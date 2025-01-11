@@ -1,0 +1,1102 @@
+{
+  "0001": {
+    "name": "Fuel flow regulation",
+    "description": "OC"
+  },
+  "0002": {
+    "name": "Fuel flow regulation",
+    "description": "Current too high"
+  },
+  "0003": {
+    "name": "Fuel flow regulation",
+    "description": "SC earth (-)"
+  },
+  "0004": {
+    "name": "Fuel flow regulation",
+    "description": "SC positive (+)"
+  },
+  "0011": {
+    "name": "Cylinder  reference signal",
+    "description": "Synchronisation error or loss"
+  },
+  "0016": {
+    "name": "Cylinder  reference signal",
+    "description": "Incorrect value received"
+  },
+  "0017": {
+    "name": "Start the engine",
+    "description": "Synchronisation time too long"
+  },
+  "004E": {
+    "name": "Turbocharger pressure regulation electrovalve 1 control (rear)",
+    "description": "Coherence"
+  },
+  "004F": {
+    "name": "Turbocharger pressure regulation electrovalve 2 control (front)",
+    "description": "Coherence"
+  },
+  "0069": {
+    "name": "Turbo pressure signal",
+    "description": "Turbocharging pressure / atmospheric pressure consistency"
+  },
+  "0087": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure too high"
+  },
+  "0088": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure too low"
+  },
+  "0089": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "Current too high"
+  },
+  "0091": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "SC earth (-)"
+  },
+  "0092": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "SC positive (+)"
+  },
+  "0095": {
+    "name": "Inlet air temperature signal (air inlet manifold)",
+    "description": "Coherence"
+  },
+  "0096": {
+    "name": "Inlet air temperature signal (air inlet manifold)",
+    "description": "Poor contact"
+  },
+  "0097": {
+    "name": "Inlet air temperature signal (air inlet manifold)",
+    "description": "Voltage too low"
+  },
+  "0098": {
+    "name": "Inlet air temperature signal (air inlet manifold)",
+    "description": "Voltage too high"
+  },
+  "0100": {
+    "name": "Flowmeter signal 1 (rear)",
+    "description": "Flow too high"
+  },
+  "0101": {
+    "name": "Flowmeter signal 1 (rear)",
+    "description": "Poor contact"
+  },
+  "0102": {
+    "name": "Flowmeter signal 1 (rear)",
+    "description": "Coherence"
+  },
+  "0104": {
+    "name": "Flowmeter signal 1 (rear)",
+    "description": "Flow too low"
+  },
+  "0106": {
+    "name": "Atmospheric pressure signal",
+    "description": "Poor contact"
+  },
+  "0107": {
+    "name": "Atmospheric pressure signal",
+    "description": "Pressure too low"
+  },
+  "0108": {
+    "name": "Atmospheric pressure signal",
+    "description": "Pressure too high"
+  },
+  "010A": {
+    "name": "Flowmeter signal 2 (front)",
+    "description": "Flow too high"
+  },
+  "010B": {
+    "name": "Flowmeter signal 2 (front)",
+    "description": "Poor contact"
+  },
+  "010C": {
+    "name": "Flowmeter signal 2 (front)",
+    "description": "Coherence"
+  },
+  "010E": {
+    "name": "Flowmeter signal 2 (front)",
+    "description": "Flow too low"
+  },
+  "010F": {
+    "name": "Air flowmeter signals",
+    "description": "Consistency between the 2 air flowmeters"
+  },
+  "0111": {
+    "name": "Air flowmeter temperature signal",
+    "description": "Poor contact"
+  },
+  "0112": {
+    "name": "Air flowmeter temperature signal",
+    "description": "Voltage too high"
+  },
+  "0113": {
+    "name": "Air flowmeter temperature signal",
+    "description": "Voltage too low"
+  },
+  "0115": {
+    "name": "Engine coolant temperature signal",
+    "description": "Coherence"
+  },
+  "0116": {
+    "name": "Engine coolant temperature signal",
+    "description": "Poor contact"
+  },
+  "0117": {
+    "name": "Engine coolant temperature signal",
+    "description": "Voltage too low"
+  },
+  "0118": {
+    "name": "Engine coolant temperature signal",
+    "description": "Voltage too high"
+  },
+  "0120": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Drift in low limit adaptation"
+  },
+  "0121": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Drift in upper limit adaptation"
+  },
+  "0122": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Voltage too low"
+  },
+  "0123": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Voltage too high"
+  },
+  "0124": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Poor contact"
+  },
+  "0180": {
+    "name": "Diesel temperature signal",
+    "description": "Coherence"
+  },
+  "0181": {
+    "name": "Diesel temperature signal",
+    "description": "Poor contact"
+  },
+  "0182": {
+    "name": "Diesel temperature signal",
+    "description": "SC earth (-)"
+  },
+  "0183": {
+    "name": "Diesel temperature signal",
+    "description": "SC positive (+)"
+  },
+  "0191": {
+    "name": "Fuel pressure signal",
+    "description": "Poor contact"
+  },
+  "0192": {
+    "name": "Fuel pressure signal",
+    "description": "SC earth (-)"
+  },
+  "0193": {
+    "name": "Fuel pressure signal",
+    "description": "SC positive (+)"
+  },
+  "0201": {
+    "name": "Injector 1",
+    "description": "OC / Piezo discharged"
+  },
+  "0202": {
+    "name": "Injector 2",
+    "description": "OC / Piezo discharged"
+  },
+  "0203": {
+    "name": "Injector 3",
+    "description": "OC / Piezo discharged"
+  },
+  "0204": {
+    "name": "Injector 4",
+    "description": "OC / Piezo discharged"
+  },
+  "0205": {
+    "name": "Injector 5",
+    "description": "OC / Piezo discharged"
+  },
+  "0206": {
+    "name": "Injector 6",
+    "description": "OC / Piezo discharged"
+  },
+  "0215": {
+    "name": "Main supply relay control",
+    "description": "SC positive (+), OC or SC earth (-)"
+  },
+  "0220": {
+    "name": "Accelerator pedal signal",
+    "description": "Consistency (easy move function)"
+  },
+  "0222": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Voltage too high or too low"
+  },
+  "0223": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Voltage too high or too low"
+  },
+  "0227": {
+    "name": "Accelerator pedal signal 2",
+    "description": "Voltage too high or too low"
+  },
+  "0228": {
+    "name": "Accelerator pedal signal 2",
+    "description": "Voltage too high or too low"
+  },
+  "0234": {
+    "name": "Turbo pressure signal",
+    "description": "Turbo pressure measured too high / turbo pressure reference value"
+  },
+  "0235": {
+    "name": "Turbo pressure signal",
+    "description": "Pressure too high / for engine torque and engine speed"
+  },
+  "0236": {
+    "name": "Turbo pressure signal",
+    "description": "Poor contact"
+  },
+  "0237": {
+    "name": "Turbo pressure signal",
+    "description": "Voltage too low"
+  },
+  "0238": {
+    "name": "Turbo pressure signal",
+    "description": "Voltage too high"
+  },
+  "0243": {
+    "name": "Turbocharger pressure regulation electrovalve 1 control (rear)",
+    "description": "Mechanical problem"
+  },
+  "0244": {
+    "name": "Turbocharger pressure regulation electrovalve 1 control (rear)",
+    "description": "Voltage too high or too low"
+  },
+  "0245": {
+    "name": "Turbocharger pressure regulation electrovalve 1 control (rear)",
+    "description": "SC earth (-)"
+  },
+  "0246": {
+    "name": "Turbocharger pressure regulation electrovalve 1 control (rear)",
+    "description": "SC positive (+)"
+  },
+  "0247": {
+    "name": "Turbocharger pressure regulation electrovalve 2 control (front)",
+    "description": "Mechanical problem"
+  },
+  "0248": {
+    "name": "Turbocharger pressure regulation electrovalve 2 control (front)",
+    "description": "Voltage too high or too low"
+  },
+  "0249": {
+    "name": "Turbocharger pressure regulation electrovalve 2 control (front)",
+    "description": "SC earth (-)"
+  },
+  "0250": {
+    "name": "Turbocharger pressure regulation electrovalve 2 control (front)",
+    "description": "SC positive (+)"
+  },
+  "0261": {
+    "name": "Injector 1",
+    "description": "Not characterised"
+  },
+  "0262": {
+    "name": "Injector 1",
+    "description": "Piezo charge"
+  },
+  "0263": {
+    "name": "Injector flow correction",
+    "description": "Cylinder 1 injector correction time outside the tolerance"
+  },
+  "0264": {
+    "name": "Injector 2",
+    "description": "Not characterised"
+  },
+  "0265": {
+    "name": "Injector 2",
+    "description": "Piezo charge"
+  },
+  "0266": {
+    "name": "Injector flow correction",
+    "description": "Cylinder 2 injector correction time outside the tolerance"
+  },
+  "0267": {
+    "name": "Injector 3",
+    "description": "Not characterised"
+  },
+  "0268": {
+    "name": "Injector 3",
+    "description": "Piezo charge"
+  },
+  "0269": {
+    "name": "Injector flow correction 3",
+    "description": "Value too high or too low"
+  },
+  "0270": {
+    "name": "Injector 4",
+    "description": "Not characterised"
+  },
+  "0271": {
+    "name": "Injector 4",
+    "description": "Not characterised"
+  },
+  "0272": {
+    "name": "Injector flow correction 4",
+    "description": "Value too high or too low"
+  },
+  "0273": {
+    "name": "Injector 5",
+    "description": "Not characterised"
+  },
+  "0274": {
+    "name": "Injector 5",
+    "description": "Piezo charge"
+  },
+  "0275": {
+    "name": "Injector flow correction 5",
+    "description": "Value too high or too low"
+  },
+  "0276": {
+    "name": "Injector 6",
+    "description": "Not characterised"
+  },
+  "0277": {
+    "name": "Injector 6",
+    "description": "Piezo charge"
+  },
+  "0278": {
+    "name": "Injector flow correction 6",
+    "description": "Value too high or too low"
+  },
+  "0299": {
+    "name": "Turbo pressure signal",
+    "description": "Turbo pressure measured too low/ turbo pressure reference value"
+  },
+  "0327": {
+    "name": "Knock sensor signal 1 (rear bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0328": {
+    "name": "Knock sensor signal 1 (rear bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0332": {
+    "name": "Knock sensor signal 2 (front bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0333": {
+    "name": "Knock sensor signal 2 (front bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0335": {
+    "name": "Engine speed signal",
+    "description": "Engine racing"
+  },
+  "0336": {
+    "name": "Engine speed signal",
+    "description": "Incorrect value received"
+  },
+  "0337": {
+    "name": "Engine speed signal",
+    "description": "No signal"
+  },
+  "0339": {
+    "name": "Engine speed signal",
+    "description": "Loss of synchronisation"
+  },
+  "0340": {
+    "name": "Cylinder  reference signal",
+    "description": "Synchronisation error or loss"
+  },
+  "0341": {
+    "name": "Cylinder  reference signal",
+    "description": "No signal"
+  },
+  "0343": {
+    "name": "Cylinder  reference signal",
+    "description": "Incorrect value received"
+  },
+  "0401": {
+    "name": "Air circuit",
+    "description": "Amount of air measured higher than the setting"
+  },
+  "0402": {
+    "name": "Air circuit",
+    "description": "Amount of air measured lower than the setting"
+  },
+  "0403": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Solenoid valve locked"
+  },
+  "0404": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Solenoid valve locked"
+  },
+  "0405": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Voltage too low"
+  },
+  "0406": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Voltage too high"
+  },
+  "0407": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Voltage too low"
+  },
+  "0408": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Voltage too high"
+  },
+  "0409": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Poor contact"
+  },
+  "0460": {
+    "name": "Low fuel level signal",
+    "description": "Coherence"
+  },
+  "0461": {
+    "name": "Low fuel level signal",
+    "description": "Incorrect value received"
+  },
+  "0470": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Differential pressure consistency before starting"
+  },
+  "0471": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Poor contact"
+  },
+  "0472": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Voltage too low"
+  },
+  "0473": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Voltage too high"
+  },
+  "0486": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Poor contact"
+  },
+  "0487": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Solenoid valve locked"
+  },
+  "0488": {
+    "name": "Exhaust gas recycling electric throttle position",
+    "description": "Solenoid valve locked"
+  },
+  "0489": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Solenoid valve locked"
+  },
+  "0490": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Solenoid valve locked"
+  },
+  "0495": {
+    "name": "Cooling function integrated into the ECU",
+    "description": "Coherence"
+  },
+  "0500": {
+    "name": "Vehicle speed signal",
+    "description": "Incorrect value received"
+  },
+  "050B": {
+    "name": "Start the engine",
+    "description": "Starting time too long"
+  },
+  "0513": {
+    "name": "Start the engine",
+    "description": "Immobiliser unlocking time too long"
+  },
+  "0531": {
+    "name": "Cooling pressure signal",
+    "description": "OC"
+  },
+  "0532": {
+    "name": "Cooling pressure signal",
+    "description": "OC or SC earth (-)"
+  },
+  "0533": {
+    "name": "Cooling pressure signal",
+    "description": "SC positive (+) 5 V"
+  },
+  "0544": {
+    "name": "Pre-cat converter upstream temperature signal 1 (rear)",
+    "description": "Poor contact"
+  },
+  "0545": {
+    "name": "Pre-cat converter upstream temperature signal 1 (rear)",
+    "description": "Value too low"
+  },
+  "0546": {
+    "name": "Pre-cat converter upstream temperature signal 1 (rear)",
+    "description": "Value too high"
+  },
+  "0547": {
+    "name": "Pre-cat converter upstream temperature signal 2 (front)",
+    "description": "Poor contact"
+  },
+  "0548": {
+    "name": "Pre-cat converter upstream temperature signal 2 (front)",
+    "description": "Value too low"
+  },
+  "0549": {
+    "name": "Pre-cat converter upstream temperature signal 2 (front)",
+    "description": "Value too high"
+  },
+  "0562": {
+    "name": "Battery voltage",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "Battery voltage",
+    "description": "Voltage too high"
+  },
+  "0571": {
+    "name": "Brake contact signal",
+    "description": "Problem on brake switch during deceleration"
+  },
+  "0603": {
+    "name": "Injection ECU  fault",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "Injection ECU  fault",
+    "description": "Not characterised"
+  },
+  "0607": {
+    "name": "Injection ECU  fault",
+    "description": "ECU load *1-Too great"
+  },
+  "062D": {
+    "name": "Injectors control 1,2,3",
+    "description": "Coherence"
+  },
+  "062E": {
+    "name": "Injectors control 4,5,6",
+    "description": "Coherence"
+  },
+  "0658": {
+    "name": "5 Volt supply no. 1",
+    "description": "Voltage too low"
+  },
+  "0659": {
+    "name": "5 Volt supply no. 1",
+    "description": "Voltage too high"
+  },
+  "0666": {
+    "name": "ECU  internal temperature",
+    "description": "Temperature too high"
+  },
+  "0667": {
+    "name": "ECU  internal temperature",
+    "description": "Poor contact"
+  },
+  "0668": {
+    "name": "ECU  internal temperature",
+    "description": "Voltage too low"
+  },
+  "0669": {
+    "name": "ECU  internal temperature",
+    "description": "Voltage too high"
+  },
+  "0685": {
+    "name": "Power relay control",
+    "description": "OC"
+  },
+  "0686": {
+    "name": "Power relay control",
+    "description": "SC earth (-)"
+  },
+  "0687": {
+    "name": "Power relay control",
+    "description": "SC positive (+)"
+  },
+  "0691": {
+    "name": "Fan",
+    "description": "SC positive (+)"
+  },
+  "0692": {
+    "name": "Fan",
+    "description": "OC or SC earth (-)"
+  },
+  "1113": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure too low during starting"
+  },
+  "1114": {
+    "name": "Injection supply cut-off  test fault",
+    "description": "Injectors"
+  },
+  "1164": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure coherence"
+  },
+  "1165": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure coherence"
+  },
+  "1167": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure coherence"
+  },
+  "1169": {
+    "name": "Voltage converter",
+    "description": "Voltage too high or too low"
+  },
+  "1192": {
+    "name": "Injection supply cut-off  test fault",
+    "description": "Flow regulator"
+  },
+  "1193": {
+    "name": "Injectors",
+    "description": "Flow not sufficient"
+  },
+  "1194": {
+    "name": "Injectors",
+    "description": "Injector : Blocked closed"
+  },
+  "1195": {
+    "name": "Injectors",
+    "description": "Injector leak"
+  },
+  "1198": {
+    "name": "Fuel flow regulation",
+    "description": "Fuel flow insufficient"
+  },
+  "1210": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "OC"
+  },
+  "12A1": {
+    "name": "Injector 1",
+    "description": "Flow not sufficient"
+  },
+  "12A2": {
+    "name": "Injector 1",
+    "description": "Injector : Blocked closed"
+  },
+  "12A3": {
+    "name": "Injector 1",
+    "description": "Injector leak"
+  },
+  "12A4": {
+    "name": "Injector 2",
+    "description": "Flow not sufficient"
+  },
+  "12A5": {
+    "name": "Injector 2",
+    "description": "Injector : Blocked closed"
+  },
+  "12A6": {
+    "name": "Injector 2",
+    "description": "Injector leak"
+  },
+  "12A7": {
+    "name": "Injector 3",
+    "description": "Flow not sufficient"
+  },
+  "12A8": {
+    "name": "Injector 3",
+    "description": "Injector : Blocked closed"
+  },
+  "12A9": {
+    "name": "Injector 3",
+    "description": "Injector leak"
+  },
+  "12AA": {
+    "name": "Injector 4",
+    "description": "Flow not sufficient"
+  },
+  "12AB": {
+    "name": "Injector 4",
+    "description": "Injector : Blocked closed"
+  },
+  "12AC": {
+    "name": "Injector 4",
+    "description": "Injector leak"
+  },
+  "12AD": {
+    "name": "Injector 5",
+    "description": "Flow not sufficient"
+  },
+  "12AE": {
+    "name": "Injector 5",
+    "description": "Injector : Blocked closed"
+  },
+  "12AF": {
+    "name": "Injector 5",
+    "description": "Injector leak"
+  },
+  "12B0": {
+    "name": "Injector 6",
+    "description": "Flow not sufficient"
+  },
+  "12B1": {
+    "name": "Injector 6",
+    "description": "Injector : Blocked closed"
+  },
+  "12B2": {
+    "name": "Injector 6",
+    "description": "Injector leak"
+  },
+  "1349": {
+    "name": "Pre/post heating relay circuit",
+    "description": "SC positive (+)"
+  },
+  "1350": {
+    "name": "Pre/post heating relay circuit",
+    "description": "OC or SC earth (-)"
+  },
+  "1351": {
+    "name": "Pre/post heating relay circuit",
+    "description": "Relay controlled / plugs not controlled"
+  },
+  "1352": {
+    "name": "Pre/post heating relay circuit",
+    "description": "Relay controlled / plugs not controlled"
+  },
+  "1403": {
+    "name": "Additional heating 1",
+    "description": "SC positive (+), OC or SC earth (-)"
+  },
+  "1404": {
+    "name": "Additional heating 2",
+    "description": "SC positive (+), OC or SC earth (-)"
+  },
+  "1429": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Regeneration not done or particulate filter clogged"
+  },
+  "1434": {
+    "name": "Additive system",
+    "description": "OC"
+  },
+  "1435": {
+    "name": "Additive system",
+    "description": "Additive ECU"
+  },
+  "1442": {
+    "name": "Additive system",
+    "description": "Addition of additive not possible"
+  },
+  "1443": {
+    "name": "Additive system",
+    "description": "SC earth (-)"
+  },
+  "1444": {
+    "name": "Additive system",
+    "description": "SC positive (+)"
+  },
+  "1445": {
+    "name": "Additive system",
+    "description": "Quantity of additive too high"
+  },
+  "1446": {
+    "name": "Additive system",
+    "description": "Additive level-Too low"
+  },
+  "1447": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Particle filter clogged"
+  },
+  "1457": {
+    "name": "Exhaust differential pressure sensor signal",
+    "description": "Particle filter or sensor absent"
+  },
+  "1461": {
+    "name": "Fault exhaust gas recycling electric valve position 1 (rear)",
+    "description": "Drift in low limit adaptation"
+  },
+  "1462": {
+    "name": "Exhaust gas recycling electric valve position 2 (front)",
+    "description": "Drift in low limit adaptation"
+  },
+  "1510": {
+    "name": "Gearbox ECU reception fault",
+    "description": "MIL request from gearbox"
+  },
+  "1527": {
+    "name": "Alternator charge information",
+    "description": "OC or SC positive (+)"
+  },
+  "1528": {
+    "name": "Alternator charge information",
+    "description": "No signal"
+  },
+  "1536": {
+    "name": "Brake contact signal",
+    "description": "Switch not functional"
+  },
+  "1613": {
+    "name": "Configuration",
+    "description": "Configuration not carried out"
+  },
+  "1621": {
+    "name": "Injection ECU  fault",
+    "description": "Not characterised"
+  },
+  "1624": {
+    "name": "CAN monitoring",
+    "description": "Coherence"
+  },
+  "1625": {
+    "name": "Vehicle speed limiter",
+    "description": "Coherence"
+  },
+  "1627": {
+    "name": "Accelerator pedal signal monitoring",
+    "description": "Coherence"
+  },
+  "1631": {
+    "name": "Injection ECU  fault",
+    "description": "Coherence"
+  },
+  "1641": {
+    "name": "Injectors control",
+    "description": "Power stage / Injector residual voltage too large"
+  },
+  "1667": {
+    "name": "Injection ECU  fault",
+    "description": "Not characterised"
+  },
+  "1668": {
+    "name": "Injection supply cut-off  test fault",
+    "description": "Coherence"
+  },
+  "1669": {
+    "name": "Engine speed signal",
+    "description": "Coherence"
+  },
+  "1671": {
+    "name": "Cruise control",
+    "description": "Coherence"
+  },
+  "1672": {
+    "name": "Engine speed signal",
+    "description": "Coherence"
+  },
+  "1693": {
+    "name": "Controlled engine start and stop",
+    "description": "Not characterised"
+  },
+  "1694": {
+    "name": "Controlled engine start and stop",
+    "description": "SC positive (+) (starter motor relay)"
+  },
+  "1695": {
+    "name": "Controlled engine start and stop",
+    "description": "Not characterised"
+  },
+  "1697": {
+    "name": "Front adaptable flexible mounting electrovalve",
+    "description": "SC positive (+), OC or SC earth (-)"
+  },
+  "1698": {
+    "name": "Rear adaptable flexible mounting electrovalve",
+    "description": "SC positive (+), OC or SC earth (-)"
+  },
+  "2008": {
+    "name": "Gas inlet swirl electrovalve control",
+    "description": "OC"
+  },
+  "2009": {
+    "name": "Gas inlet swirl electrovalve control",
+    "description": "SC earth (-)"
+  },
+  "2010": {
+    "name": "Gas inlet swirl electrovalve control",
+    "description": "SC positive (+)"
+  },
+  "2031": {
+    "name": "Pre-cat converter downstream temperature signal 1 (rear)",
+    "description": "Poor contact"
+  },
+  "2032": {
+    "name": "Pre-cat converter downstream temperature signal 1 (rear)",
+    "description": "Value too low"
+  },
+  "2033": {
+    "name": "Pre-cat converter downstream temperature signal 1 (rear)",
+    "description": "Value too high"
+  },
+  "2131": {
+    "name": "Vehicle speed limiter",
+    "description": "Electrical problem"
+  },
+  "2132": {
+    "name": "Vehicle speed limiter",
+    "description": "Voltage too low"
+  },
+  "2133": {
+    "name": "Vehicle speed limiter",
+    "description": "Voltage too high"
+  },
+  "2137": {
+    "name": "Accelerator pedal signal monitoring",
+    "description": "Consistency between the two pedal sensor signals"
+  },
+  "2140": {
+    "name": "Speed limiter switch signal",
+    "description": "Coherence between point of resistance and accelerator pedal position"
+  },
+  "2141": {
+    "name": "Exhaust gas recycling electric throttle control",
+    "description": "Fault control circuit electrics"
+  },
+  "2143": {
+    "name": "Exhaust gas recycling electric valve control 1 (rear)",
+    "description": "Fault: power stage / control circuit electrics"
+  },
+  "2144": {
+    "name": "Exhaust gas recycling electric valve control 2 (front)",
+    "description": "Fault: power stage / control circuit electrics"
+  },
+  "2146": {
+    "name": "Injectors control 1,2,3",
+    "description": "Electrical problem"
+  },
+  "2149": {
+    "name": "Injectors control 4,5,6",
+    "description": "Electrical problem"
+  },
+  "2199": {
+    "name": "Inlet air temperature signal (air inlet manifold)",
+    "description": "Consistency between inlet air temperature (inlet air manifold) and inlet air temperature (flowmeter)"
+  },
+  "2265": {
+    "name": "Presence of water in fuel",
+    "description": "Water present"
+  },
+  "2266": {
+    "name": "Presence of water in fuel",
+    "description": "SC earth (-)"
+  },
+  "2267": {
+    "name": "Presence of water in fuel",
+    "description": "SC positive (+)"
+  },
+  "2268": {
+    "name": "Presence of water in fuel",
+    "description": "OC"
+  },
+  "2279": {
+    "name": "Turbo pressure signal",
+    "description": "Pressure too low / for engine torque and engine speed (leak after turbo)"
+  },
+  "2291": {
+    "name": "Start the engine",
+    "description": "Rail pressure insufficient when starting"
+  },
+  "2299": {
+    "name": "Accelerator pedal signal",
+    "description": "Coherence with brake switch"
+  },
+  "2408": {
+    "name": "Additive system",
+    "description": "Fuel tank cap presence sensor"
+  },
+  "242A": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Poor contact"
+  },
+  "242C": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Voltage too low"
+  },
+  "242D": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Voltage too high"
+  },
+  "2670": {
+    "name": "5 Volt supply no. 2",
+    "description": "Voltage too low"
+  },
+  "2671": {
+    "name": "5 Volt supply no. 2",
+    "description": "Voltage too high"
+  },
+  "3007": {
+    "name": "Air flowmeter signals",
+    "description": "Flow too low"
+  },
+  "3008": {
+    "name": "Air flowmeter signals",
+    "description": "Flow too high"
+  },
+  "C019": {
+    "name": "No communication on the network (CAN)",
+    "description": "Low Speed CAN"
+  },
+  "C028": {
+    "name": "Communication on the comfort VAN",
+    "description": "No signal"
+  },
+  "C046": {
+    "name": "Communications on the bodywork VAN",
+    "description": "No signal"
+  },
+  "C055": {
+    "name": "Fault in communication on the Comfort CAN",
+    "description": "No signal"
+  },
+  "C103": {
+    "name": "Gearbox ECU reception fault",
+    "description": "No signal"
+  },
+  "C121": {
+    "name": "ABS ECU reception",
+    "description": "No signal"
+  },
+  "C122": {
+    "name": "ESP ECU reception fault",
+    "description": "No signal"
+  },
+  "C404": {
+    "name": "Gearbox ECU reception fault",
+    "description": "Incorrect value received"
+  },
+  "C415": {
+    "name": "ABS ECU reception",
+    "description": "Coherence"
+  },
+  "C416": {
+    "name": "ESP ECU reception fault",
+    "description": "Coherence"
+  },
+  "D000": {
+    "name": "No communication on the network (CAN)",
+    "description": "ECU mute"
+  },
+  "D003": {
+    "name": "No communication on the network (CAN)",
+    "description": "CAN network : overloaded"
+  },
+  "D118": {
+    "name": "Built-in Systems Interface ECU reception",
+    "description": "No signal"
+  },
+  "D218": {
+    "name": "Built-in Systems Interface ECU reception",
+    "description": "Consistency between Built-in Systems Interface / cruise control / speed limiter"
+  },
+  "E000": {
+    "name": "Remote Controlled Wake-up (RCD): Main wake-up fault",
+    "description": "Incorrect value received"
+  },
+  "E003": {
+    "name": "Remote Controlled Wake-up (RCD): Main wake-up fault",
+    "description": "Coherence"
+  },
+  "E118": {
+    "name": "Remote controlled wake-up (RCD): Partial wake-up fault",
+    "description": "Incorrect value received"
+  }
+}

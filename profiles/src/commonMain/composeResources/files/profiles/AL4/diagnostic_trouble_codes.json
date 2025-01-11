@@ -1,0 +1,1518 @@
+{
+  "0000": {
+    "name": "Kick-down contact.",
+    "description": "Not characterised"
+  },
+  "0001": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "0002": {
+    "name": "Clutch slip.",
+    "description": "Not characterised"
+  },
+  "0003": {
+    "name": "Sensors supply fault.",
+    "description": "Not characterised"
+  },
+  "0004": {
+    "name": "Automatic gearbox oil temperature signal error",
+    "description": "Not characterised"
+  },
+  "0005": {
+    "name": "Oil pressure signal fault",
+    "description": "Not characterised"
+  },
+  "0006": {
+    "name": "Pressure regulation fault (difference / reference value)",
+    "description": "Not characterised"
+  },
+  "0007": {
+    "name": "Oil pressure defect fault.",
+    "description": "Not characterised"
+  },
+  "0010": {
+    "name": "Display serial supply.",
+    "description": "Short circuit to positive"
+  },
+  "0011": {
+    "name": "Display serial supply.",
+    "description": "Open circuit"
+  },
+  "0012": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Short circuit to positive"
+  },
+  "0013": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Open circuit"
+  },
+  "0014": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short-circuit between two wires"
+  },
+  "0015": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short-circuit between two wires"
+  },
+  "0016": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Short circuit to positive"
+  },
+  "0017": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Open circuit"
+  },
+  "0020": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "0021": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "0022": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "0023": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Coherence"
+  },
+  "0024": {
+    "name": "Fault Engine temperature(CAN)",
+    "description": "No signal"
+  },
+  "0025": {
+    "name": "Engine speed signal.",
+    "description": "No signal"
+  },
+  "0026": {
+    "name": "Fault : accelerator pedal position",
+    "description": "Not characterised"
+  },
+  "0027": {
+    "name": "Accelerator pedal initialisation not done",
+    "description": "Not characterised"
+  },
+  "0031": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "Not characterised"
+  },
+  "0032": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "0033": {
+    "name": "Automatic gearbox communication fault with ABS (ESP)",
+    "description": "Not characterised"
+  },
+  "0034": {
+    "name": "Automatic gearbox communication fault with BSI.",
+    "description": "Not characterised"
+  },
+  "0035": {
+    "name": "Fault in the front left wheel vehicle speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "0036": {
+    "name": "Fault in the front right wheel speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "0037": {
+    "name": "CAN communication (Absence / Interference)",
+    "description": "Not characterised"
+  },
+  "0040": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Open circuit"
+  },
+  "0041": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Open circuit"
+  },
+  "0042": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Open circuit"
+  },
+  "0043": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Open circuit"
+  },
+  "0044": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Open circuit"
+  },
+  "0045": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Open circuit"
+  },
+  "0046": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Open circuit"
+  },
+  "0047": {
+    "name": "Shift-lock output *1.",
+    "description": "Open circuit"
+  },
+  "0050": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short circuit to positive"
+  },
+  "0051": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0052": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0053": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0054": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0055": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0056": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Short circuit to positive"
+  },
+  "0057": {
+    "name": "Shift-lock output *1.",
+    "description": "Short circuit to positive"
+  },
+  "0060": {
+    "name": "ECU fault.",
+    "description": "Checksum"
+  },
+  "0061": {
+    "name": "ECU fault.",
+    "description": "RAM"
+  },
+  "0062": {
+    "name": "ECU fault.",
+    "description": "EEPROM"
+  },
+  "0063": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Intermediate position"
+  },
+  "0064": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Inconsistent position"
+  },
+  "0065": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Unstable position"
+  },
+  "0066": {
+    "name": "Press control signal fault.",
+    "description": "Not characterised"
+  },
+  "0067": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "0070": {
+    "name": "Converter lock-up.",
+    "description": "Not characterised"
+  },
+  "0071": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Short circuit to positive"
+  },
+  "0072": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Open circuit"
+  },
+  "0073": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "0074": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "0075": {
+    "name": "Fault : Fault: oil wear through controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "0076": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Short circuit to positive"
+  },
+  "0077": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Open circuit"
+  },
+  "0080": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "0081": {
+    "name": "Fault: activation time of one touch control.",
+    "description": "Not characterised"
+  },
+  "0082": {
+    "name": "ESP function.",
+    "description": "Coherence"
+  },
+  "0083": {
+    "name": "ESP function.",
+    "description": "Not characterised"
+  },
+  "0084": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "0085": {
+    "name": "Incorrect rear right-hand wheel speed transmitted by the ABS/ESP ECU.",
+    "description": "Not characterised"
+  },
+  "0086": {
+    "name": "Incorrect rear left-hand wheel speed transmitted by the EBS/ESP ECU",
+    "description": "Not characterised"
+  },
+  "0087": {
+    "name": "Vehicle speed transmitted by the ABS.",
+    "description": "No signal"
+  },
+  "0090": {
+    "name": "Vehicle speed information.",
+    "description": "Coherence"
+  },
+  "0091": {
+    "name": "Gearbox input speed signal.",
+    "description": "No signal"
+  },
+  "0092": {
+    "name": "Gearbox output speed signal fault",
+    "description": "No signal"
+  },
+  "0093": {
+    "name": "Gearbox input speed signal.",
+    "description": "Not characterised"
+  },
+  "0094": {
+    "name": "Gearbox output speed signal fault",
+    "description": "Not characterised"
+  },
+  "0095": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "0096": {
+    "name": "Fault in the transverse acceleration information emitted by the ABS",
+    "description": "No signal"
+  },
+  "0097": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Value received incorrect"
+  },
+  "0218": {
+    "name": "Automatic gearbox fault",
+    "description": "Overheating"
+  },
+  "0504": {
+    "name": "Wired brake fault",
+    "description": "Coherence"
+  },
+  "0601": {
+    "name": "ECU fault.",
+    "description": "Checksum or microprocessor"
+  },
+  "0603": {
+    "name": "ECU fault.",
+    "description": "EEPROM"
+  },
+  "0604": {
+    "name": "ECU fault.",
+    "description": "RAM or RAM Data or processing capacity exceeded"
+  },
+  "0606": {
+    "name": "ECU fault.",
+    "description": "Push controls supply voltage"
+  },
+  "0705": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Unstable position"
+  },
+  "0706": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Inconsistent position"
+  },
+  "0709": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Intermediate position"
+  },
+  "0715": {
+    "name": "Gearbox input engine speed signal fault.",
+    "description": "Not characterised"
+  },
+  "0717": {
+    "name": "Gearbox input engine speed signal fault.",
+    "description": "No signal"
+  },
+  "0720": {
+    "name": "Gearbox output speed signal fault",
+    "description": "Not characterised"
+  },
+  "0721": {
+    "name": "Vehicle speed data fault.",
+    "description": "Coherence"
+  },
+  "0722": {
+    "name": "Gearbox output speed signal fault",
+    "description": "No signal"
+  },
+  "0730": {
+    "name": "Slipping fault (clutch / brakes).",
+    "description": "Not characterised"
+  },
+  "0740": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "0741": {
+    "name": "Fault converter lock-up.",
+    "description": "Not characterised"
+  },
+  "0742": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "0743": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0753": {
+    "name": "Sequence solenoid 1 output fault",
+    "description": "Open circuit or short circuit to positive or short circuit between 2 wires"
+  },
+  "0758": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0763": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0768": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Open circuit or short circuit to positive or short circuit between 2 wires"
+  },
+  "0773": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0811": {
+    "name": "Disengagement fault when the vehicle is stationary.",
+    "description": "Not characterised"
+  },
+  "0819": {
+    "name": "Automatic gearbox electric control fault.",
+    "description": "Steering wheel controls inactive"
+  },
+  "0826": {
+    "name": "Fault: activation time of one touch control.",
+    "description": "Not characterised"
+  },
+  "0932": {
+    "name": "Oil pressure signal fault",
+    "description": "Not characterised"
+  },
+  "0937": {
+    "name": "Automatic gearbox oil temperature signal error",
+    "description": "Not characterised"
+  },
+  "1000": {
+    "name": "Kick-down contact.",
+    "description": "Not characterised"
+  },
+  "1001": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "1002": {
+    "name": "Clutch slip.",
+    "description": "Not characterised"
+  },
+  "1003": {
+    "name": "Sensors supply fault.",
+    "description": "Not characterised"
+  },
+  "1004": {
+    "name": "Automatic gearbox oil temperature signal error",
+    "description": "Not characterised"
+  },
+  "1005": {
+    "name": "Oil pressure signal fault",
+    "description": "Not characterised"
+  },
+  "1006": {
+    "name": "Pressure regulation fault (difference / reference value)",
+    "description": "Not characterised"
+  },
+  "1007": {
+    "name": "Oil pressure defect fault.",
+    "description": "Not characterised"
+  },
+  "1010": {
+    "name": "Display serial supply.",
+    "description": "Short circuit to positive"
+  },
+  "1011": {
+    "name": "Display serial supply.",
+    "description": "Open circuit"
+  },
+  "1012": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Short circuit to positive"
+  },
+  "1013": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Open circuit"
+  },
+  "1014": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short-circuit between two wires"
+  },
+  "1015": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short-circuit between two wires"
+  },
+  "1016": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Short circuit to positive"
+  },
+  "1017": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Open circuit"
+  },
+  "1020": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "1021": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "1022": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "1023": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Coherence"
+  },
+  "1024": {
+    "name": "Fault Engine temperature(CAN)",
+    "description": "No signal"
+  },
+  "1025": {
+    "name": "Engine speed signal.",
+    "description": "No signal"
+  },
+  "1026": {
+    "name": "Fault : accelerator pedal position",
+    "description": "Not characterised"
+  },
+  "1027": {
+    "name": "Accelerator pedal initialisation not done",
+    "description": "Not characterised"
+  },
+  "1031": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "Not characterised"
+  },
+  "1032": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "1033": {
+    "name": "Automatic gearbox communication fault with ABS (ESP)",
+    "description": "Not characterised"
+  },
+  "1034": {
+    "name": "Automatic gearbox communication fault with BSI.",
+    "description": "Not characterised"
+  },
+  "1035": {
+    "name": "Fault in the front left wheel vehicle speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "1036": {
+    "name": "Fault in the front right wheel speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "1037": {
+    "name": "CAN communication (Absence / Interference)",
+    "description": "Not characterised"
+  },
+  "1040": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Open circuit"
+  },
+  "1041": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Open circuit"
+  },
+  "1042": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Open circuit"
+  },
+  "1043": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Open circuit"
+  },
+  "1044": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Open circuit"
+  },
+  "1045": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Open circuit"
+  },
+  "1046": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Open circuit"
+  },
+  "1047": {
+    "name": "Shift-lock output 1.",
+    "description": "Open circuit"
+  },
+  "1050": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short circuit to positive"
+  },
+  "1051": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Short circuit to positive"
+  },
+  "1052": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Short circuit to positive"
+  },
+  "1053": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short circuit to positive"
+  },
+  "1054": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Short circuit to positive"
+  },
+  "1055": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Short circuit to positive"
+  },
+  "1056": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Short circuit to positive"
+  },
+  "1057": {
+    "name": "Shift-lock output 1.",
+    "description": "Short circuit to positive"
+  },
+  "1060": {
+    "name": "ECU fault.",
+    "description": "Checksum"
+  },
+  "1061": {
+    "name": "ECU fault.",
+    "description": "RAM"
+  },
+  "1062": {
+    "name": "ECU fault.",
+    "description": "EEPROM"
+  },
+  "1063": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Intermediate position"
+  },
+  "1064": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Inconsistent position"
+  },
+  "1065": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Unstable position"
+  },
+  "1066": {
+    "name": "Press control signal fault.",
+    "description": "Not characterised"
+  },
+  "1067": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "1070": {
+    "name": "Converter lock-up.",
+    "description": "Not characterised"
+  },
+  "1071": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Short circuit to positive"
+  },
+  "1072": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Open circuit"
+  },
+  "1073": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "1074": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "1075": {
+    "name": "Fault : Fault: oil wear through controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "1076": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Short circuit to positive"
+  },
+  "1077": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Open circuit"
+  },
+  "1080": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "1081": {
+    "name": "Fault: activation time of one touch control.",
+    "description": "Not characterised"
+  },
+  "1082": {
+    "name": "ESP function.",
+    "description": "Coherence"
+  },
+  "1083": {
+    "name": "ESP function.",
+    "description": "Not characterised"
+  },
+  "1084": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "1085": {
+    "name": "Incorrect rear right-hand wheel speed transmitted by the ABS/ESP ECU.",
+    "description": "Not characterised"
+  },
+  "1086": {
+    "name": "Incorrect rear left-hand wheel speed transmitted by the EBS/ESP ECU",
+    "description": "Not characterised"
+  },
+  "1087": {
+    "name": "Vehicle speed transmitted by the ABS.",
+    "description": "No signal"
+  },
+  "1090": {
+    "name": "Vehicle speed information.",
+    "description": "Coherence"
+  },
+  "1091": {
+    "name": "Gearbox input speed signal.",
+    "description": "No signal"
+  },
+  "1092": {
+    "name": "Gearbox output speed signal fault",
+    "description": "No signal"
+  },
+  "1093": {
+    "name": "Gearbox input speed signal.",
+    "description": "Not characterised"
+  },
+  "1094": {
+    "name": "Gearbox output speed signal fault",
+    "description": "Not characterised"
+  },
+  "1095": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "1096": {
+    "name": "Fault in the transverse acceleration information emitted by the ABS",
+    "description": "No signal"
+  },
+  "1097": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Value received incorrect"
+  },
+  "1167": {
+    "name": "Pressure regulation fault (difference / reference value).",
+    "description": "Not characterised"
+  },
+  "1592": {
+    "name": "Fault supply to solenoid valves and regulators.",
+    "description": "Open circuit"
+  },
+  "1593": {
+    "name": "Fault supply to solenoid valves and regulators.",
+    "description": "Short circuit to positive"
+  },
+  "1611": {
+    "name": "Oil pressure defect fault.",
+    "description": "Not characterised"
+  },
+  "1703": {
+    "name": "Fault: accelerator pedal initialisation not performed.",
+    "description": "Not characterised"
+  },
+  "1706": {
+    "name": "Press control signal fault.",
+    "description": "Not characterised"
+  },
+  "1707": {
+    "name": "Fault: activation time of one touch control.",
+    "description": "Not characterised"
+  },
+  "1710": {
+    "name": "Sensors supply fault.",
+    "description": "Not characterised"
+  },
+  "1727": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Coherence"
+  },
+  "1747": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1748": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1750": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Steering wheel controls jammed"
+  },
+  "1751": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Not characterised"
+  },
+  "1752": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "1753": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1760": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Short circuit to positive"
+  },
+  "1761": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Open circuit"
+  },
+  "1762": {
+    "name": "Instrument panel display standard line fault.",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1763": {
+    "name": "Multifunction switch (CMF) signal fault or Air conditioning or Key-lock control",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1768": {
+    "name": "Fault: shift-lock output.",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1770": {
+    "name": "Fault: oil wear through controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "1799": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "2000": {
+    "name": "Kick-down contact.",
+    "description": "Not characterised"
+  },
+  "2001": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "2002": {
+    "name": "Clutch slip.",
+    "description": "Not characterised"
+  },
+  "2003": {
+    "name": "Sensors supply fault.",
+    "description": "Not characterised"
+  },
+  "2004": {
+    "name": "Automatic gearbox oil temperature signal error",
+    "description": "Not characterised"
+  },
+  "2005": {
+    "name": "Oil pressure signal fault",
+    "description": "Not characterised"
+  },
+  "2006": {
+    "name": "Pressure regulation fault (difference / reference value)",
+    "description": "Not characterised"
+  },
+  "2007": {
+    "name": "Oil pressure defect fault.",
+    "description": "Not characterised"
+  },
+  "2010": {
+    "name": "Display serial supply.",
+    "description": "Short circuit to positive"
+  },
+  "2011": {
+    "name": "Display serial supply.",
+    "description": "Open circuit"
+  },
+  "2012": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Short circuit to positive"
+  },
+  "2013": {
+    "name": "Fault : Air conditioning or Key-lock control",
+    "description": "Open circuit"
+  },
+  "2014": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short-circuit between two wires"
+  },
+  "2015": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short-circuit between two wires"
+  },
+  "2016": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Short circuit to positive"
+  },
+  "2017": {
+    "name": "Supply to solenoid valves and regulators.",
+    "description": "Open circuit"
+  },
+  "2020": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "2021": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "2022": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "2023": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Coherence"
+  },
+  "2024": {
+    "name": "Fault Engine temperature(CAN)",
+    "description": "No signal"
+  },
+  "2025": {
+    "name": "Engine speed signal.",
+    "description": "No signal"
+  },
+  "2026": {
+    "name": "Fault : accelerator pedal position",
+    "description": "Not characterised"
+  },
+  "2027": {
+    "name": "Accelerator pedal initialisation not done",
+    "description": "Not characterised"
+  },
+  "2031": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "Not characterised"
+  },
+  "2032": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "2033": {
+    "name": "Automatic gearbox communication fault with ABS (ESP)",
+    "description": "Not characterised"
+  },
+  "2034": {
+    "name": "Automatic gearbox communication fault with BSI.",
+    "description": "Not characterised"
+  },
+  "2035": {
+    "name": "Fault in the front left wheel vehicle speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "2036": {
+    "name": "Fault in the front right wheel speed transmitted by the ABS ECU (CAN)",
+    "description": "No signal"
+  },
+  "2037": {
+    "name": "CAN communication (Absence / Interference)",
+    "description": "Not characterised"
+  },
+  "2040": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Open circuit"
+  },
+  "2041": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Open circuit"
+  },
+  "2042": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Open circuit"
+  },
+  "2043": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Open circuit"
+  },
+  "2044": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Open circuit"
+  },
+  "2045": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Open circuit"
+  },
+  "2046": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Open circuit"
+  },
+  "2047": {
+    "name": "Shift-lock output 1.",
+    "description": "Open circuit"
+  },
+  "2050": {
+    "name": "Sequence solenoid 1 output fault.",
+    "description": "Short circuit to positive"
+  },
+  "2051": {
+    "name": "Sequence solenoid 2 output fault",
+    "description": "Short circuit to positive"
+  },
+  "2052": {
+    "name": "Sequence solenoid 3 output fault",
+    "description": "Short circuit to positive"
+  },
+  "2053": {
+    "name": "Sequence solenoid 4 output fault",
+    "description": "Short circuit to positive"
+  },
+  "2054": {
+    "name": "Sequence solenoid 5 output fault",
+    "description": "Short circuit to positive"
+  },
+  "2055": {
+    "name": "Sequence solenoid 6 output fault",
+    "description": "Short circuit to positive"
+  },
+  "2056": {
+    "name": "Exchanger flow control solenoid valve output fault",
+    "description": "Short circuit to positive"
+  },
+  "2057": {
+    "name": "Shift-lock output 1.",
+    "description": "Short circuit to positive"
+  },
+  "2060": {
+    "name": "ECU fault.",
+    "description": "Checksum"
+  },
+  "2061": {
+    "name": "ECU fault.",
+    "description": "RAM"
+  },
+  "2062": {
+    "name": "ECU fault.",
+    "description": "EEPROM"
+  },
+  "2063": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Intermediate position"
+  },
+  "2064": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Inconsistent position"
+  },
+  "2065": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "Unstable position"
+  },
+  "2066": {
+    "name": "Press control signal fault.",
+    "description": "Not characterised"
+  },
+  "2067": {
+    "name": "Multifunction switch (CMF) signal fault",
+    "description": "In position P/N"
+  },
+  "2070": {
+    "name": "Converter lock-up.",
+    "description": "Not characterised"
+  },
+  "2071": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Short circuit to positive"
+  },
+  "2072": {
+    "name": "Converter bridging solenoid valve fault",
+    "description": "Open circuit"
+  },
+  "2073": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "2074": {
+    "name": "Controlled converter sliding.",
+    "description": "Not characterised"
+  },
+  "2075": {
+    "name": "Fault : Fault: oil wear through controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "2076": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Short circuit to positive"
+  },
+  "2077": {
+    "name": "Line pressure modulation electrovalve output fault",
+    "description": "Open circuit"
+  },
+  "2080": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "2081": {
+    "name": "Fault: activation time of one touch control.",
+    "description": "Not characterised"
+  },
+  "2082": {
+    "name": "ESP function.",
+    "description": "Coherence"
+  },
+  "2083": {
+    "name": "ESP function.",
+    "description": "Not characterised"
+  },
+  "2084": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "2085": {
+    "name": "Incorrect rear right-hand wheel speed transmitted by the ABS/ESP ECU.",
+    "description": "Not characterised"
+  },
+  "2086": {
+    "name": "Incorrect rear left-hand wheel speed transmitted by the EBS/ESP ECU",
+    "description": "Not characterised"
+  },
+  "2087": {
+    "name": "Vehicle speed transmitted by the ABS.",
+    "description": "No signal"
+  },
+  "2090": {
+    "name": "Vehicle speed information.",
+    "description": "Coherence"
+  },
+  "2091": {
+    "name": "Gearbox input speed signal.",
+    "description": "No signal"
+  },
+  "2092": {
+    "name": "Gearbox output speed signal fault",
+    "description": "No signal"
+  },
+  "2093": {
+    "name": "Gearbox input speed signal.",
+    "description": "Not characterised"
+  },
+  "2094": {
+    "name": "Gearbox output speed signal fault",
+    "description": "Not characterised"
+  },
+  "2095": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Not characterised"
+  },
+  "2096": {
+    "name": "Fault in the transverse acceleration information emitted by the ABS",
+    "description": "No signal"
+  },
+  "2097": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "Value received incorrect"
+  },
+  "2775": {
+    "name": "Press control signal fault.",
+    "description": "VoltageIntermediate"
+  },
+  "2776": {
+    "name": "Press control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "2777": {
+    "name": "Press control signal fault.",
+    "description": "Open circuit"
+  },
+  "5395": {
+    "name": "Kick-down switch signal fault.",
+    "description": "Not characterised"
+  },
+  "00A0": {
+    "name": "Communication with the automatic gearbox electric control ECU.",
+    "description": "No signal"
+  },
+  "00A1": {
+    "name": "Automatic gearbox electric control.",
+    "description": "Not characterised"
+  },
+  "00A2": {
+    "name": "Torque request acknowledgement fault",
+    "description": "Not characterised"
+  },
+  "00A3": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "00A4": {
+    "name": "Automatic gearbox fault",
+    "description": "Overheating"
+  },
+  "00A5": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "00A6": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "00A7": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "00B0": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "00B1": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Open circuit"
+  },
+  "00B2": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Not characterised"
+  },
+  "00B3": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Steering wheel controls jammed"
+  },
+  "00B4": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "00B5": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to positive"
+  },
+  "00B6": {
+    "name": "Press control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "00B7": {
+    "name": "Press control signal fault.",
+    "description": "Open circuit"
+  },
+  "00C0": {
+    "name": "Press control signal fault.",
+    "description": "VoltageIntermediate"
+  },
+  "00C1": {
+    "name": "Automatic gearbox electric control fault.",
+    "description": "Steering wheel controls inactive"
+  },
+  "00C2": {
+    "name": "ECU fault.",
+    "description": "Push controls supply voltage"
+  },
+  "00C3": {
+    "name": "Wired brake fault",
+    "description": "Coherence"
+  },
+  "00C4": {
+    "name": "ECU fault.",
+    "description": "RAM data"
+  },
+  "00C5": {
+    "name": "ECU fault.",
+    "description": "Microprocessor"
+  },
+  "00C6": {
+    "name": "ECU fault.",
+    "description": "Processing capacity exceeded"
+  },
+  "00C7": {
+    "name": "Gear lever fault.",
+    "description": "Error between positions D and R"
+  },
+  "00D0": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "072F": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "10A0": {
+    "name": "Communication with the automatic gearbox electric control ECU.",
+    "description": "No signal"
+  },
+  "10A1": {
+    "name": "Automatic gearbox electric control.",
+    "description": "Not characterised"
+  },
+  "10A2": {
+    "name": "Torque request acknowledgement fault",
+    "description": "Not characterised"
+  },
+  "10A3": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "10A4": {
+    "name": "Automatic gearbox fault",
+    "description": "Overheating"
+  },
+  "10A5": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "10A6": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "10A7": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "10B0": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "10B1": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Open circuit"
+  },
+  "10B2": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Not characterised"
+  },
+  "10B3": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Steering wheel controls jammed"
+  },
+  "10B4": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "10B5": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to positive"
+  },
+  "10B6": {
+    "name": "Press control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "10B7": {
+    "name": "Press control signal fault.",
+    "description": "Open circuit"
+  },
+  "10C0": {
+    "name": "Press control signal fault.",
+    "description": "VoltageIntermediate"
+  },
+  "10C1": {
+    "name": "Automatic gearbox electric control fault.",
+    "description": "Steering wheel controls inactive"
+  },
+  "10C2": {
+    "name": "ECU fault.",
+    "description": "Push controls supply voltage"
+  },
+  "10C3": {
+    "name": "Wired brake fault",
+    "description": "Coherence"
+  },
+  "10C4": {
+    "name": "ECU fault.",
+    "description": "RAM data"
+  },
+  "10C5": {
+    "name": "ECU fault.",
+    "description": "Microprocessor"
+  },
+  "10C6": {
+    "name": "ECU fault.",
+    "description": "Processing capacity exceeded"
+  },
+  "10C7": {
+    "name": "Gear lever fault.",
+    "description": "Error between positions D and R"
+  },
+  "10D0": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "17A6": {
+    "name": "Gear lever fault.",
+    "description": "Error between positions D and R"
+  },
+  "20A0": {
+    "name": "Communication with the automatic gearbox electric control ECU.",
+    "description": "No signal"
+  },
+  "20A1": {
+    "name": "Automatic gearbox electric control.",
+    "description": "Not characterised"
+  },
+  "20A2": {
+    "name": "Torque request acknowledgement fault",
+    "description": "Not characterised"
+  },
+  "20A3": {
+    "name": "Clutch release when stationary.",
+    "description": "Not characterised"
+  },
+  "20A4": {
+    "name": "Automatic gearbox fault",
+    "description": "Overheating"
+  },
+  "20A5": {
+    "name": "Brake signal (switch / CAN).",
+    "description": "Not characterised"
+  },
+  "20A6": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "20A7": {
+    "name": "Fault: engine torque information (CAN)",
+    "description": "No signal"
+  },
+  "20B0": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "20B1": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Open circuit"
+  },
+  "20B2": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Not characterised"
+  },
+  "20B3": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Steering wheel controls jammed"
+  },
+  "20B4": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "20B5": {
+    "name": "Steering wheel gear shift control signal fault.",
+    "description": "Short circuit to positive"
+  },
+  "20B6": {
+    "name": "Press control signal fault.",
+    "description": "Short circuit to earth"
+  },
+  "20B7": {
+    "name": "Press control signal fault.",
+    "description": "Open circuit"
+  },
+  "20C0": {
+    "name": "Press control signal fault.",
+    "description": "VoltageIntermediate"
+  },
+  "20C1": {
+    "name": "Automatic gearbox electric control fault.",
+    "description": "Steering wheel controls inactive"
+  },
+  "20C2": {
+    "name": "ECU fault.",
+    "description": "Push controls supply voltage"
+  },
+  "20C3": {
+    "name": "Wired brake fault",
+    "description": "Coherence"
+  },
+  "20C4": {
+    "name": "ECU fault.",
+    "description": "RAM data"
+  },
+  "20C5": {
+    "name": "ECU fault.",
+    "description": "Microprocessor"
+  },
+  "20C6": {
+    "name": "ECU fault.",
+    "description": "Processing capacity exceeded"
+  },
+  "20C7": {
+    "name": "Gear lever fault.",
+    "description": "Error between positions D and R"
+  },
+  "20D0": {
+    "name": "Fault: controlled converter slip.",
+    "description": "Not characterised"
+  },
+  "D000": {
+    "name": "Fault in communication between the gearbox ECU and the other ECUs on the network CAN",
+    "description": "No signal"
+  },
+  "D003": {
+    "name": "Fault: CAN communication (absence / interference).",
+    "description": "Not characterised"
+  },
+  "D108": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "No signal"
+  },
+  "D110": {
+    "name": "Fault in communication with the gearbox electrical control ECU.",
+    "description": "No signal"
+  },
+  "D113": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "No signal"
+  },
+  "D118": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "No signal"
+  },
+  "D213": {
+    "name": "Fault ESP function.",
+    "description": "Coherence"
+  },
+  "D308": {
+    "name": "Communication error between the automatic gearbox and the engine management",
+    "description": "Value received incorrect"
+  },
+  "D310": {
+    "name": "Automatic gearbox electric control fault.",
+    "description": "Not characterised"
+  },
+  "D313": {
+    "name": "Fault in communication between the automatic gearbox and the built-in systems interface and/or the ABS/ASR (ESP)",
+    "description": "Not characterised"
+  }
+}
