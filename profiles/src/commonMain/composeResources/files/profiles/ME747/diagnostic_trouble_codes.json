@@ -1,0 +1,938 @@
+{
+  "0011": {
+    "name": "Inlet camshaft position fault (front row of cylinders)",
+    "description": "Coherence"
+  },
+  "0012": {
+    "name": "Inlet camshaft position fault (front row of cylinders)",
+    "description": "Coherence"
+  },
+  "0021": {
+    "name": "Inlet camshaft position fault (rear row of cylinders)",
+    "description": "Coherence"
+  },
+  "0022": {
+    "name": "Inlet camshaft position fault (rear row of cylinders)",
+    "description": "Coherence"
+  },
+  "0040": {
+    "name": "Fault of coherence between the 2 upstream oxygen sensors (front and rear banks of cylinders)",
+    "description": "Not characterised"
+  },
+  "0041": {
+    "name": "Fault of coherence between the 2 downstream oxygen sensors (front and rear banks of cylinders)",
+    "description": "Not characterised"
+  },
+  "0071": {
+    "name": "Fault : exterior air temperature",
+    "description": "No frames"
+  },
+  "0075": {
+    "name": "Fault : variable valve gear solenoid valve (front cylinder bank)",
+    "description": "OC"
+  },
+  "0076": {
+    "name": "Fault : variable valve gear solenoid valve (front cylinder bank)",
+    "description": "SC-"
+  },
+  "0077": {
+    "name": "Fault : variable valve gear solenoid valve (front cylinder bank)",
+    "description": "SC+"
+  },
+  "0081": {
+    "name": "Fault : variable valve gear solenoid valve (rear cylinder bank)",
+    "description": "OC"
+  },
+  "0082": {
+    "name": "Fault : variable valve gear solenoid valve (rear cylinder bank)",
+    "description": "SC-"
+  },
+  "0083": {
+    "name": "Fault : variable valve gear solenoid valve (rear cylinder bank)",
+    "description": "SC+"
+  },
+  "0106": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "SC-"
+  },
+  "0108": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "SC+, OC"
+  },
+  "0109": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Coherence"
+  },
+  "0112": {
+    "name": "Fault : inlet air thermistor signal",
+    "description": "SC+, OC"
+  },
+  "0113": {
+    "name": "Fault : inlet air thermistor signal",
+    "description": "SC-"
+  },
+  "0116": {
+    "name": "Fault : engine coolant thermistor signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Fault : engine coolant thermistor signal",
+    "description": "SC-"
+  },
+  "0118": {
+    "name": "Fault : engine coolant thermistor signal",
+    "description": "SC+, OC"
+  },
+  "0119": {
+    "name": "Fault : engine coolant thermistor signal",
+    "description": "Coherence"
+  },
+  "0121": {
+    "name": "Fault : motorised throttle potentiometer track 1 and 2",
+    "description": "Coherence"
+  },
+  "0122": {
+    "name": "Fault : motorised throttle potentiometer track 1",
+    "description": "Low stop"
+  },
+  "0123": {
+    "name": "Fault : motorised throttle potentiometer track 1",
+    "description": "High stop"
+  },
+  "0130": {
+    "name": "Upstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "Coherence"
+  },
+  "0131": {
+    "name": "Upstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "SC-"
+  },
+  "0132": {
+    "name": "Upstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "SC+"
+  },
+  "0133": {
+    "name": "Upstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "0134": {
+    "name": "Upstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "No signal"
+  },
+  "0135": {
+    "name": "Fault : upstream Lambda sensor heating (front pre-catalytic converter)",
+    "description": "Electrical circuit malfunction"
+  },
+  "0137": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "SC-"
+  },
+  "0138": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "SC+"
+  },
+  "0139": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "0140": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "No signal"
+  },
+  "0141": {
+    "name": "Fault : downstream Lambda sensor heating (front pre-catalytic converter)",
+    "description": "Electrical circuit malfunction"
+  },
+  "0150": {
+    "name": "Upstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "Coherence"
+  },
+  "0151": {
+    "name": "Upstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "SC-"
+  },
+  "0152": {
+    "name": "Upstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "SC+"
+  },
+  "0153": {
+    "name": "Upstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "0154": {
+    "name": "Upstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "No signal"
+  },
+  "0155": {
+    "name": "Fault : upstream Lambda sensor heating (rear pre-catalytic converter)",
+    "description": "Electrical circuit malfunction"
+  },
+  "0157": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "SC-"
+  },
+  "0158": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "SC+"
+  },
+  "0159": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "0160": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "No signal"
+  },
+  "0161": {
+    "name": "Fault : upstream Lambda sensor heating (rear pre-catalytic converter)",
+    "description": "Electrical circuit malfunction"
+  },
+  "0171": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too lean"
+  },
+  "0172": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too rich"
+  },
+  "0174": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too lean"
+  },
+  "0175": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too rich"
+  },
+  "0196": {
+    "name": "Engine oil temperature sensor signal fault",
+    "description": "Coherence"
+  },
+  "0197": {
+    "name": "Engine oil temperature sensor signal fault",
+    "description": "SC-"
+  },
+  "0198": {
+    "name": "Engine oil temperature sensor signal fault",
+    "description": "SC+, OC"
+  },
+  "0201": {
+    "name": "Injector number 1 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0202": {
+    "name": "Injector number 2 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0203": {
+    "name": "Injector number 3 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0204": {
+    "name": "Injector number 4 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0205": {
+    "name": "Injector number 5 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0206": {
+    "name": "Injector number 6 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0215": {
+    "name": "Fuel pump relay control fault",
+    "description": "OC"
+  },
+  "0220": {
+    "name": "Fault accelerator pedal sensor",
+    "description": "Lack of coherence of the voltage values of tracks 1 and 2 of the accelerator pedal sensor during braking"
+  },
+  "0221": {
+    "name": "Fault : accelerator pedal sensor signal track 1 and 2",
+    "description": "Coherence"
+  },
+  "0222": {
+    "name": "Fault : accelerator pedal sensor track 1 signal",
+    "description": "Low stop"
+  },
+  "0223": {
+    "name": "Fault : accelerator pedal sensor track 1 signal",
+    "description": "High stop"
+  },
+  "0224": {
+    "name": "Fault accelerator pedal sensor",
+    "description": "Lack of coherence of the voltage values of tracks 1 and 2 of the accelerator pedal sensor during braking"
+  },
+  "0225": {
+    "name": "Fault : accelerator pedal sensor signal track 1 and 2",
+    "description": "Coherence"
+  },
+  "0227": {
+    "name": "Fault : accelerator pedal sensor track 2 signal",
+    "description": "Low stop"
+  },
+  "0228": {
+    "name": "Fault : accelerator pedal sensor track 2 signal",
+    "description": "High stop"
+  },
+  "0231": {
+    "name": "Fuel pump relay control fault",
+    "description": "SC-"
+  },
+  "0232": {
+    "name": "Fuel pump relay control fault",
+    "description": "SC+"
+  },
+  "0261": {
+    "name": "Injector number 1 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0262": {
+    "name": "Injector number 1 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0264": {
+    "name": "Injector number 2 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0265": {
+    "name": "Injector number 2 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0267": {
+    "name": "Injector number 3 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0268": {
+    "name": "Injector number 3 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0270": {
+    "name": "Injector number 4 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0271": {
+    "name": "Injector number 4 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0273": {
+    "name": "Injector number 5 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0274": {
+    "name": "Injector number 5 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0276": {
+    "name": "Injector number 6 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0277": {
+    "name": "Injector number 6 command fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0300": {
+    "name": "Fault : unspecified combustion misfiring",
+    "description": "Not characterised"
+  },
+  "0301": {
+    "name": "Fault: misfiring on cylinder No. 1",
+    "description": "Not characterised"
+  },
+  "0302": {
+    "name": "Fault: misfiring on cylinder No. 2",
+    "description": "Not characterised"
+  },
+  "0303": {
+    "name": "Fault: misfiring on cylinder No. 3",
+    "description": "Not characterised"
+  },
+  "0304": {
+    "name": "Fault: misfiring on cylinder No. 4",
+    "description": "Not characterised"
+  },
+  "0305": {
+    "name": "Fault: misfiring on cylinder No. 5",
+    "description": "Not characterised"
+  },
+  "0306": {
+    "name": "Fault: misfiring on cylinder No. 6",
+    "description": "Not characterised"
+  },
+  "0313": {
+    "name": "Fault : combustion misfiring at low fuel level",
+    "description": "Not characterised"
+  },
+  "0327": {
+    "name": "Fault : knock sensor signal  (front bank of cylinders)",
+    "description": "SC-"
+  },
+  "0328": {
+    "name": "Fault : knock sensor signal  (front bank of cylinders)",
+    "description": "SC+, OC"
+  },
+  "0332": {
+    "name": "Fault : knock sensor signal  (rear bank of cylinders)",
+    "description": "SC-"
+  },
+  "0333": {
+    "name": "Fault : knock sensor signal  (rear bank of cylinders)",
+    "description": "SC+, OC"
+  },
+  "0335": {
+    "name": "Engine speed sensor signal fault",
+    "description": "Not characterised"
+  },
+  "0336": {
+    "name": "Engine speed sensor signal fault",
+    "description": "Coherence"
+  },
+  "0337": {
+    "name": "Engine speed sensor signal fault",
+    "description": "SC-"
+  },
+  "0338": {
+    "name": "Engine speed sensor signal fault",
+    "description": "SC+, OC"
+  },
+  "0341": {
+    "name": "Fault : cylinder reference sensor signal (front bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0342": {
+    "name": "Fault : cylinder reference sensor signal (front bank of cylinders)",
+    "description": "SC-"
+  },
+  "0343": {
+    "name": "Fault : cylinder reference sensor signal (front bank of cylinders)",
+    "description": "SC+, OC"
+  },
+  "0346": {
+    "name": "Fault : cylinder reference sensor signal (rear bank of cylinders)",
+    "description": "Coherence"
+  },
+  "0347": {
+    "name": "Fault : cylinder reference sensor signal (rear bank of cylinders)",
+    "description": "SC-"
+  },
+  "0348": {
+    "name": "Fault : cylinder reference sensor signal (rear bank of cylinders)",
+    "description": "SC+, OC"
+  },
+  "0350": {
+    "name": "Ignition coil  control fault",
+    "description": "Malfunction of the control of all of the coils"
+  },
+  "0351": {
+    "name": "Ignition coil 1 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0352": {
+    "name": "Ignition coil 2 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0353": {
+    "name": "Ignition coil 3 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0354": {
+    "name": "Ignition coil 4 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0355": {
+    "name": "Ignition coil 5 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0356": {
+    "name": "Ignition coil 6 control fault",
+    "description": "Electrical circuit malfunction"
+  },
+  "0410": {
+    "name": "Fault : injection of air to the exhaust",
+    "description": "Not characterised"
+  },
+  "0420": {
+    "name": "Fault : catalytic converter ageing (front cylinder bank)",
+    "description": "Not characterised"
+  },
+  "0430": {
+    "name": "Fault : catalytic converter ageing (rear cylinder bank)",
+    "description": "Not characterised"
+  },
+  "0443": {
+    "name": "Canister discharge electrovalve control fault",
+    "description": "Coherence"
+  },
+  "0444": {
+    "name": "Canister discharge electrovalve control fault",
+    "description": "OC"
+  },
+  "0445": {
+    "name": "Canister discharge electrovalve control fault",
+    "description": "Short-circuit between two wires"
+  },
+  "0461": {
+    "name": "Fuel level sensor fault",
+    "description": "Coherence or minimum fuel level reached"
+  },
+  "0462": {
+    "name": "Fuel level sensor fault",
+    "description": "SC-"
+  },
+  "0463": {
+    "name": "Fuel level sensor fault",
+    "description": "SC+, OC"
+  },
+  "0475": {
+    "name": "Fault : duel mode exhaust valve solenoid valve",
+    "description": "Coherence"
+  },
+  "0477": {
+    "name": "Fault : duel mode exhaust valve solenoid valve",
+    "description": "SC-"
+  },
+  "0478": {
+    "name": "Fault : duel mode exhaust valve solenoid valve",
+    "description": "SC+, OC"
+  },
+  "0480": {
+    "name": "Fault : fan (GMV1) high speed relay or chopper control",
+    "description": "Electrical circuit malfunction"
+  },
+  "0481": {
+    "name": "Fault : fan assembly (GMV2) low speed control",
+    "description": "Electrical circuit malfunction"
+  },
+  "0485": {
+    "name": "Fan unit control fault",
+    "description": "Coherence"
+  },
+  "0501": {
+    "name": "Vehicle speed information received from the ABS/ESP fault",
+    "description": "No frames"
+  },
+  "0532": {
+    "name": "Fault : air conditioning pressure sensor signal",
+    "description": "Low stop"
+  },
+  "0533": {
+    "name": "Fault : air conditioning pressure sensor signal",
+    "description": "High stop"
+  },
+  "0560": {
+    "name": "Battery voltage fault",
+    "description": "Not characterised"
+  },
+  "0561": {
+    "name": "Battery voltage fault",
+    "description": "Not characterised"
+  },
+  "0562": {
+    "name": "Battery voltage fault",
+    "description": "Low stop"
+  },
+  "0563": {
+    "name": "Battery voltage fault",
+    "description": "High stop"
+  },
+  "0570": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0571": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0572": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0573": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0590": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0591": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0592": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0593": {
+    "name": "Fault on the cruise control / speed limiter",
+    "description": "Coherence"
+  },
+  "0601": {
+    "name": "Fault inside ECU",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "Fault inside ECU",
+    "description": "Not characterised"
+  },
+  "0605": {
+    "name": "Fault inside ECU",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "Fault inside ECU",
+    "description": "Not characterised"
+  },
+  "0615": {
+    "name": "Starter control relay fault",
+    "description": "OC"
+  },
+  "0616": {
+    "name": "Starter control relay fault",
+    "description": "SC-"
+  },
+  "0617": {
+    "name": "Starter control relay fault",
+    "description": "SC+"
+  },
+  "061B": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Not characterised"
+  },
+  "0703": {
+    "name": "Fault : main and secondary brake information",
+    "description": "SC+"
+  },
+  "0704": {
+    "name": "Clutch switch signal fault",
+    "description": "Coherence"
+  },
+  "1152": {
+    "name": "Motorised throttle motor control fault",
+    "description": "Open circuit, short circuit to positive or short circuit to negative"
+  },
+  "1153": {
+    "name": "Fault : motorised throttle limit programming",
+    "description": "Programming failure"
+  },
+  "1157": {
+    "name": "Fault : motorised throttle potentiometer track 2",
+    "description": "Low stop"
+  },
+  "1158": {
+    "name": "Fault : motorised throttle potentiometer track 2",
+    "description": "High stop"
+  },
+  "1161": {
+    "name": "Throttle position regulation fault",
+    "description": "CC-, CC+, coherence"
+  },
+  "1303": {
+    "name": "Anti-knock regulation fault",
+    "description": "Not characterised"
+  },
+  "1329": {
+    "name": "Knock regulation limit fault on cylinder no. 1",
+    "description": "Not characterised"
+  },
+  "1330": {
+    "name": "Knock regulation limit fault on cylinder no. 2",
+    "description": "Not characterised"
+  },
+  "1331": {
+    "name": "Knock regulation limit fault on cylinder no. 3",
+    "description": "Not characterised"
+  },
+  "1332": {
+    "name": "Knock regulation limit fault on cylinder no. 4",
+    "description": "Not characterised"
+  },
+  "1333": {
+    "name": "Knock regulation limit fault on cylinder no. 5",
+    "description": "Not characterised"
+  },
+  "1334": {
+    "name": "Knock regulation limit fault on cylinder no. 6",
+    "description": "Not characterised"
+  },
+  "1335": {
+    "name": "Inlet camshaft position fault (front or rear bank of cylinders)",
+    "description": "Coherence"
+  },
+  "1336": {
+    "name": "Fault : unspecified combustion misfiring",
+    "description": "Not characterised"
+  },
+  "1337": {
+    "name": "Fault: misfiring on cylinder No. 1",
+    "description": "Not characterised"
+  },
+  "1338": {
+    "name": "Fault: misfiring on cylinder No. 2",
+    "description": "Not characterised"
+  },
+  "1339": {
+    "name": "Fault: misfiring on cylinder No. 3",
+    "description": "Not characterised"
+  },
+  "1340": {
+    "name": "Fault: misfiring on cylinder No. 4",
+    "description": "Not characterised"
+  },
+  "1341": {
+    "name": "Fault: misfiring on cylinder No. 5",
+    "description": "Not characterised"
+  },
+  "1342": {
+    "name": "Fault: misfiring on cylinder No. 6",
+    "description": "Not characterised"
+  },
+  "1527": {
+    "name": "Information fault of the alternator charge: not characterized.",
+    "description": "Not characterised"
+  },
+  "1536": {
+    "name": "Fault : main and secondary brake information",
+    "description": "Short-circuit or open circuit"
+  },
+  "1613": {
+    "name": "Fault: configuration",
+    "description": "Not characterised"
+  },
+  "1614": {
+    "name": "Fault : Speed Limiter point of resistance sensor signal",
+    "description": "Coherence"
+  },
+  "1621": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "ECU internal fault"
+  },
+  "1622": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "ECU internal failure or fault at the air loop"
+  },
+  "1626": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "ECU internal fault"
+  },
+  "1627": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Accelerator pedal sensor signal processing"
+  },
+  "1632": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "ECU internal fault"
+  },
+  "1643": {
+    "name": "Fault : Speed Limiter point of resistance sensor signal",
+    "description": "SC-"
+  },
+  "1644": {
+    "name": "Fault : Speed Limiter point of resistance sensor signal",
+    "description": "SC+"
+  },
+  "1645": {
+    "name": "Fault : Speed Limiter point of resistance sensor signal",
+    "description": "Lack of coherence between the speed limiter point of resistance sensor signal and the accelerator pedal position signal"
+  },
+  "1652": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Malfunction of the VVT system or fault at the air loop"
+  },
+  "1653": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Not characterised"
+  },
+  "1654": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Motorised throttle signal processing"
+  },
+  "1664": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Processing of the engine torque information"
+  },
+  "1667": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Accelerator pedal sensor signal processing"
+  },
+  "1669": {
+    "name": "Fault monitoring of the engine ECU",
+    "description": "Processing of the engine speed information"
+  },
+  "1693": {
+    "name": "Controlled engine starting and stopping reception anomaly fault",
+    "description": "No frames"
+  },
+  "1694": {
+    "name": "Fault: piloted engine stop-and-start (DAMP)",
+    "description": "Coherence"
+  },
+  "1695": {
+    "name": "Fault: piloted engine stop-and-start (DAMP)",
+    "description": "Internal combustion engine : jammed"
+  },
+  "1696": {
+    "name": "Fault: piloted engine stop-and-start (DAMP)",
+    "description": "Coherence"
+  },
+  "1701": {
+    "name": "Fault : gear inconsistency",
+    "description": "Not characterised"
+  },
+  "1739": {
+    "name": "Starter power stage fault",
+    "description": "SC-"
+  },
+  "1740": {
+    "name": "Starter power stage fault",
+    "description": "SC+"
+  },
+  "1741": {
+    "name": "Starter power stage fault",
+    "description": "OC"
+  },
+  "2096": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "2097": {
+    "name": "Downstream oxygen sensor signal fault (front pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "2098": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "2099": {
+    "name": "Downstream oxygen sensor signal fault (rear pre-cat. converter)",
+    "description": "Ageing"
+  },
+  "2101": {
+    "name": "Fault : motorised throttle limit programming",
+    "description": "Not characterised"
+  },
+  "2137": {
+    "name": "Fault : accelerator pedal sensor signal track 1 and 2",
+    "description": "Coherence"
+  },
+  "2176": {
+    "name": "Fault : motorised throttle limit programming",
+    "description": "Idle position not programmed"
+  },
+  "2177": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too lean-Idling"
+  },
+  "2178": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too rich-Idling"
+  },
+  "2179": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too lean-Idling"
+  },
+  "2180": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too rich-Idling"
+  },
+  "2191": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too lean-loaded"
+  },
+  "2192": {
+    "name": "Fault mixture control at stop (front cylinder row)",
+    "description": "Mixture too rich-loaded"
+  },
+  "2193": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too lean-loaded"
+  },
+  "2194": {
+    "name": "Fault: richness regulation at limit (rear row of cylinders)",
+    "description": "Mixture too rich-loaded"
+  },
+  "2299": {
+    "name": "Fault : accelerator pedal jammed detection",
+    "description": "Lock of coherence between the accelerator pedal sensor signal and the brake switch signal"
+  },
+  "3010": {
+    "name": "Throttle position regulation fault",
+    "description": "Difference between motor control and system position"
+  },
+  "3011": {
+    "name": "Throttle position regulation fault",
+    "description": "Return spring ineffective"
+  },
+  "3012": {
+    "name": "Throttle position regulation fault",
+    "description": "Opening spring ineffective"
+  },
+  "3013": {
+    "name": "Fault : motorised throttle limit programming",
+    "description": "Learning not performed"
+  },
+  "3014": {
+    "name": "Fault : motorised throttle limit programming",
+    "description": "Programming conditions not satisfied"
+  },
+  "3015": {
+    "name": "Throttle position sensor signal fault",
+    "description": "Amplified signal"
+  },
+  "C028": {
+    "name": "Fault : MIL lamp diagnostics reception on the CAN",
+    "description": "No frames"
+  },
+  "C055": {
+    "name": "Fault in communication on the Comfort CAN",
+    "description": "No frames"
+  },
+  "C103": {
+    "name": "Communication with the automatic gearbox ECU missing",
+    "description": "No frames"
+  },
+  "C122": {
+    "name": "Communication lack fault with the ESP ECU",
+    "description": "No frames"
+  },
+  "C404": {
+    "name": "Fault : communication between the automatic gearbox ECU and the engine ECU",
+    "description": "No frames"
+  },
+  "D000": {
+    "name": "Communication between the engine management ECU and the other ECUs on the network (CAN)",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "Fault: absence of communication on the CAN network",
+    "description": "No frames"
+  },
+  "D107": {
+    "name": "Absence of communication with the electro-pump assembly ECU",
+    "description": "No frames"
+  },
+  "D118": {
+    "name": "Communication missing fault with the BSI",
+    "description": "No frames"
+  },
+  "E000": {
+    "name": "Fault : remote control wake-up information",
+    "description": "No frames"
+  },
+  "E003": {
+    "name": "Fault : remote control wake-up information",
+    "description": "Incorrect value received"
+  },
+  "E108": {
+    "name": "Fault : remote control wake-up information",
+    "description": "Coherence"
+  },
+  "E118": {
+    "name": "Fault : remote control wake-up information",
+    "description": "Incorrect value received"
+  }
+}
