@@ -1,0 +1,162 @@
+{
+  "0501": {
+    "name": "Vehicle speed information coming from the engine management ECU fault",
+    "description": "Performance / operating domain request to the multi-function engine control unit for authorisation to start the air conditioning"
+  },
+  "0562": {
+    "name": "Undervoltage fault",
+    "description": "Under voltage"
+  },
+  "0563": {
+    "name": "Overvoltage fault",
+    "description": "Excess voltage"
+  },
+  "0602": {
+    "name": "Power steering ECU internal fault",
+    "description": "Downloading"
+  },
+  "0603": {
+    "name": "Power steering ECU internal fault",
+    "description": "EEPROM memory"
+  },
+  "0604": {
+    "name": "Power steering ECU internal fault",
+    "description": "RAM"
+  },
+  "0605": {
+    "name": "Power steering ECU internal fault",
+    "description": "ROM"
+  },
+  "0606": {
+    "name": "Power steering ECU internal fault",
+    "description": "-"
+  },
+  "1613": {
+    "name": "Configuration fault",
+    "description": "-"
+  },
+  "5135": {
+    "name": "Steering wheel angle sensor fault",
+    "description": "Circuit malfunction"
+  },
+  "5209": {
+    "name": "Fault ignition positive",
+    "description": "-"
+  },
+  "5388": {
+    "name": "Steering wheel angle sensor fault",
+    "description": "Calibration of the sensor incorrect"
+  },
+  "5400": {
+    "name": "Power steering torque sensor fault",
+    "description": "Electrical fault"
+  },
+  "5401": {
+    "name": "Control fault of the power steering motor",
+    "description": "Power supply to the power steering motor"
+  },
+  "5402": {
+    "name": "Control fault of the power steering motor",
+    "description": "Power supply to the power steering motor"
+  },
+  "5404": {
+    "name": "Control fault of the power steering motor",
+    "description": "Motor control circuit"
+  },
+  "5405": {
+    "name": "Electric power steering motor excess current",
+    "description": "-"
+  },
+  "5406": {
+    "name": "ECU temperature or power steering motor temperature fault",
+    "description": "Overheating of the power steering motor or ECU"
+  },
+  "5407": {
+    "name": "Vehicle speed information coming from the engine management ECU fault",
+    "description": "Incorrect value received"
+  },
+  "5408": {
+    "name": "Vehicle speed information coming from the engine management ECU fault",
+    "description": "Vehicle speed information missing"
+  },
+  "5409": {
+    "name": "Torque sensor power supply fault",
+    "description": "-"
+  },
+  "540B": {
+    "name": "Voltage too low in STOP phase fault",
+    "description": "Low voltage in STOP phase"
+  },
+  "5410": {
+    "name": "Power steering temperature sensor fault",
+    "description": "-"
+  },
+  "5413": {
+    "name": "Power steering torque sensor fault",
+    "description": "Initialisation of the torque sensor"
+  },
+  "5414": {
+    "name": "Electric power steering motor",
+    "description": "Internal malfunction"
+  },
+  "5415": {
+    "name": "Overheating of the power steering motor or ECU",
+    "description": "-"
+  },
+  "5418": {
+    "name": "Steering wheel angle sensor fault",
+    "description": "Calibration of the sensor never carried out"
+  },
+  "541A": {
+    "name": "Fault in the power relay of the power steering ECU",
+    "description": "-"
+  },
+  "563A": {
+    "name": "Overheating of the power steering motor or ECU",
+    "description": "-"
+  },
+  "5644": {
+    "name": "Supply fault",
+    "description": "Open circuit"
+  },
+  "D000": {
+    "name": "Fault: ECU not communicating on the CAN",
+    "description": "-"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN network",
+    "description": "-"
+  },
+  "D108": {
+    "name": "Fault: absence of communication with CMM",
+    "description": "-"
+  },
+  "D113": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "-"
+  },
+  "D118": {
+    "name": "Fault: no communication with the built-in systems interface",
+    "description": "Missing datastream"
+  },
+  "D208": {
+    "name": "Internal combustion engine information fault",
+    "description": "-"
+  },
+  "D213": {
+    "name": "Vehicle speed information received from the ABS/ESP fault",
+    "description": "Incorrect value received"
+  },
+  "D308": {
+    "name": "Internal combustion engine information fault",
+    "description": "-"
+  },
+  "D313": {
+    "name": "Vehicle speed information received from the ABS/ESP fault",
+    "description": "Functional faults due to the ABS/ESP"
+  },
+  "D318": {
+    "name": "Fault: no communication with the built-in systems interface",
+    "description": "Value received incorrect"
+  }
+}
