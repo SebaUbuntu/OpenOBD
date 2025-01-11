@@ -1,0 +1,398 @@
+{
+  "0100": {
+    "name": "Fault : air flowmeter signals",
+    "description": "Consistency with air flow"
+  },
+  "0101": {
+    "name": "Fault : air flowmeter signals",
+    "description": "Measurement variation too great"
+  },
+  "0102": {
+    "name": "Fault : air flowmeter signals",
+    "description": "Short circuit to earth"
+  },
+  "0103": {
+    "name": "Fault : air flowmeter signals",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0104": {
+    "name": "Fault : air flowmeter signals",
+    "description": "Measurement variation too great"
+  },
+  "0106": {
+    "name": "Atmospheric pressure sensor signal",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Fault atmospheric pressure sensor signal",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0108": {
+    "name": "Fault atmospheric pressure sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0109": {
+    "name": "Fault atmospheric pressure sensor signal",
+    "description": "Sensors supply fault"
+  },
+  "0110": {
+    "name": "Fault intake air temperature signal",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0111": {
+    "name": "Fault intake air temperature signal",
+    "description": "Incorrect signal"
+  },
+  "0112": {
+    "name": "Fault intake air temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0113": {
+    "name": "Fault intake air temperature signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0114": {
+    "name": "Fault intake air temperature signal",
+    "description": "No signal"
+  },
+  "0115": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Coherence of the temperature increase"
+  },
+  "0116": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Measurement variation too great"
+  },
+  "0117": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0118": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0119": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "No signal"
+  },
+  "0120": {
+    "name": "Fault accelerator pedal signal",
+    "description": "No signal"
+  },
+  "0122": {
+    "name": "Fault throttle potentiometer",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0123": {
+    "name": "Fault throttle potentiometer",
+    "description": "Control short circuited to positive or short circuited to earth"
+  },
+  "0170": {
+    "name": "Fault  advance regulation",
+    "description": "Drifting of the injection advance"
+  },
+  "0215": {
+    "name": "ECU power-supply relay fault",
+    "description": "Main relay stuck or unwanted cut-off"
+  },
+  "0222": {
+    "name": "Fault accelerator pedal signal",
+    "description": "Short circuit to earth"
+  },
+  "0223": {
+    "name": "Fault accelerator pedal signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0224": {
+    "name": "Fault accelerator pedal signal",
+    "description": "No signal"
+  },
+  "0335": {
+    "name": "Fault engine speed signal",
+    "description": "Loss of signal"
+  },
+  "0336": {
+    "name": "Fault engine speed signal",
+    "description": "Incorrect signal"
+  },
+  "0380": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0400": {
+    "name": "Fault  EGR regulation valve",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0401": {
+    "name": "Fault  EGR regulation valve",
+    "description": "Flow of recirculated gas insufficient"
+  },
+  "0402": {
+    "name": "Fault  EGR regulation valve",
+    "description": "Flow of recirculated gas too great"
+  },
+  "0403": {
+    "name": "Fault  EGR regulation valve",
+    "description": "Drifting of the EGR flow"
+  },
+  "0404": {
+    "name": "Fault : EGR butterfly regulation",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0405": {
+    "name": "Fault EGR electrovalve",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0406": {
+    "name": "Fault EGR electrovalve",
+    "description": "Short circuit to positive"
+  },
+  "0500": {
+    "name": "Fault vehicle speed signal",
+    "description": "Value received too high"
+  },
+  "0501": {
+    "name": "Fault vehicle speed signal",
+    "description": "Consistency with engine speed and injected flow"
+  },
+  "0503": {
+    "name": "Fault vehicle speed signal",
+    "description": "-"
+  },
+  "0530": {
+    "name": "Fault air conditioning pressure signal",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0560": {
+    "name": "Fault battery voltage signal",
+    "description": "Coherence"
+  },
+  "0561": {
+    "name": "Fault battery voltage signal",
+    "description": "Coherence"
+  },
+  "0562": {
+    "name": "Fault battery voltage signal",
+    "description": "Battery voltage too low"
+  },
+  "0563": {
+    "name": "Fault battery voltage signal",
+    "description": "Battery voltage too high"
+  },
+  "0601": {
+    "name": "Fault ECU",
+    "description": "ECU internal fault"
+  },
+  "0603": {
+    "name": "Fault ECU",
+    "description": "ECU internal fault"
+  },
+  "0604": {
+    "name": "Fault ECU",
+    "description": "ECU internal fault"
+  },
+  "0605": {
+    "name": "Fault ECU",
+    "description": "ECU internal fault"
+  },
+  "0607": {
+    "name": "Fault ECU",
+    "description": "ECU internal fault"
+  },
+  "0657": {
+    "name": "Fault sensor power supply",
+    "description": "Open circuit"
+  },
+  "0658": {
+    "name": "Fault sensor power supply",
+    "description": "Short circuit to earth"
+  },
+  "0659": {
+    "name": "Fault sensor power supply",
+    "description": "Short circuit to positive"
+  },
+  "0725": {
+    "name": "Fault engine speed signal",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0908": {
+    "name": "Fault warning lamp",
+    "description": "-"
+  },
+  "1101": {
+    "name": "Fault atmospheric pressure sensor signal",
+    "description": "Incorrect value received"
+  },
+  "1102": {
+    "name": "Fault : needle lift sensor",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1106": {
+    "name": "Timing regulation control electrovalve fault",
+    "description": "Solenoid valve locked"
+  },
+  "1108": {
+    "name": "Fan assembly high speed command fault",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1109": {
+    "name": "Fault slow speed cooling fan control",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1110": {
+    "name": "Fault air conditioning cut-off relay control",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "1120": {
+    "name": "Fault : needle lift sensor",
+    "description": "Open circuit"
+  },
+  "1121": {
+    "name": "Fault : needle lift sensor",
+    "description": "Short circuit to positive or short circuit to earth"
+  },
+  "1122": {
+    "name": "Fault : needle lift sensor",
+    "description": "No signal"
+  },
+  "1130": {
+    "name": "Timing regulation control electrovalve fault",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "1131": {
+    "name": "Timing regulation control electrovalve fault",
+    "description": "Short circuit to positive"
+  },
+  "1145": {
+    "name": "Fault noise on the needle lift signal",
+    "description": "Incoherence"
+  },
+  "1146": {
+    "name": "Fault needle lift consistency",
+    "description": "Plausibility"
+  },
+  "1300": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1302": {
+    "name": "Fault in correlation between the needle lift and the engine speed",
+    "description": "Plausibility"
+  },
+  "1349": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Short circuit to positive"
+  },
+  "1350": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "1351": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Plug never supplied or cut off"
+  },
+  "1352": {
+    "name": "Fault : pre-heating relay circuit",
+    "description": "Plug permanently supplied"
+  },
+  "1402": {
+    "name": "EGR butterfly solenoid valve fault",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1519": {
+    "name": "FaultCooling function integrated in ECU",
+    "description": "Consistency between fan unit speed and setting"
+  },
+  "1602": {
+    "name": "Fault pre-heating warning light",
+    "description": "Short circuit to positive or short circuit to earth"
+  },
+  "1603": {
+    "name": "Fault : Engine coolant temperature sensor: not defined",
+    "description": "Short circuit to positive or short circuit to earth"
+  },
+  "1605": {
+    "name": "Fault: driver's wishes output",
+    "description": "Short circuit to positive or short circuit to earth"
+  },
+  "1607": {
+    "name": "Fault diagnostic warning light",
+    "description": "-"
+  },
+  "1608": {
+    "name": "Coolant temperature warning lamp fault",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "1609": {
+    "name": "Fault : Engine speed",
+    "description": "Short circuit to positive or short circuit to earth"
+  },
+  "1613": {
+    "name": "Fault Configuration",
+    "description": "-"
+  },
+  "1614": {
+    "name": "Fault sensor power supply",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1687": {
+    "name": "Fault pump module not matched-unlocked",
+    "description": "-"
+  },
+  "1689": {
+    "name": "Fault pump module locked",
+    "description": "-"
+  },
+  "1690": {
+    "name": "High pressure fuel pump relay control fault",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1691": {
+    "name": "High pressure fuel pump relay control fault",
+    "description": "Short circuit to positive"
+  },
+  "1692": {
+    "name": "High pressure fuel pump relay control fault",
+    "description": "Short circuit to earth"
+  },
+  "2141": {
+    "name": "EGR butterfly solenoid valve fault",
+    "description": "Short circuit to earth"
+  },
+  "2142": {
+    "name": "EGR butterfly solenoid valve fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "2144": {
+    "name": "Fault EGR electrovalve",
+    "description": "Short circuit to earth"
+  },
+  "2145": {
+    "name": "Fault EGR electrovalve",
+    "description": "Short circuit to positive"
+  },
+  "C028": {
+    "name": "Communication fault on the CAN",
+    "description": "No communication on network: not specified VAN"
+  },
+  "D000": {
+    "name": "Communication fault on the CAN",
+    "description": "ECU mute"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN",
+    "description": "No communication on CAN network"
+  },
+  "D113": {
+    "name": "Communication fault on the CAN",
+    "description": "Fault: absence of communication with the ABS"
+  },
+  "D118": {
+    "name": "Communication fault on the CAN",
+    "description": "Fault in communication with the BSI"
+  },
+  "D218": {
+    "name": "Communication fault on the CAN",
+    "description": "Incorrect transmission from the BSI"
+  }
+}

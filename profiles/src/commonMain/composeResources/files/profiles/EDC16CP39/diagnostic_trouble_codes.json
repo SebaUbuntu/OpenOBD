@@ -1,0 +1,1078 @@
+{
+  "0001": {
+    "name": "Fuel flow regulator control",
+    "description": "Regulation solenoid valve open circuit or ECU connection temperature too high"
+  },
+  "0002": {
+    "name": "Fuel flow regulator control",
+    "description": "Non-coherence of the control current"
+  },
+  "0003": {
+    "name": "Fuel flow regulator control",
+    "description": "Regulation solenoid valve short circuit to earth or value too low"
+  },
+  "0004": {
+    "name": "Fuel flow regulator control",
+    "description": "Regulation solenoid valve short circuit to positive (stuck closed)"
+  },
+  "0016": {
+    "name": "Camshaft signal",
+    "description": "Camshaft crankshaft synchronisation"
+  },
+  "0026": {
+    "name": "Recirculation valve solenoid valve control",
+    "description": "Excessive temperature"
+  },
+  "0030": {
+    "name": "Oxygen sensor signal",
+    "description": "Voltage problem on sensor heating power stage"
+  },
+  "0031": {
+    "name": "Oxygen sensor signal",
+    "description": "Short circuit to earth on sensor heating power stage"
+  },
+  "0032": {
+    "name": "Oxygen sensor signal",
+    "description": "Short circuit to positive on sensor heating power stage"
+  },
+  "0033": {
+    "name": "Compressor valve 2 compressor solenoid valve control 2",
+    "description": "Open circuit. compressor valve 2 closed"
+  },
+  "0034": {
+    "name": "Compressor valve 2 compressor solenoid valve control 2",
+    "description": "Short circuit to earth. compressor valve 2 open"
+  },
+  "0035": {
+    "name": "Compressor valve 2 compressor solenoid valve control 2",
+    "description": "Short circuit to positive. compressor valve 2 closed"
+  },
+  "0039": {
+    "name": "Compressor valve 2 compressor solenoid valve control 2",
+    "description": "Excessive temperature"
+  },
+  "0049": {
+    "name": "Turbo pressure regulation",
+    "description": "Biturbo mode impossible, risk of overspeed on turbo 2"
+  },
+  "0053": {
+    "name": "Oxygen sensor signal",
+    "description": "Fault: internal resistor"
+  },
+  "0069": {
+    "name": "Atmospheric pressure signal",
+    "description": "Consistency in relation to inlet pressure"
+  },
+  "0075": {
+    "name": "Recirculation valve solenoid valve control",
+    "description": "Open circuit. min turbocharging"
+  },
+  "0076": {
+    "name": "Recirculation valve solenoid valve control",
+    "description": "Short circuit to earth. max turbocharging"
+  },
+  "0077": {
+    "name": "Recirculation valve solenoid valve control",
+    "description": "Short circuit to positive. min turbocharging"
+  },
+  "0087": {
+    "name": "Fuel high pressure regulation",
+    "description": "Pressure below reference"
+  },
+  "0088": {
+    "name": "Fuel high pressure regulation",
+    "description": "Pump flow regulation solenoid valve opens more than the reference value"
+  },
+  "0089": {
+    "name": "Fuel pressure regulator control",
+    "description": "Regulator control current not coherent in relation to the pressure"
+  },
+  "0090": {
+    "name": "Fuel pressure regulator control",
+    "description": "Open circuit"
+  },
+  "0091": {
+    "name": "Fuel pressure regulator control",
+    "description": "Short circuit to earth"
+  },
+  "0092": {
+    "name": "Fuel pressure regulator control",
+    "description": "Short circuit to positive"
+  },
+  "0093": {
+    "name": "Fuel high pressure regulation",
+    "description": "Pump flow regulation solenoid valve opens less than the reference value"
+  },
+  "0097": {
+    "name": "Intake air temperature signal (intake air manifold)",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0098": {
+    "name": "Intake air temperature signal (intake air manifold)",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0100": {
+    "name": "Flowmeter signal",
+    "description": "Air flow not plausible"
+  },
+  "0102": {
+    "name": "Flowmeter signal",
+    "description": "Frequency too low : Minimum air flow"
+  },
+  "0103": {
+    "name": "Flowmeter signal",
+    "description": "Frequency too low : Maximum air flow"
+  },
+  "0104": {
+    "name": "Flowmeter signal",
+    "description": "Sensor supply or signal open circuit, short circuit to positive or to earth"
+  },
+  "0107": {
+    "name": "Atmospheric pressure signal",
+    "description": "Sensor incorporated in the ECU short circuit to earth or value too low"
+  },
+  "0108": {
+    "name": "Atmospheric pressure signal",
+    "description": "Sensor incorporated in the ECU short circuit to positive or open circuit or value too high"
+  },
+  "0112": {
+    "name": "Intake air temperature signal (air flow sensor)",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0113": {
+    "name": "Intake air temperature signal (air flow sensor)",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0115": {
+    "name": "Engine coolant temperature signal",
+    "description": "Coherence of the temperature increase"
+  },
+  "0117": {
+    "name": "Engine coolant temperature signal",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0118": {
+    "name": "Engine coolant temperature signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0120": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Throttle movement drift or programming not done"
+  },
+  "0121": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Throttle movement drift or programming not done"
+  },
+  "0122": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0123": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0130": {
+    "name": "Oxygen sensor signal",
+    "description": "Battery voltage fault"
+  },
+  "0131": {
+    "name": "Oxygen sensor signal",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "0132": {
+    "name": "Oxygen sensor signal",
+    "description": "Short circuit to positive"
+  },
+  "0133": {
+    "name": "Oxygen sensor signal",
+    "description": "Sensor voltage outside limits"
+  },
+  "0134": {
+    "name": "Oxygen sensor signal",
+    "description": "Open circuit"
+  },
+  "0135": {
+    "name": "Oxygen sensor signal",
+    "description": "Short circuit to positive, to earth, open circuit of the sensor heating"
+  },
+  "0171": {
+    "name": "Oxygen sensor signal",
+    "description": "Too much air in the exhaust"
+  },
+  "0182": {
+    "name": "Diesel temperature signal",
+    "description": "Short circuit to earth or value too high"
+  },
+  "0183": {
+    "name": "Diesel temperature signal",
+    "description": "Short circuit to positive or open circuit or value too low"
+  },
+  "0192": {
+    "name": "Fuel pressure signal",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0193": {
+    "name": "Fuel pressure signal",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0197": {
+    "name": "Oil temperature and level signal",
+    "description": "Oil temperature short circuit to earth"
+  },
+  "0198": {
+    "name": "Oil temperature and level signal",
+    "description": "Oil temperature short circuit to positive"
+  },
+  "0201": {
+    "name": "Controls injector cylinder 1",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0202": {
+    "name": "Controls injector cylinder 2",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0203": {
+    "name": "Controls injector cylinder 3",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0204": {
+    "name": "Controls injector cylinder 4",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0215": {
+    "name": "Injection system supply relay circuit (stage 1)",
+    "description": "Opening too quick or relay still stuck when engine switched off"
+  },
+  "0220": {
+    "name": "Easy Move",
+    "description": "Excessive difference between two initialisation values"
+  },
+  "0221": {
+    "name": "Easy Move",
+    "description": "Fault in plausibility between the pedal position parameters sent on the CAN"
+  },
+  "0222": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0223": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0224": {
+    "name": "Easy Move",
+    "description": "Fault in the information received from the pedal sensor"
+  },
+  "0227": {
+    "name": "Accelerator pedal signal 2",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0228": {
+    "name": "Accelerator pedal signal 2",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0234": {
+    "name": "Turbo pressure regulation",
+    "description": "Pressure greater than setting"
+  },
+  "0237": {
+    "name": "Turbo pressure signal (inlet air manifold)",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0238": {
+    "name": "Turbo pressure signal (inlet air manifold)",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0239": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Implausible value on starting"
+  },
+  "0240": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Implausible value"
+  },
+  "0241": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0242": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0243": {
+    "name": "Turbo pressure regulation solenoid valve control",
+    "description": "Open circuit or pressure too low"
+  },
+  "0245": {
+    "name": "Turbo pressure regulation solenoid valve control",
+    "description": "Short circuit to earth or pressure too high"
+  },
+  "0246": {
+    "name": "Turbo pressure regulation solenoid valve control",
+    "description": "Short circuit to positive or pressure too low"
+  },
+  "0247": {
+    "name": "Turbine valve solenoid valve control 2",
+    "description": "Excessive temperature. max turbocharging"
+  },
+  "0248": {
+    "name": "Turbine valve solenoid valve control 2",
+    "description": "Open circuit. max turbocharging"
+  },
+  "0249": {
+    "name": "Turbine valve solenoid valve control 2",
+    "description": "Turbo max turbocharging 2. turbine valve 2 open"
+  },
+  "0250": {
+    "name": "Turbine valve solenoid valve control 2",
+    "description": "Turbo min turbocharging 2. turbine valve 2 closed"
+  },
+  "0262": {
+    "name": "Controls injector cylinder 1",
+    "description": "Short circuit between 2 wires of the injector"
+  },
+  "0265": {
+    "name": "Controls injector cylinder 2",
+    "description": "Short circuit between 2 wires of the injector"
+  },
+  "0268": {
+    "name": "Controls injector cylinder 3",
+    "description": "Short circuit between 2 wires of the injector"
+  },
+  "0271": {
+    "name": "Controls injector cylinder 4",
+    "description": "Short circuit between 2 wires of the injector"
+  },
+  "0299": {
+    "name": "Turbo pressure regulation",
+    "description": "Pressure below reference"
+  },
+  "0336": {
+    "name": "Engine speed signal",
+    "description": "Signal missing"
+  },
+  "0339": {
+    "name": "Engine speed signal",
+    "description": "Incorrect signal"
+  },
+  "0341": {
+    "name": "Camshaft signal",
+    "description": "Signal missing"
+  },
+  "0401": {
+    "name": "Air circuit fault",
+    "description": "Air pressure higher than the setting"
+  },
+  "0402": {
+    "name": "Air circuit fault",
+    "description": "Amount of air measured lower than the setting"
+  },
+  "0405": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Signal voltage too low"
+  },
+  "0406": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Signal voltage too high"
+  },
+  "0420": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Particle filter overloaded"
+  },
+  "0461": {
+    "name": "CAN communication",
+    "description": "Diesel level signal not coherent"
+  },
+  "0462": {
+    "name": "CAN communication",
+    "description": "Diesel level signal short circuit to earth"
+  },
+  "0463": {
+    "name": "CAN communication",
+    "description": "Diesel level signal open circuit"
+  },
+  "0470": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Differential pressure coherence when stationary"
+  },
+  "0472": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Short circuit to earth or hoses pinched or value too low"
+  },
+  "0473": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0483": {
+    "name": "Cooling function integrated into the ECU (fan unit)",
+    "description": "Open circuit or temperature too high"
+  },
+  "0487": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "EGR throttle opening too low"
+  },
+  "0488": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "EGR throttle opening too high"
+  },
+  "0489": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Excessive opening of the valve"
+  },
+  "0490": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Insufficient opening of the valve"
+  },
+  "0494": {
+    "name": "Cooling function integrated into the ECU (fan unit)",
+    "description": "Coherence between the fan assembly high speed and the reference value"
+  },
+  "0500": {
+    "name": "Vehicle speed signal",
+    "description": "Vehicle speed or feedback invalid"
+  },
+  "0532": {
+    "name": "Air conditioning pressure signal",
+    "description": "Short circuit to earth or value too low"
+  },
+  "0533": {
+    "name": "Air conditioning pressure signal",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "0562": {
+    "name": "Battery voltage signal",
+    "description": "Battery voltage too low"
+  },
+  "0563": {
+    "name": "Battery voltage signal",
+    "description": "Battery voltage too high"
+  },
+  "0565": {
+    "name": "Cruise control",
+    "description": "CAN communication error or data incorrect"
+  },
+  "0568": {
+    "name": "Cruise control",
+    "description": "Programmed speed incorrect"
+  },
+  "0569": {
+    "name": "Cruise control",
+    "description": "Coherence between the speed requested and the vehicle speed"
+  },
+  "0571": {
+    "name": "Brake contact signal",
+    "description": "Brake pedal faulty information (ABS or ESP info)"
+  },
+  "0603": {
+    "name": "ECU",
+    "description": "ECU internal fault"
+  },
+  "0606": {
+    "name": "ECU",
+    "description": "ECU internal fault"
+  },
+  "0615": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Starter relay open circuit or excessive temperature"
+  },
+  "0617": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Short circuit to positive of the starter motor relay"
+  },
+  "0658": {
+    "name": "Supply for accelerator pedal, manifold air pressure, fuel pressure, oil level sensors",
+    "description": "Supply voltage too low"
+  },
+  "0659": {
+    "name": "Supply for accelerator pedal, manifold air pressure, fuel pressure, oil level sensors",
+    "description": "Supply voltage too high"
+  },
+  "0668": {
+    "name": "ECU",
+    "description": "ECU temperature too low"
+  },
+  "0669": {
+    "name": "ECU",
+    "description": "ECU temperature too high"
+  },
+  "0686": {
+    "name": "Injection system supply relay circuit (power stage)",
+    "description": "Short circuit to earth"
+  },
+  "0687": {
+    "name": "Injection system supply relay circuit (power stage)",
+    "description": "Short circuit to positive"
+  },
+  "0691": {
+    "name": "Fan assembly high speed control",
+    "description": "Short circuit to earth, short circuit to positive, or temperature too high"
+  },
+  "0692": {
+    "name": "Fan assembly high speed control",
+    "description": "Open circuit"
+  },
+  "0693": {
+    "name": "Fan assembly low speed control",
+    "description": "Short circuit to earth, short circuit to positive, or temperature too high"
+  },
+  "0694": {
+    "name": "Fan assembly low speed control",
+    "description": "Open circuit"
+  },
+  "0704": {
+    "name": "Clutch switch signal",
+    "description": "No signal or signal not coherent"
+  },
+  "1113": {
+    "name": "Fuel high pressure regulation",
+    "description": "Pressure below minimum pressure"
+  },
+  "1161": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Butterfly stuck while driving"
+  },
+  "1162": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Valve jammed while driving"
+  },
+  "1166": {
+    "name": "Fuel high pressure regulation",
+    "description": "Maximum rail pressure exceeded"
+  },
+  "1197": {
+    "name": "Bank 1 injector control",
+    "description": "ECU internal fault"
+  },
+  "1199": {
+    "name": "Fuel high pressure regulation",
+    "description": "Pressure outside thresholds even though the minimum fuel level has been reached"
+  },
+  "1206": {
+    "name": "Fuel pressure regulator control",
+    "description": "ECU control circuit temperature too high"
+  },
+  "1269": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Turbocharging pressure not plausible during monoturbo operation"
+  },
+  "1349": {
+    "name": "Pre-heating relay circuit",
+    "description": "Control short circuit to positive"
+  },
+  "1350": {
+    "name": "Pre-heating relay circuit",
+    "description": "Control short circuit to earth or open circuit"
+  },
+  "1351": {
+    "name": "Pre-heating relay circuit",
+    "description": "Relay controlled and Plugs never supplied"
+  },
+  "1352": {
+    "name": "Pre-heating relay circuit",
+    "description": "Relay not controlled and spark plugs supplied"
+  },
+  "1366": {
+    "name": "Controls injector cylinder 1",
+    "description": "Fault: not listed"
+  },
+  "1367": {
+    "name": "Controls injector cylinder 2",
+    "description": "Fault: not listed"
+  },
+  "1368": {
+    "name": "Controls injector cylinder 3",
+    "description": "Fault: not listed"
+  },
+  "1369": {
+    "name": "Controls injector cylinder 4",
+    "description": "Fault: not listed"
+  },
+  "1403": {
+    "name": "Additional heating circuit 1",
+    "description": "Short circuit to earth, short circuit to positive, open circuit or actuator fault"
+  },
+  "1404": {
+    "name": "Additional heating circuit 2",
+    "description": "Short circuit to earth, short circuit to positive, open circuit or actuator fault"
+  },
+  "1433": {
+    "name": "Additive system",
+    "description": "Fault on the additive adding injector"
+  },
+  "1434": {
+    "name": "Additive system",
+    "description": "Open circuit or excessive temperature on additive adding pump"
+  },
+  "1435": {
+    "name": "Additive system",
+    "description": "Additive adding system fault"
+  },
+  "1443": {
+    "name": "Additive system",
+    "description": "Short circuit to earth on the additive adding pump"
+  },
+  "1444": {
+    "name": "Additive system",
+    "description": "Short circuit to positive on the additive adding pump"
+  },
+  "1445": {
+    "name": "Additive system",
+    "description": "Additive in Particle Emission Filter max threshold"
+  },
+  "1446": {
+    "name": "Additive system",
+    "description": "Low additive level reached"
+  },
+  "1447": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Particle filter clogged"
+  },
+  "1457": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Particle filter punctured"
+  },
+  "1459": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "EGR valve confirmed stuck closed"
+  },
+  "1461": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Drift of the movement of the valve or programming not carried out"
+  },
+  "1462": {
+    "name": "Electric EGR valve position repeat signal",
+    "description": "Drift of the movement of the valve or programming not carried out"
+  },
+  "1490": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Regeneration requested too frequently"
+  },
+  "1491": {
+    "name": "Resetting of the injectors",
+    "description": "Flow correction too high"
+  },
+  "1492": {
+    "name": "Resetting of the injectors",
+    "description": "Flow correction too low"
+  },
+  "1493": {
+    "name": "Resetting of the injectors",
+    "description": "Correction outside limits"
+  },
+  "1494": {
+    "name": "Resetting of the injectors",
+    "description": "Mixture difference too high"
+  },
+  "1495": {
+    "name": "Resetting of the injectors",
+    "description": "Mixture difference too low"
+  },
+  "1505": {
+    "name": "Stopping of the engine (CAN info)",
+    "description": "Triggering of the airbag impact detector"
+  },
+  "1506": {
+    "name": "CAN communication",
+    "description": "No communication with the air conditioning ECU"
+  },
+  "1536": {
+    "name": "Brake contact signal",
+    "description": "Non-coherence between the 2 brake pedal signals"
+  },
+  "1586": {
+    "name": "Engine speed sensor, EGR valve repeat sensor, turbine 2 valve repeat sensor, intake air heater butterfly repeat sensor supply",
+    "description": "Supply voltage too low"
+  },
+  "1587": {
+    "name": "Engine speed sensor, EGR valve repeat sensor, turbine 2 valve repeat sensor, intake air heater butterfly repeat sensor supply",
+    "description": "Supply voltage too high"
+  },
+  "1589": {
+    "name": "Flowmeter signal",
+    "description": "Supply voltage too low"
+  },
+  "1590": {
+    "name": "Flowmeter signal",
+    "description": "Supply voltage too high"
+  },
+  "1600": {
+    "name": "Injector configuration",
+    "description": "Characterisation of the injectors incorrect or not carried out"
+  },
+  "1607": {
+    "name": "Vehicle speed limitation",
+    "description": "Vehicle speed reference value too low or CAN communication problem"
+  },
+  "1612": {
+    "name": "Coded anti-start",
+    "description": "Code ADC2 reading or writing error"
+  },
+  "1613": {
+    "name": "Configuration",
+    "description": "Configuration incorrect or not done"
+  },
+  "1614": {
+    "name": "Accelerator pedal point of resistance information (Speed Limiter)",
+    "description": "No signal"
+  },
+  "1625": {
+    "name": "CAN communication",
+    "description": "ESP plausibility"
+  },
+  "1631": {
+    "name": "ECU",
+    "description": "ECU internal fault"
+  },
+  "1639": {
+    "name": "Injection system supply relay circuit (power stage)",
+    "description": "Open circuit"
+  },
+  "1640": {
+    "name": "Injection system supply relay circuit (power stage)",
+    "description": "Excessive temperature"
+  },
+  "1641": {
+    "name": "Bank of injectors",
+    "description": "Short circuit on DC/DC converter charge switch"
+  },
+  "1643": {
+    "name": "Accelerator pedal point of resistance information (Speed Limiter)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "1644": {
+    "name": "Accelerator pedal point of resistance information (Speed Limiter)",
+    "description": "Short circuit to positive"
+  },
+  "1645": {
+    "name": "Accelerator pedal point of resistance information (Speed Limiter)",
+    "description": "Plausibility with the accelerator pedal signal fault"
+  },
+  "1655": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Short circuit to positive. starter not supplied."
+  },
+  "1656": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Short circuit to earth. starter supplied continuously."
+  },
+  "1657": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Open circuit on the starting line"
+  },
+  "1667": {
+    "name": "ECU",
+    "description": "ECU internal fault"
+  },
+  "1670": {
+    "name": "CAN communication",
+    "description": "Torque values requested by the ESP not coherent"
+  },
+  "1694": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Open circuit on the starting line"
+  },
+  "1695": {
+    "name": "Starting and switching off of the engine controlled",
+    "description": "Starter jammed or drop in battery voltage"
+  },
+  "1700": {
+    "name": "ECU",
+    "description": "ECU internal fault"
+  },
+  "1727": {
+    "name": "CAN communication",
+    "description": "Torque request inconsistent"
+  },
+  "1728": {
+    "name": "CAN communication",
+    "description": "Torque information not valid. accelerator pedal signal absent"
+  },
+  "2031": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Implausible temperature before starting the engine"
+  },
+  "2032": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Short circuit to earth or value too low"
+  },
+  "2033": {
+    "name": "Catalytic converter  downstream temperature signal",
+    "description": "Short circuit to positive or open circuit or value too high"
+  },
+  "2100": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit between wires"
+  },
+  "2102": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to earth"
+  },
+  "2103": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to positive"
+  },
+  "2106": {
+    "name": "Motorised throttle  control",
+    "description": "ECU control stage problem"
+  },
+  "2107": {
+    "name": "Motorised throttle  control",
+    "description": "ECU control stage problem"
+  },
+  "2111": {
+    "name": "Mixer butterfly position copy signal",
+    "description": "Butterfly stuck during post operation"
+  },
+  "2118": {
+    "name": "Motorised throttle  control",
+    "description": "ECU control stage problem"
+  },
+  "2119": {
+    "name": "Motorised throttle  control",
+    "description": "ECU control stage problem"
+  },
+  "2137": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Coherence with the  accelerator pedal signal"
+  },
+  "2143": {
+    "name": "Electric EGR valve control",
+    "description": "Open circuit EGR closed"
+  },
+  "2144": {
+    "name": "Electric EGR valve control",
+    "description": "Short circuit to earth EGR : closed"
+  },
+  "2145": {
+    "name": "Electric EGR valve control",
+    "description": "Short circuit to positive EGR closed"
+  },
+  "2146": {
+    "name": "Bank 1 injector control",
+    "description": "Short circuit to positive, to earth or between 2 wires"
+  },
+  "2147": {
+    "name": "Bank 1 injector control",
+    "description": "Fault: not listed"
+  },
+  "2149": {
+    "name": "Bank 2 injector control",
+    "description": "Short circuit to positive, to earth or between 2 wires"
+  },
+  "2150": {
+    "name": "Bank 2 injector control",
+    "description": "Fault: not listed"
+  },
+  "2192": {
+    "name": "Oxygen sensor signal",
+    "description": "Oxygen concentration too low at partial load"
+  },
+  "2193": {
+    "name": "Oxygen sensor signal",
+    "description": "Oxygen concentration to high at partial load"
+  },
+  "2196": {
+    "name": "Oxygen sensor signal",
+    "description": "Oxygen concentration too low at full load"
+  },
+  "2197": {
+    "name": "Oxygen sensor signal",
+    "description": "Oxygen concentration too high at full load"
+  },
+  "2231": {
+    "name": "Oxygen sensor signal",
+    "description": "Sensor voltage outside limits"
+  },
+  "2245": {
+    "name": "Oxygen sensor signal",
+    "description": "Sensor voltage too low or oxygen concentration too low"
+  },
+  "2246": {
+    "name": "Oxygen sensor signal",
+    "description": "Oxygen concentration too high"
+  },
+  "2299": {
+    "name": "Accelerator pedal signal 1",
+    "description": "Coherence with brake pedal"
+  },
+  "2408": {
+    "name": "Additive system",
+    "description": "Fuel tank cap sensor signal fault"
+  },
+  "2413": {
+    "name": "Electric EGR valve control",
+    "description": "Excess voltage on the valve control in the ECU"
+  },
+  "2530": {
+    "name": "Reawakening of the ECU controlled remotely",
+    "description": "Presence of the remote control wake-up (RCD) signal : absent"
+  },
+  "2563": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "Turbine valve 2 stuck"
+  },
+  "2564": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "Voltage too low"
+  },
+  "2565": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "Voltage too high"
+  },
+  "2566": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "Turbine 2 valve stuck when the engine stops"
+  },
+  "2670": {
+    "name": "Cylinder reference sensor, air conditioning pressure sensor, exhaust differential pressure sensor and turbo 2 pressure sensor supply",
+    "description": "Supply voltage too low"
+  },
+  "2671": {
+    "name": "Cylinder reference sensor, air conditioning pressure sensor, exhaust differential pressure sensor and turbo 2 pressure sensor supply",
+    "description": "Supply voltage too high"
+  },
+  "3002": {
+    "name": "Fuel pressure regulator control",
+    "description": "Pressure greater than setting"
+  },
+  "3003": {
+    "name": "Fuel pressure regulator control",
+    "description": "Pressure below reference"
+  },
+  "3007": {
+    "name": "Flowmeter signal",
+    "description": "Air flow too low"
+  },
+  "3008": {
+    "name": "Flowmeter signal",
+    "description": "Air flow too high"
+  },
+  "3025": {
+    "name": "Fuel pressure regulator control",
+    "description": "Control current outside thresholds"
+  },
+  "023D": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Consistency with atmospheric pressure"
+  },
+  "023E": {
+    "name": "Turbo pressure signal (turbo 2)",
+    "description": "Coherence between the 3 pressure sensors"
+  },
+  "119F": {
+    "name": "Additive system",
+    "description": "Dilution of oil by too frequent regeneration"
+  },
+  "11A0": {
+    "name": "Resetting of the injectors",
+    "description": "Resetting to max limit"
+  },
+  "11A1": {
+    "name": "Resetting of the injectors",
+    "description": "Resetting to min limit"
+  },
+  "11A2": {
+    "name": "Resetting of the injectors",
+    "description": "Resetting not plausible"
+  },
+  "11A5": {
+    "name": "Injector return pressurisation valve",
+    "description": "Fault: not listed"
+  },
+  "129A": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "The valve opens less than the reference value"
+  },
+  "129B": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "The valve opens more than the reference value"
+  },
+  "129E": {
+    "name": "Turbine valve position repeat signal 2",
+    "description": "Turbine valve 2 stuck"
+  },
+  "16A0": {
+    "name": "Engine overspeed",
+    "description": "Auto supply of the engine with oil"
+  },
+  "16A1": {
+    "name": "Turbo pressure signal (inlet air manifold)",
+    "description": "Inversion of the connection of the 2 intake air pressure sensors"
+  },
+  "250B": {
+    "name": "Oil level sensor signal",
+    "description": "Open circuit or excessive temperature"
+  },
+  "250C": {
+    "name": "Oil level sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "250D": {
+    "name": "Oil level sensor signal",
+    "description": "Short circuit to positive"
+  },
+  "C019": {
+    "name": "CAN communication",
+    "description": "CAN LS fault"
+  },
+  "C028": {
+    "name": "VAN communication",
+    "description": "Instrument panel communication fault"
+  },
+  "C055": {
+    "name": "CAN communication",
+    "description": "Absence of communication on the Comfort CAN"
+  },
+  "C103": {
+    "name": "CAN communication",
+    "description": "No communication with the automatic gearbox"
+  },
+  "C118": {
+    "name": "Brake contact signal",
+    "description": "Main brake information absent received by the CAN (BSI info)"
+  },
+  "C121": {
+    "name": "CAN communication",
+    "description": "Absence of communication with the ABS or ESP ECU"
+  },
+  "C122": {
+    "name": "CAN communication",
+    "description": "Absence of communication with the ABS or ESP ECU"
+  },
+  "C304": {
+    "name": "CAN communication",
+    "description": "Auto gearbox error message"
+  },
+  "C404": {
+    "name": "CAN communication",
+    "description": "Incoherence of message sent by the automatic gearbox"
+  },
+  "D000": {
+    "name": "CAN communication",
+    "description": "Engine ECU mute"
+  },
+  "D003": {
+    "name": "CAN communication",
+    "description": "Absence of communication: CAN absent"
+  },
+  "D118": {
+    "name": "CAN communication",
+    "description": "Absence of communication with the BSI ECU"
+  },
+  "D213": {
+    "name": "CAN communication",
+    "description": "Loss of communication with ESP (wheel speed)"
+  },
+  "E000": {
+    "name": "Remote Controlled Wake-up",
+    "description": "Partial wake-up request absent"
+  },
+  "E003": {
+    "name": "Remote Controlled Wake-up",
+    "description": "Main Wake-up Request : Not plausible"
+  },
+  "E118": {
+    "name": "Remote Controlled Wake-up",
+    "description": "Main Wake-up Request : missing"
+  }
+}
