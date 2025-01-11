@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+    <string name="app_name" translatable="false">OpenOBD</string>
+
+    <!-- Generic UI elements -->
+    <string name="go_back">Go back</string>
+
+    <!-- Devices -->
+    <string name="devices">Devices</string>
+    <string name="current_device_none">None</string>
+    <string name="no_device_connected">No device connected</string>
+    <string name="unknown_device">Unknown device</string>
+
+    <!-- Connection types -->
+    <string name="connection_type_none">None</string>
+    <string name="connection_type_usb" translatable="false">USB</string>
+    <string name="connection_type_bluetooth" translatable="false">Bluetooth</string>
+    <string name="connection_type_wifi" translatable="false">Wi-Fi</string>
+    <string name="connection_type_serial">Serial</string>
+
+    <!-- Functions -->
+    <string name="dashboard">Dashboard</string>
+    <string name="dtc">Diagnostic Trouble Codes (DTC)</string>
+    <string name="sensors">Sensors</string>
+    <string name="settings">Settings</string>
+
+    <!-- Settings -->
+    <string name="platform_name">Platform name</string>
+
+    <!-- Permissions -->
+    <string name="permission_bluetooth">Bluetooth</string>
+
+    <!-- Permission gated composable -->
+    <string name="permission_not_granted">Permission not granted: %1$s</string>
+    <string name="request_permission">Request permission</string>
+    <string name="permission_denied">Permission denied: %1$s. Open the app settings to grant it</string>
+
+    <!-- Bluetooth state -->
+    <string name="bluetooth_state">Bluetooth: %1$s</string>
+    <string name="bluetooth_state_unavailable">Unavailable</string>
+    <string name="bluetooth_state_disabled">Disabled</string>
+    <string name="bluetooth_state_disabling">Disabling</string>
+    <string name="bluetooth_state_enabled">Enabled</string>
+    <string name="bluetooth_state_enabling">Enabling</string>
+
+    <!-- Bluetooth device state -->
+    <string name="bluetooth_device_state_unknown">Unknown</string>
+    <string name="bluetooth_device_state_available">Available</string>
+    <string name="bluetooth_device_state_bonding">Bonding</string>
+    <string name="bluetooth_device_state_bonded">Bonded</string>
+    <string name="bluetooth_device_state_connecting">Connecting</string>
+    <string name="bluetooth_device_state_connected">Connected</string>
+    <string name="bluetooth_device_state_disconnecting">Disconnecting</string>
+</resources>

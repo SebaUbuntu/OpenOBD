@@ -1,0 +1,30 @@
+#
+# SPDX-FileCopyrightText: Sebastiano Barezzi
+# SPDX-License-Identifier: Apache-2.0
+#
+
+[versions]
+agp = "8.9.1"
+android-compileSdk = "35"
+android-minSdk = "29"
+android-targetSdk = "35"
+androidx-activity = "1.10.1"
+androidx-lifecycle = "2.8.4"
+androidx-navigation = "2.8.0-alpha10"
+compose-multiplatform = "1.7.0"
+kotlin = "2.1.0"
+kotlinx-coroutines = "1.9.0"
+
+[libraries]
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "androidx-activity" }
+androidx-lifecycle-runtime-compose = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "androidx-lifecycle" }
+androidx-lifecycle-viewmodel = { group = "org.jetbrains.androidx.lifecycle", name = "lifecycle-viewmodel", version.ref = "androidx-lifecycle" }
+androidx-navigation-compose = { group = "org.jetbrains.androidx.navigation", name = "navigation-compose", version.ref = "androidx-navigation" }
+kotlinx-coroutines-swing = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-swing", version.ref = "kotlinx-coroutines" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+androidLibrary = { id = "com.android.library", version.ref = "agp" }
+composeCompiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+composeMultiplatform = { id = "org.jetbrains.compose", version.ref = "compose-multiplatform" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
