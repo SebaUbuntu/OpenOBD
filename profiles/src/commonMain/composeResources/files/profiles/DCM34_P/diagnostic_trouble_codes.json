@@ -1,0 +1,914 @@
+{
+  "0069": {
+    "name": "Fault : Supercharging pressure sensor",
+    "description": "Coherence of the atmospheric pressure / turbocharging pressure at idle"
+  },
+  "0087": {
+    "name": "Rail pressure regulation fault",
+    "description": "Rail pressure insufficient in relation to the reference value"
+  },
+  "0088": {
+    "name": "Rail pressure regulation fault",
+    "description": "Rail pressure excessive in relation to the reference value"
+  },
+  "0089": {
+    "name": "Rail pressure regulation fault",
+    "description": "Control current not plausible. Rail pressure flow weak. Rail pressure flow strong."
+  },
+  "0091": {
+    "name": "Fault - High pressure pump actuator",
+    "description": "Short circuit to earth"
+  },
+  "0092": {
+    "name": "Fault - High pressure pump actuator",
+    "description": "Short circuit to positive"
+  },
+  "0094": {
+    "name": "Rail pressure regulation fault",
+    "description": "Limitation compensation jammed or too great"
+  },
+  "0096": {
+    "name": "Fault : air temperature sensor",
+    "description": "Variation in the voltage of the air temperature sensor"
+  },
+  "0097": {
+    "name": "Fault : air temperature sensor",
+    "description": "Voltage of the air temperature sensor lower than a threshold"
+  },
+  "0098": {
+    "name": "Fault : air temperature sensor",
+    "description": "Voltage of the air temperature sensor higher than a threshold"
+  },
+  "009A": {
+    "name": "Exterior temperature sensor fault.",
+    "description": "Fault on the ambient air temperature estimator"
+  },
+  "0100": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Air flow above the maximum permissible threshold"
+  },
+  "0101": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Variation in voltage outside the tolerance"
+  },
+  "0102": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Period of the signal from the air flow sensor too great"
+  },
+  "0103": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Period of the signal from the air flow sensor too small"
+  },
+  "0106": {
+    "name": "Atmospheric pressure sensor fault",
+    "description": "Fault: variation in the atmospheric pressure sensor voltage outside the tolerance"
+  },
+  "0107": {
+    "name": "Atmospheric pressure sensor fault",
+    "description": "Atmospheric pressure sensor supply fault. Voltage of the signal from the atmospheric pressure sensor lower than a threshold"
+  },
+  "0108": {
+    "name": "Atmospheric pressure sensor fault",
+    "description": "Voltage of the signal from the atmospheric pressure sensor higher than a threshold"
+  },
+  "0111": {
+    "name": "Fault : air temperature sensor",
+    "description": "Variation in the voltage of the air temperature sensor 1"
+  },
+  "0112": {
+    "name": "Fault : air temperature sensor",
+    "description": "Voltage of the air temperature sensor 1 lower than a threshold"
+  },
+  "0113": {
+    "name": "Fault : air temperature sensor",
+    "description": "Voltage of the air temperature sensor 1 higher than a threshold"
+  },
+  "0115": {
+    "name": "Fault : Engine coolant temperature sensor: not defined",
+    "description": "Test for rise in temperature. The engine is hot even though the sensor indicates a cold temperature"
+  },
+  "0116": {
+    "name": "Fault : Engine coolant temperature sensor: not defined",
+    "description": "Variation in the voltage of the engine coolant temperature sensor"
+  },
+  "0117": {
+    "name": "Fault : Engine coolant temperature sensor: not defined",
+    "description": "Voltage of the engine coolant temperature sensor below a threshold"
+  },
+  "0118": {
+    "name": "Fault : Engine coolant temperature sensor: not defined",
+    "description": "Voltage of the engine coolant temperature sensor higher than a threshold"
+  },
+  "0181": {
+    "name": "Fuel temperature sensor fault",
+    "description": "Variation in the voltage of the fuel temperature sensor"
+  },
+  "0182": {
+    "name": "Fuel temperature sensor fault",
+    "description": "Voltage of the fuel temperature sensor lower than a threshold"
+  },
+  "0183": {
+    "name": "Fuel temperature sensor fault",
+    "description": "Voltage of the fuel temperature sensor higher than a threshold"
+  },
+  "0191": {
+    "name": "Fault : Rail pressure sensor",
+    "description": "Fault: variation in the voltage outside the norms for the rail pressure sensor"
+  },
+  "0192": {
+    "name": "Fault : Rail pressure sensor",
+    "description": "The voltage of the signal from the rail pressure sensor is lower than a threshold"
+  },
+  "0193": {
+    "name": "Fault : Rail pressure sensor",
+    "description": "The voltage of the signal from the rail pressure sensor is higher than a threshold"
+  },
+  "0197": {
+    "name": "Oil thermistor fault",
+    "description": "Electrical fault on the oil temperature sensor. Supply voltage below min limit"
+  },
+  "0198": {
+    "name": "Oil thermistor fault",
+    "description": "Electrical fault on the oil temperature sensor:voltage above a threshold"
+  },
+  "0199": {
+    "name": "Oil thermistor fault",
+    "description": "Electrical fault on the oil temperature sensor: Variation in voltage outside the tolerance"
+  },
+  "0201": {
+    "name": "Fault - Injector 1",
+    "description": "Injector control time too long"
+  },
+  "0202": {
+    "name": "Fault - Injector 2",
+    "description": "Open circuit"
+  },
+  "0203": {
+    "name": "Fault - Injector 3",
+    "description": "Open circuit"
+  },
+  "0204": {
+    "name": "Fault - Injector 4",
+    "description": "Open circuit"
+  },
+  "0215": {
+    "name": "Fault in the main relay",
+    "description": "Main relay stuck or unwanted cut-off"
+  },
+  "0222": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Electrical fault on track 1. Short circuit to earth"
+  },
+  "0223": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Electrical fault on track 1. Short circuit to battery positive"
+  },
+  "0224": {
+    "name": "Braking system fault",
+    "description": "Fault on the brake pedal"
+  },
+  "0226": {
+    "name": "Braking system fault",
+    "description": "Fault of coherence between the brake pedal position and the  function. Easy Move"
+  },
+  "0227": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Electrical fault on track 2. Short circuit to earth"
+  },
+  "0228": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Electrical fault on track 2. Short circuit to battery positive"
+  },
+  "0234": {
+    "name": "Fault turbocharging regulation",
+    "description": "Turbocharging too great"
+  },
+  "0235": {
+    "name": "Fault : Supercharging pressure sensor",
+    "description": "Gone beyond the bottom threshold (checking of a stopping range)"
+  },
+  "0236": {
+    "name": "Fault : Supercharging pressure sensor",
+    "description": "Fault: variation in the turbocharging pressure sensor voltage outside the threshold"
+  },
+  "0237": {
+    "name": "Fault : Supercharging pressure sensor",
+    "description": "Voltage of the signal from the turbocharging pressure sensor lower than a threshold"
+  },
+  "0238": {
+    "name": "Fault : Supercharging pressure sensor",
+    "description": "Voltage of the signal from the turbocharging pressure sensor higher than a threshold"
+  },
+  "0243": {
+    "name": "Variable geometry turbocharger solenoid valve or turbocharging pressure regulation valve fault",
+    "description": "Open circuit  / no enough turbocharging"
+  },
+  "0245": {
+    "name": "Variable geometry turbocharger solenoid valve or turbocharging pressure regulation valve fault",
+    "description": "Short circuit to earth  / turbocharging too great"
+  },
+  "0246": {
+    "name": "Variable geometry turbocharger solenoid valve or turbocharging pressure regulation valve fault",
+    "description": "Short-circuit to positive  / no enough turbocharging"
+  },
+  "0262": {
+    "name": "Fault - Injector 1",
+    "description": "Temperature rise time too short"
+  },
+  "0263": {
+    "name": "Fault - Injector 1",
+    "description": "Injector flow excessive. Injector flow not sufficient"
+  },
+  "0265": {
+    "name": "Fault - Injector 2",
+    "description": "Temperature rise time too short"
+  },
+  "0266": {
+    "name": "Fault - Injector 2",
+    "description": "Injector flow excessive. Injector flow not sufficient"
+  },
+  "0268": {
+    "name": "Fault - Injector 3",
+    "description": "Temperature rise time too short"
+  },
+  "0269": {
+    "name": "Fault - Injector 3",
+    "description": "Injector flow excessive. Injector flow not sufficient"
+  },
+  "0271": {
+    "name": "Fault - Injector 4",
+    "description": "Temperature rise time too short"
+  },
+  "0272": {
+    "name": "Fault - Injector 4",
+    "description": "Injector flow excessive. Injector flow not sufficient"
+  },
+  "0299": {
+    "name": "Fault turbocharging regulation",
+    "description": "No enough turbocharging"
+  },
+  "0336": {
+    "name": "Fault-engine speed sensor",
+    "description": "No signal from the engine speed sensor on starting"
+  },
+  "0337": {
+    "name": "Fault-engine speed sensor",
+    "description": "Signal incoherent, too many or not enough teeth seen on one rev"
+  },
+  "0338": {
+    "name": "Fault-engine speed sensor",
+    "description": "Signal incoherent, too many teeth seen on one rev"
+  },
+  "0339": {
+    "name": "Fault-engine speed sensor",
+    "description": "Loss of the detection of the 2 missing teeth, target fault"
+  },
+  "0341": {
+    "name": "Camshaft position sensor fault",
+    "description": "Problem with synchronisation of the camshaft"
+  },
+  "0342": {
+    "name": "Camshaft position sensor fault",
+    "description": "Loss of the camshaft signal"
+  },
+  "0401": {
+    "name": "Fault -  EGR regulation valve",
+    "description": "Air flow measured higher than the setting"
+  },
+  "0402": {
+    "name": "Fault -  EGR regulation valve",
+    "description": "Air flow measured lower than the setting"
+  },
+  "0405": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "Voltage of the EGR valve position repeat signal lower than a threshold"
+  },
+  "0406": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "Voltage of the EGR valve position repeat signal higher than a threshold"
+  },
+  "0409": {
+    "name": "Fault : Electric EGR valve",
+    "description": "Cleaning of the EGR valve in power latch, valve jammed open"
+  },
+  "0470": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Test of the coherence of the particle emission filter differential pressure on starting (Pressure higher than a threshold)"
+  },
+  "0471": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Fault - particle emission filter differential pressure sensor voltage variation outside tolerance"
+  },
+  "0472": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Voltage of the signal from the particle emission filter differential pressure sensor lower than a threshold"
+  },
+  "0473": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Voltage of the signal from the particle emission filter differential pressure sensor higher than a threshold"
+  },
+  "0488": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "EGR valve jammed closed while driving"
+  },
+  "0489": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "EGR valve tends to remain jammed in the open position"
+  },
+  "0490": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "EGR valve tends to remain jammed in the closed position"
+  },
+  "0493": {
+    "name": "Fault-Fan unit",
+    "description": "Fan assembly zero speed not coherent"
+  },
+  "0494": {
+    "name": "Fault-Fan unit",
+    "description": "Fan assembly slow speed not coherent"
+  },
+  "0495": {
+    "name": "Fault-Fan unit",
+    "description": "Lack of coherence of the fan assembly fast speed"
+  },
+  "0500": {
+    "name": "ESP fault",
+    "description": "No vehicle speed signal"
+  },
+  "0504": {
+    "name": "Brake switch fault",
+    "description": "Main brake and secondary brake signals not coherent when the acceleration is valid"
+  },
+  "0513": {
+    "name": "Coded anti-theft device fault",
+    "description": "Coded immobiliser code not valid"
+  },
+  "0532": {
+    "name": "Air conditioning pressure sensor fault",
+    "description": "Voltage of the signal from the air conditioning pressure sensor lower than a threshold"
+  },
+  "0533": {
+    "name": "Air conditioning pressure sensor fault",
+    "description": "Voltage of the signal from the air conditioning pressure sensor higher than a threshold"
+  },
+  "0562": {
+    "name": "Battery voltage fault",
+    "description": "Battery voltage : too low"
+  },
+  "0563": {
+    "name": "Battery voltage fault",
+    "description": "Battery voltage: Voltage high"
+  },
+  "0603": {
+    "name": "Coded anti-theft device fault",
+    "description": "The coded immobiliser code in the memory cannot be read"
+  },
+  "0604": {
+    "name": "Fault inside ECU",
+    "description": "ECU cannot be checked"
+  },
+  "0605": {
+    "name": "Fault inside ECU",
+    "description": "ECU cannot be checked"
+  },
+  "0606": {
+    "name": "Fault inside ECU",
+    "description": "The supply to the injectors cannot be cut"
+  },
+  "0608": {
+    "name": "EEPROM fault",
+    "description": "Rail pressure fault"
+  },
+  "0611": {
+    "name": "Fault - bank of injectors",
+    "description": "Problem with resetting the injector dead time"
+  },
+  "0620": {
+    "name": "Alternator fault",
+    "description": "Malfunction of the circuit, or current too great"
+  },
+  "0658": {
+    "name": "Sensors supply fault 5V n1",
+    "description": "Supply voltage threshold too low on the following sensors: Accelerator pedal, Rail pressure sensor, Camshaft sensor, Engine speed sensor"
+  },
+  "0659": {
+    "name": "Sensors supply fault 5V n1",
+    "description": "Supply voltage threshold too low on the following sensors: Accelerator pedal, Rail pressure sensor, Camshaft sensor, Engine speed sensor"
+  },
+  "065A": {
+    "name": "Alternator fault",
+    "description": "Malfunction"
+  },
+  "0686": {
+    "name": "Secondary relay fault",
+    "description": "Open circuit or short circuit to earth on the secondary relay"
+  },
+  "0687": {
+    "name": "Secondary relay fault",
+    "description": "Short circuit to positive on the secondary relay"
+  },
+  "0691": {
+    "name": "Fault-Fan unit",
+    "description": "Short circuit to earth on the fan assembly fast speed"
+  },
+  "0692": {
+    "name": "Fault-Fan unit",
+    "description": "Open circuit or short circuit to positive on the fan assembly fast speed"
+  },
+  "0693": {
+    "name": "Fault-Fan unit",
+    "description": "Short circuit to earth on the fan assembly slow speed"
+  },
+  "0694": {
+    "name": "Fault-Fan unit",
+    "description": "Open circuit or short circuit to positive on the fan assembly slow speed"
+  },
+  "0704": {
+    "name": "Clutch switch fault",
+    "description": "Clutch switch fault : No detection of pressing of the clutch pedal over a speed range between 0 and 120 km"
+  },
+  "0805": {
+    "name": "Clutch sensor fault",
+    "description": "The frequency of the clutch signal is higher or lower than the threshold"
+  },
+  "0806": {
+    "name": "Clutch sensor fault",
+    "description": "The variation between two increasing acquisitions in succession is either lower or higher than the threshold"
+  },
+  "0807": {
+    "name": "Clutch sensor fault",
+    "description": "Clutch position sensor"
+  },
+  "0808": {
+    "name": "Clutch sensor fault",
+    "description": "Clutch position sensor opening cyclic ratio high threshold"
+  },
+  "0809": {
+    "name": "Clutch switch fault",
+    "description": "Malfunction of the clutch sensor resulting from an absence of movement of the clutch pedal"
+  },
+  "0831": {
+    "name": "Clutch switch fault",
+    "description": "Clutch switch fault : No pressure detection on the clutch pedal over a speed range"
+  },
+  "0A1A": {
+    "name": "Alternator fault",
+    "description": "Alternator communication fault"
+  },
+  "0A3B": {
+    "name": "Alternator fault",
+    "description": "Alternator temperature too high"
+  },
+  "1162": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "EGR valve stuck open during driving"
+  },
+  "1163": {
+    "name": "Fault - bank of injectors",
+    "description": "Problem with resetting the injector dead time"
+  },
+  "1164": {
+    "name": "Fault : Rail pressure sensor",
+    "description": "Slow drift in the rail pressure prior to starting"
+  },
+  "1166": {
+    "name": "Rail pressure regulation fault",
+    "description": "Not characterised"
+  },
+  "11AA": {
+    "name": "Variable geometry turbocharger solenoid valve or turbocharging pressure regulation valve fault",
+    "description": "Variable geometry turbocharger electrovalve connection fault, too much turbocharging"
+  },
+  "11AB": {
+    "name": "Variable geometry turbocharger solenoid valve or turbocharging pressure regulation valve fault",
+    "description": "Variable geometry turbocharger electrovalve connection fault, not enough turbocharging"
+  },
+  "11AC": {
+    "name": "Rail pressure regulation fault",
+    "description": "Control current not plausible  / flow too high"
+  },
+  "11B4": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Engine speed limited on the accelerator pedal"
+  },
+  "1207": {
+    "name": "Rail pressure regulation fault",
+    "description": "On starting, the rail pressure requested is not attained at the end of a timed period"
+  },
+  "1210": {
+    "name": "Fault - High pressure pump actuator",
+    "description": "Open circuit"
+  },
+  "129F": {
+    "name": "Fault -  EGR regulation valve",
+    "description": "EGR value too low"
+  },
+  "12A0": {
+    "name": "Fault -  EGR regulation valve",
+    "description": "EGR value too high"
+  },
+  "12A2": {
+    "name": "Fault - Injector 1",
+    "description": "Injector 1 jammed closed or cylinder problem"
+  },
+  "12A5": {
+    "name": "Fault - Injector 2",
+    "description": "Injector 2 jammed closed or cylinder problem"
+  },
+  "12A8": {
+    "name": "Fault - Injector 3",
+    "description": "Injector 3 jammed closed or cylinder problem"
+  },
+  "12AB": {
+    "name": "Fault - Injector 4",
+    "description": "Injector 4 jammed closed or cylinder problem"
+  },
+  "1349": {
+    "name": "Fault : pre-post heating relay",
+    "description": "Short-circuit to positive or circuit open. Pre-heating glow plug or pre-heating glow plug harness problem"
+  },
+  "1350": {
+    "name": "Fault : pre-post heating relay",
+    "description": "Short circuit to earth. The plugs are supplied permanently"
+  },
+  "1351": {
+    "name": "Fault : pre-post heating relay",
+    "description": "Relay open. The plugs are not supplied permanently"
+  },
+  "1352": {
+    "name": "Fault : pre-post heating relay",
+    "description": "Relay stuck. The plugs are supplied permanently"
+  },
+  "1363": {
+    "name": "Accelerometer sensor fault",
+    "description": "Measurement above the minimum threshold at idle"
+  },
+  "1366": {
+    "name": "Fault - Injector 1",
+    "description": "Past the lower threshold. Injector control compensation outside the tolerance"
+  },
+  "1367": {
+    "name": "Fault - Injector 2",
+    "description": "Past the lower threshold. Injector control compensation outside the tolerance"
+  },
+  "1368": {
+    "name": "Fault - Injector 3",
+    "description": "Past the lower threshold. Injector control compensation outside the tolerance"
+  },
+  "1369": {
+    "name": "Fault - Injector 4",
+    "description": "Past the lower threshold. Injector control compensation outside the tolerance"
+  },
+  "1372": {
+    "name": "Fault - Injector 1",
+    "description": "Past the upper threshold. Injector control compensation outside the tolerance"
+  },
+  "1373": {
+    "name": "Fault - Injector 2",
+    "description": "Past the upper threshold. Injector control compensation outside the tolerance"
+  },
+  "1374": {
+    "name": "Fault - Injector 3",
+    "description": "Past the upper threshold. Injector control compensation outside the tolerance"
+  },
+  "1375": {
+    "name": "Fault - Injector 4",
+    "description": "Past the upper threshold. Injector control compensation outside the tolerance"
+  },
+  "1403": {
+    "name": "Additional heating 1 fault",
+    "description": "1 additional heating : Open circuit / short-circuit to positive / Short circuit to earth"
+  },
+  "1404": {
+    "name": "Additional heating 2 fault",
+    "description": "2 additional heating : Open circuit / short-circuit to positive / Short circuit to earth"
+  },
+  "1412": {
+    "name": "Particle emission filter upstream temperature sensor fault",
+    "description": "Signal inconsistent"
+  },
+  "1433": {
+    "name": "Additive pump fault",
+    "description": "Additive pump fault, or fault in communication between the built-in systems interface and the additive pump"
+  },
+  "1434": {
+    "name": "Fault on the diesel fuel additive pump",
+    "description": "Particle filter additive system. Additive pump: open circuit"
+  },
+  "1435": {
+    "name": "Additive pump fault",
+    "description": "Communications fault between the BSI and the additive pump"
+  },
+  "1443": {
+    "name": "Fault on the diesel fuel additive pump",
+    "description": "Additive system FAP. Additive pump : Short circuit to earth"
+  },
+  "1444": {
+    "name": "Fault on the diesel fuel additive pump",
+    "description": "Additive system FAP. Additive pump : short-circuit to positive"
+  },
+  "1446": {
+    "name": "Fault on the diesel fuel additive pump",
+    "description": "Critical additive level reached"
+  },
+  "1447": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Particle filter clogged"
+  },
+  "1457": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Fault FAP absent"
+  },
+  "1462": {
+    "name": "Faults : Position repeat of the EGR valve",
+    "description": "Slow drift : the last stop programmed is too far from the first stop programmed at the factory. Rapid drift : the last stop programmed is too far from the stop programmed at the previous programming (previous drive)"
+  },
+  "1471": {
+    "name": "Turbocharging air cooler mixer - EGR valve",
+    "description": "Open circuit on the turbocharging air cooler mixer control. Throttle open"
+  },
+  "1490": {
+    "name": "Fault : Particle filter differential pressure sensor",
+    "description": "Particle filter overloaded"
+  },
+  "1500": {
+    "name": "Fault on the selector lever position sensor",
+    "description": "Coherence of the engagement of reverse gear"
+  },
+  "1536": {
+    "name": "Brake switch fault",
+    "description": "The main brake and secondary brake signals are invalid during deceleration or acceleration"
+  },
+  "1585": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "5V supply fault, track 1 / 5V supply fault, track 2"
+  },
+  "15B3": {
+    "name": "Fault on the diesel fuel additive pump",
+    "description": "Minimum level of additive reached"
+  },
+  "1600": {
+    "name": "Fault inside ECU",
+    "description": "Injector class values not coherent"
+  },
+  "1607": {
+    "name": "Vehicle speed limiter fault",
+    "description": "Speed limiter information not valid"
+  },
+  "160A": {
+    "name": "EEPROM fault",
+    "description": "Approval n configuration fault"
+  },
+  "1612": {
+    "name": "Coded anti-theft device fault",
+    "description": "Matching of the coded immobiliser incorrect"
+  },
+  "1613": {
+    "name": "EEPROM fault",
+    "description": "Fault in configuration of the vehicle functions"
+  },
+  "1621": {
+    "name": "Fault inside ECU",
+    "description": "Not characterised"
+  },
+  "1671": {
+    "name": "Faulty cruise control",
+    "description": "Cruise control information incorrect"
+  },
+  "1694": {
+    "name": "Controlled engine starting and switch-off fault",
+    "description": "Fault on the starter motor control line"
+  },
+  "1695": {
+    "name": "Controlled engine starting and switch-off fault",
+    "description": "Starter seized"
+  },
+  "1696": {
+    "name": "Controlled engine start and stop",
+    "description": "Fault signalling simultaneous requests for starting and for switching off the engine"
+  },
+  "16B1": {
+    "name": "Controlled air inlet module fault",
+    "description": "Piloted flaps jammed closed or in an intermediate position"
+  },
+  "16B2": {
+    "name": "Controlled air inlet module fault",
+    "description": "Piloted flaps jammed open"
+  },
+  "2031": {
+    "name": "Particle emission filter upstream temperature sensor fault",
+    "description": "Particulate filter upstream temperature sensor voltage. Temperature not plausible"
+  },
+  "2032": {
+    "name": "Particle emission filter upstream temperature sensor fault",
+    "description": "Voltage of the particle emission filter upstream temperature sensor higher than a threshold"
+  },
+  "2033": {
+    "name": "Particle emission filter upstream temperature sensor fault",
+    "description": "Voltage of the particle filter upstream temperature sensor lower than a threshold"
+  },
+  "2084": {
+    "name": "Particle emission filter upstream temperature sensor fault",
+    "description": "Variation fault"
+  },
+  "2131": {
+    "name": "Fault : Tight spot switch for the accelerator pedal",
+    "description": "Accelerator sensor signal not valid"
+  },
+  "2132": {
+    "name": "Fault : Tight spot switch for the accelerator pedal",
+    "description": "Voltage below the lower threshold"
+  },
+  "2133": {
+    "name": "Fault : Tight spot switch for the accelerator pedal",
+    "description": "Voltage above the upper threshold"
+  },
+  "2137": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Ratio between track 1 and track 2 incorrect"
+  },
+  "2140": {
+    "name": "Fault : Tight spot switch for the accelerator pedal",
+    "description": "Lack of coherence with the pedal position transmitted by the pedal sensor"
+  },
+  "2141": {
+    "name": "Turbocharging air cooler mixer - EGR valve",
+    "description": "Short circuit to earth on the turbocharging air cooler mixer control. Air mixer closed"
+  },
+  "2142": {
+    "name": "Turbocharging air cooler mixer - EGR valve",
+    "description": "Short circuit to positive on turbocharging air cooler mixer control. Air mixer open"
+  },
+  "2143": {
+    "name": "EGR valve faultElectrical",
+    "description": "Open circuit on the EGR valve supply control. Valve physically closed"
+  },
+  "2144": {
+    "name": "EGR valve faultElectrical",
+    "description": "Short circuit to earth on the EGR valve supply control. Valve physically closed"
+  },
+  "2145": {
+    "name": "EGR valve faultElectrical",
+    "description": "Open circuit on the EGR valve supply control. Valve physically closed"
+  },
+  "2147": {
+    "name": "Fault - bank of injectors",
+    "description": "Injector voltage below the threshold"
+  },
+  "2148": {
+    "name": "Fault - bank of injectors",
+    "description": "Injector voltage above the threshold"
+  },
+  "2265": {
+    "name": "Fault on the water in diesel sensor",
+    "description": "Information from the CAN \"Water in the diesel fuel\""
+  },
+  "2299": {
+    "name": "Fault-accelerator pedal sensor",
+    "description": "Accelerator pedal blocked"
+  },
+  "250B": {
+    "name": "Oil level sensor fault",
+    "description": "Variation in the voltage of the oil level sensor lower or higher than a threshold"
+  },
+  "250C": {
+    "name": "Oil level sensor fault",
+    "description": "Injector voltage below the threshold"
+  },
+  "250D": {
+    "name": "Oil level sensor fault",
+    "description": "Injector voltage above the threshold"
+  },
+  "2562": {
+    "name": "Fault : Variable geometry turbocharger position repeat",
+    "description": "No enough turbocharging"
+  },
+  "2563": {
+    "name": "Fault : Variable geometry turbocharger position repeat",
+    "description": "Turbocharging too great"
+  },
+  "2564": {
+    "name": "Fault : Variable geometry turbocharger position repeat",
+    "description": "Voltage of the signal lower than a threshold"
+  },
+  "2565": {
+    "name": "Fault : Variable geometry turbocharger position repeat",
+    "description": "Voltage of the signal higher than a threshold"
+  },
+  "2566": {
+    "name": "Fault : Variable geometry turbocharger position repeat",
+    "description": "Programming of the upper stop outside tolerance"
+  },
+  "2670": {
+    "name": "Sensors supply fault 5V n2",
+    "description": "Supply voltage threshold too low on the following sensors: Capteur pression suralimentation, Air flow sensor, Particle emission filter pressure sensor, Capteur recopie position turbo, EGR position repeat sensor, Air conditioning sensor"
+  },
+  "2671": {
+    "name": "Sensors supply fault 5V n2",
+    "description": "Supply voltage threshold too low on the following sensors: Capteur pression suralimentation, Air flow sensor, Particle emission filter pressure sensor, Capteur recopie position turbo, EGR position repeat sensor, Air conditioning sensor"
+  },
+  "3007": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Air flow too weak relative to the flow calculated. Problem of leak after the air flow sensor, or air flow sensor clogged"
+  },
+  "3008": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Air flow too low compared with the calculated flow. Air flow sensor problem"
+  },
+  "3026": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Air flow too low compared with the calculated flow. This detection threshold is a performance threshold"
+  },
+  "3027": {
+    "name": "Fault : air flowmeter signal",
+    "description": "Air flow too weak relative to the flow calculated. This detection threshold is a performance threshold"
+  },
+  "C019": {
+    "name": "Fault on intersystems CAN network",
+    "description": "CAN :Fault on the engine fuse box or on the network connecting it to the built-in systems interface"
+  },
+  "C028": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Malfunction of the instrument panel or of the Comfort VAN, no lighting of the MIL warning lamp"
+  },
+  "C055": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Loss of communication between the BSI and the instrument panel"
+  },
+  "C122": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Loss of communication with the ABS/ESP module"
+  },
+  "C167": {
+    "name": "Coded anti-theft device fault",
+    "description": "Absence of response from the BSI"
+  },
+  "C416": {
+    "name": "ESP fault",
+    "description": "ESP requests not coherent"
+  },
+  "D000": {
+    "name": "Fault on intersystems CAN network",
+    "description": "CAN not communicating fault"
+  },
+  "D003": {
+    "name": "Fault on intersystems CAN network",
+    "description": "CAN at Bus off"
+  },
+  "D105": {
+    "name": "Fault on intersystems CAN network",
+    "description": "No communication with the steering wheel angle control unit"
+  },
+  "D113": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Absence of communication with the ESP and the BSI"
+  },
+  "D118": {
+    "name": "Fault on intersystems CAN network",
+    "description": "No communication with the built-in systems interface"
+  },
+  "D205": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Invalid value on the steering wheel angle control unit"
+  },
+  "D213": {
+    "name": "Fault on intersystems CAN network",
+    "description": "One of the parameters present in a datastream sent by the ABS/ESP is invalid"
+  },
+  "D218": {
+    "name": "Fault on intersystems CAN network",
+    "description": "No communication with the built-in systems interface"
+  },
+  "D305": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Steering wheel angle control unit dataframe prohibited value or length error"
+  },
+  "D313": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Error in length or prohibited value on the ABS/ESP datastream"
+  },
+  "D318": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Error in length or prohibited value on the BSI datastream"
+  },
+  "D400": {
+    "name": "Alternator LIN network fault",
+    "description": "Registering of a fault on the LIN network"
+  },
+  "D401": {
+    "name": "Alternator LIN network fault",
+    "description": "Registering of a fault on the slave node of the alternator LIN network"
+  },
+  "E000": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Request for principal wake-up of the ECU not plausible or absent"
+  },
+  "E003": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Request for ECU wake-up (wire signal) inconsistent with the CAN data"
+  },
+  "E118": {
+    "name": "Fault on intersystems CAN network",
+    "description": "Request for partial wake-up of the ECU not plausible or absent"
+  }
+}

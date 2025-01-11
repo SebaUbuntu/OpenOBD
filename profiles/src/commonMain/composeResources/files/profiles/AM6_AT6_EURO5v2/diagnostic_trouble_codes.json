@@ -1,0 +1,458 @@
+{
+  "0115": {
+    "name": "Defective coolant temperature signal",
+    "description": "Incorrect value received"
+  },
+  "0218": {
+    "name": "Oil temperature alert fault",
+    "description": "Lighting of the warning light (Thermal protection pattern 3 : Request for engine torque reduction by the gearbox)"
+  },
+  "0298": {
+    "name": "Oil wear counter fault",
+    "description": "Value at maximum"
+  },
+  "0562": {
+    "name": "ECU supply voltage fault",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "ECU supply voltage fault",
+    "description": "Voltage too high"
+  },
+  "0601": {
+    "name": "ECU fault",
+    "description": "Processor"
+  },
+  "0602": {
+    "name": "Telecharging fault",
+    "description": "Not characterised"
+  },
+  "0603": {
+    "name": "ECU fault",
+    "description": "EEPROM"
+  },
+  "0604": {
+    "name": "ECU fault",
+    "description": "RAM"
+  },
+  "0605": {
+    "name": "ECU fault",
+    "description": "Flash ROM"
+  },
+  "0715": {
+    "name": "Fault on the circuit of the gearbox input speed sensor",
+    "description": "Incorrect value received"
+  },
+  "0717": {
+    "name": "Fault on the circuit of the gearbox input speed sensor",
+    "description": "No signal"
+  },
+  "0720": {
+    "name": "Fault on the circuit of the gearbox output speed sensor",
+    "description": "Incorrect value received"
+  },
+  "0722": {
+    "name": "Fault on the circuit of the gearbox output speed sensor",
+    "description": "No signal"
+  },
+  "0727": {
+    "name": "Engine speed signal fault",
+    "description": "Incorrect value received"
+  },
+  "0729": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 6"
+  },
+  "0731": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 1"
+  },
+  "0732": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 2"
+  },
+  "0733": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 3"
+  },
+  "0734": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 4"
+  },
+  "0735": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 5"
+  },
+  "0736": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear R"
+  },
+  "0741": {
+    "name": "Fault: converter lock-up impossible",
+    "description": "Not characterised"
+  },
+  "0742": {
+    "name": "Converter permanently locked up fault",
+    "description": "Not characterised"
+  },
+  "0751": {
+    "name": "Mechanical or hydraulic fault on the engine brake function in the first sequential mode",
+    "description": "Coherence"
+  },
+  "0752": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 1"
+  },
+  "0756": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 2"
+  },
+  "0761": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 3"
+  },
+  "0765": {
+    "name": "Reduction of drag in mode D general fault",
+    "description": "Not characterised"
+  },
+  "0766": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 4"
+  },
+  "0771": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 5"
+  },
+  "0772": {
+    "name": "Fault in engaging clutch C1 for reduction of drag in mode D",
+    "description": "Not characterised"
+  },
+  "0780": {
+    "name": "Random gear change fault",
+    "description": "Locking"
+  },
+  "0819": {
+    "name": "One-touch control signal fault",
+    "description": "Change of position impossible"
+  },
+  "0826": {
+    "name": "One-touch control signal fault",
+    "description": "Locking in position M+ or M-"
+  },
+  "0882": {
+    "name": "Fault in the gearbox supply voltage",
+    "description": "Voltage too low"
+  },
+  "0883": {
+    "name": "Fault in the gearbox supply voltage",
+    "description": "Voltage too high"
+  },
+  "0928": {
+    "name": "Fault on the lever locking actuator circuit (shift-lock)",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0931": {
+    "name": "Fault on the lever locking actuator circuit (shift-lock)",
+    "description": "Short circuit to positive"
+  },
+  "0938": {
+    "name": "Oil thermistor fault",
+    "description": "Locking"
+  },
+  "0939": {
+    "name": "Oil thermistor fault",
+    "description": "Short circuit to earth"
+  },
+  "0940": {
+    "name": "Oil thermistor fault",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0961": {
+    "name": "Fault on the circuit of the line pressure modulation electrovalve (SLT)",
+    "description": "Locking"
+  },
+  "0962": {
+    "name": "Fault on the circuit of the line pressure modulation electrovalve (SLT)",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0963": {
+    "name": "Fault on the circuit of the line pressure modulation electrovalve (SLT)",
+    "description": "Short circuit to positive"
+  },
+  "0965": {
+    "name": "Fault on the control circuit of the brake pressure modulation electrovalve (SLB1)",
+    "description": "Locking"
+  },
+  "0966": {
+    "name": "Fault on the control circuit of the brake pressure modulation electrovalve (SLB1)",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0967": {
+    "name": "Fault on the control circuit of the brake pressure modulation electrovalve (SLB1)",
+    "description": "Short circuit to positive"
+  },
+  "0969": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C1",
+    "description": "Locking"
+  },
+  "0970": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C1",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0971": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C1",
+    "description": "Short circuit to positive"
+  },
+  "0973": {
+    "name": "Fault on the circuit of the sequence electrovalve 1",
+    "description": "Short circuit to earth"
+  },
+  "0974": {
+    "name": "Fault on the circuit of the sequence electrovalve 1",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0976": {
+    "name": "Fault on the circuit of the sequence electrovalve 2",
+    "description": "Short circuit to earth"
+  },
+  "0977": {
+    "name": "Fault on the circuit of the sequence electrovalve 2",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "1213": {
+    "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU",
+    "description": "Incorrect value received"
+  },
+  "1605": {
+    "name": "Engine torque required by the driver information not received by the CAN fault (Engine ECU)",
+    "description": "Incorrect value received"
+  },
+  "160A": {
+    "name": "ECU identification fault",
+    "description": "Not characterised"
+  },
+  "160E": {
+    "name": "Fault: cutting of supply during the power latch",
+    "description": "Not characterised"
+  },
+  "1613": {
+    "name": "Configuration fault",
+    "description": "Not characterised"
+  },
+  "1703": {
+    "name": "Fault on the accelerator pedal position information not received by the CAN (Engine ECU)",
+    "description": "Incorrect value received"
+  },
+  "1727": {
+    "name": "Fault on the actual engine torque information not received by the CAN (Engine ECU)",
+    "description": "Incorrect value received"
+  },
+  "1732": {
+    "name": "Fault on the gear lever position sensor",
+    "description": "No signal"
+  },
+  "1733": {
+    "name": "Fault on the gear lever position sensor",
+    "description": "Incorrect value received"
+  },
+  "1737": {
+    "name": "Fault on the gear lever position sensor",
+    "description": "Locking"
+  },
+  "1771": {
+    "name": "Fault with the drive reduction motor in mode D",
+    "description": "Engine racing"
+  },
+  "17A0": {
+    "name": "Fault on the key locking control circuit (key lock)",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "17A1": {
+    "name": "Fault on the key locking control circuit (key lock)",
+    "description": "Short circuit to earth"
+  },
+  "17A2": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear R"
+  },
+  "17A3": {
+    "name": "Fault with the drive reduction in mode R",
+    "description": "No signal"
+  },
+  "17A5": {
+    "name": "Mechanical or hydraulic gearbox fault on first gear with engine braking",
+    "description": "Coherence"
+  },
+  "17A9": {
+    "name": "Fault with the drive reduction in mode D",
+    "description": "Not characterised"
+  },
+  "17AA": {
+    "name": "Fault with the drive reduction motor in mode D",
+    "description": "Engine racing"
+  },
+  "1800": {
+    "name": "Fault: initialisation of position N",
+    "description": "Not characterised"
+  },
+  "1828": {
+    "name": "Fault on the starting inhibiting control output (Start-lock)",
+    "description": "Short circuit to positive"
+  },
+  "1829": {
+    "name": "Fault on the starting inhibiting control output (Start-lock)",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "1830": {
+    "name": "Fault on the front wheels speed information not received by the CAN (Anti-lock braking system ECU)",
+    "description": "Incorrect value received"
+  },
+  "1838": {
+    "name": "Mechanical or hydraulic fault on the engine brake function in the first sequential mode",
+    "description": "Coherence"
+  },
+  "1839": {
+    "name": "Reduction of drag in mode D activation fault",
+    "description": "Not characterised"
+  },
+  "2707": {
+    "name": "Gearbox hydraulic or mechanical fault",
+    "description": "Coherence on gear 6"
+  },
+  "2719": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C2",
+    "description": "Locking"
+  },
+  "2720": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C2",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2721": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C2",
+    "description": "Short circuit to positive"
+  },
+  "2728": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C3",
+    "description": "Locking"
+  },
+  "2729": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C3",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2730": {
+    "name": "Fault on the control circuit of the clutch pressure modulation electrovalve C3",
+    "description": "Short circuit to positive"
+  },
+  "2762": {
+    "name": "Fault on the control circuit of the torque converter lock-up pressure modulation electrovalve (SLU)",
+    "description": "Locking"
+  },
+  "2763": {
+    "name": "Fault on the control circuit of the torque converter lock-up pressure modulation electrovalve (SLU)",
+    "description": "Short circuit to positive"
+  },
+  "2764": {
+    "name": "Fault on the control circuit of the torque converter lock-up pressure modulation electrovalve (SLU)",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2775": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Coherence"
+  },
+  "2776": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Short circuit to earth"
+  },
+  "2777": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "2779": {
+    "name": "Fault in the sequential signal - or the sensor",
+    "description": "Coherence"
+  },
+  "2780": {
+    "name": "Fault in the sequential signal - or the sensor",
+    "description": "Short circuit to earth"
+  },
+  "2781": {
+    "name": "Fault in the sequential signal - or the sensor",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "5325": {
+    "name": "Fault in communication with the ABS ECU",
+    "description": "Absence of signal with the rear LH wheel"
+  },
+  "5335": {
+    "name": "Fault in communication with the ABS ECU",
+    "description": "Absence of signal with the rear RH wheel"
+  },
+  "D000": {
+    "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network",
+    "description": "No signal"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN network",
+    "description": "No signal"
+  },
+  "D105": {
+    "name": "Fault in communication on the CAN network with the steering wheel angle sensor",
+    "description": "No signal"
+  },
+  "D108": {
+    "name": "Fault in communication on the CAN with the engine management ECU",
+    "description": "No signal"
+  },
+  "D110": {
+    "name": "Fault in communication with the gearbox electrical control ECU",
+    "description": "No signal"
+  },
+  "D113": {
+    "name": "Fault in communication on the CAN with the ESP ECU",
+    "description": "No signal"
+  },
+  "D118": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "No signal"
+  },
+  "D205": {
+    "name": "Signal error transmitted by the steering wheel angle sensor over the CAN network",
+    "description": "Incorrect value received"
+  },
+  "D208": {
+    "name": "Signal error transmitted by the engine management ECU over the CAN network",
+    "description": "Incorrect value received"
+  },
+  "D213": {
+    "name": "Fault information transmitted by the dynamic stability control (ESP) ECU",
+    "description": "Incorrect value received"
+  },
+  "D218": {
+    "name": "Fault in the outside air temperature received on the CAN network",
+    "description": "Engine ECU)"
+  },
+  "D308": {
+    "name": "Fault in the gearbox electrical control on the CAN network",
+    "description": "Incorrect value received"
+  },
+  "D310": {
+    "name": "Fault in the gearbox electrical control on the CAN network",
+    "description": "Incorrect value received"
+  },
+  "D313": {
+    "name": "Fault in the gearbox electrical control on the CAN network",
+    "description": "Incorrect value received"
+  },
+  "D318": {
+    "name": "Fault in the gearbox electrical control on the CAN network",
+    "description": "Incorrect value received"
+  },
+  "E000": {
+    "name": "Fault in synchronisation of the main controlled reawakening request received by the CAN (BSI ECU) and the controlled reawakening control by wire",
+    "description": "Incorrect value received"
+  },
+  "E003": {
+    "name": "Coherence fault between the status of the vehicle and the main controlled triggering request received by the CAN",
+    "description": "Coherence"
+  }
+}

@@ -1,0 +1,762 @@
+{
+  "0010": {
+    "name": "Variable timing electrovalve",
+    "description": "Problem"
+  },
+  "0011": {
+    "name": "Variable timing electrovalve",
+    "description": "Locked at the upper stop"
+  },
+  "0012": {
+    "name": "Variable timing electrovalve",
+    "description": "Locked at the lower stop"
+  },
+  "0075": {
+    "name": "Variable timing electrovalve",
+    "description": "Problem"
+  },
+  "0076": {
+    "name": "Variable timing electrovalve",
+    "description": "Short circuit to negative"
+  },
+  "0077": {
+    "name": "Variable timing electrovalve",
+    "description": "Short circuit to positive"
+  },
+  "0106": {
+    "name": "Intake manifold pressure sensor signal",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Intake manifold pressure sensor signal",
+    "description": "Short circuit to negative"
+  },
+  "0108": {
+    "name": "Intake manifold pressure sensor signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0111": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Problem"
+  },
+  "0112": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Short circuit to negative"
+  },
+  "0113": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0115": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Not characterised"
+  },
+  "0116": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short circuit to negative"
+  },
+  "0118": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0120": {
+    "name": "Motorised throttle signal 1",
+    "description": "Not characterised"
+  },
+  "0121": {
+    "name": "Incoherence between motorised throttle signals 1 and 2",
+    "description": "Not characterised"
+  },
+  "0122": {
+    "name": "Motorised throttle signal 1",
+    "description": "Short circuit to negative"
+  },
+  "0123": {
+    "name": "Motorised throttle signal 1",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0130": {
+    "name": "Richness regulation",
+    "description": "Problem"
+  },
+  "0131": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Short circuit to negative or open circuit"
+  },
+  "0132": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0133": {
+    "name": "Richness regulation",
+    "description": "Problem"
+  },
+  "0135": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0136": {
+    "name": "Downstream oxygen sensor",
+    "description": "Not characterised"
+  },
+  "0137": {
+    "name": "Downstream oxygen sensor",
+    "description": "Short circuit to negative or open circuit"
+  },
+  "0138": {
+    "name": "Downstream oxygen sensor",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0139": {
+    "name": "Downstream oxygen sensor",
+    "description": "Coherence"
+  },
+  "0140": {
+    "name": "Downstream oxygen sensor",
+    "description": "Problem"
+  },
+  "0141": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0170": {
+    "name": "Richness regulation",
+    "description": "Coherence"
+  },
+  "0171": {
+    "name": "Richness regulation",
+    "description": "Lower limit"
+  },
+  "0172": {
+    "name": "Richness regulation",
+    "description": "Maximum value"
+  },
+  "0201": {
+    "name": "Injector No 1 control",
+    "description": "Open circuit"
+  },
+  "0202": {
+    "name": "Injector No 2 control",
+    "description": "Open circuit"
+  },
+  "0203": {
+    "name": "Injector No 3 control",
+    "description": "Open circuit"
+  },
+  "0204": {
+    "name": "Injector control 4",
+    "description": "Open circuit"
+  },
+  "0215": {
+    "name": "Engine ECU supply",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0220": {
+    "name": "Pedal sensor ,Signal 1",
+    "description": "Signal"
+  },
+  "0221": {
+    "name": "Pedal sensor inconsistency, signals 1 and 2",
+    "description": "Not characterised"
+  },
+  "0222": {
+    "name": "Pedal sensor ,Signal 1",
+    "description": "Short circuit to negative"
+  },
+  "0223": {
+    "name": "Pedal sensor ,Signal 1",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0224": {
+    "name": "Hill start assist (easy move)",
+    "description": "Lack of coherence of the accelerator pedal position during braking"
+  },
+  "0225": {
+    "name": "Pedal sensor ,Signal 2",
+    "description": "Not characterised"
+  },
+  "0227": {
+    "name": "Pedal sensor ,Signal 2",
+    "description": "Short circuit to negative"
+  },
+  "0228": {
+    "name": "Pedal sensor ,Signal 2",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0261": {
+    "name": "Injector No 1 control",
+    "description": "Short circuit to negative"
+  },
+  "0262": {
+    "name": "Injector No 1 control",
+    "description": "Short circuit to positive"
+  },
+  "0264": {
+    "name": "Injector No 2 control",
+    "description": "Short circuit to negative"
+  },
+  "0265": {
+    "name": "Injector No 2 control",
+    "description": "Short circuit to positive"
+  },
+  "0267": {
+    "name": "Injector No 3 control",
+    "description": "Short circuit to negative"
+  },
+  "0268": {
+    "name": "Injector No 3 control",
+    "description": "Short circuit to positive"
+  },
+  "0270": {
+    "name": "Injector control 4",
+    "description": "Short circuit to negative"
+  },
+  "0271": {
+    "name": "Injector control 4",
+    "description": "Short circuit to positive"
+  },
+  "0300": {
+    "name": "Misfiring on several cylinders or undetermined cylinder",
+    "description": "Not characterised"
+  },
+  "0301": {
+    "name": "Misfiring on cylinder 1",
+    "description": "Not characterised"
+  },
+  "0302": {
+    "name": "Misfiring on cylinder 2",
+    "description": "Not characterised"
+  },
+  "0303": {
+    "name": "Misfiring on cylinder 3",
+    "description": "Not characterised"
+  },
+  "0304": {
+    "name": "Misfiring on cylinder 4",
+    "description": "Not characterised"
+  },
+  "0325": {
+    "name": "Pinking sensor signal",
+    "description": "Not characterised"
+  },
+  "0326": {
+    "name": "Pinking sensor signal",
+    "description": "Open circuit"
+  },
+  "0327": {
+    "name": "Pinking sensor signal",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0329": {
+    "name": "Pinking sensor signal",
+    "description": "Problem"
+  },
+  "0335": {
+    "name": "Engine speed sensor signal",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0336": {
+    "name": "Engine speed sensor signal",
+    "description": "Not characterised"
+  },
+  "0337": {
+    "name": "Engine speed sensor signal",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0338": {
+    "name": "Engine speed sensor signal",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0339": {
+    "name": "Engine speed sensor signal",
+    "description": "Loss of synchronisation"
+  },
+  "0341": {
+    "name": "Cylinder reference sensor 1",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0350": {
+    "name": "Ignition coils control",
+    "description": "Problem"
+  },
+  "0351": {
+    "name": "1 ignition coil control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0352": {
+    "name": "2 ignition coil control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0353": {
+    "name": "3 ignition coil control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0354": {
+    "name": "4 ignition coil control",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0400": {
+    "name": "Exhaust gas recycling (EGR)",
+    "description": "Problem"
+  },
+  "0401": {
+    "name": "Exhaust gas recycling (EGR)",
+    "description": "Insufficient recycling"
+  },
+  "0402": {
+    "name": "Exhaust gas recycling (EGR)",
+    "description": "Excessive recycling"
+  },
+  "0403": {
+    "name": "Position of EGR solenoid valve",
+    "description": "Coherence"
+  },
+  "0404": {
+    "name": "EGR valve  learning",
+    "description": "Jammed open"
+  },
+  "0405": {
+    "name": "Position of EGR solenoid valve",
+    "description": "Short circuit to negative"
+  },
+  "0406": {
+    "name": "Position of EGR solenoid valve",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0410": {
+    "name": "Injection of air to the exhaust",
+    "description": "Problem"
+  },
+  "0412": {
+    "name": "Air pump relay control",
+    "description": "Not characterised"
+  },
+  "0413": {
+    "name": "Air pump relay control",
+    "description": "Open circuit"
+  },
+  "0414": {
+    "name": "Air pump relay control",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0420": {
+    "name": "Catalytic converter ageing",
+    "description": "Loss of efficiency"
+  },
+  "0440": {
+    "name": "Fuel vapours recirculation",
+    "description": "Problem"
+  },
+  "0443": {
+    "name": "Canister purge electrovalve",
+    "description": "Not characterised"
+  },
+  "0444": {
+    "name": "Canister purge electrovalve",
+    "description": "Open circuit"
+  },
+  "0445": {
+    "name": "Canister purge electrovalve",
+    "description": "Short circuit to positive or short circuit to negative"
+  },
+  "0462": {
+    "name": "Fuel gauge",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0463": {
+    "name": "Fuel gauge",
+    "description": "Short circuit to negative"
+  },
+  "0480": {
+    "name": "Fan assembly (GMV1) relay control chopper",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0481": {
+    "name": "Fan unit relay control (fan 2) low speed",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0483": {
+    "name": "Status of the fan assembly",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0485": {
+    "name": "Status of the fan assembly",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "0500": {
+    "name": "Wheel speed information received from the ABS/ESP fault",
+    "description": "Value invalid"
+  },
+  "0502": {
+    "name": "Vehicle speed sensor signal",
+    "description": "Short circuit to negative"
+  },
+  "0503": {
+    "name": "Vehicle speed sensor signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0532": {
+    "name": "Air conditioning pressure",
+    "description": "Short circuit to negative or open circuit"
+  },
+  "0533": {
+    "name": "Air conditioning pressure",
+    "description": "Short circuit to positive"
+  },
+  "0551": {
+    "name": "Power steering stop information",
+    "description": "Open circuit"
+  },
+  "0553": {
+    "name": "Power steering stop information",
+    "description": "Short circuit to positive"
+  },
+  "0562": {
+    "name": "Battery voltage",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "Battery voltage",
+    "description": "Voltage too high"
+  },
+  "0568": {
+    "name": "Speed regulation switch information",
+    "description": "Problem"
+  },
+  "0571": {
+    "name": "Incoherence between 2 stop switches",
+    "description": "Coherence"
+  },
+  "0597": {
+    "name": "Thermostat controlled",
+    "description": "Open circuit"
+  },
+  "0598": {
+    "name": "Thermostat controlled",
+    "description": "Short circuit to negative"
+  },
+  "0599": {
+    "name": "Thermostat controlled",
+    "description": "Short circuit to positive"
+  },
+  "0601": {
+    "name": "Control unit",
+    "description": "Not characterised"
+  },
+  "0608": {
+    "name": "Throttle sensor supply",
+    "description": "Short circuit to positive or short circuit to negative"
+  },
+  "0609": {
+    "name": "Supplies for the inlet air pressure, cylinder reference, air conditioning pressure and accelerator pedal sensors",
+    "description": "Short circuit to positive or short circuit to negative"
+  },
+  "0704": {
+    "name": "Clutch switch signal",
+    "description": "Problem"
+  },
+  "1134": {
+    "name": "Incoherence between butterfly position and 2 wire/pressure",
+    "description": "Coherence"
+  },
+  "1148": {
+    "name": "Variable timing electrovalve",
+    "description": "Problem"
+  },
+  "1149": {
+    "name": "Variable timing electrovalve",
+    "description": "Short circuit to positive or short circuit to negative"
+  },
+  "1150": {
+    "name": "Motorised throttle  control",
+    "description": "Problem"
+  },
+  "1151": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to positive"
+  },
+  "1153": {
+    "name": "Throttle stop learning",
+    "description": "Problem"
+  },
+  "1154": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to negative"
+  },
+  "1155": {
+    "name": "Motorised throttle  control",
+    "description": "Not characterised"
+  },
+  "1156": {
+    "name": "Motorised throttle signal 2",
+    "description": "Not characterised"
+  },
+  "1157": {
+    "name": "Motorised throttle signal 2",
+    "description": "Short circuit to negative"
+  },
+  "1158": {
+    "name": "Motorised throttle signal 2",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "1160": {
+    "name": "Incoherence between butterfly position and 1 wire/pressure",
+    "description": "Coherence"
+  },
+  "1161": {
+    "name": "Throttle position captor, check",
+    "description": "Coherence"
+  },
+  "1290": {
+    "name": "Air intake solenoid valve",
+    "description": "Problem"
+  },
+  "1292": {
+    "name": "Air intake solenoid valve",
+    "description": "Short circuit to negative"
+  },
+  "1293": {
+    "name": "Air intake solenoid valve",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "1336": {
+    "name": "Significant combustion misfiring on several cylinders or on an unspecified cylinder",
+    "description": "Not characterised"
+  },
+  "1454": {
+    "name": "EGR solenoid valve control",
+    "description": "Short circuit to positive"
+  },
+  "1455": {
+    "name": "EGR solenoid valve control",
+    "description": "Short circuit to negative"
+  },
+  "1456": {
+    "name": "EGR valve  learning",
+    "description": "Jammed closed"
+  },
+  "1461": {
+    "name": "EGR valve  learning",
+    "description": "Jammed closed"
+  },
+  "1462": {
+    "name": "EGR valve  learning",
+    "description": "Jammed open"
+  },
+  "1601": {
+    "name": "Fuel pump control power relay",
+    "description": "Short circuit to negative or short circuit to positive or open circuit"
+  },
+  "1612": {
+    "name": "Generation 2 coded anti-start",
+    "description": "Failure writing the immobiliser code"
+  },
+  "1614": {
+    "name": "Vehicle speed limiter switch",
+    "description": "Coherence"
+  },
+  "1617": {
+    "name": "Inside engine management ECU",
+    "description": "Not characterised"
+  },
+  "1621": {
+    "name": "System  anomaly",
+    "description": "Safety"
+  },
+  "1622": {
+    "name": "Incoherence between the throttle angle and inlet pressure information",
+    "description": "Safety"
+  },
+  "1623": {
+    "name": "Engine torque given",
+    "description": "Safety"
+  },
+  "1624": {
+    "name": "Incorrect ESP request",
+    "description": "Safety"
+  },
+  "1625": {
+    "name": "Incorrect ESP request",
+    "description": "Safety"
+  },
+  "1626": {
+    "name": "Incoherent information linked to the automatic gearbox",
+    "description": "Safety"
+  },
+  "1627": {
+    "name": "Non-observance of the torque required by the driver",
+    "description": "Safety"
+  },
+  "1628": {
+    "name": "Information from the accelerator pedal or brake switch  incoherent",
+    "description": "Safety"
+  },
+  "1629": {
+    "name": "Incoherence between estimated and actual mechanical friction",
+    "description": "Safety"
+  },
+  "1630": {
+    "name": "Request for cruise control incoherent",
+    "description": "Safety"
+  },
+  "1631": {
+    "name": "Inside engine management ECU",
+    "description": "Not characterised"
+  },
+  "1643": {
+    "name": "Vehicle speed limiter switch",
+    "description": "Short circuit to negative"
+  },
+  "1644": {
+    "name": "Vehicle speed limiter switch",
+    "description": "Short circuit to positive"
+  },
+  "1645": {
+    "name": "Vehicle speed limiter switch",
+    "description": "Open circuit"
+  },
+  "1655": {
+    "name": "Information with the engine running",
+    "description": "Short circuit to positive"
+  },
+  "1656": {
+    "name": "Information with the engine running",
+    "description": "Short circuit to negative"
+  },
+  "1657": {
+    "name": "Information with the engine running",
+    "description": "Open circuit"
+  },
+  "1675": {
+    "name": "Controlled alternator electrics",
+    "description": "Not characterised"
+  },
+  "1693": {
+    "name": "Controlled engine starting and stopping anomaly",
+    "description": "Not characterised"
+  },
+  "1694": {
+    "name": "Controlled engine starting and stopping anomaly",
+    "description": "Anomaly-Starter"
+  },
+  "1695": {
+    "name": "Controlled engine starting and stopping anomaly",
+    "description": "Engine blocked"
+  },
+  "2100": {
+    "name": "Motorised throttle  control",
+    "description": "Problem"
+  },
+  "2101": {
+    "name": "Motorised throttle  control",
+    "description": "Not characterised"
+  },
+  "2102": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to negative"
+  },
+  "2103": {
+    "name": "Motorised throttle  control",
+    "description": "Short circuit to positive"
+  },
+  "2144": {
+    "name": "EGR solenoid valve control",
+    "description": "Short circuit to negative"
+  },
+  "2145": {
+    "name": "EGR solenoid valve control",
+    "description": "Short circuit to positive"
+  },
+  "2299": {
+    "name": "Accelerator pedal jammed detection",
+    "description": "Problem"
+  },
+  "250B": {
+    "name": "Electric oil gauge",
+    "description": "Coherence"
+  },
+  "250C": {
+    "name": "Electric oil gauge",
+    "description": "Voltage too low"
+  },
+  "250D": {
+    "name": "Electric oil gauge",
+    "description": "Voltage too high"
+  },
+  "C019": {
+    "name": "Failure of the LS CAN",
+    "description": "Not characterised"
+  },
+  "C103": {
+    "name": "Dialogue with the  automatic gearbox ECU",
+    "description": "No communication with the automatic gearbox"
+  },
+  "C121": {
+    "name": "Dialogue with the ABS or the ESP",
+    "description": "No communication with ABS/ESP ECU"
+  },
+  "C404": {
+    "name": "Dialogue with the  automatic gearbox ECU",
+    "description": "Incorrect value received"
+  },
+  "C415": {
+    "name": "Dialogue with the ABS or the ESP",
+    "description": "Incorrect value received"
+  },
+  "D000": {
+    "name": "The engine ECU does not communicate any longer on the system",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "Failure of the LS CAN",
+    "description": "Not characterised"
+  },
+  "D103": {
+    "name": "Dialogue with the Stop & Start ECU",
+    "description": "No communication"
+  },
+  "D109": {
+    "name": "Dialogue with the  automatic gearbox ECU",
+    "description": "No communication with the automatic gearbox"
+  },
+  "D113": {
+    "name": "Dialogue with the ABS or the ESP",
+    "description": "No communication with ABS/ESP ECU"
+  },
+  "D118": {
+    "name": "Coherence with the built-in systems interface",
+    "description": "No communication with the BSI"
+  },
+  "D203": {
+    "name": "Dialogue with the Stop & Start ECU",
+    "description": "Incorrect value received"
+  },
+  "D209": {
+    "name": "Dialogue with the  automatic gearbox ECU",
+    "description": "Incorrect value received"
+  },
+  "D213": {
+    "name": "Dialogue with the ABS or the ESP",
+    "description": "Incorrect value received"
+  },
+  "D218": {
+    "name": "Coherence with the built-in systems interface",
+    "description": "Incorrect value received"
+  },
+  "E000": {
+    "name": "Main wake-up fault",
+    "description": "Not characterised"
+  },
+  "E003": {
+    "name": "Remote control wake-up: inconsistency between main wake-up and electric signal",
+    "description": "Not characterised"
+  },
+  "E118": {
+    "name": "Partial wake-up fault",
+    "description": "Not characterised"
+  }
+}

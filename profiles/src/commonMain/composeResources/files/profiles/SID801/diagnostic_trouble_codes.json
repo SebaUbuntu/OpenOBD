@@ -1,0 +1,474 @@
+{
+  "0001": {
+    "name": "Fuel flow regulation",
+    "description": "Open circuit"
+  },
+  "0002": {
+    "name": "Fuel flow regulation",
+    "description": "Current too high"
+  },
+  "0003": {
+    "name": "Fuel flow regulation",
+    "description": "Short circuit to earth"
+  },
+  "0004": {
+    "name": "Fuel flow regulation",
+    "description": "Short circuit between two wires"
+  },
+  "0016": {
+    "name": "Cylinder reference signal",
+    "description": "Incorrect value received"
+  },
+  "0087": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure coherence"
+  },
+  "0088": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure coherence"
+  },
+  "0089": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "Current too high"
+  },
+  "0090": {
+    "name": "Injection supply cut-off test",
+    "description": "Regulators"
+  },
+  "0091": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "Short circuit to earth"
+  },
+  "0092": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "Short circuit between two wires"
+  },
+  "0102": {
+    "name": "Flowmeter signal",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "0103": {
+    "name": "Flowmeter signal",
+    "description": "Short circuit to +"
+  },
+  "0106": {
+    "name": "Atmospheric pressure signal",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Atmospheric pressure signal",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "0108": {
+    "name": "Atmospheric pressure signal",
+    "description": "Short circuit to +"
+  },
+  "0111": {
+    "name": "Inlet air temperature signal",
+    "description": "Coherence"
+  },
+  "0112": {
+    "name": "Inlet air temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0113": {
+    "name": "Inlet air temperature signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0115": {
+    "name": "Coolant temperature signal",
+    "description": "Coherence"
+  },
+  "0116": {
+    "name": "Coolant temperature signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Coolant temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0118": {
+    "name": "Coolant temperature signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0181": {
+    "name": "Diesel temperature signal",
+    "description": "Coherence"
+  },
+  "0182": {
+    "name": "Diesel temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0183": {
+    "name": "Diesel temperature signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0191": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure coherence"
+  },
+  "0192": {
+    "name": "Fuel pressure signal",
+    "description": "Short circuit to earth"
+  },
+  "0193": {
+    "name": "Fuel pressure signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0201": {
+    "name": "Fault on the piezo of injector 1",
+    "description": "-"
+  },
+  "0202": {
+    "name": "Fault on the piezo of injector 2",
+    "description": "-"
+  },
+  "0203": {
+    "name": "Fault on the piezo of injector 3",
+    "description": "-"
+  },
+  "0204": {
+    "name": "Fault on the piezo of injector 4",
+    "description": "-"
+  },
+  "0215": {
+    "name": "Supply relay control",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "0222": {
+    "name": "Accelerator pedal 1 signal",
+    "description": "Short circuit to earth"
+  },
+  "0223": {
+    "name": "Accelerator pedal 1 signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0227": {
+    "name": "Accelerator pedal 2 signal",
+    "description": "Short circuit to earth"
+  },
+  "0228": {
+    "name": "Accelerator pedal 2 signal",
+    "description": "Short circuit to + or open circuit"
+  },
+  "0263": {
+    "name": "Injector 1 flow correction",
+    "description": "Value too high or too low"
+  },
+  "0266": {
+    "name": "Injector 2 flow correction",
+    "description": "Value too high or too low"
+  },
+  "0269": {
+    "name": "Injector 3 flow correction",
+    "description": "Value too high or too low"
+  },
+  "0272": {
+    "name": "Injector 4 flow correction",
+    "description": "Value too high or too low"
+  },
+  "0336": {
+    "name": "Engine speed signal",
+    "description": "Coherence"
+  },
+  "0337": {
+    "name": "Engine speed signal",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "0341": {
+    "name": "Cylinder reference signal",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "0400": {
+    "name": "Exhaust gas recycling",
+    "description": "Flow incorrect"
+  },
+  "0401": {
+    "name": "Exhaust gas recycling",
+    "description": "Flow incorrect"
+  },
+  "0402": {
+    "name": "Exhaust gas recycling",
+    "description": "Flow incorrect"
+  },
+  "0460": {
+    "name": "Low fuel level",
+    "description": "-"
+  },
+  "0480": {
+    "name": "Fan unit 1",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "0481": {
+    "name": "Fan unit 2",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "0483": {
+    "name": "Cooling function incorporated into ECU",
+    "description": "Coherence"
+  },
+  "0500": {
+    "name": "Vehicle speed signal",
+    "description": "Incorrect value received"
+  },
+  "0501": {
+    "name": "Vehicle speed signal",
+    "description": "Coherence"
+  },
+  "0532": {
+    "name": "Air conditioning pressure",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "0533": {
+    "name": "Air conditioning pressure",
+    "description": "Short circuit to +"
+  },
+  "0562": {
+    "name": "Battery voltage too low",
+    "description": "-"
+  },
+  "0563": {
+    "name": "Battery voltage",
+    "description": "Too high"
+  },
+  "0568": {
+    "name": "Cruise control",
+    "description": "Control"
+  },
+  "0571": {
+    "name": "Brake switch signal",
+    "description": "Coherence"
+  },
+  "0572": {
+    "name": "Brake switch signal",
+    "description": "Coherence"
+  },
+  "0601": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "0602": {
+    "name": "Configuration",
+    "description": "-"
+  },
+  "0603": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "0604": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "0605": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "0606": {
+    "name": "Injector(s) control",
+    "description": "Coherence"
+  },
+  "0658": {
+    "name": "Fuel pressure sensor supply",
+    "description": "Lower limit"
+  },
+  "0659": {
+    "name": "Fuel pressure sensor supply",
+    "description": "Maximum value"
+  },
+  "0704": {
+    "name": "Cruise control",
+    "description": "Control"
+  },
+  "1114": {
+    "name": "Injection supply cut-off test",
+    "description": "-"
+  },
+  "1164": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure coherence"
+  },
+  "1165": {
+    "name": "Fuel pressure signal",
+    "description": "Pressure coherence"
+  },
+  "1167": {
+    "name": "Fuel pressure regulation",
+    "description": "Pressure coherence"
+  },
+  "1169": {
+    "name": "Voltage converter",
+    "description": "-"
+  },
+  "1192": {
+    "name": "Injection supply cut-off test",
+    "description": "Regulators"
+  },
+  "1197": {
+    "name": "Injector(s) control",
+    "description": "-"
+  },
+  "1198": {
+    "name": "Fuel flow regulation",
+    "description": "Flow insufficient"
+  },
+  "1210": {
+    "name": "Fuel pressure regulation electrovalve",
+    "description": "Open circuit"
+  },
+  "1349": {
+    "name": "Pre-post heating relay circuit",
+    "description": "Short circuit to +"
+  },
+  "1350": {
+    "name": "Pre-post heating relay circuit",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "1351": {
+    "name": "Pre-post heating relay circuit",
+    "description": "Coherence"
+  },
+  "1352": {
+    "name": "Pre-post heating relay circuit",
+    "description": "Coherence"
+  },
+  "1366": {
+    "name": "Fault on the piezo of injector 1",
+    "description": "-"
+  },
+  "1367": {
+    "name": "Fault on the piezo of injector 2",
+    "description": "-"
+  },
+  "1368": {
+    "name": "Fault on the piezo of injector 3",
+    "description": "-"
+  },
+  "1369": {
+    "name": "Fault on the piezo of injector 4",
+    "description": "-"
+  },
+  "1403": {
+    "name": "1 additional heating",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "1404": {
+    "name": "2 additional heating",
+    "description": "Short circuit between 2 wires or open circuit"
+  },
+  "1621": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "1627": {
+    "name": "Failure to comply with torque requested by driver",
+    "description": "-"
+  },
+  "1641": {
+    "name": "Injector(s) control",
+    "description": "Power stage"
+  },
+  "1667": {
+    "name": "Injection ECU",
+    "description": "-"
+  },
+  "1668": {
+    "name": "Injection supply cut-off test",
+    "description": "Coherence"
+  },
+  "1669": {
+    "name": "Engine speed signal",
+    "description": "Coherence"
+  },
+  "1670": {
+    "name": "ESP plausibility",
+    "description": "Coherence"
+  },
+  "1671": {
+    "name": "Cruise control",
+    "description": "Coherence"
+  },
+  "1672": {
+    "name": "Engine speed signal",
+    "description": "Coherence"
+  },
+  "2137": {
+    "name": "Accelerator pedal signal monitoring",
+    "description": "Coherence"
+  },
+  "2143": {
+    "name": "EGR electrovalve control",
+    "description": "Open circuit"
+  },
+  "2144": {
+    "name": "EGR electrovalve control",
+    "description": "Short circuit to earth"
+  },
+  "2145": {
+    "name": "EGR electrovalve control",
+    "description": "Short circuit between two wires"
+  },
+  "2299": {
+    "name": "Accelerator pedal sensor or brake switch information incoherent",
+    "description": "Pedal jammed"
+  },
+  "2670": {
+    "name": "Pedal sensor supply",
+    "description": "Lower limit"
+  },
+  "2671": {
+    "name": "Pedal sensor supply",
+    "description": "Maximum value"
+  },
+  "C019": {
+    "name": "No communications on the network",
+    "description": "CAN"
+  },
+  "C028": {
+    "name": "Communication on the Comfort VAN",
+    "description": "-"
+  },
+  "C037": {
+    "name": "Communication on the Bodywork VAN",
+    "description": "-"
+  },
+  "C046": {
+    "name": "Communication on the Bodywork VAN",
+    "description": "-"
+  },
+  "C055": {
+    "name": "Communication on the Comfort VAN",
+    "description": "-"
+  },
+  "C121": {
+    "name": "ABS ECU reception",
+    "description": "-"
+  },
+  "C122": {
+    "name": "ESP ECU reception",
+    "description": "-"
+  },
+  "C415": {
+    "name": "ABS ECU reception",
+    "description": "Incorrect value received"
+  },
+  "C416": {
+    "name": "ESP ECU reception",
+    "description": "Incorrect value received"
+  },
+  "D000": {
+    "name": "No communications on the network",
+    "description": "CAN"
+  },
+  "D003": {
+    "name": "No communications on the network",
+    "description": "CAN"
+  },
+  "D118": {
+    "name": "BSI ECU reception",
+    "description": "BSI or air conditioning"
+  },
+  "D218": {
+    "name": "BSI ECU reception",
+    "description": "Incorrect value received"
+  }
+}

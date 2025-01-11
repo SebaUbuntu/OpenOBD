@@ -1,0 +1,770 @@
+{
+  "000A": {
+    "name": "Inlet camshaft position fault",
+    "description": "Coherence"
+  },
+  "0010": {
+    "name": "Intake variable timing solenoid valve control fault",
+    "description": "Open circuit"
+  },
+  "0012": {
+    "name": "Inlet camshaft position fault",
+    "description": "Coherence"
+  },
+  "0016": {
+    "name": "Fault in the synchronisation between the camshaft and the crankshaft",
+    "description": "Coherence"
+  },
+  "0030": {
+    "name": "Upstream oxygen sensor heating control fault",
+    "description": "Open circuit"
+  },
+  "0031": {
+    "name": "Upstream oxygen sensor heating control fault",
+    "description": "Short circuit to earth"
+  },
+  "0032": {
+    "name": "Upstream oxygen sensor heating control fault",
+    "description": "Short circuit to positive"
+  },
+  "0036": {
+    "name": "Fault downstream oxygen sensor heating control",
+    "description": "Open circuit"
+  },
+  "0037": {
+    "name": "Fault downstream oxygen sensor heating control",
+    "description": "Short circuit to earth"
+  },
+  "0038": {
+    "name": "Fault downstream oxygen sensor heating control",
+    "description": "Short circuit to positive"
+  },
+  "0053": {
+    "name": "Upstream oxygen sensor heating control fault",
+    "description": "Coherence"
+  },
+  "0054": {
+    "name": "Fault downstream oxygen sensor heating control",
+    "description": "Coherence"
+  },
+  "0105": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Open circuit"
+  },
+  "0106": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0108": {
+    "name": "Inlet manifold pressure sensor signal fault",
+    "description": "Short circuit to positive"
+  },
+  "0110": {
+    "name": "Defective intake air temperature signal",
+    "description": "Coherence"
+  },
+  "0112": {
+    "name": "Defective intake air temperature signal",
+    "description": "Maximum value"
+  },
+  "0113": {
+    "name": "Defective intake air temperature signal",
+    "description": "Bottom limit"
+  },
+  "0115": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Coherence"
+  },
+  "0116": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Short circuit to positive"
+  },
+  "0118": {
+    "name": "Fault engine coolant temperature signal",
+    "description": "Short circuit to earth"
+  },
+  "0120": {
+    "name": "Motorised throttle track 1 signal fault",
+    "description": "No signal"
+  },
+  "0121": {
+    "name": "Motorised butterfly fault: incoherence of signals 1 and 2",
+    "description": "Coherence"
+  },
+  "0122": {
+    "name": "Motorised throttle track 1 signal fault",
+    "description": "Bottom limit"
+  },
+  "0123": {
+    "name": "Motorised throttle track 1 signal fault",
+    "description": "Maximum value"
+  },
+  "0130": {
+    "name": "Upstream oxygen sensor signal fault",
+    "description": "Open circuit"
+  },
+  "0131": {
+    "name": "Upstream oxygen sensor signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0132": {
+    "name": "Upstream oxygen sensor signal fault",
+    "description": "Short circuit to positive"
+  },
+  "0133": {
+    "name": "Upstream oxygen sensor signal fault",
+    "description": "Coherence"
+  },
+  "0134": {
+    "name": "Upstream oxygen sensor signal fault",
+    "description": "Coherence"
+  },
+  "0136": {
+    "name": "Downstrean oxygen sensor signal fault",
+    "description": "Open circuit"
+  },
+  "0137": {
+    "name": "Downstrean oxygen sensor signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0138": {
+    "name": "Downstrean oxygen sensor signal fault",
+    "description": "Short circuit to positive"
+  },
+  "0140": {
+    "name": "Downstrean oxygen sensor signal fault",
+    "description": "Coherence"
+  },
+  "0171": {
+    "name": "Mixture regulation fault",
+    "description": "Mixture too lean"
+  },
+  "0172": {
+    "name": "Mixture regulation fault",
+    "description": "Mixture too rich"
+  },
+  "0201": {
+    "name": "Injector No. 1 control fault",
+    "description": "Open circuit"
+  },
+  "0202": {
+    "name": "Injector No. 2 control fault",
+    "description": "Open circuit"
+  },
+  "0203": {
+    "name": "Injector No. 3 control fault",
+    "description": "Open circuit"
+  },
+  "0204": {
+    "name": "Injector No. 4 control fault",
+    "description": "Open circuit"
+  },
+  "0220": {
+    "name": "Fault accelerator pedal sensor signal track 1",
+    "description": "Open circuit"
+  },
+  "0221": {
+    "name": "Accelerator pedal sensor fault, incoherence of signals 1 and 2",
+    "description": "Coherence"
+  },
+  "0222": {
+    "name": "Fault accelerator pedal sensor signal track 1",
+    "description": "Short circuit to earth"
+  },
+  "0223": {
+    "name": "Fault accelerator pedal sensor signal track 1",
+    "description": "Short circuit to positive"
+  },
+  "0225": {
+    "name": "Fault accelerator pedal sensor signal track 2",
+    "description": "Open circuit"
+  },
+  "0226": {
+    "name": "Accelerator pedal sensor fault, incoherence of signals 1 and 2",
+    "description": "Coherence"
+  },
+  "0227": {
+    "name": "Fault accelerator pedal sensor signal track 2",
+    "description": "Short circuit to earth"
+  },
+  "0228": {
+    "name": "Fault accelerator pedal sensor signal track 2",
+    "description": "Short circuit to positive"
+  },
+  "0230": {
+    "name": "Power relay control fault",
+    "description": "Open circuit"
+  },
+  "0231": {
+    "name": "Power relay control fault",
+    "description": "Short circuit to earth"
+  },
+  "0232": {
+    "name": "Power relay control fault",
+    "description": "Short circuit to positive"
+  },
+  "0261": {
+    "name": "Injector No. 1 control fault",
+    "description": "Short circuit to earth"
+  },
+  "0262": {
+    "name": "Injector No. 1 control fault",
+    "description": "Short circuit to positive"
+  },
+  "0264": {
+    "name": "Injector No. 2 control fault",
+    "description": "Short circuit to earth"
+  },
+  "0265": {
+    "name": "Injector No. 2 control fault",
+    "description": "Short circuit to positive"
+  },
+  "0267": {
+    "name": "Injector No. 3 control fault",
+    "description": "Short circuit to earth"
+  },
+  "0268": {
+    "name": "Injector No. 3 control fault",
+    "description": "Short circuit to positive"
+  },
+  "0270": {
+    "name": "Injector No. 4 control fault",
+    "description": "Short circuit to earth"
+  },
+  "0271": {
+    "name": "Injector No. 4 control fault",
+    "description": "Short circuit to positive"
+  },
+  "0300": {
+    "name": "Fault misfire on undetermined cylinders",
+    "description": "Not characterised"
+  },
+  "0301": {
+    "name": "Fault: misfiring on cylinder No. 1",
+    "description": "Not characterised"
+  },
+  "0302": {
+    "name": "Fault: misfiring on cylinder No. 2",
+    "description": "Not characterised"
+  },
+  "0303": {
+    "name": "Fault: misfiring on cylinder No. 3",
+    "description": "Not characterised"
+  },
+  "0304": {
+    "name": "Fault: misfiring on cylinder No. 4",
+    "description": "Not characterised"
+  },
+  "0313": {
+    "name": "Fuel level information fault",
+    "description": "Bottom limit"
+  },
+  "0325": {
+    "name": "Knock detector signal fault",
+    "description": "Open circuit"
+  },
+  "0327": {
+    "name": "Knock detector signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0328": {
+    "name": "Knock detector signal fault",
+    "description": "Short circuit to positive"
+  },
+  "0335": {
+    "name": "Engine speed sensor signal fault",
+    "description": "No signal"
+  },
+  "0336": {
+    "name": "Engine speed sensor signal fault",
+    "description": "Coherence"
+  },
+  "0340": {
+    "name": "Inlet cylinder reference sensor signal fault",
+    "description": "Open circuit"
+  },
+  "0341": {
+    "name": "Inlet cylinder reference sensor signal fault",
+    "description": "Coherence"
+  },
+  "0342": {
+    "name": "Inlet cylinder reference sensor signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0343": {
+    "name": "Inlet cylinder reference sensor signal fault",
+    "description": "Short circuit to positive"
+  },
+  "0351": {
+    "name": "Cylinder 1 ignition coil control fault",
+    "description": "Not characterised"
+  },
+  "0352": {
+    "name": "Cylinder 2 ignition coil control fault",
+    "description": "Not characterised"
+  },
+  "0353": {
+    "name": "Cylinder 3 ignition coil control fault",
+    "description": "Not characterised"
+  },
+  "0354": {
+    "name": "Cylinder 4 ignition coil control fault",
+    "description": "Not characterised"
+  },
+  "0420": {
+    "name": "Catalytic converter ageing fault",
+    "description": "Coherence"
+  },
+  "0444": {
+    "name": "Canister discharge electrovalve control fault",
+    "description": "Open circuit"
+  },
+  "0445": {
+    "name": "Canister discharge electrovalve control fault",
+    "description": "Short circuit to earth or short circuit to positive"
+  },
+  "0460": {
+    "name": "Fuel level information fault",
+    "description": "Not characterised"
+  },
+  "0461": {
+    "name": "Fuel level information fault",
+    "description": "Coherence"
+  },
+  "0462": {
+    "name": "Fuel level information fault",
+    "description": "Coherence"
+  },
+  "0500": {
+    "name": "Vehicle speed data fault",
+    "description": "Not characterised"
+  },
+  "0501": {
+    "name": "Vehicle speed data fault",
+    "description": "Coherence"
+  },
+  "0513": {
+    "name": "Engine immobiliser code coherence fault",
+    "description": "Not characterised"
+  },
+  "0530": {
+    "name": "Air conditioning pressure sensor signal fault",
+    "description": "Open circuit"
+  },
+  "0531": {
+    "name": "Air conditioning pressure sensor signal fault",
+    "description": "Coherence"
+  },
+  "0532": {
+    "name": "Air conditioning pressure sensor signal fault",
+    "description": "Bottom limit"
+  },
+  "0533": {
+    "name": "Air conditioning pressure sensor signal fault",
+    "description": "Maximum value"
+  },
+  "0560": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Not characterised"
+  },
+  "0562": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Voltage too high"
+  },
+  "0571": {
+    "name": "Defective brake contactor signal",
+    "description": "Coherence"
+  },
+  "0572": {
+    "name": "Defective brake contactor signal",
+    "description": "Coherence"
+  },
+  "0573": {
+    "name": "Defective brake contactor signal",
+    "description": "Coherence"
+  },
+  "0602": {
+    "name": "Configuration fault",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "Fault engine ECU",
+    "description": "Not characterised"
+  },
+  "0605": {
+    "name": "Fault engine ECU",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "Fault engine ECU",
+    "description": "Not characterised"
+  },
+  "0615": {
+    "name": "Fault: starting control",
+    "description": "Open circuit"
+  },
+  "0616": {
+    "name": "Fault: starting control",
+    "description": "Short circuit to earth"
+  },
+  "0617": {
+    "name": "Fault: starting control",
+    "description": "Short circuit to positive"
+  },
+  "061F": {
+    "name": "Motorised throttle position signal fault",
+    "description": "Coherence"
+  },
+  "0633": {
+    "name": "ECU",
+    "description": "Fault internal to the EEPROM (Coded immobiliser)"
+  },
+  "066A": {
+    "name": "Control Pre-post heat plugs 1",
+    "description": "Short circuit to earth"
+  },
+  "066C": {
+    "name": "Control Pre-post heat plugs 2",
+    "description": "Short circuit to earth"
+  },
+  "066E": {
+    "name": "Control Pre-post heat plugs 3",
+    "description": "Short circuit to earth"
+  },
+  "0670": {
+    "name": "Fuel preheating ECU",
+    "description": "Coherence"
+  },
+  "0671": {
+    "name": "Control Pre-post heat plugs 1",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0672": {
+    "name": "Control Pre-post heat plugs 2",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0673": {
+    "name": "Control Pre-post heat plugs 3",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "0674": {
+    "name": "Control Pre-post heat plugs 4",
+    "description": "Open circuit or short circuit to positive"
+  },
+  "067A": {
+    "name": "Control Pre-post heat plugs 4",
+    "description": "Short circuit to earth"
+  },
+  "0685": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Coherence"
+  },
+  "0686": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Bottom limit"
+  },
+  "0687": {
+    "name": "Engine management ECU supply voltage fault",
+    "description": "Maximum value"
+  },
+  "0691": {
+    "name": "Fan assembly high speed command fault",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0692": {
+    "name": "Fan assembly high speed command fault",
+    "description": "Short circuit to positive"
+  },
+  "0693": {
+    "name": "Fault slow speed cooling fan control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0694": {
+    "name": "Fault slow speed cooling fan control",
+    "description": "Short circuit to positive"
+  },
+  "0704": {
+    "name": "Clutch sensor signal fault",
+    "description": "Coherence"
+  },
+  "1153": {
+    "name": "Motorised throttle programming fault",
+    "description": "Coherence"
+  },
+  "1181": {
+    "name": "braking pressure sensor signal fault",
+    "description": "Coherence"
+  },
+  "1183": {
+    "name": "braking pressure sensor signal fault",
+    "description": "Bottom limit"
+  },
+  "1184": {
+    "name": "braking pressure sensor signal fault",
+    "description": "Maximum value"
+  },
+  "11B8": {
+    "name": "Fault of coherence between the braking vacuum sensor signal and the activation of the vacuum pump",
+    "description": "Not characterised"
+  },
+  "11B9": {
+    "name": "Braking assistance vacuum pump activation fault",
+    "description": "Maximum number of activations reached"
+  },
+  "11BA": {
+    "name": "Braking assistance vacuum pump activation fault",
+    "description": "Maximum activation time reached"
+  },
+  "1336": {
+    "name": "Fault misfire on undetermined cylinders",
+    "description": "Not characterised"
+  },
+  "1337": {
+    "name": "Fault: misfiring on cylinder No. 1",
+    "description": "Not characterised"
+  },
+  "1338": {
+    "name": "Fault: misfiring on cylinder No. 2",
+    "description": "Not characterised"
+  },
+  "1339": {
+    "name": "Fault: misfiring on cylinder No. 3",
+    "description": "Not characterised"
+  },
+  "1340": {
+    "name": "Fault: misfiring on cylinder No. 4",
+    "description": "Not characterised"
+  },
+  "1379": {
+    "name": "Engine starting fault",
+    "description": "Coherence"
+  },
+  "1380": {
+    "name": "Engine starting fault",
+    "description": "Coherence"
+  },
+  "1397": {
+    "name": "Heat build-up in the fuel preheating ECU electrical supply contact",
+    "description": "Coherence"
+  },
+  "1398": {
+    "name": "Fuel preheating ECU",
+    "description": "Coherence"
+  },
+  "1399": {
+    "name": "Fuel preheating ECU electrical supply",
+    "description": "No supply"
+  },
+  "139A": {
+    "name": "Fuel preheating ECU",
+    "description": "Coherence"
+  },
+  "139B": {
+    "name": "Status of the fuel preheating system",
+    "description": "Not characterised"
+  },
+  "139C": {
+    "name": "Preheat glow plugs power management signal return fault",
+    "description": "Coherence"
+  },
+  "139D": {
+    "name": "Preheat glow plugs power management signal fault",
+    "description": "Short circuit to positive"
+  },
+  "139E": {
+    "name": "Preheat glow plugs power management signal fault",
+    "description": "Open circuit"
+  },
+  "139F": {
+    "name": "Preheat glow plugs power management signal fault",
+    "description": "Short circuit to earth"
+  },
+  "13A0": {
+    "name": "Fuel preheating ECU electrical supply",
+    "description": "Maximum value"
+  },
+  "13A1": {
+    "name": "Temperature of the fuel preheating ECU",
+    "description": "Coherence"
+  },
+  "13A2": {
+    "name": "Fault in the fuel temperature calculated by the engine management ECU",
+    "description": "Maximum value"
+  },
+  "13A3": {
+    "name": "Fault in the fuel temperature calculated by the engine management ECU",
+    "description": "Bottom limit"
+  },
+  "13A4": {
+    "name": "Fault in the fuel preheating ECU piloting command by the engine management ECU",
+    "description": "Coherence"
+  },
+  "160A": {
+    "name": "Approval reference",
+    "description": "Approval number not entered"
+  },
+  "1625": {
+    "name": "Engine ECU monitoring fault",
+    "description": "Coherence"
+  },
+  "1627": {
+    "name": "Engine ECU monitoring fault",
+    "description": "Coherence"
+  },
+  "1631": {
+    "name": "Fault engine ECU",
+    "description": "Not characterised"
+  },
+  "1635": {
+    "name": "Vacuum pump relay control fault",
+    "description": "Open circuit"
+  },
+  "1636": {
+    "name": "Vacuum pump relay control fault",
+    "description": "Short circuit to earth"
+  },
+  "1637": {
+    "name": "Vacuum pump relay control fault",
+    "description": "Short circuit to positive"
+  },
+  "1643": {
+    "name": "Fault accelerator pedal point of resistance information",
+    "description": "Short circuit to earth"
+  },
+  "1644": {
+    "name": "Fault accelerator pedal point of resistance information",
+    "description": "Short circuit to positive"
+  },
+  "1645": {
+    "name": "Fault accelerator pedal point of resistance information",
+    "description": "Coherence"
+  },
+  "1664": {
+    "name": "Engine ECU monitoring fault",
+    "description": "Coherence"
+  },
+  "2088": {
+    "name": "Intake variable timing solenoid valve control fault",
+    "description": "Short circuit to earth"
+  },
+  "2089": {
+    "name": "Intake variable timing solenoid valve control fault",
+    "description": "Short circuit to positive"
+  },
+  "2100": {
+    "name": "Motorised throttle motor control fault",
+    "description": "Open circuit"
+  },
+  "2101": {
+    "name": "Motorised throttle motor control fault",
+    "description": "Coherence"
+  },
+  "2102": {
+    "name": "Motorised throttle motor control fault",
+    "description": "Short circuit to earth"
+  },
+  "2103": {
+    "name": "Motorised throttle motor control fault",
+    "description": "Short circuit to positive"
+  },
+  "2120": {
+    "name": "Motorised throttle track 2 signal fault",
+    "description": "No signal"
+  },
+  "2121": {
+    "name": "Motorised butterfly fault: incoherence of signals 1 and 2",
+    "description": "Coherence"
+  },
+  "2122": {
+    "name": "Motorised throttle track 2 signal fault",
+    "description": "Bottom limit"
+  },
+  "2123": {
+    "name": "Motorised throttle track 2 signal fault",
+    "description": "Maximum value"
+  },
+  "2176": {
+    "name": "Motorised throttle limp home position programming fault",
+    "description": "Coherence"
+  },
+  "2299": {
+    "name": "Accelerator pedal signal fault",
+    "description": "Lack of coherence with the brake signal"
+  },
+  "3010": {
+    "name": "Throttle position regulation fault",
+    "description": "Coherence"
+  },
+  "3011": {
+    "name": "Throttle position regulation fault",
+    "description": "Coherence"
+  },
+  "3012": {
+    "name": "Throttle position regulation fault",
+    "description": "Coherence"
+  },
+  "3013": {
+    "name": "Motorised throttle programming fault",
+    "description": "Not characterised"
+  },
+  "3014": {
+    "name": "Motorised throttle programming fault",
+    "description": "Conditions not satisfied"
+  },
+  "3015": {
+    "name": "Motorised throttle position signal fault",
+    "description": "Coherence"
+  },
+  "C028": {
+    "name": "Malfunction of the instrument panel or of the Comfort VAN, no lighting of the MIL warning lamp",
+    "description": "Not characterised"
+  },
+  "C055": {
+    "name": "Malfunction of the Comfort CAN, no more lighting of the MIL warning lamp possible",
+    "description": "Not characterised"
+  },
+  "C103": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "Not characterised"
+  },
+  "C140": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "Not characterised"
+  },
+  "C167": {
+    "name": "Intersystems CAN",
+    "description": "Fault: absence of response from the Built-In Systems Interface to the unlocking request"
+  },
+  "D000": {
+    "name": "Communication missing fault between the engine ECU and the others ECU's intersystems CAN network",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "Absence of communication on the CAN",
+    "description": "Not characterised"
+  },
+  "E000": {
+    "name": "Remote controlled triggering fault",
+    "description": "Coherence"
+  },
+  "E003": {
+    "name": "Remote controlled triggering fault",
+    "description": "Coherence"
+  },
+  "E118": {
+    "name": "Remote controlled triggering fault",
+    "description": "Coherence"
+  }
+}

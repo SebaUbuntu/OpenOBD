@@ -1,0 +1,166 @@
+{
+  "0516": {
+    "name": "System voltage unstable",
+    "description": "No signal"
+  },
+  "0561": {
+    "name": "Undervoltage fault",
+    "description": "Under voltage"
+  },
+  "0562": {
+    "name": "Undervoltage fault",
+    "description": "Under voltage"
+  },
+  "0563": {
+    "name": "Overvoltage fault",
+    "description": "Over voltage (battery positive)"
+  },
+  "0601": {
+    "name": "ECU internal fault",
+    "description": "EEPROM failure  ( incorrect reading of the fault codes )"
+  },
+  "0602": {
+    "name": "Downloading fault",
+    "description": "Internal malfunction"
+  },
+  "0603": {
+    "name": "ECU internal fault",
+    "description": "EEPROM failure  ( incorrect calibration signature )"
+  },
+  "0604": {
+    "name": "ECU internal fault",
+    "description": "-"
+  },
+  "0605": {
+    "name": "ECU internal fault",
+    "description": "-"
+  },
+  "0606": {
+    "name": "ECU internal fault",
+    "description": "-"
+  },
+  "1613": {
+    "name": "Configuration fault",
+    "description": "-"
+  },
+  "5178": {
+    "name": "ECU internal fault",
+    "description": "-"
+  },
+  "5200": {
+    "name": "ECU internal fault",
+    "description": "Internal fault"
+  },
+  "5201": {
+    "name": "Electropump assembly motor current fault",
+    "description": "Internal short circuit"
+  },
+  "5202": {
+    "name": "Electropump assembly critical temperature reached fault",
+    "description": "Overheating of the electric pump unit"
+  },
+  "5203": {
+    "name": "Jamming of the electropump assembly motor fault",
+    "description": "Mechanical jamming"
+  },
+  "5204": {
+    "name": "Steering wheel angle sensor signal S1 fault",
+    "description": "Short circuit to positive or to earth"
+  },
+  "5205": {
+    "name": "Steering wheel angle sensor signal S2 fault",
+    "description": "Short circuit to positive or to earth"
+  },
+  "5206": {
+    "name": "Fault between signal S1 and S2 from the steering wheel angle sensor",
+    "description": "Short circuit between two wires"
+  },
+  "5208": {
+    "name": "Vehicle speed information fault",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "5209": {
+    "name": "Ignition positive supply fault",
+    "description": "Ignition positive disconnected when the vehicle is running"
+  },
+  "5210": {
+    "name": "Fault engine running",
+    "description": "-"
+  },
+  "5211": {
+    "name": "Attempt to restart the assistance at high vehicle speed",
+    "description": "Assistance does not start at a significant vehicle speed"
+  },
+  "5406": {
+    "name": "Fault overheating of the electropump assembly",
+    "description": "-"
+  },
+  "5407": {
+    "name": "Vehicle speed data fault",
+    "description": "Value received incorrect"
+  },
+  "5408": {
+    "name": "Vehicle speed data fault",
+    "description": "No signal"
+  },
+  "540B": {
+    "name": "Under-voltage in stop and start mode",
+    "description": "Voltage below the minimum threshold"
+  },
+  "5417": {
+    "name": "Steering wheel angle sensor fault",
+    "description": "-"
+  },
+  "5554": {
+    "name": "Temperature sensor fault",
+    "description": "-"
+  },
+  "D000": {
+    "name": "Fault: ECU not communicating on the CAN",
+    "description": "No transmission of the power steering status dataframe"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN network",
+    "description": "CAN at Bus off"
+  },
+  "D105": {
+    "name": "Speed of rotation of the steering wheel information fault",
+    "description": "Speed of rotation of the steering wheel information absent or lost"
+  },
+  "D108": {
+    "name": "Fault absence of communication with the engine management ECU and the hybrid management ECU (If the hybrid management ECU is present)",
+    "description": "Internal combustion engine status information missing"
+  },
+  "D113": {
+    "name": "Vehicle speed data fault",
+    "description": "Vehicle speed information missing"
+  },
+  "D205": {
+    "name": "Speed of rotation of the steering wheel information fault",
+    "description": "Value received incorrect"
+  },
+  "D208": {
+    "name": "Fault absence of communication with the engine management ECU and the hybrid management ECU (If the hybrid management ECU is present)",
+    "description": "Value received incorrect"
+  },
+  "D213": {
+    "name": "Communication fault with the ESP ECU",
+    "description": "Vehicle speed information invalid"
+  },
+  "D305": {
+    "name": "Speed of rotation of the steering wheel information fault",
+    "description": "No signal"
+  },
+  "D308": {
+    "name": "Fault absence of communication with the engine management ECU and the hybrid management ECU (If the hybrid management ECU is present)",
+    "description": "No signal"
+  },
+  "D313": {
+    "name": "Vehicle speed information received from the ABS/ESP fault",
+    "description": "Functional faults due to the ABS/ESP"
+  },
+  "4554": {
+    "name": "Temperature sensor",
+    "description": "-"
+  }
+}

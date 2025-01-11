@@ -1,0 +1,26 @@
+#
+# SPDX-FileCopyrightText: Sebastiano Barezzi
+# SPDX-License-Identifier: GPL-3.0-or-later
+#
+
+version = 1
+SPDX-PackageName = "OpenOBD"
+SPDX-PackageSupplier = "Sebastiano Barezzi <seba@sebaubuntu.dev>"
+SPDX-PackageDownloadLocation = "https://github.com/SebaUbuntu/OpenOBD"
+
+[[annotations]]
+path = [
+    "iosApp/**",
+    "profiles/src/commonMain/composeResources/files/profiles/**",
+    "storage/schemas/**/*.json",
+    "README.md",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "Sebastiano Barezzi"
+SPDX-License-Identifier = "GPL-3.0-or-later"
+
+[[annotations]]
+path = ["gradle/wrapper/**", "gradle/gradle-daemon-jvm.properties"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2007-2023 Gradle, Inc."
+SPDX-License-Identifier = "Apache-2.0"

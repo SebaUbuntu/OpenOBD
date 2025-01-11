@@ -1,0 +1,2022 @@
+{
+  "0001": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Open circuit"
+  },
+  "0002": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Estimated resistance not plausible"
+  },
+  "0003": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Short circuit to earth"
+  },
+  "0004": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Short circuit to positive"
+  },
+  "0016": {
+    "name": "Synchronisation",
+    "description": "Lack of coherence between the engine speed sensor and the camshaft position sensor"
+  },
+  "0017": {
+    "name": "Starting monitoring",
+    "description": "Synchronisation time too long"
+  },
+  "0069": {
+    "name": "Air turbocharging pressure",
+    "description": "Lack of coherence in relation to the atmospheric pressure"
+  },
+  "0071": {
+    "name": "Inlet air temperature at the air flow sensor",
+    "description": "Drift downwards or upwards"
+  },
+  "0087": {
+    "name": "Fuel high pressure circuit",
+    "description": "Fuel pressure lower than the reference value"
+  },
+  "0088": {
+    "name": "Fuel high pressure circuit",
+    "description": "Fuel pressure higher than the reference value"
+  },
+  "008A": {
+    "name": "Low pressure fuel circuit",
+    "description": "Fuel pressure lower than the reference value (threshold 2)"
+  },
+  "008B": {
+    "name": "Low pressure fuel circuit",
+    "description": "Fuel pressure higher than the reference value"
+  },
+  "0093": {
+    "name": "Fuel high pressure circuit",
+    "description": "Ability of the injection system to regulate the fuel pressure inadequate (threshold 2)"
+  },
+  "0094": {
+    "name": "Fuel high pressure circuit",
+    "description": "Ability of the injection system to regulate the fuel pressure inadequate (threshold 1)"
+  },
+  "0095": {
+    "name": "Inlet air temperature at the air inlet manifold inlet",
+    "description": "Lack of coherence in relation to the estimated temperature"
+  },
+  "0096": {
+    "name": "Inlet air temperature at the air inlet manifold inlet",
+    "description": "Drift downwards or upwards"
+  },
+  "0097": {
+    "name": "Inlet air temperature at the air inlet manifold inlet",
+    "description": "Voltage of the component too low"
+  },
+  "0098": {
+    "name": "Inlet air temperature at the air inlet manifold inlet",
+    "description": "Voltage of the component too high"
+  },
+  "00BA": {
+    "name": "Low pressure fuel circuit",
+    "description": "Fuel pressure lower than the reference value (threshold 1)"
+  },
+  "00BC": {
+    "name": "Inlet air circuit",
+    "description": "Air flow lower than the theoretical air flow, legislative threshold"
+  },
+  "00BD": {
+    "name": "Inlet air circuit",
+    "description": "Air flow higher than the theoretical air flow, legislative threshold"
+  },
+  "0101": {
+    "name": "Air flow.",
+    "description": "Non-coherent variation of the signal"
+  },
+  "0102": {
+    "name": "Air flow.",
+    "description": "Signal incoherent (frequency too low)"
+  },
+  "0103": {
+    "name": "Air flow.",
+    "description": "Signal inconsistent (Frequency too high)"
+  },
+  "0112": {
+    "name": "Inlet air temperature at the air flow sensor",
+    "description": "Voltage of the component too low"
+  },
+  "0113": {
+    "name": "Inlet air temperature at the air flow sensor",
+    "description": "Voltage of the component too high"
+  },
+  "0115": {
+    "name": "Engine coolant temperature",
+    "description": "Temperature not plausible, overheating or drifts downwards or upwards"
+  },
+  "0117": {
+    "name": "Engine coolant temperature",
+    "description": "Voltage of the component too low"
+  },
+  "0118": {
+    "name": "Engine coolant temperature",
+    "description": "Voltage of the component too high"
+  },
+  "0122": {
+    "name": "Position of the air mixer",
+    "description": "Voltage of the component too low"
+  },
+  "0123": {
+    "name": "Position of the air mixer",
+    "description": "Voltage of the component too high"
+  },
+  "0133": {
+    "name": "NOx sensor",
+    "description": "Richness measurement faulty"
+  },
+  "0134": {
+    "name": "NOx sensor",
+    "description": "Measurement of the mixture blocked"
+  },
+  "0182": {
+    "name": "Fuel temperature",
+    "description": "Voltage of the component too low"
+  },
+  "0183": {
+    "name": "Fuel temperature",
+    "description": "Voltage of the component too high"
+  },
+  "0191": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Drift downwards"
+  },
+  "0192": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Voltage of the component too low"
+  },
+  "0193": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Voltage of the component too high"
+  },
+  "0194": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Non-coherent variation of the signal"
+  },
+  "0195": {
+    "name": "Oil temperature",
+    "description": "Voltage of the component too low or too high"
+  },
+  "0201": {
+    "name": "Cylinder 1 diesel injector control",
+    "description": "Open circuit"
+  },
+  "0202": {
+    "name": "Cylinder 2 diesel injector control",
+    "description": "Open circuit"
+  },
+  "0203": {
+    "name": "Cylinder 3 diesel injector control",
+    "description": "Open circuit"
+  },
+  "0204": {
+    "name": "Cylinder 4 diesel injector control",
+    "description": "Open circuit"
+  },
+  "0215": {
+    "name": "Principal relay control",
+    "description": "Relay stuck"
+  },
+  "0234": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure higher than the reference value, legislative threshold"
+  },
+  "0235": {
+    "name": "Air turbocharging pressure",
+    "description": "Drift downwards or upwards"
+  },
+  "0237": {
+    "name": "Air turbocharging pressure",
+    "description": "Voltage of the component too low"
+  },
+  "0238": {
+    "name": "Air turbocharging pressure",
+    "description": "Voltage of the component too high"
+  },
+  "0243": {
+    "name": "Turbocharger control",
+    "description": "Open circuit"
+  },
+  "0245": {
+    "name": "Turbocharger control",
+    "description": "Short circuit to earth"
+  },
+  "0246": {
+    "name": "Turbocharger control",
+    "description": "Short circuit to positive"
+  },
+  "0262": {
+    "name": "Cylinder 1 diesel injector control",
+    "description": "Short-circuit between two wires"
+  },
+  "0263": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Current speed of the engine cylinder too low"
+  },
+  "0265": {
+    "name": "Cylinder 2 diesel injector control",
+    "description": "Short-circuit between two wires"
+  },
+  "0266": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Current speed of the engine cylinder too low"
+  },
+  "0268": {
+    "name": "Cylinder 3 diesel injector control",
+    "description": "Short-circuit between two wires"
+  },
+  "0269": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Current speed of the engine cylinder too low"
+  },
+  "0271": {
+    "name": "Cylinder 4 diesel injector control",
+    "description": "Short-circuit between two wires"
+  },
+  "0272": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Current speed of the engine cylinder too low"
+  },
+  "0299": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure lower than the reference value, legislative threshold"
+  },
+  "029B": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "029F": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02A3": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02A7": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02CC": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02CD": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "02CE": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02CF": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "02D0": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02D1": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "02D2": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "02D3": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "02E4": {
+    "name": "EGR valve",
+    "description": "Actuator jammed open"
+  },
+  "02E5": {
+    "name": "EGR valve",
+    "description": "Actuator jammed shut"
+  },
+  "02EC": {
+    "name": "Inlet air circuit",
+    "description": "Air flow lower than the theoretical air flow, after sales threshold"
+  },
+  "02ED": {
+    "name": "Inlet air circuit",
+    "description": "Air flow higher than the theoretical air flow, after sales threshold"
+  },
+  "0335": {
+    "name": "Engine speed",
+    "description": "Signal invalid"
+  },
+  "0336": {
+    "name": "Engine speed",
+    "description": "Signal incorrect"
+  },
+  "0337": {
+    "name": "Engine speed",
+    "description": "Not enough teeth seen over one revolution by the target"
+  },
+  "0338": {
+    "name": "Engine speed",
+    "description": "Too many teeth seen over one revolution by the target"
+  },
+  "0339": {
+    "name": "Engine speed",
+    "description": "Target not detected"
+  },
+  "0340": {
+    "name": "Camshaft position",
+    "description": "Signal not detected"
+  },
+  "0341": {
+    "name": "Camshaft position",
+    "description": "Signal inconsistent"
+  },
+  "0343": {
+    "name": "Camshaft position",
+    "description": "Signal absent on starting"
+  },
+  "0344": {
+    "name": "Camshaft position",
+    "description": "Signal invalid"
+  },
+  "0401": {
+    "name": "Inlet air circuit",
+    "description": "Air flow higher than the reference value, legislative threshold"
+  },
+  "0402": {
+    "name": "Inlet air circuit",
+    "description": "Air flow below the reference value, legislative threshold"
+  },
+  "0403": {
+    "name": "Control of the EGR valve",
+    "description": "Open circuit"
+  },
+  "0405": {
+    "name": "EGR valve position",
+    "description": "Voltage of the component too low"
+  },
+  "0406": {
+    "name": "EGR valve position",
+    "description": "Voltage of the component too high"
+  },
+  "0421": {
+    "name": "Pre-catalytic converter",
+    "description": "Detected absent"
+  },
+  "0425": {
+    "name": "Temperature of the exhaust gas upstream of the pre-catalyst",
+    "description": "Lack of coherence in relation to the estimated temperature"
+  },
+  "0426": {
+    "name": "Temperature of the exhaust gas upstream of the pre-catalyst",
+    "description": "Drift downwards or upwards"
+  },
+  "0427": {
+    "name": "Temperature of the exhaust gas upstream of the pre-catalyst",
+    "description": "Voltage of the component too low"
+  },
+  "0428": {
+    "name": "Temperature of the exhaust gas upstream of the pre-catalyst",
+    "description": "Voltage of the component too high"
+  },
+  "042E": {
+    "name": "EGR valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "042F": {
+    "name": "EGR valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "0460": {
+    "name": "Fuel level",
+    "description": "Signal invalid"
+  },
+  "0487": {
+    "name": "Air metering valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "0488": {
+    "name": "Air metering valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "0489": {
+    "name": "EGR valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "048A": {
+    "name": "Control of the EGR valve",
+    "description": "Short circuit to positive"
+  },
+  "0490": {
+    "name": "EGR valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "0494": {
+    "name": "Fan assembly",
+    "description": "Lack of coherence between the status detected and the reference value of the slow speed"
+  },
+  "0495": {
+    "name": "Fan assembly",
+    "description": "Lack of coherence between the status detected and the fast speed reference value"
+  },
+  "04D9": {
+    "name": "Inlet air circuit",
+    "description": "Air flow higher than the reference value, after sales threshold"
+  },
+  "04DA": {
+    "name": "Inlet air circuit",
+    "description": "Air flow below the reference value, after sales threshold"
+  },
+  "0500": {
+    "name": "Vehicle speed information",
+    "description": "Signal missing or incorrect"
+  },
+  "0504": {
+    "name": "Brake pedal position",
+    "description": "Signal inconsistent"
+  },
+  "050B": {
+    "name": "Starting monitoring",
+    "description": "Starting time too long"
+  },
+  "0513": {
+    "name": "Engine immobiliser",
+    "description": "Coded immobiliser unlocking time too long"
+  },
+  "0520": {
+    "name": "Engine oil pressure",
+    "description": "Voltage of the component too low or too high"
+  },
+  "0527": {
+    "name": "Fan assembly",
+    "description": "Internal fault"
+  },
+  "0530": {
+    "name": "Pressure of the air conditioning system",
+    "description": "Voltage of the component too low or too high"
+  },
+  "0555": {
+    "name": "Braking system vacuum measurement",
+    "description": "Short-circuit, circuit open or variation in voltage outside the tolerance"
+  },
+  "0560": {
+    "name": "Battery",
+    "description": "Voltage too low"
+  },
+  "0562": {
+    "name": "Engine management ECU electrical supply",
+    "description": "Voltage of the component too low"
+  },
+  "0563": {
+    "name": "Engine management ECU electrical supply",
+    "description": "Voltage of the component too high"
+  },
+  "0579": {
+    "name": "Vehicle speed regulation",
+    "description": "Vehicle speed not coherent"
+  },
+  "057F": {
+    "name": "Battery",
+    "description": "Battery charge status insufficient"
+  },
+  "058B": {
+    "name": "Battery",
+    "description": "Current value not valid"
+  },
+  "058C": {
+    "name": "Battery",
+    "description": "Temperature too high"
+  },
+  "058D": {
+    "name": "Battery",
+    "description": "Voltage value not valid"
+  },
+  "0591": {
+    "name": "Vehicle cruise control: not defined",
+    "description": "Vehicle speed reference value not coherent"
+  },
+  "0597": {
+    "name": "Controlled thermostat",
+    "description": "Actuator jammed shut"
+  },
+  "0602": {
+    "name": "Engine management ECU",
+    "description": "Calibration missing"
+  },
+  "0603": {
+    "name": "Engine management ECU",
+    "description": "Non-volatile memory fault"
+  },
+  "0604": {
+    "name": "Engine management ECU",
+    "description": "Memory fault"
+  },
+  "0605": {
+    "name": "Engine management ECU",
+    "description": "Memory fault or incorrect calibration"
+  },
+  "060A": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "060B": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0610": {
+    "name": "Downloading / Configuration",
+    "description": "Fault in the configuration of the ECU"
+  },
+  "0615": {
+    "name": "Starter relay control",
+    "description": "Short circuit or open circuit"
+  },
+  "0620": {
+    "name": "Alternator",
+    "description": "Electrical fault on the network"
+  },
+  "0627": {
+    "name": "Control of the low pressure fuel supply pump",
+    "description": "Open circuit"
+  },
+  "0628": {
+    "name": "Control of the low pressure fuel supply pump",
+    "description": "Short circuit to earth"
+  },
+  "0629": {
+    "name": "Control of the low pressure fuel supply pump",
+    "description": "Short circuit to positive"
+  },
+  "062A": {
+    "name": "Control of the low pressure fuel supply pump",
+    "description": "Signal not coherent (frequency incorrect)"
+  },
+  "062B": {
+    "name": "Configuration of the diesel injectors",
+    "description": "Configuration absent"
+  },
+  "062C": {
+    "name": "Fault in the speed information for the vehicle speed curbing",
+    "description": "Signal inconsistent or absence of calibration"
+  },
+  "0634": {
+    "name": "Engine management ECU internal temperature",
+    "description": "Voltage of the component too high"
+  },
+  "064A": {
+    "name": "Low pressure fuel pump",
+    "description": "Overheating or overpowering"
+  },
+  "064F": {
+    "name": "Downloading / Configuration",
+    "description": "Homologation number corrupted"
+  },
+  "0657": {
+    "name": "Sensors No.1 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "065A": {
+    "name": "Alternator",
+    "description": "Mechanical fault on the network"
+  },
+  "0667": {
+    "name": "Engine management ECU internal temperature",
+    "description": "Voltage of the component too low"
+  },
+  "066A": {
+    "name": "Pre-heat glow plug No. 1",
+    "description": "Short circuit to earth"
+  },
+  "066B": {
+    "name": "Pre-heat glow plug No. 1",
+    "description": "Short circuit to positive"
+  },
+  "066C": {
+    "name": "Pre-heat glow plug No. 2",
+    "description": "Short circuit to earth"
+  },
+  "066D": {
+    "name": "Pre-heat glow plug No. 2",
+    "description": "Short circuit to positive"
+  },
+  "066E": {
+    "name": "Pre-heat glow plug No. 3",
+    "description": "Short circuit to earth"
+  },
+  "066F": {
+    "name": "Pre-heat glow plug No. 3",
+    "description": "Short circuit to positive"
+  },
+  "0670": {
+    "name": "Pre-post heat unit",
+    "description": "Supply voltage problem or short-circuit"
+  },
+  "0671": {
+    "name": "Pre-heat glow plug No. 1",
+    "description": "Open circuit"
+  },
+  "0672": {
+    "name": "Pre-heat glow plug No. 2",
+    "description": "Open circuit"
+  },
+  "0673": {
+    "name": "Pre-heat glow plug No. 3",
+    "description": "Open circuit"
+  },
+  "0674": {
+    "name": "Pre-heat glow plug No. 4",
+    "description": "Open circuit"
+  },
+  "067A": {
+    "name": "Pre-heat glow plug No. 4",
+    "description": "Short circuit to earth"
+  },
+  "067B": {
+    "name": "Pre-heat glow plug No. 4",
+    "description": "Short circuit to positive"
+  },
+  "0685": {
+    "name": "Power relay control",
+    "description": "Open circuit"
+  },
+  "0686": {
+    "name": "Power relay control",
+    "description": "Short circuit to earth"
+  },
+  "0687": {
+    "name": "Power relay control",
+    "description": "Short circuit to positive"
+  },
+  "0691": {
+    "name": "Low speed fan",
+    "description": "Short circuit to earth"
+  },
+  "0692": {
+    "name": "Low speed fan",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0693": {
+    "name": "Cooling fan fast speed",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "0694": {
+    "name": "Cooling fan fast speed",
+    "description": "Short circuit to positive"
+  },
+  "06DF": {
+    "name": "Pre-post heat unit",
+    "description": "Status return signal fault"
+  },
+  "0805": {
+    "name": "Position of the clutch master cylinder",
+    "description": "Short circuit or signal incorrect"
+  },
+  "0806": {
+    "name": "Position of the clutch master cylinder",
+    "description": "Signal incorrect"
+  },
+  "0810": {
+    "name": "Position of the clutch master cylinder",
+    "description": "Signal jammed in the not pressed or pressed down position"
+  },
+  "0812": {
+    "name": "Reverse gear information",
+    "description": "Signal inconsistent"
+  },
+  "0820": {
+    "name": "Position of the clutch master cylinder",
+    "description": "Signal blocked"
+  },
+  "0830": {
+    "name": "Position of the clutch pedal",
+    "description": "Signal invalid"
+  },
+  "0850": {
+    "name": "Gearbox neutral sensor",
+    "description": "Signal out of range"
+  },
+  "0897": {
+    "name": "Deterioration of the engine oil",
+    "description": "Service interval exceeded"
+  },
+  "0914": {
+    "name": "Gearbox neutral position measurement",
+    "description": "Lack of coherence of the neutral status when changing gear"
+  },
+  "0A1A": {
+    "name": "Fault - communication with the controlled alternator",
+    "description": "Communication not valid"
+  },
+  "0A23": {
+    "name": "Alternator",
+    "description": "Lack of coherence between the torque and the status of the alternator"
+  },
+  "0A3B": {
+    "name": "Alternator",
+    "description": "Overheating of the reversible alternator or its surroundings"
+  },
+  "107A": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure higher than the reference value, after sales threshold"
+  },
+  "107B": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure lower than the reference value, after sales threshold"
+  },
+  "1113": {
+    "name": "Fuel high pressure circuit",
+    "description": "Fuel pressure below the minimum threshold"
+  },
+  "1163": {
+    "name": "Programming of the diesel injectors",
+    "description": "Failure of the diesel injectors programming operations"
+  },
+  "1164": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Drift upwards"
+  },
+  "1166": {
+    "name": "Fuel high pressure circuit",
+    "description": "Fuel pressure above the maximum threshold"
+  },
+  "1199": {
+    "name": "Fuel level",
+    "description": "Level too low"
+  },
+  "119F": {
+    "name": "Deterioration of the engine oil",
+    "description": "Rate of dilution of the engine oil excessive"
+  },
+  "11AA": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure above the maximum threshold"
+  },
+  "11AB": {
+    "name": "Inlet air circuit",
+    "description": "Air turbocharging pressure below the minimum threshold"
+  },
+  "11AD": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Drop in pressure not coherent"
+  },
+  "11B4": {
+    "name": "Position of the accelerator pedal",
+    "description": "Signal inconsistent"
+  },
+  "11B7": {
+    "name": "Damage to the high pressure fuel pump",
+    "description": "Detection of wear of the high pressure fuel pump"
+  },
+  "12B3": {
+    "name": "EGR valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "12B4": {
+    "name": "EGR valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "1349": {
+    "name": "Pre-post heat unit",
+    "description": "Open circuit on the control"
+  },
+  "1350": {
+    "name": "Pre-post heat unit",
+    "description": "Short-circuit to earth on the control"
+  },
+  "1351": {
+    "name": "Pre-post heat unit",
+    "description": "Coherence fault"
+  },
+  "1366": {
+    "name": "Cylinder 1 diesel injector control",
+    "description": "Estimated resistance not plausible"
+  },
+  "1367": {
+    "name": "Cylinder 2 diesel injector control",
+    "description": "Estimated resistance not plausible"
+  },
+  "1368": {
+    "name": "Cylinder 3 diesel injector control",
+    "description": "Estimated resistance not plausible"
+  },
+  "1369": {
+    "name": "Cylinder 4 diesel injector control",
+    "description": "Estimated resistance not plausible"
+  },
+  "1382": {
+    "name": "Ancillary drive belt",
+    "description": "Fault in coherence between the engine speed and the alternator speed"
+  },
+  "1383": {
+    "name": "Ancillary drive belt",
+    "description": "Break imminent"
+  },
+  "1393": {
+    "name": "Engine stopping request",
+    "description": "Request for stopping of the engine from the gearbox ECU"
+  },
+  "13BA": {
+    "name": "Voltage retaining device",
+    "description": "Internal resistance not valid"
+  },
+  "13BB": {
+    "name": "Battery",
+    "description": "Exceeding of the maximum threshold for the discharge current supplied by the ancillaries battery during the last start or restart"
+  },
+  "13BD": {
+    "name": "Voltage retaining device",
+    "description": "Internal fault"
+  },
+  "13BE": {
+    "name": "Voltage retaining device",
+    "description": "Compensation for losses on line fault"
+  },
+  "13BF": {
+    "name": "Reversible alternator",
+    "description": "Overvoltage of the electrical network"
+  },
+  "1403": {
+    "name": "Additional heating 1 command",
+    "description": "Short circuit or open circuit"
+  },
+  "1404": {
+    "name": "Additional heating 2 command",
+    "description": "Short circuit or open circuit"
+  },
+  "1412": {
+    "name": "Particulate filter",
+    "description": "Signal inconsistent"
+  },
+  "1434": {
+    "name": "Multiplexed additive pump",
+    "description": "Multiplexed pump fault"
+  },
+  "1442": {
+    "name": "Control of the additive pump by wire",
+    "description": "Open circuit"
+  },
+  "1443": {
+    "name": "Control of the additive pump by wire",
+    "description": "Short circuit to earth"
+  },
+  "1444": {
+    "name": "Control of the additive pump by wire",
+    "description": "Short circuit to positive"
+  },
+  "1446": {
+    "name": "Additive adding",
+    "description": "Calculated additive level below the critical threshold"
+  },
+  "1448": {
+    "name": "Particulate filter",
+    "description": "Driving conditions not suitable for regeneration of the particle emission filter (threshold 1)"
+  },
+  "144A": {
+    "name": "Particulate filter",
+    "description": "Ineffective regeneration of the particle emission filter (threshold 1)"
+  },
+  "1461": {
+    "name": "Programming the EGR valve stops",
+    "description": "Discrepancy in the programming of the bottom stop"
+  },
+  "1462": {
+    "name": "Programming the EGR valve stops",
+    "description": "Discrepancy in the programming of the top stop"
+  },
+  "1496": {
+    "name": "Turbocharger",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "1497": {
+    "name": "Turbocharger",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "1498": {
+    "name": "Air metering valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "1499": {
+    "name": "Air metering valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "149C": {
+    "name": "Programming of the stops of the turbocharger",
+    "description": "Discrepancy in the programming of the bottom stop"
+  },
+  "14A7": {
+    "name": "Programming the EGR valve stops",
+    "description": "First programming not carried out"
+  },
+  "14A9": {
+    "name": "Programming of the stops of the turbocharger",
+    "description": "First programming not carried out"
+  },
+  "14AA": {
+    "name": "Programming the air mixer stops",
+    "description": "First programming not carried out"
+  },
+  "1505": {
+    "name": "Engine stopping request",
+    "description": "Request to switch off the engine from the airbags ECU"
+  },
+  "151A": {
+    "name": "Engine immobiliser",
+    "description": "Coded immobiliser unlocking time too long"
+  },
+  "1536": {
+    "name": "Brake pedal position",
+    "description": "Signal inconsistent"
+  },
+  "15A0": {
+    "name": "Engine oil pressure circuit",
+    "description": "Engine oil pressure higher than the reference value"
+  },
+  "15A1": {
+    "name": "Engine oil pressure circuit",
+    "description": "Engine oil pressure lower reference"
+  },
+  "15A2": {
+    "name": "Engine oil pressure circuit",
+    "description": "Fluctuation of the engine oil pressure"
+  },
+  "15A3": {
+    "name": "Control of the engine oil pressure regulation",
+    "description": "Short circuit to positive"
+  },
+  "15A4": {
+    "name": "Control of the engine oil pressure regulation",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "15A7": {
+    "name": "Engine oil pressure circuit",
+    "description": "Engine oil pressure above the maximum threshold"
+  },
+  "15A8": {
+    "name": "Engine oil pressure circuit",
+    "description": "Engine oil pressure below the minimum threshold"
+  },
+  "15B3": {
+    "name": "Additive adding",
+    "description": "Calculated additive level below the minimum threshold"
+  },
+  "15B4": {
+    "name": "Position of the accelerator pedal",
+    "description": "Lack of coherence between the pedal position recalculated for the electric handbrake and the pedal position from the driver's requirement"
+  },
+  "1600": {
+    "name": "Configuration of the diesel injectors",
+    "description": "Configuration incorrect"
+  },
+  "160A": {
+    "name": "Downloading / Configuration",
+    "description": "Configuration fault of the approval number"
+  },
+  "1612": {
+    "name": "Fault internal to the EEPROM (Coded immobiliser)",
+    "description": "Not characterised"
+  },
+  "1614": {
+    "name": "Status of the hard point of the accelerator pedal",
+    "description": "Signal invalid"
+  },
+  "1621": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1631": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1632": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1643": {
+    "name": "Status of the hard point of the accelerator pedal",
+    "description": "Voltage too low"
+  },
+  "1644": {
+    "name": "Status of the hard point of the accelerator pedal",
+    "description": "Voltage too high"
+  },
+  "1655": {
+    "name": "Engine running information",
+    "description": "Short circuit to positive"
+  },
+  "1656": {
+    "name": "Engine running information",
+    "description": "Short circuit to earth"
+  },
+  "1657": {
+    "name": "Engine running information",
+    "description": "Open circuit"
+  },
+  "1696": {
+    "name": "Starter control",
+    "description": "Simultaneous request for starting and stopping"
+  },
+  "16A0": {
+    "name": "Engine",
+    "description": "Detection of oil separation after cutting out"
+  },
+  "16A5": {
+    "name": "Control of the crankcase fumes heater",
+    "description": "Short circuit to positive"
+  },
+  "16A6": {
+    "name": "Control of the crankcase fumes heater",
+    "description": "Short circuit to earth"
+  },
+  "16A7": {
+    "name": "Control of the crankcase fumes heater",
+    "description": "Open circuit"
+  },
+  "16AB": {
+    "name": "Ancillary drive belt",
+    "description": "Break imminent"
+  },
+  "16B1": {
+    "name": "Controlled air inlet module",
+    "description": "Actuator jammed shut"
+  },
+  "16B2": {
+    "name": "Controlled air inlet module",
+    "description": "Actuator jammed open"
+  },
+  "16B3": {
+    "name": "Controlled thermostat",
+    "description": "Actuator jammed open"
+  },
+  "16CF": {
+    "name": "Reversible alternator",
+    "description": "Reversible alternator brushes wear fault"
+  },
+  "16D0": {
+    "name": "Damage to the double damping flywheel",
+    "description": "Detection of resonance of the double damping flywheel"
+  },
+  "16D2": {
+    "name": "Control of the motorised coolant outlet housing",
+    "description": "Overheating or overpowering"
+  },
+  "16D3": {
+    "name": "Position of the motorised coolant outlet housing",
+    "description": "Signal not coherent (frequency incorrect)"
+  },
+  "16D4": {
+    "name": "Position of the motorised coolant outlet housing",
+    "description": "Signal inconsistent (Frequency too high)"
+  },
+  "16D5": {
+    "name": "Position of the motorised coolant outlet housing",
+    "description": "Signal incoherent (frequency too low)"
+  },
+  "16D6": {
+    "name": "Deterioration of the engine oil",
+    "description": "Carbon content of the engine oil excessive"
+  },
+  "16D8": {
+    "name": "Controlled engine start and stop",
+    "description": "Starter control line faulty"
+  },
+  "16D9": {
+    "name": "Controlled engine start and stop",
+    "description": "Engine blocked"
+  },
+  "16DA": {
+    "name": "Sensors No.6 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "16DB": {
+    "name": "Sensors No.4 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "16DC": {
+    "name": "Sensors No.5 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "16DD": {
+    "name": "Motorised coolant outlet housing",
+    "description": "Actuator jammed in the heater matrix closed position"
+  },
+  "16DE": {
+    "name": "Motorised coolant outlet housing",
+    "description": "Actuator jammed in the bypass closed position"
+  },
+  "16DF": {
+    "name": "Motorised coolant outlet housing",
+    "description": "Actuator jammed in the engine cooling radiator opening closed position"
+  },
+  "16E0": {
+    "name": "Motorised coolant outlet housing",
+    "description": "Actuator jammed in the engine cooling radiator opening open position"
+  },
+  "16E4": {
+    "name": "Vehicle cruise control",
+    "description": "Vehicle speed incorrect"
+  },
+  "16E5": {
+    "name": "Vehicle speed regulation",
+    "description": "Vehicle speed incorrect"
+  },
+  "16E6": {
+    "name": "Engine management ECU",
+    "description": "ECU shutdown phase (power latch) not performed or not finished"
+  },
+  "16E8": {
+    "name": "Particle filter differential pressure",
+    "description": "Detection of an inversion of the pressure take-offs"
+  },
+  "16E9": {
+    "name": "Combustion of the cylinders",
+    "description": "Acyclism correction too great or insufficient"
+  },
+  "16EA": {
+    "name": "Depollution of the deNOx system",
+    "description": "Excess emission of ammonia"
+  },
+  "16EB": {
+    "name": "Fuel high pressure circuit",
+    "description": "Duration of excess fuel pressure too long"
+  },
+  "16ED": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Application of an electrical current which is not plausible"
+  },
+  "16EE": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Application of an electrical current which is too high"
+  },
+  "1771": {
+    "name": "Damage to the clutch",
+    "description": "Overheating of the clutch"
+  },
+  "1A89": {
+    "name": "Power storage battery or voltage retaining device",
+    "description": "Voltage value prohibited"
+  },
+  "1A8A": {
+    "name": "Power storage battery or voltage retaining device",
+    "description": "Temperature value not valid"
+  },
+  "1A8D": {
+    "name": "Reversible alternator restarting authorisation line",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "1A8E": {
+    "name": "Reversible alternator restarting authorisation line",
+    "description": "Short circuit to positive or overheating"
+  },
+  "1A90": {
+    "name": "Reversible alternator",
+    "description": "Overheating of the reversible alternator or its surroundings"
+  },
+  "1A92": {
+    "name": "Reversible alternator",
+    "description": "Power electronics fault - down-grade alternator mode"
+  },
+  "1A93": {
+    "name": "Reversible alternator",
+    "description": "Power electronics fault - down-grade alternator mode"
+  },
+  "1A94": {
+    "name": "Reversible alternator",
+    "description": "Power electronics fault - down-grade alternator mode"
+  },
+  "1A95": {
+    "name": "Reversible alternator",
+    "description": "Internal fault - latent problem"
+  },
+  "1A96": {
+    "name": "Reversible alternator",
+    "description": "Reversible alternator identifier fault"
+  },
+  "1A98": {
+    "name": "Stop and start",
+    "description": "Failure to restart the engine"
+  },
+  "1A99": {
+    "name": "Stop and start",
+    "description": "Voltage too high - 12 V network"
+  },
+  "1A9B": {
+    "name": "Reversible alternator",
+    "description": "Voltage regulation fault"
+  },
+  "1A9C": {
+    "name": "Power accumulator",
+    "description": "Energy accumulator state of health fault"
+  },
+  "1AA2": {
+    "name": "Voltage retaining device",
+    "description": "Internal electronics fault, open circuit or short circuit"
+  },
+  "1AA3": {
+    "name": "Voltage retaining device",
+    "description": "Supply open circuit or short circuit to earth"
+  },
+  "1AA4": {
+    "name": "Power storage battery or voltage retaining device",
+    "description": "Overvoltage of the power accumulator"
+  },
+  "1AA5": {
+    "name": "Voltage retaining device",
+    "description": "Internal fault - partial destruction of switch"
+  },
+  "1AA6": {
+    "name": "Voltage retaining device",
+    "description": "Internal fault - destruction of switch"
+  },
+  "2002": {
+    "name": "Particulate filter",
+    "description": "Detected absent"
+  },
+  "202B": {
+    "name": "Control of the urea reservoir heating",
+    "description": "Consumption of electrical current too low"
+  },
+  "202C": {
+    "name": "Control of the urea reservoir heating",
+    "description": "Consumption of electrical current too high"
+  },
+  "202D": {
+    "name": "Urea fluid level",
+    "description": "Tank empty"
+  },
+  "2032": {
+    "name": "Temperature of the exhaust gas downstream of the pre-catalyst",
+    "description": "Voltage of the component too low"
+  },
+  "2033": {
+    "name": "Temperature of the exhaust gas downstream of the pre-catalyst",
+    "description": "Voltage of the component too high"
+  },
+  "203B": {
+    "name": "Urea fluid level",
+    "description": "Urea fluid consumption not coherent"
+  },
+  "203F": {
+    "name": "Urea fluid level",
+    "description": "Urea fluid level below the minimum threshold"
+  },
+  "2043": {
+    "name": "Urea fluid temperature",
+    "description": "Signal blocked"
+  },
+  "2044": {
+    "name": "Urea fluid temperature",
+    "description": "Drift downwards or upwards"
+  },
+  "2046": {
+    "name": "Urea fluid temperature",
+    "description": "Non-coherent variation of the signal"
+  },
+  "2047": {
+    "name": "Control of the urea injector",
+    "description": "Open circuit"
+  },
+  "2048": {
+    "name": "Control of the urea injector",
+    "description": "Short circuit to earth"
+  },
+  "2049": {
+    "name": "Control of the urea injector",
+    "description": "Short circuit to positive"
+  },
+  "204B": {
+    "name": "Pressure of the urea fluid",
+    "description": "Signal blocked"
+  },
+  "204E": {
+    "name": "Pressure of the urea fluid",
+    "description": "Non-coherent variation of the signal"
+  },
+  "205B": {
+    "name": "DeNOx system circuit",
+    "description": "Detection of a blockage"
+  },
+  "2062": {
+    "name": "Control of the deNOx system relay",
+    "description": "Open circuit"
+  },
+  "2063": {
+    "name": "Control of the deNOx system relay",
+    "description": "Short circuit to earth"
+  },
+  "2064": {
+    "name": "Control of the deNOx system relay",
+    "description": "Short circuit to positive"
+  },
+  "207F": {
+    "name": "Urea fluid",
+    "description": "Deterioration of the quality of the urea fluid"
+  },
+  "2084": {
+    "name": "Temperature of the exhaust gas upstream of the deNOx catalytic converter",
+    "description": "Drift downwards or upwards"
+  },
+  "208B": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too low"
+  },
+  "208E": {
+    "name": "DeNOx system circuit",
+    "description": "Detection of a blockage"
+  },
+  "209F": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too low"
+  },
+  "20A2": {
+    "name": "DeNOx system circuit",
+    "description": "Bleed fault"
+  },
+  "20BA": {
+    "name": "Control of the urea pipe heating",
+    "description": "Consumption of electrical current too low"
+  },
+  "20BC": {
+    "name": "Control of the urea pipe heating",
+    "description": "Consumption of electrical current too high"
+  },
+  "20E8": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too low"
+  },
+  "20E9": {
+    "name": "Pressure of the urea fluid",
+    "description": "Drift upwards"
+  },
+  "20EE": {
+    "name": "Depollution of the deNOx system",
+    "description": "Emission control ineffective"
+  },
+  "20F6": {
+    "name": "DeNOx system circuit",
+    "description": "Leak detection"
+  },
+  "2100": {
+    "name": "Control of the air mixer",
+    "description": "Open circuit"
+  },
+  "2101": {
+    "name": "Control of the air mixer",
+    "description": "Overheating or overpowering"
+  },
+  "2102": {
+    "name": "Control of the air mixer",
+    "description": "Short circuit to earth"
+  },
+  "2103": {
+    "name": "Control of the air mixer",
+    "description": "Short circuit to positive"
+  },
+  "2109": {
+    "name": "Programming the air mixer stops",
+    "description": "Discrepancy in the programming of the bottom stop"
+  },
+  "2111": {
+    "name": "Air metering valve",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "2112": {
+    "name": "Air metering valve",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "2122": {
+    "name": "Position of the accelerator pedal, signal 1",
+    "description": "Voltage of the component too low"
+  },
+  "2123": {
+    "name": "Position of the accelerator pedal, signal 1",
+    "description": "Voltage of the component too high"
+  },
+  "2127": {
+    "name": "Position of the accelerator pedal, signal 2",
+    "description": "Voltage of the component too low"
+  },
+  "2128": {
+    "name": "Position of the accelerator pedal, signal 2",
+    "description": "Voltage of the component too high"
+  },
+  "2138": {
+    "name": "Position of the accelerator pedal",
+    "description": "Inconsistency between 2 tracks"
+  },
+  "2147": {
+    "name": "Diesel injectors bank No. 1",
+    "description": "Voltage of the component too low"
+  },
+  "2148": {
+    "name": "Diesel injectors bank No. 1",
+    "description": "Voltage of the component too high"
+  },
+  "2150": {
+    "name": "Diesel injectors bank No. 2",
+    "description": "Voltage of the component too low"
+  },
+  "2151": {
+    "name": "Diesel injectors bank No. 2",
+    "description": "Voltage of the component too high"
+  },
+  "2163": {
+    "name": "Programming the air mixer stops",
+    "description": "Discrepancy in the programming of the top stop"
+  },
+  "21C5": {
+    "name": "Urea fluid level",
+    "description": "Signal blocked"
+  },
+  "2200": {
+    "name": "NOx sensor",
+    "description": "Component detected not communicating on the emission control network"
+  },
+  "2201": {
+    "name": "NOx sensor",
+    "description": "Measurement of the NOx content blocked"
+  },
+  "2202": {
+    "name": "Heating of the NOx sensor",
+    "description": "Availability time too long"
+  },
+  "2204": {
+    "name": "NOx sensor",
+    "description": "Faulty measurement of the NOx content"
+  },
+  "2207": {
+    "name": "Heating of the NOx sensor",
+    "description": "Heating fault"
+  },
+  "220A": {
+    "name": "NOx sensor electrical supply",
+    "description": "Voltage of the component too low"
+  },
+  "2227": {
+    "name": "Atmospheric pressure",
+    "description": "Drift downwards or upwards"
+  },
+  "2228": {
+    "name": "Atmospheric pressure",
+    "description": "Voltage of the component too low"
+  },
+  "2229": {
+    "name": "Atmospheric pressure",
+    "description": "Voltage of the component too high"
+  },
+  "2230": {
+    "name": "Atmospheric pressure",
+    "description": "Non-coherent variation of the signal"
+  },
+  "2265": {
+    "name": "Water in fuel",
+    "description": "Status return signal fault"
+  },
+  "2291": {
+    "name": "Starting monitoring",
+    "description": "High pressure fuel circuit fuel pressure rise time too long"
+  },
+  "2299": {
+    "name": "Position of the accelerator pedal",
+    "description": "Lack of coherence between the position of the accelerator pedal and the position of the brake pedal"
+  },
+  "2413": {
+    "name": "Control of the EGR valve",
+    "description": "Overheating or overpowering"
+  },
+  "2425": {
+    "name": "Control of the Bypass of the EGR exchanger",
+    "description": "Open circuit"
+  },
+  "2426": {
+    "name": "Control of the Bypass of the EGR exchanger",
+    "description": "Short circuit to earth"
+  },
+  "2427": {
+    "name": "Control of the Bypass of the EGR exchanger",
+    "description": "Short circuit to positive"
+  },
+  "242B": {
+    "name": "Temperature of the exhaust gas upstream of the turbocharger",
+    "description": "Temperature not plausible"
+  },
+  "242C": {
+    "name": "Temperature of the exhaust gas upstream of the turbocharger",
+    "description": "Voltage of the component too low"
+  },
+  "242D": {
+    "name": "Temperature of the exhaust gas upstream of the turbocharger",
+    "description": "Voltage of the component too high"
+  },
+  "242F": {
+    "name": "Particulate filter",
+    "description": "Filter detected worn"
+  },
+  "2448": {
+    "name": "Inlet air circuit",
+    "description": "Air flow greater than maximum"
+  },
+  "2453": {
+    "name": "Particle filter differential pressure",
+    "description": "Drift downwards or upwards"
+  },
+  "2454": {
+    "name": "Particle filter differential pressure",
+    "description": "Voltage of the component too low"
+  },
+  "2455": {
+    "name": "Particle filter differential pressure",
+    "description": "Voltage of the component too high"
+  },
+  "2459": {
+    "name": "Particulate filter",
+    "description": "Ineffective regeneration of the particle emission filter (threshold 2)"
+  },
+  "2463": {
+    "name": "Particulate filter",
+    "description": "Detected overloaded"
+  },
+  "246B": {
+    "name": "Particulate filter",
+    "description": "Driving conditions not suitable for regeneration of the particle emission filter (threshold 2)"
+  },
+  "246C": {
+    "name": "Particulate filter",
+    "description": "Detected clogged"
+  },
+  "2493": {
+    "name": "EGR exchanger bypass position",
+    "description": "Voltage outside tolerance"
+  },
+  "2494": {
+    "name": "EGR exchanger bypass position",
+    "description": "Voltage too low"
+  },
+  "2495": {
+    "name": "EGR exchanger bypass position",
+    "description": "Voltage too high"
+  },
+  "249E": {
+    "name": "Depollution of the deNOx system",
+    "description": "Excess emission of ammonia"
+  },
+  "24A4": {
+    "name": "Particulate filter",
+    "description": "Detected blocked"
+  },
+  "24A5": {
+    "name": "EGR heat exchanger by-pass",
+    "description": "Actuator jammed"
+  },
+  "250A": {
+    "name": "Engine oil level",
+    "description": "Voltage of the component incorrect"
+  },
+  "2541": {
+    "name": "Pressure of the fuel in the low pressure fuel circuit",
+    "description": "Voltage of the component too low"
+  },
+  "2542": {
+    "name": "Pressure of the fuel in the low pressure fuel circuit",
+    "description": "Voltage of the component too high"
+  },
+  "2562": {
+    "name": "Turbocharger",
+    "description": "Actuator too closed in relation to the reference value"
+  },
+  "2563": {
+    "name": "Turbocharger",
+    "description": "Actuator too open in relation to the reference value"
+  },
+  "2564": {
+    "name": "Position of the turbocharger",
+    "description": "Voltage of the component too low"
+  },
+  "2565": {
+    "name": "Position of the turbocharger",
+    "description": "Voltage of the component too high"
+  },
+  "2566": {
+    "name": "Programming of the stops of the turbocharger",
+    "description": "Discrepancy in the programming of the top stop"
+  },
+  "2585": {
+    "name": "Multiplexed additive pump",
+    "description": "Multiplexed pump fault"
+  },
+  "2598": {
+    "name": "Turbocharger",
+    "description": "Actuator jammed open"
+  },
+  "2599": {
+    "name": "Turbocharger",
+    "description": "Actuator jammed shut"
+  },
+  "2635": {
+    "name": "Low pressure fuel pump",
+    "description": "Status return signal fault"
+  },
+  "2669": {
+    "name": "Sensors No.2 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "2681": {
+    "name": "Control of the motorised coolant outlet housing",
+    "description": "Open circuit"
+  },
+  "2682": {
+    "name": "Control of the motorised coolant outlet housing",
+    "description": "Short circuit to earth"
+  },
+  "2683": {
+    "name": "Control of the motorised coolant outlet housing",
+    "description": "Short circuit to positive"
+  },
+  "2684": {
+    "name": "Sensors No.3 5 volt electrical supply",
+    "description": "Voltage outside tolerance"
+  },
+  "2687": {
+    "name": "Control of the fuel heater",
+    "description": "Open circuit"
+  },
+  "2689": {
+    "name": "Control of the fuel heater",
+    "description": "Short circuit to positive"
+  },
+  "269A": {
+    "name": "Control of the urea injector",
+    "description": "Overheating or overpowering"
+  },
+  "26A5": {
+    "name": "Motorised coolant outlet housing",
+    "description": "Position incorrect in relation to the reference value"
+  },
+  "2A00": {
+    "name": "NOx sensor",
+    "description": "Richness measurement faulty"
+  },
+  "2BAD": {
+    "name": "Depollution of the deNOx system",
+    "description": "Failure of the system"
+  },
+  "3025": {
+    "name": "Control of the high pressure fuel flow regulator",
+    "description": "Consumption of electrical current not plausible"
+  },
+  "3035": {
+    "name": "Programming of the diesel injectors",
+    "description": "Driving conditions not suitable for resetting the diesel injectors"
+  },
+  "3036": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3037": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3038": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3039": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303A": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303B": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303C": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303D": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303E": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "303F": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3040": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3041": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too high or insufficient"
+  },
+  "3042": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "3043": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "3044": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "3045": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected too great"
+  },
+  "3046": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "3047": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "3048": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "3049": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "304A": {
+    "name": "Combustion of cylinder No. 1",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "304B": {
+    "name": "Combustion of cylinder No. 2",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "304C": {
+    "name": "Combustion of cylinder No. 3",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "304D": {
+    "name": "Combustion of cylinder No. 4",
+    "description": "Correction of the quantity of fuel injected insufficient"
+  },
+  "3050": {
+    "name": "Urea fluid level",
+    "description": "Non-coherent variation of the signal"
+  },
+  "3051": {
+    "name": "DeNOx system circuit",
+    "description": "Pressurisation fault"
+  },
+  "3052": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too low"
+  },
+  "3053": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too high"
+  },
+  "3054": {
+    "name": "Pressure of the urea fluid",
+    "description": "Urea fluid pressure too high"
+  },
+  "3055": {
+    "name": "Pressure of the urea fluid",
+    "description": "Drift downwards"
+  },
+  "3056": {
+    "name": "Pressure of the urea fluid",
+    "description": "Drift downwards"
+  },
+  "3057": {
+    "name": "Particulate filter",
+    "description": "Estimated number of particles incorrect"
+  },
+  "3058": {
+    "name": "Control of the urea injector",
+    "description": "Overheating or overpowering"
+  },
+  "3059": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "305A": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "305B": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "305C": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "C019": {
+    "name": "Intersystems CAN",
+    "description": "Fault on the engine fuse box or on the network connecting it to the built-in systems interface"
+  },
+  "C028": {
+    "name": "Intersystems CAN",
+    "description": "Fault on the instrument panel or on the Comfort VAN, loss of the lighting of the engine diagnostics warning lamp"
+  },
+  "C055": {
+    "name": "Intersystems CAN",
+    "description": "Fault on the Comfort CAN, no further lighting of the engine diagnostics warning lamp possible"
+  },
+  "C073": {
+    "name": "Intersystems CAN",
+    "description": "CAN in error"
+  },
+  "C074": {
+    "name": "Intersystems CAN",
+    "description": "CAN in error"
+  },
+  "C103": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "No communication"
+  },
+  "C118": {
+    "name": "Multiplexed additive pump",
+    "description": "CAN fault or multiplexed additive pump fault"
+  },
+  "C121": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "No communication"
+  },
+  "C140": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "No communication"
+  },
+  "C167": {
+    "name": "Fault: absence of response from the Built-In Systems Interface to the unlocking request",
+    "description": "Not characterised"
+  },
+  "C29D": {
+    "name": "Fault in communication with the deNOx system",
+    "description": "No communication"
+  },
+  "C29E": {
+    "name": "DeNOx system ECU",
+    "description": "Component detected not communicating on the emission control network"
+  },
+  "C304": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "Communication not valid"
+  },
+  "C305": {
+    "name": "Speed limiter/Cruise control",
+    "description": "Lack of coherence between the cruise control and speed limiter data"
+  },
+  "C315": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "Communication not valid"
+  },
+  "C322": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "Communication not valid"
+  },
+  "C415": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "Communication not valid"
+  },
+  "C422": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "Communication not valid"
+  },
+  "C467": {
+    "name": "Multiplexed additive pump",
+    "description": "CAN fault or multiplexed additive pump fault"
+  },
+  "C59E": {
+    "name": "Fault in communication with the deNOx system",
+    "description": "Communication not valid"
+  },
+  "C59F": {
+    "name": "Fault in communication with the deNOx system",
+    "description": "Communication not valid"
+  },
+  "D000": {
+    "name": "Engine management ECU",
+    "description": "ECU detected not communicating on the network"
+  },
+  "D105": {
+    "name": "Fault in communication with the steering wheel angle sensor",
+    "description": "No communication"
+  },
+  "D109": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "No communication"
+  },
+  "D113": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "No communication"
+  },
+  "D118": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "No communication"
+  },
+  "D121": {
+    "name": "Fault in communication with the power steering ECU",
+    "description": "No communication"
+  },
+  "D133": {
+    "name": "LIN network",
+    "description": "Reversible alternator confirmed absent"
+  },
+  "D134": {
+    "name": "LIN network",
+    "description": "No communication with the voltage retaining device"
+  },
+  "D205": {
+    "name": "Fault in communication with the steering wheel angle sensor",
+    "description": "Communication not valid"
+  },
+  "D209": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "Communication not valid"
+  },
+  "D213": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "Communication not valid"
+  },
+  "D218": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "Communication not valid"
+  },
+  "D221": {
+    "name": "Fault in communication with the power steering ECU",
+    "description": "Communication not valid"
+  },
+  "D233": {
+    "name": "Reversible alternator",
+    "description": "Sensor fault"
+  },
+  "D234": {
+    "name": "Health status of the power storage battery or operating status of the voltage retaining device",
+    "description": "Prohibited value"
+  },
+  "D305": {
+    "name": "Fault in communication with the steering wheel angle sensor",
+    "description": "Communication not valid"
+  },
+  "D309": {
+    "name": "Communication fault with the gearbox ECU",
+    "description": "Communication not valid"
+  },
+  "D313": {
+    "name": "Fault in communication with the ABS/ESP ECU",
+    "description": "Communication not valid"
+  },
+  "D318": {
+    "name": "Communication fault with the built-in Systems Interface",
+    "description": "Communication not valid"
+  },
+  "D321": {
+    "name": "Fault in communication with the power steering ECU",
+    "description": "Communication not valid"
+  },
+  "D333": {
+    "name": "Reversible alternator",
+    "description": "Error of length or prohibited value of the reversible alternator datastream"
+  },
+  "D334": {
+    "name": "LIN network",
+    "description": "Error in length or prohibited value of the data from the voltage retention device"
+  },
+  "D400": {
+    "name": "Alternator LIN network",
+    "description": "Registering of a fault on the LIN network"
+  },
+  "D401": {
+    "name": "LIN network",
+    "description": "Recording of a fault on the Alternator LIN"
+  },
+  "D535": {
+    "name": "Fault in communication with the deNOx system",
+    "description": "Communication not valid"
+  },
+  "D536": {
+    "name": "Fault in communication with the deNOx system",
+    "description": "Communication not valid"
+  },
+  "E000": {
+    "name": "Remote controlled triggering line fault",
+    "description": "Request for principal wake-up of the ECU not plausible or absent"
+  },
+  "E002": {
+    "name": "Remote controlled triggering line fault",
+    "description": "Short circuit to earth"
+  },
+  "E003": {
+    "name": "Remote controlled triggering line fault",
+    "description": "Request for ECU wake-up (wire signal) inconsistent with the CAN data"
+  }
+}

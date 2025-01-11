@@ -1,0 +1,498 @@
+{
+  "0106": {
+    "name": "Inlet manifold pressure sensor",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Inlet manifold pressure sensor",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0108": {
+    "name": "Inlet manifold pressure sensor",
+    "description": "Open circuit"
+  },
+  "0112": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0113": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0116": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0118": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0121": {
+    "name": "Motorised throttle, incoherence between signals 1 and 2",
+    "description": "Coherence"
+  },
+  "0122": {
+    "name": "Motorised throttle 1 signal error",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0123": {
+    "name": "Motorised throttle 1 signal error",
+    "description": "Short circuit to positive"
+  },
+  "0130": {
+    "name": "Oxygen sensor upstream of catalytic converter",
+    "description": "Not characterised"
+  },
+  "0131": {
+    "name": "Oxygen sensor upstream of catalytic converter",
+    "description": "Short circuit to positive or to earth"
+  },
+  "0132": {
+    "name": "Oxygen sensor upstream of catalytic converter",
+    "description": "Short circuit to positive or to earth"
+  },
+  "0133": {
+    "name": "Oxygen sensor upstream of catalytic converter",
+    "description": "Ageing"
+  },
+  "0134": {
+    "name": "Oxygen sensor upstream of catalytic converter",
+    "description": "Open circuit"
+  },
+  "0135": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "Not characterised"
+  },
+  "0136": {
+    "name": "Downstream oxygen sensor: not defined",
+    "description": "Not characterised"
+  },
+  "0137": {
+    "name": "Downstream oxygen sensor: not defined",
+    "description": "Short circuit to positive or to earth"
+  },
+  "0138": {
+    "name": "Downstream oxygen sensor: not defined",
+    "description": "Short circuit to positive or to earth"
+  },
+  "0140": {
+    "name": "Downstream oxygen sensor: not defined",
+    "description": "Open circuit"
+  },
+  "0141": {
+    "name": "Heating control of downstream Lambda sensor",
+    "description": "Not characterised"
+  },
+  "0157": {
+    "name": "Motorised throttle 2 signal error",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0158": {
+    "name": "Motorised throttle 2 signal error",
+    "description": "Short circuit to positive"
+  },
+  "0170": {
+    "name": "Mixture regulation fault",
+    "description": "Not characterised"
+  },
+  "0171": {
+    "name": "Mixture regulation fault",
+    "description": "Lower limit"
+  },
+  "0172": {
+    "name": "Mixture regulation fault",
+    "description": "Maximum value"
+  },
+  "0201": {
+    "name": "Injector 1 control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0202": {
+    "name": "Injector 2 control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0203": {
+    "name": "Injector 3 control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0204": {
+    "name": "Injector 4 control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0221": {
+    "name": "Pedal sensor, incoherence between signals 1 and 2",
+    "description": "Coherence"
+  },
+  "0222": {
+    "name": "Accelerator pedal sensor 1",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0223": {
+    "name": "Accelerator pedal sensor 1",
+    "description": "Short circuit to positive"
+  },
+  "0227": {
+    "name": "Accelerator pedal sensor signal 2",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0228": {
+    "name": "Accelerator pedal sensor signal 2",
+    "description": "Short circuit to positive"
+  },
+  "0262": {
+    "name": "Injector 1 control",
+    "description": "Short circuit to positive"
+  },
+  "0265": {
+    "name": "Injector 2 control",
+    "description": "Short circuit to positive"
+  },
+  "0268": {
+    "name": "Injector 3 control",
+    "description": "Short circuit to positive"
+  },
+  "0271": {
+    "name": "Injector 4 control",
+    "description": "Short circuit to positive"
+  },
+  "0300": {
+    "name": "Combustion misfiring",
+    "description": "Not characterised"
+  },
+  "0313": {
+    "name": "Combustion misfiring",
+    "description": "Not characterised"
+  },
+  "0326": {
+    "name": "Knock detector",
+    "description": "Not characterised"
+  },
+  "0341": {
+    "name": "Cylinder reference sensor",
+    "description": "Not characterised"
+  },
+  "0351": {
+    "name": "1/4 ignition coil control",
+    "description": "No spark"
+  },
+  "0352": {
+    "name": "2/3 ignition coil control",
+    "description": "No spark"
+  },
+  "0400": {
+    "name": "Adaptation of amount of air entering manifold",
+    "description": "Not characterised"
+  },
+  "0401": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Not characterised"
+  },
+  "0404": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Not characterised"
+  },
+  "0405": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Not characterised"
+  },
+  "0413": {
+    "name": "Air pump relay control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0414": {
+    "name": "Air pump relay control",
+    "description": "Short circuit to positive"
+  },
+  "0420": {
+    "name": "Catalytic converter ageing",
+    "description": "Loss of efficiency"
+  },
+  "0444": {
+    "name": "Purge canister solenoid valve control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0445": {
+    "name": "Purge canister solenoid valve control",
+    "description": "Short circuit to positive"
+  },
+  "0461": {
+    "name": "Fuel sender",
+    "description": "Plausibility"
+  },
+  "0462": {
+    "name": "Fuel sender",
+    "description": "Short circuit to earth"
+  },
+  "0463": {
+    "name": "Fuel sender",
+    "description": "Open circuit"
+  },
+  "0480": {
+    "name": "Speed setting requested of fan",
+    "description": "Open circuit, short circuit to positive, short circuit to earth"
+  },
+  "0481": {
+    "name": "Fan low speed control",
+    "description": "Not characterised"
+  },
+  "0485": {
+    "name": "Cooling function integrated in ECU  engine check",
+    "description": "Not characterised"
+  },
+  "0491": {
+    "name": "Recirculation of exhaust gas (EOBD)",
+    "description": "Flow insufficient or zero"
+  },
+  "0501": {
+    "name": "VEHICLE SPEED SENSOR SIGNAL OR VEHICLE SPEED INFORMATION",
+    "description": "Coherence"
+  },
+  "0503": {
+    "name": "VEHICLE SPEED SENSOR SIGNAL OR VEHICLE SPEED INFORMATION",
+    "description": "Not characterised"
+  },
+  "0532": {
+    "name": "Air conditioning pressure",
+    "description": "Lower limit"
+  },
+  "0533": {
+    "name": "Air conditioning pressure",
+    "description": "Maximum value"
+  },
+  "0562": {
+    "name": "Battery voltage",
+    "description": "Lower limit"
+  },
+  "0563": {
+    "name": "Battery voltage",
+    "description": "Maximum value"
+  },
+  "0568": {
+    "name": "Cruise control",
+    "description": "Not characterised"
+  },
+  "0569": {
+    "name": "Communication fault on the CAN",
+    "description": "Not characterised"
+  },
+  "0571": {
+    "name": "Cruise control switch",
+    "description": "Coherence"
+  },
+  "0601": {
+    "name": "Injection ECU",
+    "description": "Not characterised"
+  },
+  "0603": {
+    "name": "Injection ECU",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "Injection ECU",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "Injection ECU",
+    "description": "Not characterised"
+  },
+  "0608": {
+    "name": "Sensor supply",
+    "description": "Not characterised"
+  },
+  "0609": {
+    "name": "Sensor supply",
+    "description": "Not characterised"
+  },
+  "0650": {
+    "name": "DIAGNOSTIC LED CONTROL",
+    "description": "Not characterised"
+  },
+  "0704": {
+    "name": "Clutch switch",
+    "description": "Coherence"
+  },
+  "1108": {
+    "name": "Adaptation of amount of air entering manifold",
+    "description": "Not characterised"
+  },
+  "1109": {
+    "name": "Adaptation of amount of air entering manifold",
+    "description": "Not characterised"
+  },
+  "1110": {
+    "name": "Adaptation of amount of air entering manifold",
+    "description": "Not characterised"
+  },
+  "1152": {
+    "name": "Motorised throttle control",
+    "description": "Not characterised"
+  },
+  "1153": {
+    "name": "Fault - Motor-driven throttle",
+    "description": "Not characterised"
+  },
+  "1161": {
+    "name": "Fault - Motor-driven throttle",
+    "description": "Not characterised"
+  },
+  "1327": {
+    "name": "Defective detection of phase integral to ignition",
+    "description": "Not characterised"
+  },
+  "1336": {
+    "name": "Combustion misfiring",
+    "description": "Not characterised"
+  },
+  "1378": {
+    "name": "Combustion misfiring",
+    "description": "Not characterised"
+  },
+  "1456": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Not characterised"
+  },
+  "1511": {
+    "name": "RCD LINE CONTROL",
+    "description": "Not characterised"
+  },
+  "1526": {
+    "name": "Alternator charge information function",
+    "description": "Not characterised"
+  },
+  "1601": {
+    "name": "Supply relay control signal",
+    "description": "Not characterised"
+  },
+  "1613": {
+    "name": "Configuration",
+    "description": "Not characterised"
+  },
+  "1614": {
+    "name": "SPEED LIMITER SWITCH STUCK",
+    "description": "Not characterised"
+  },
+  "1631": {
+    "name": "Injection ECU",
+    "description": "Not characterised"
+  },
+  "1632": {
+    "name": "Accelerator pedal / motorised throttle inconsistency",
+    "description": "Not characterised"
+  },
+  "1643": {
+    "name": "SPEED LIMITER SWITCH",
+    "description": "Short circuit to earth"
+  },
+  "1644": {
+    "name": "SPEED LIMITER SWITCH",
+    "description": "Short circuit to positive"
+  },
+  "1693": {
+    "name": "RCD LINE CONTROL",
+    "description": "Not characterised"
+  },
+  "1694": {
+    "name": "RCD LINE CONTROL",
+    "description": "Not characterised"
+  },
+  "1695": {
+    "name": "RCD LINE CONTROL",
+    "description": "Not characterised"
+  },
+  "1696": {
+    "name": "RCD LINE CONTROL",
+    "description": "Not characterised"
+  },
+  "2101": {
+    "name": "Motorised throttle control",
+    "description": "Not characterised"
+  },
+  "2143": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2145": {
+    "name": "Control of the exhaust gas recirculation valve",
+    "description": "Short circuit to positive"
+  },
+  "C019": {
+    "name": "Communication fault on the CAN",
+    "description": "Not characterised"
+  },
+  "C028": {
+    "name": "No communication on the COMFORT Van",
+    "description": "Not characterised"
+  },
+  "C037": {
+    "name": "No communication on the BODY Van",
+    "description": "Not characterised"
+  },
+  "C055": {
+    "name": "No communication on the COMFORT Van",
+    "description": "Not characterised"
+  },
+  "C103": {
+    "name": "AUTOMATIC GEARBOX OR CONTROLLED MANUAL GEARBOX RECEPTION",
+    "description": "No signal"
+  },
+  "C122": {
+    "name": "Motorised throttle 1 signal error",
+    "description": "No signal"
+  },
+  "C404": {
+    "name": "AUTOMATIC GEARBOX OR CONTROLLED MANUAL GEARBOX RECEPTION",
+    "description": "Coherence"
+  },
+  "C415": {
+    "name": "ABS or ESP ECU reception",
+    "description": "Coherence"
+  },
+  "C416": {
+    "name": "ABS or ESP ECU reception",
+    "description": "Coherence"
+  },
+  "D000": {
+    "name": "NO COMMUNICATION BETWEEN THE ENGINE MANAGEMENT ECU AND THE OTHER NETWORK ECUS",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN",
+    "description": "Not characterised"
+  },
+  "D117": {
+    "name": "Communication fault with the suspension ECU",
+    "description": "No signal"
+  },
+  "D118": {
+    "name": "Communication fault with BSI",
+    "description": "No signal"
+  },
+  "E000": {
+    "name": "Remote Controlled Wake-up (RCD): Main wake-up fault",
+    "description": "Not characterised"
+  },
+  "E003": {
+    "name": "Remote control wake-up: inconsistency between main wake-up and electric signal",
+    "description": "Not characterised"
+  },
+  "1645": {
+    "name": "Undefined",
+    "description": ""
+  },
+  "1186": {
+    "name": "Undefined",
+    "description": ""
+  },
+  "D112": {
+    "name": "Undefined",
+    "description": ""
+  },
+  "1671": {
+    "name": "Undefined",
+    "description": ""
+  }
+}

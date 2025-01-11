@@ -1,0 +1,246 @@
+{
+  "0560": {
+    "name": "ECU supply fault",
+    "description": "-"
+  },
+  "0600": {
+    "name": "ECU fault",
+    "description": "Electronic power output stage"
+  },
+  "0602": {
+    "name": "Downloading fault",
+    "description": "Not done"
+  },
+  "0604": {
+    "name": "ECU fault",
+    "description": "RAM"
+  },
+  "0605": {
+    "name": "ECU fault",
+    "description": "ROM"
+  },
+  "0608": {
+    "name": "Clutch and gear engagement actuators position sensor supply fault",
+    "description": "-"
+  },
+  "0609": {
+    "name": "Gear selection actuator position sensor supply fault",
+    "description": "-"
+  },
+  "0743": {
+    "name": "Fault: clutch actuator motor signal - current incorrect",
+    "description": "Coherence"
+  },
+  "0744": {
+    "name": "Clutch actuator motor signal fault",
+    "description": "Open circuit"
+  },
+  "0750": {
+    "name": "Gearbox fault - the gear does not engage",
+    "description": "-"
+  },
+  "0755": {
+    "name": "Faultgearbox - the gear does not remain engaged",
+    "description": "-"
+  },
+  "0760": {
+    "name": "Faultgearbox - incorrect gear engaged",
+    "description": "-"
+  },
+  "0765": {
+    "name": "Faultgearbox - the gear does not disengage",
+    "description": "-"
+  },
+  "0811": {
+    "name": "Fault - no opening of the clutch",
+    "description": "-"
+  },
+  "1702": {
+    "name": "ECU switch to dormant mode phase (power latch) not carried out or not completed fault",
+    "description": "-"
+  },
+  "1704": {
+    "name": "Fault brake signal (switch / CAN)",
+    "description": "-"
+  },
+  "1708": {
+    "name": "Gear lever signal fault",
+    "description": "Short circuit to earth"
+  },
+  "1709": {
+    "name": "Gear lever signal fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1712": {
+    "name": "Fault clutch actuator position signal",
+    "description": "-"
+  },
+  "1717": {
+    "name": "Gear lever signal fault (CAN 250)",
+    "description": "Open circuit"
+  },
+  "1718": {
+    "name": "Gear lever signal fault",
+    "description": "Coherence"
+  },
+  "1719": {
+    "name": "Gear lever signal fault",
+    "description": "Coherence"
+  },
+  "1725": {
+    "name": "Gear change actuator position signal fault",
+    "description": "-"
+  },
+  "1733": {
+    "name": "Selection actuator position signal fault",
+    "description": "-"
+  },
+  "1743": {
+    "name": "Gearbox input speed signal fault",
+    "description": "Coherence"
+  },
+  "1749": {
+    "name": "Engagement actuator fault: incorrect position in relation to the reference value",
+    "description": "Coherence"
+  },
+  "1751": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Coherence"
+  },
+  "1752": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Short circuit to earth"
+  },
+  "1753": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Short circuit to positive"
+  },
+  "1754": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Open circuit"
+  },
+  "1755": {
+    "name": "Clutch actuator fault: incorrect position in relation to the reference value",
+    "description": "Coherence"
+  },
+  "1756": {
+    "name": "Clutch actuator motor signal fault",
+    "description": "Short circuit to earth or short circuit to positive"
+  },
+  "1759": {
+    "name": "Gear engagement actuator motor signal fault",
+    "description": "Short circuit to earth or short circuit to positive"
+  },
+  "1761": {
+    "name": "Gear engagement actuator motor signal fault",
+    "description": "Open circuit"
+  },
+  "1764": {
+    "name": "Gear selection actuator motor signal fault",
+    "description": "Short circuit to earth or short circuit to positive"
+  },
+  "1766": {
+    "name": "Gear selection actuator motor signal fault",
+    "description": "Open circuit"
+  },
+  "1767": {
+    "name": "Fault-gear selection actuator :Position incorrect in relation to the reference value",
+    "description": "Coherence"
+  },
+  "1771": {
+    "name": "Fault 1 clutch",
+    "description": "Coherence"
+  },
+  "1794": {
+    "name": "Clutch actuator counter information",
+    "description": "Coherence"
+  },
+  "1795": {
+    "name": "Gearbox information",
+    "description": "Coherence"
+  },
+  "1797": {
+    "name": "Steering wheel gear control counters information",
+    "description": "Coherence"
+  },
+  "1798": {
+    "name": "Gear lever counter information",
+    "description": "Coherence"
+  },
+  "1799": {
+    "name": "Starting prohibition (start-lock) control fault",
+    "description": "Coherence"
+  },
+  "17AE": {
+    "name": "Gearbox input speed signal fault",
+    "description": "Coherence"
+  },
+  "17DF": {
+    "name": "Gearbox fault : Gear changing impossible (2 gears)",
+    "description": "-"
+  },
+  "1800": {
+    "name": "Gearbox programming incomplete fault",
+    "description": "-"
+  },
+  "1801": {
+    "name": "Worn clutch fault",
+    "description": "-"
+  },
+  "1804": {
+    "name": "Activated clutch actuator thermal protection fault",
+    "description": "-"
+  },
+  "1842": {
+    "name": "Gearbox actuators supply voltage fault",
+    "description": "Voltage too low"
+  },
+  "D000": {
+    "name": "CAN communication fault (not communicating)",
+    "description": "-"
+  },
+  "D003": {
+    "name": "CAN communication fault (bus off)",
+    "description": "-"
+  },
+  "D103": {
+    "name": "Stop Start Reversible Alternator ECU absent fault",
+    "description": "-"
+  },
+  "D108": {
+    "name": "Engine ECU absent fault",
+    "description": "-"
+  },
+  "D113": {
+    "name": "Fault-ABS ECU ESP missing",
+    "description": "-"
+  },
+  "D118": {
+    "name": "FaultBSI ECU -closed position",
+    "description": "-"
+  },
+  "D208": {
+    "name": "Fault in the information transmitted by the engine ECU",
+    "description": "Coherence"
+  },
+  "D213": {
+    "name": "Fault in the information transmitted by the ABS/ESP ECU",
+    "description": "Coherence"
+  },
+  "D218": {
+    "name": "Fault in the information transmitted by the BSI ECU",
+    "description": "-"
+  },
+  "E000": {
+    "name": "Receiving of the main triggering request information",
+    "description": "-"
+  },
+  "E003": {
+    "name": "Lack of coherence between the status of the vehicle and the main triggering request information fault",
+    "description": "-"
+  },
+  "E109": {
+    "name": "Receiving of the partial triggering request information",
+    "description": "-"
+  }
+}

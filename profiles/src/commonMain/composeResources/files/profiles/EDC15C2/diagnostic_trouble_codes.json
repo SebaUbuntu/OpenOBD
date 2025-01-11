@@ -1,0 +1,454 @@
+{
+  "0000": {
+    "name": "Fault Injector 2 or 3 circuit",
+    "description": "Injector control current fault"
+  },
+  "0070": {
+    "name": "External air temperature signal",
+    "description": "CAN value not plausible"
+  },
+  "0089": {
+    "name": "Fault fuel high pressure monitoring",
+    "description": "Maximum pressure exceeded/Pressure below reference/Regulator blocked/Leak"
+  },
+  "0090": {
+    "name": "Fuel pressure regulator",
+    "description": "Short circuit to earth or open circuit or Stop requested but regulator still active"
+  },
+  "0100": {
+    "name": "Fault flowmeter signal",
+    "description": "Air flow too high or too low or short-circuit"
+  },
+  "0101": {
+    "name": "Fault flowmeter signal",
+    "description": "Air flow too high or too low"
+  },
+  "0105": {
+    "name": "Atmospheric pressure sensor",
+    "description": "Minimum or maximum pressure reached"
+  },
+  "0110": {
+    "name": "Intake air temperature signal",
+    "description": "Short circuit or open circuit"
+  },
+  "0115": {
+    "name": "Engine coolant temperature signal fault",
+    "description": "Short circuit or open circuit"
+  },
+  "0120": {
+    "name": "EGR butterfly position fault",
+    "description": "Consistency with air flow/Short circuit or open circuit"
+  },
+  "0121": {
+    "name": "Accelerator pedal signal fault 1",
+    "description": "Signal short circuited or open circuit/Coherence with brake switch"
+  },
+  "0180": {
+    "name": "Fault signal fuel temperature",
+    "description": "Short circuit or open circuit"
+  },
+  "0190": {
+    "name": "Fault-Diesel pressure signal",
+    "description": "Short circuit or open circuit/Consistency between fuel regulator current and pressure"
+  },
+  "0191": {
+    "name": "Fault-Diesel pressure signal",
+    "description": "Consistency between fuel regulator current and pressure"
+  },
+  "0201": {
+    "name": "Injector 1 circuit fault",
+    "description": "Open circuit, short-curcuit, battery too low, harness too resistive/Injector control current fault"
+  },
+  "0202": {
+    "name": "Injector 2 circuit fault",
+    "description": "Open circuit, short-curcuit, battery too low, harness too resistive/Injector control current fault"
+  },
+  "0203": {
+    "name": "Fault Injector 3 or 4 circuit",
+    "description": "Open circuit, short-curcuit, battery too low, harness too resistive/Injector control current fault"
+  },
+  "0204": {
+    "name": "Fault Injector 3 or 4 circuit",
+    "description": "Open circuit, short-curcuit, battery too low, harness too resistive/Injector control current fault"
+  },
+  "0215": {
+    "name": "Injection system supply relay circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "0220": {
+    "name": "Accelerator pedal signal fault 1",
+    "description": "Plausibility with digital signal/Short circuit or open circuit/Coherence with brake switch"
+  },
+  "0221": {
+    "name": "Accelerator pedal signal fault 2",
+    "description": "Plausibility between main and secondary signals/Short circuit or open circuit/Coherence with the 1 accelerator pedal signal"
+  },
+  "0225": {
+    "name": "Accelerator pedal signal fault 2",
+    "description": "Plausibility between main and secondary signals/Short circuit or open circuit/Coherence with the 1 accelerator pedal signal"
+  },
+  "0230": {
+    "name": "Fuel low pressure pump supply",
+    "description": "Short circuit or open circuit/Coherence when stopping engine"
+  },
+  "0234": {
+    "name": "Turbo pressure fault",
+    "description": "Air flow greater than maximum/Turbo pressure measured too high"
+  },
+  "0235": {
+    "name": "Fault turbo pressure signal",
+    "description": "Short circuit or open circuit/Consistency with atmospheric pressure"
+  },
+  "0243": {
+    "name": "Turbo pressure fault",
+    "description": "Electrovalve short circuited or open circuit/Turbo pressure measured too low or too high"
+  },
+  "0245": {
+    "name": "Turbo pressure fault",
+    "description": "Air flow greater than maximum/Turbo pressure measured too high"
+  },
+  "0246": {
+    "name": "Turbo pressure fault",
+    "description": "Turbo pressure measured too low"
+  },
+  "0299": {
+    "name": "Turbo pressure fault",
+    "description": "Air flow greater than maximum/Turbo pressure measured too low or too high"
+  },
+  "0335": {
+    "name": "Engine speed fault",
+    "description": "Max engine speed exceeded Coherence"
+  },
+  "0340": {
+    "name": "Camshaft-crankshaft synchronisation - camshafts",
+    "description": "Frequency too high/Camshaft sensor supply short circuited or open circuit/Operation of the flow limiter/Engine speed signal variation too sudden"
+  },
+  "0380": {
+    "name": "Fault pre/post heating relay circuit",
+    "description": "Short circuit or open circuit/Relay"
+  },
+  "0381": {
+    "name": "Preheating LED circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "0400": {
+    "name": "EGR control electrovalve fault",
+    "description": "Air flow higher than recommended/Consistency with air flow"
+  },
+  "0401": {
+    "name": "EGR air circuit fault",
+    "description": "Air flow lower than recommended"
+  },
+  "0402": {
+    "name": "EGR air circuit fault",
+    "description": "Air flow higher than recommended/Consistency with air flow"
+  },
+  "0403": {
+    "name": "EGR control electrovalve fault",
+    "description": "Air flow higher than recommended/Short circuit or open circuit/Consistency with air flow"
+  },
+  "0480": {
+    "name": "Fan assembly high speed circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "0481": {
+    "name": "Fan assembly low speed circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "0485": {
+    "name": "Cooling function incorporated into ECU",
+    "description": "Open circuit or communication fault on the network/Consistency between fan unit speed and setting"
+  },
+  "0500": {
+    "name": "Vehicle speed signal fault",
+    "description": "Fault: vehicle speed info transmission on multiplex network/Consistency with engine speed and injected flow/Fault inside ECU"
+  },
+  "0530": {
+    "name": "Air conditioning pressure signal",
+    "description": "Short circuit or open circuit"
+  },
+  "0560": {
+    "name": "Battery voltage fault",
+    "description": "Battery voltage too high or too low"
+  },
+  "0561": {
+    "name": "5V supply stabilising",
+    "description": "Voltage too high or too low"
+  },
+  "0568": {
+    "name": "Cruise control signal",
+    "description": "Control lever short-circuited or open circuit"
+  },
+  "0571": {
+    "name": "Fault brake contact signal",
+    "description": "Coherence of the 2 brake switches/Communications fault"
+  },
+  "0603": {
+    "name": "ECU fault",
+    "description": "Fault: memory or configuration"
+  },
+  "0604": {
+    "name": "Analogue - digital conversion of the accelerator pedal signal",
+    "description": "Fault inside ECU"
+  },
+  "0606": {
+    "name": "ECU fault",
+    "description": "Microprocessor internal fault"
+  },
+  "0608": {
+    "name": "Sensors supply fault",
+    "description": "Short circuit or open circuit"
+  },
+  "0609": {
+    "name": "Sensors supply fault",
+    "description": "Short circuit or open circuit"
+  },
+  "0650": {
+    "name": "Diagnostic LED circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "0700": {
+    "name": "Error message from the automatic gearbox",
+    "description": "Fault on the automatic gearbox system which may lead to an emissions control problem"
+  },
+  "1000": {
+    "name": "Fault : CAN communications",
+    "description": "No communications between the engine management ECU and the other ECUs of the network"
+  },
+  "1001": {
+    "name": "Fault : CAN communications",
+    "description": "No communications between the engine management ECU and the other ECUs of the network"
+  },
+  "1003": {
+    "name": "External intervention fault on flow",
+    "description": "ESP ECU ,Value received incorrect/Automatic gearbox information function : incorrect value received"
+  },
+  "1101": {
+    "name": "Atmospheric pressure sensor",
+    "description": "Minimum or maximum pressure reached"
+  },
+  "1107": {
+    "name": "Swirl solenoid valve circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1108": {
+    "name": "Fan assembly high speed circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1109": {
+    "name": "Fan assembly low speed circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1110": {
+    "name": "Air conditioning cut-off circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1112": {
+    "name": "Fault fuel high pressure monitoring",
+    "description": "Maximum or minimum pressure exceeded/Fuel high pressure regulator blocked/Lack of pressure"
+  },
+  "1132": {
+    "name": "Catalytic converter temperature signals",
+    "description": "Fault on catalytic converter upstream and downstream temperature sensors"
+  },
+  "1135": {
+    "name": "3rd piston deactivator fault (EOBD)",
+    "description": "Short circuit or open circuit"
+  },
+  "1138": {
+    "name": "Fuel pressure regulator",
+    "description": "Stop requested but regulator still active"
+  },
+  "1164": {
+    "name": "Fault fuel pressure sensor test",
+    "description": "Fuel pressure too low or high after switching off ignition"
+  },
+  "1168": {
+    "name": "Fuel pressure regulator",
+    "description": "Short circuit or open circuit/Stop requested but regulator still active"
+  },
+  "1169": {
+    "name": "Capacitor 1 voltage fault",
+    "description": "Short circuit or open circuit/Voltage too high or too low"
+  },
+  "1170": {
+    "name": "Capacitor 2 voltage fault",
+    "description": "Short circuit or open circuit/Voltage too high or too low"
+  },
+  "1171": {
+    "name": "Engine stop through injector cut-off test",
+    "description": "Fault inside ECU"
+  },
+  "1402": {
+    "name": "EGR butterfly position fault",
+    "description": "Consistency with air flow/Short circuit or open circuit"
+  },
+  "1403": {
+    "name": "1 additional heating circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1404": {
+    "name": "2 additional heating and preheating circuit",
+    "description": "Faulty circuit"
+  },
+  "1408": {
+    "name": "Additional heating circuit",
+    "description": "Coherence with battery voltage/Short circuit or open circuit"
+  },
+  "1411": {
+    "name": "Catalytic converter upstream temperature signal (1 catalytic converter)",
+    "description": "Consistency when starting/Short circuit or open circuit"
+  },
+  "1416": {
+    "name": "Catalytic converter downstream temperature signal (2 catalytic converter)",
+    "description": "Short circuit or open circuit/Value invalid/Consistency when starting/Fault: sensor recognised by fuel additive ECU"
+  },
+  "1421": {
+    "name": "Catalytic converter upstream temperature signal (1 catalytic converter)",
+    "description": "Consistency when starting/Short circuit or open circuit"
+  },
+  "1425": {
+    "name": "Catalytic converter downstream temperature signal (2 catalytic converter)",
+    "description": "Short circuit or open circuit/Value invalid/Consistency when starting/Fault: sensor recognised by fuel additive ECU"
+  },
+  "1429": {
+    "name": "Differential exhaust pressure signal",
+    "description": "Supply outside range/Short circuit or open circuit/Hoses pinched"
+  },
+  "1435": {
+    "name": "Fuel additive system",
+    "description": "Fuel additive ECU/Fuel sender fault/Fault on the additive adding injector"
+  },
+  "1442": {
+    "name": "Fault additive quantity",
+    "description": "Maximum threshold of additive in the particulate emission filter reached"
+  },
+  "1446": {
+    "name": "Fault additive quantity",
+    "description": "Fuel additive low level reached"
+  },
+  "1447": {
+    "name": "Particulate filter",
+    "description": "Particle filter clogged/Particulate filter punctured or exhaust differential pressure info"
+  },
+  "1448": {
+    "name": "Particulate filter",
+    "description": "Idle too high/Particle filter overloaded"
+  },
+  "1451": {
+    "name": "Inlet air heater circuit",
+    "description": "Electrovalve short circuited or open circuit"
+  },
+  "1458": {
+    "name": "Coolant solenoid valve fault",
+    "description": "Electrovalve stuck open or closed/Short circuit or open circuit"
+  },
+  "1460": {
+    "name": "Coolant solenoid valve fault",
+    "description": "Electrovalve stuck open or closed/Short circuit or open circuit"
+  },
+  "1476": {
+    "name": "Coolant solenoid valve fault",
+    "description": "Electrovalve stuck open or closed/Short circuit or open circuit"
+  },
+  "1477": {
+    "name": "Coolant solenoid valve fault",
+    "description": "Electrovalve stuck open or closed/Short circuit or open circuit"
+  },
+  "1479": {
+    "name": "Coolant solenoid valve fault",
+    "description": "Electrovalve stuck open or closed/Short circuit or open circuit"
+  },
+  "1507": {
+    "name": "Anti-bubbling strategy fault",
+    "description": "Strategy activated by fuel temperature/Strategy activated by coolant temperature"
+  },
+  "1511": {
+    "name": "Supply to the ECU with ignition on",
+    "description": "Open circuit"
+  },
+  "1517": {
+    "name": "Engine immobiliser function",
+    "description": "Function faulty"
+  },
+  "1519": {
+    "name": "Cooling function incorporated into ECU",
+    "description": "Open circuit or communication fault on the network/Consistency between fan unit speed and setting"
+  },
+  "1521": {
+    "name": "Clutch switch signal",
+    "description": "Coherence with vehicle speed"
+  },
+  "1536": {
+    "name": "ESP plausibility",
+    "description": "ESP ECU fault"
+  },
+  "1537": {
+    "name": "Fault accelerator pedal blocked",
+    "description": "Strategy active"
+  },
+  "1543": {
+    "name": "Air conditioning cut-off circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1606": {
+    "name": "Diagnostic LED circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1607": {
+    "name": "Accelerator pedal sitff point signal",
+    "description": "Short circuit or open circuit/Negative loop difference/Plausibility between pedal position and sensor signal"
+  },
+  "1608": {
+    "name": "Coolant temperature warning LED circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "1613": {
+    "name": "Configuration function",
+    "description": "Programming error"
+  },
+  "1614": {
+    "name": "Sensors supply fault",
+    "description": "Short circuit or open circuit"
+  },
+  "1671": {
+    "name": "Cruise control signal",
+    "description": "Control lever short-circuited or open circuit"
+  },
+  "2002": {
+    "name": "Particulate filter",
+    "description": "Particle filter clogged/Particulate filter punctured or exhaust differential pressure info"
+  },
+  "2120": {
+    "name": "Inlet air heater circuit",
+    "description": "Short circuit or open circuit"
+  },
+  "2141": {
+    "name": "EGR butterfly position fault",
+    "description": "Short circuit to earth"
+  },
+  "2144": {
+    "name": "EGR control electrovalve fault",
+    "description": "Consistency with air flow/Short circuit or open circuit"
+  },
+  "2299": {
+    "name": "Fault accelerator pedal blocked",
+    "description": "Strategy active"
+  },
+  "3004": {
+    "name": "3rd piston deactivator fault (EOBD)",
+    "description": "Short circuit or open circuit"
+  },
+  "D000": {
+    "name": "Fault : CAN communications",
+    "description": "No communications between the engine management ECU and the other ECUs of the network"
+  },
+  "D001": {
+    "name": "Fault : CAN communications",
+    "description": "No communications between the engine management ECU and the other ECUs of the network"
+  },
+  "D118": {
+    "name": "Fault Reception",
+    "description": "Error on the BODY VAN 1 (particle emission filter information)/Fuel gauge info not valid"
+  }
+}

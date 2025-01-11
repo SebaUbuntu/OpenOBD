@@ -1,0 +1,782 @@
+{
+  "0504": {
+    "name": "Brake pedal information",
+    "description": "Value received incorrect"
+  },
+  "0513": {
+    "name": "Built-in systems interface",
+    "description": "Value received incorrect"
+  },
+  "0562": {
+    "name": "ECU supply voltage",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "ECU supply voltage",
+    "description": "Voltage too high"
+  },
+  "0601": {
+    "name": "Automatic gearbox ECU",
+    "description": "Non volatile memory or processor fault"
+  },
+  "0602": {
+    "name": "Downloading",
+    "description": "Not done"
+  },
+  "0604": {
+    "name": "Automatic gearbox ECU",
+    "description": "RAM"
+  },
+  "0605": {
+    "name": "Automatic gearbox ECU",
+    "description": "ROM"
+  },
+  "060A": {
+    "name": "Engine management ECU",
+    "description": "Self-check"
+  },
+  "0610": {
+    "name": "Configuration",
+    "description": "Not done"
+  },
+  "06EF": {
+    "name": "Starter motor",
+    "description": "Poor starting"
+  },
+  "0702": {
+    "name": "Control of the hydraulic block solenoid valves",
+    "description": "Incorrect operation"
+  },
+  "0705": {
+    "name": "Multifunction switch signal",
+    "description": "Short-circuit or value received incorrect"
+  },
+  "0715": {
+    "name": "Automatic gearbox input speed sensor signal",
+    "description": "-"
+  },
+  "0716": {
+    "name": "Automatic gearbox input speed sensor signal",
+    "description": "Voltage too high"
+  },
+  "0720": {
+    "name": "Automatic gearbox output speed sensor signal",
+    "description": "-"
+  },
+  "0721": {
+    "name": "Automatic gearbox output speed sensor signal",
+    "description": "Voltage too high"
+  },
+  "0729": {
+    "name": "Automatic gearbox (ratio 6)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0731": {
+    "name": "Automatic gearbox (ratio 1)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0732": {
+    "name": "Automatic gearbox (ratio 2)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0733": {
+    "name": "Automatic gearbox (ratio 3)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0734": {
+    "name": "Automatic gearbox (ratio 4)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0735": {
+    "name": "Automatic gearbox (ratio 5)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0736": {
+    "name": "Automatic gearbox (reverse gear)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0741": {
+    "name": "Converter lock-up pressure modulating electrovalve",
+    "description": "Clutch jammed (open condition)"
+  },
+  "0742": {
+    "name": "Converter lock-up pressure modulating electrovalve",
+    "description": "Clutch jammed (closed condition)"
+  },
+  "0746": {
+    "name": "Control of the clutch pressure modulating solenoid valve C1",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0747": {
+    "name": "Control of the clutch pressure modulating solenoid valve C1",
+    "description": "Pressure too high"
+  },
+  "076F": {
+    "name": "Automatic Gearbox (ratio 7)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "0770": {
+    "name": "Gear selection actuator",
+    "description": "Blocked (closed condition)"
+  },
+  "0771": {
+    "name": "Gear selection actuator",
+    "description": "Blocked (closed condition)"
+  },
+  "0772": {
+    "name": "Gear selection actuator",
+    "description": "Blocked (open condition)"
+  },
+  "0776": {
+    "name": "Control of the clutch pressure modulating solenoid valve C2",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0777": {
+    "name": "Control of the clutch pressure modulating solenoid valve C2",
+    "description": "Pressure too high"
+  },
+  "077B": {
+    "name": "Gear selection actuator",
+    "description": "Incoherence (gear engaged not certain)"
+  },
+  "0796": {
+    "name": "Control of the clutch pressure modulating solenoid valve C3",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0797": {
+    "name": "Control of the clutch pressure modulating solenoid valve C3",
+    "description": "Pressure too high"
+  },
+  "07D9": {
+    "name": "Automatic Gearbox (ratio 8)",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "07E4": {
+    "name": "Gear selection actuator",
+    "description": "-"
+  },
+  "07E6": {
+    "name": "Gear selection actuator",
+    "description": "Blocked (open condition)"
+  },
+  "081C": {
+    "name": "Gear selection actuator",
+    "description": "Incoherence (position P)"
+  },
+  "0826": {
+    "name": "One-touch control",
+    "description": "Locking in position M+ or M-"
+  },
+  "0842": {
+    "name": "Oil pressure switch",
+    "description": "Blocked (closed condition)"
+  },
+  "0843": {
+    "name": "Oil pressure switch",
+    "description": "Blocked (open condition)"
+  },
+  "0847": {
+    "name": "Oil pressure switch",
+    "description": "Blocked (closed condition)"
+  },
+  "0848": {
+    "name": "Oil pressure switch",
+    "description": "Blocked (open condition)"
+  },
+  "0882": {
+    "name": "ECU supply voltage (In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine)",
+    "description": "Voltage too low"
+  },
+  "0883": {
+    "name": "ECU supply voltage (In Stop and Start mode: automatic stopping then automatic restarting of the internal combustion engine)",
+    "description": "Voltage too high"
+  },
+  "0893": {
+    "name": "Automatic gearbox",
+    "description": "Blocked"
+  },
+  "0928": {
+    "name": "Control of the gear lever locking solenoid valve",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0930": {
+    "name": "Control of the gear lever locking solenoid valve",
+    "description": "Short circuit to earth"
+  },
+  "0937": {
+    "name": "Oil temperature sensor",
+    "description": "Short circuit"
+  },
+  "0938": {
+    "name": "Oil temperature sensor",
+    "description": "Voltage outside range"
+  },
+  "093B": {
+    "name": "Pressure-modulating solenoid valve for management of the oil pressure accumulator (AMN8 gearbox)",
+    "description": "Short circuit to earth"
+  },
+  "093C": {
+    "name": "Pressure-modulating solenoid valve for management of the oil pressure accumulator (AMN8 gearbox)",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0960": {
+    "name": "Control of the clutch pressure modulating solenoid valve C1",
+    "description": "Open circuit"
+  },
+  "0962": {
+    "name": "Control of the clutch pressure modulating solenoid valve C1",
+    "description": "Short circuit to earth"
+  },
+  "0963": {
+    "name": "Control of the clutch pressure modulating solenoid valve C1",
+    "description": "Short-circuit to positive"
+  },
+  "0964": {
+    "name": "Control of the clutch pressure modulating solenoid valve C2",
+    "description": "Open circuit"
+  },
+  "0966": {
+    "name": "Control of the clutch pressure modulating solenoid valve C2",
+    "description": "Short circuit to earth"
+  },
+  "0967": {
+    "name": "Control of the clutch pressure modulating solenoid valve C2",
+    "description": "Short-circuit to positive"
+  },
+  "0968": {
+    "name": "Control of the clutch pressure modulating solenoid valve C3",
+    "description": "Open circuit"
+  },
+  "0970": {
+    "name": "Control of the clutch pressure modulating solenoid valve C3",
+    "description": "Short circuit to earth"
+  },
+  "0971": {
+    "name": "Control of the clutch pressure modulating solenoid valve C3",
+    "description": "Short-circuit to positive"
+  },
+  "0973": {
+    "name": "Gear change solenoid valve SC2",
+    "description": "Short circuit to earth"
+  },
+  "0974": {
+    "name": "Gear change solenoid valve SC2",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0976": {
+    "name": "Gear change solenoid valve SC3",
+    "description": "Short circuit to earth"
+  },
+  "0977": {
+    "name": "Gear change solenoid valve SC3",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0979": {
+    "name": "Gear change solenoid valve SC4",
+    "description": "Short circuit to earth"
+  },
+  "0980": {
+    "name": "Gear change solenoid valve SC4",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0982": {
+    "name": "Gear change solenoid valve SC5",
+    "description": "Short circuit to earth"
+  },
+  "0983": {
+    "name": "Gear change solenoid valve SC5",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0985": {
+    "name": "Automatic gearbox lubrication control solenoid valve",
+    "description": "Short circuit to earth"
+  },
+  "0986": {
+    "name": "Automatic gearbox lubrication control solenoid valve",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "0998": {
+    "name": "Converter lock-up pressure control solenoid valve",
+    "description": "Short circuit to earth"
+  },
+  "0999": {
+    "name": "Converter lock-up pressure control solenoid valve",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "099B": {
+    "name": "Control solenoid valve of the finger for locking the automatic gearbox in position P",
+    "description": "Short circuit to earth"
+  },
+  "099C": {
+    "name": "Control solenoid valve of the finger for locking the automatic gearbox in position P",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "142A": {
+    "name": "Control of the urea pipe heating",
+    "description": "Performance or operation does not conform"
+  },
+  "1604": {
+    "name": "Engine speed signal",
+    "description": "Incoherence"
+  },
+  "160A": {
+    "name": "Automatic gearbox ECU",
+    "description": "Identification"
+  },
+  "160F": {
+    "name": "Approval reference",
+    "description": "Identification"
+  },
+  "1612": {
+    "name": "Coded engine immobiliser code",
+    "description": "Playing impossible"
+  },
+  "162C": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "16A3": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "16C9": {
+    "name": "Starting authorised",
+    "description": "Not authorised"
+  },
+  "1701": {
+    "name": "Automatic gearbox",
+    "description": "Incorrect gear engaged"
+  },
+  "1702": {
+    "name": "Power latch",
+    "description": "Not done"
+  },
+  "1707": {
+    "name": "Gear lever signal",
+    "description": "Voltage outside range"
+  },
+  "1708": {
+    "name": "Gear lever signal",
+    "description": "Short circuit to earth"
+  },
+  "1709": {
+    "name": "Gear lever signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "170A": {
+    "name": "Gear displayed on control panel",
+    "description": "Incoherence"
+  },
+  "1718": {
+    "name": "Gear lever position sensor",
+    "description": "Position not valid"
+  },
+  "1727": {
+    "name": "Engine torque data",
+    "description": "Incoherence"
+  },
+  "1751": {
+    "name": "Steering wheel speed control signal",
+    "description": "Voltage outside range"
+  },
+  "1752": {
+    "name": "Steering wheel speed control signal",
+    "description": "Short circuit to earth"
+  },
+  "1753": {
+    "name": "Steering wheel speed control signal",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "1768": {
+    "name": "Shift-lock command",
+    "description": "Incoherence"
+  },
+  "17A5": {
+    "name": "Automatic gearbox (ratio 1) : manual mode",
+    "description": "Clutches jammed inside the automatic gearbox"
+  },
+  "17CD": {
+    "name": "Control of the additional oil pump (ATN8 gearbox)",
+    "description": "Short circuit"
+  },
+  "1800": {
+    "name": "Programming of position N or P",
+    "description": "Not carried out"
+  },
+  "1828": {
+    "name": "Start lock",
+    "description": "Short-circuit to positive"
+  },
+  "1829": {
+    "name": "Start lock",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "1837": {
+    "name": "Gear control at the steering wheel",
+    "description": "Blocked"
+  },
+  "258F": {
+    "name": "Request for engine torque and engine speed transmitted by the automatic gearbox",
+    "description": "Incoherence"
+  },
+  "2711": {
+    "name": "Automatic gearbox",
+    "description": "Incoherence"
+  },
+  "2714": {
+    "name": "Control of the clutch pressure modulating solenoid valve C4",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "2715": {
+    "name": "Control of the clutch pressure modulating solenoid valve C4",
+    "description": "Pressure too high"
+  },
+  "2718": {
+    "name": "Control of the clutch pressure modulating solenoid valve C4",
+    "description": "Open circuit"
+  },
+  "2720": {
+    "name": "Control of the clutch pressure modulating solenoid valve C4",
+    "description": "Short circuit to earth"
+  },
+  "2721": {
+    "name": "Control of the clutch pressure modulating solenoid valve C4",
+    "description": "Short-circuit to positive"
+  },
+  "2723": {
+    "name": "Control of the brake pressure modulating solenoid valve B1",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "2724": {
+    "name": "Control of the brake pressure modulating solenoid valve B1",
+    "description": "Pressure too high"
+  },
+  "2727": {
+    "name": "Control of the brake pressure modulating solenoid valve B1",
+    "description": "Open circuit"
+  },
+  "2729": {
+    "name": "Control of the brake pressure modulating solenoid valve B1",
+    "description": "Short circuit to earth"
+  },
+  "2730": {
+    "name": "Control of the brake pressure modulating solenoid valve B1",
+    "description": "Short-circuit to positive"
+  },
+  "2732": {
+    "name": "Control of the brake pressure modulating solenoid valve B2",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "2733": {
+    "name": "Control of the brake pressure modulating solenoid valve B2",
+    "description": "Pressure too high"
+  },
+  "2736": {
+    "name": "Control of the brake pressure modulating solenoid valve B2",
+    "description": "Open circuit"
+  },
+  "2738": {
+    "name": "Control of the brake pressure modulating solenoid valve B2",
+    "description": "Short circuit to earth"
+  },
+  "2739": {
+    "name": "Control of the brake pressure modulating solenoid valve B2",
+    "description": "Short-circuit to positive"
+  },
+  "2775": {
+    "name": "One-touch control switch S1",
+    "description": "Voltage outside range"
+  },
+  "2776": {
+    "name": "One-touch control switch S1",
+    "description": "Short circuit to earth"
+  },
+  "2777": {
+    "name": "One-touch control switch S1",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "2780": {
+    "name": "One-touch control switch S2",
+    "description": "Short circuit to earth"
+  },
+  "2781": {
+    "name": "One-touch control switch S2",
+    "description": "Short circuit to positive or open circuit"
+  },
+  "2782": {
+    "name": "One-touch control switch S2",
+    "description": "Voltage outside range"
+  },
+  "2783": {
+    "name": "Automatic gearbox oil temperature",
+    "description": "Overheating"
+  },
+  "2800": {
+    "name": "Gear lever position sensor",
+    "description": "Value received incorrect"
+  },
+  "2805": {
+    "name": "Gear lever position sensor",
+    "description": "Value received incorrect"
+  },
+  "2807": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Open circuit"
+  },
+  "2808": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "2812": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Open circuit"
+  },
+  "2814": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Short circuit to earth"
+  },
+  "2815": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Short-circuit to positive"
+  },
+  "2816": {
+    "name": "Control of the line pressure modulation solenoid valve",
+    "description": "Open circuit"
+  },
+  "2817": {
+    "name": "Control of the converter lock-up pressure modulation solenoid valve",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "281B": {
+    "name": "Control of the converter lock-up pressure modulation solenoid valve",
+    "description": "Open circuit"
+  },
+  "281D": {
+    "name": "Control of the converter lock-up pressure modulation solenoid valve",
+    "description": "Short circuit to earth"
+  },
+  "281E": {
+    "name": "Control of the converter lock-up pressure modulation solenoid valve",
+    "description": "Short-circuit to positive"
+  },
+  "C037": {
+    "name": "Communication on the CAN",
+    "description": "ECU not communicating"
+  },
+  "C046": {
+    "name": "Communication on the CAN",
+    "description": "ECU not communicating"
+  },
+  "C073": {
+    "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network",
+    "description": "No signal"
+  },
+  "C076": {
+    "name": "Fault in communication between the gearbox ECU and the other ECUs on the CAN network",
+    "description": "No signal"
+  },
+  "C100": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "No communication"
+  },
+  "C115": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "No communication"
+  },
+  "C121": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "No communication"
+  },
+  "C126": {
+    "name": "Communication on the CAN with the steering wheel angle sensor",
+    "description": "No communication"
+  },
+  "C140": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "No communication"
+  },
+  "C141": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "No communication"
+  },
+  "C167": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "No communication"
+  },
+  "C315": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Data invalid"
+  },
+  "C318": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "No communication"
+  },
+  "C322": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Data invalid"
+  },
+  "C328": {
+    "name": "Communication on the CAN with the steering wheel angle sensor",
+    "description": "Data invalid"
+  },
+  "C331": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Data invalid"
+  },
+  "C400": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Data invalid"
+  },
+  "C411": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Invalid value"
+  },
+  "C415": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Invalid value"
+  },
+  "C418": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Data invalid"
+  },
+  "C422": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Data invalid"
+  },
+  "C442": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Data invalid"
+  },
+  "C64C": {
+    "name": "Brake pedal information",
+    "description": "Invalid value"
+  },
+  "D105": {
+    "name": "Communication on the CAN with the steering wheel angle sensor",
+    "description": "No communication"
+  },
+  "D108": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "No communication"
+  },
+  "D113": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "No communication"
+  },
+  "D118": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "No communication"
+  },
+  "D12A": {
+    "name": "Communication on the CAN with the sequential gear lever",
+    "description": "No communication"
+  },
+  "D148": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "No communication"
+  },
+  "D153": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "No communication"
+  },
+  "D158": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "No communication"
+  },
+  "D162": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "No communication"
+  },
+  "D1A2": {
+    "name": "Communication on the CAN with the sequential gear lever",
+    "description": "No communication"
+  },
+  "D205": {
+    "name": "STEERING WHEEL ANGLE SENSOR INFORMATION",
+    "description": "Invalid value"
+  },
+  "D208": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Invalid value"
+  },
+  "D213": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Invalid value"
+  },
+  "D218": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Invalid value"
+  },
+  "D22A": {
+    "name": "Communication on the CAN with the sequential gear lever",
+    "description": "Invalid value"
+  },
+  "D262": {
+    "name": "Cruise Control information",
+    "description": "Invalid value"
+  },
+  "D305": {
+    "name": "Communication on the CAN with the steering wheel angle sensor",
+    "description": "Data invalid"
+  },
+  "D308": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Data invalid"
+  },
+  "D313": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Data invalid"
+  },
+  "D318": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Data invalid"
+  },
+  "D32A": {
+    "name": "Communication on the CAN with the sequential gear lever",
+    "description": "Data invalid"
+  },
+  "D348": {
+    "name": "Communication on the CAN with the engine management ECU",
+    "description": "Data invalid"
+  },
+  "D353": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Data invalid"
+  },
+  "D358": {
+    "name": "Communication on the CAN with the built-in systems interface",
+    "description": "Data invalid"
+  },
+  "D362": {
+    "name": "Communication on the CAN with the ESP ECU",
+    "description": "Data invalid"
+  },
+  "D3A2": {
+    "name": "Communication on the CAN with the sequential gear lever",
+    "description": "Data invalid"
+  },
+  "E000": {
+    "name": "Main triggering request received by the CAN from the built-in systems interface",
+    "description": "Invalid value"
+  },
+  "E002": {
+    "name": "Remote controlled triggering signal",
+    "description": "Short circuit to earth"
+  },
+  "E003": {
+    "name": "Synchronisation of the main controlled triggering request received via the CAN (built-in systems interface) and the controlled triggering wired command",
+    "description": "Incoherence"
+  },
+  "F006": {
+    "name": "Check of the supply",
+    "description": "Voltage outside range"
+  },
+  "F009": {
+    "name": "Check of the supply",
+    "description": "Voltage outside range"
+  },
+  "F017": {
+    "name": "Check of the clock",
+    "description": "Internal fault"
+  }
+}

@@ -1,0 +1,950 @@
+[
+  {
+    "id": "AL4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AL4",
+    "description": "PSA AL4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "AM6_AT6_EURO5v1",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AM6_AT6_EURO5v1",
+    "description": "PSA AM6_AT6_EURO5v1 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "AM6_AT6_EURO5v2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AM6_AT6_EURO5v2",
+    "description": "PSA AM6_AT6_EURO5v2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "AM6v2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AM6v2",
+    "description": "PSA AM6v2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "AM6v3",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AM6v3",
+    "description": "PSA AM6v3 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "AXN8",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "AXN8",
+    "description": "PSA AXN8 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "BVMP_MA",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "BVMP_MA",
+    "description": "PSA BVMP_MA ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "CFC300P_HY",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "CFC300P_HY",
+    "description": "PSA CFC300P_HY ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "CFC300Pv2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "CFC300Pv2",
+    "description": "PSA CFC300Pv2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "CFC300Pv3",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "CFC300Pv3",
+    "description": "PSA CFC300Pv3 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "CFC300Pv4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "CFC300Pv4",
+    "description": "PSA CFC300Pv4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "CFC300Pv5",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "CFC300Pv5",
+    "description": "PSA CFC300Pv5 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAE_A515A",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAE_A515A",
+    "description": "PSA DAE_A515A ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAE_A515BC",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAE_A515BC",
+    "description": "PSA DAE_A515BC ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAE_BVH2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAE_BVH2",
+    "description": "PSA DAE_BVH2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAE_CAN",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAE_CAN",
+    "description": "PSA DAE_CAN ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAEv1",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAEv1",
+    "description": "PSA DAEv1 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DAEv4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DAEv4",
+    "description": "PSA DAEv4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM34",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM34",
+    "description": "PSA DCM34 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM34_P",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM34_P",
+    "description": "PSA DCM34_P ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM35",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM35",
+    "description": "PSA DCM35 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM35_BR2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM35_BR2",
+    "description": "PSA DCM35_BR2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM35_HY",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM35_HY",
+    "description": "PSA DCM35_HY ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM35v2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM35v2",
+    "description": "PSA DCM35v2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM62",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM62",
+    "description": "PSA DCM62 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM62v2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM62v2",
+    "description": "PSA DCM62v2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM71",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM71",
+    "description": "PSA DCM71 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCM71v5",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCM71v5",
+    "description": "PSA DCM71v5 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "DCN2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "DCN2",
+    "description": "PSA DCN2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC15C2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC15C2",
+    "description": "PSA EDC15C2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC16C3",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC16C3",
+    "description": "PSA EDC16C3 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC16CP39",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC16CP39",
+    "description": "PSA EDC16CP39 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC17C10",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC17C10",
+    "description": "PSA EDC17C10 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC17C10_BR2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC17C10_BR2",
+    "description": "PSA EDC17C10_BR2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC17C60",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC17C60",
+    "description": "PSA EDC17C60 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC17CP11",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC17CP11",
+    "description": "PSA EDC17CP11 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EDC17CP42",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EDC17CP42",
+    "description": "PSA EDC17CP42 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "EMF_A",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "EMF_A",
+    "description": "PSA EMF_A ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "GEP_X3",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "GEP_X3",
+    "description": "PSA GEP_X3 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "GEPv1",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "GEPv1",
+    "description": "PSA GEPv1 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "GEPv4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "GEPv4",
+    "description": "PSA GEPv4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "GEPv7",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "GEPv7",
+    "description": "PSA GEPv7 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "HDI_SID803",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "HDI_SID803",
+    "description": "PSA HDI_SID803 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "HDI_SID807",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "HDI_SID807",
+    "description": "PSA HDI_SID807 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "HDI_SID807_BR2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "HDI_SID807_BR2",
+    "description": "PSA HDI_SID807_BR2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "J34P",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "J34P",
+    "description": "PSA J34P ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "M744",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "M744",
+    "description": "PSA M744 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MD1CS003",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MD1CS003",
+    "description": "PSA MD1CS003 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME744",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME744",
+    "description": "PSA ME744 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME745",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME745",
+    "description": "PSA ME745 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME745v3",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME745v3",
+    "description": "PSA ME745v3 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME747",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME747",
+    "description": "PSA ME747 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME749",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME749",
+    "description": "PSA ME749 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "ME749_EC5",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "ME749_EC5",
+    "description": "PSA ME749_EC5 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_2",
+    "description": "PSA MED17_4_2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_2V2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_2V2",
+    "description": "PSA MED17_4_2V2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_4",
+    "description": "PSA MED17_4_4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_4v2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_4v2",
+    "description": "PSA MED17_4_4v2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_EURO4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_EURO4",
+    "description": "PSA MED17_4_EURO4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MED17_4_EURO5",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MED17_4_EURO5",
+    "description": "PSA MED17_4_EURO5 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MEV17_4_2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MEV17_4_2",
+    "description": "PSA MEV17_4_2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MEV17_4_EURO4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MEV17_4_EURO4",
+    "description": "PSA MEV17_4_EURO4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MEV17_4_EURO5",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MEV17_4_EURO5",
+    "description": "PSA MEV17_4_EURO5 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MEVD17_4_2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MEVD17_4_2",
+    "description": "PSA MEVD17_4_2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MEVD17_4_4",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MEVD17_4_4",
+    "description": "PSA MEVD17_4_4 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MM6KP",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MM6KP",
+    "description": "PSA MM6KP ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MM6LP",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MM6LP",
+    "description": "PSA MM6LP ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "MM6LPB",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "MM6LPB",
+    "description": "PSA MM6LPB ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "S2000P",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "S2000P",
+    "description": "PSA S2000P ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "S2000PM2",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "S2000PM2",
+    "description": "PSA S2000PM2 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "SID201",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "SID201",
+    "description": "PSA SID201 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "SID801",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "SID801",
+    "description": "PSA SID801 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V341",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V341",
+    "description": "PSA V341 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V343",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V343",
+    "description": "PSA V343 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V344",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V344",
+    "description": "PSA V344 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V46",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V46",
+    "description": "PSA V46 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V46_21",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V46_21",
+    "description": "PSA V46_21 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "V46_52",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "V46_52",
+    "description": "PSA V46_52 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  },
+  {
+    "id": "VD46v1",
+    "manufacturers": [
+      "CITROEN",
+      "PEUGEOT"
+    ],
+    "display_name": "VD46v1",
+    "description": "PSA VD46v1 ECU",
+    "resources": {
+      "diagnostic_trouble_codes": "extend"
+    }
+  }
+]

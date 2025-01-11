@@ -1,0 +1,366 @@
+{
+  "0115": {
+    "name": "Fault on the engine coolant temperature information not received by the CAN (Engine ECU)",
+    "description": "Not characterised"
+  },
+  "0218": {
+    "name": "Fault : gearbox oil temperature too high (thermal protection pattern 3) with request for reduction of the engine torque",
+    "description": "Not characterised"
+  },
+  "0298": {
+    "name": "Fault: gearbox oil needs replacing",
+    "description": "Not characterised"
+  },
+  "0562": {
+    "name": "ECU supply voltage too low",
+    "description": "Not characterised"
+  },
+  "0563": {
+    "name": "ECU supply voltage too high fault",
+    "description": "Not characterised"
+  },
+  "0601": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0603": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0715": {
+    "name": "Fault on the circuit of the gearbox input speed sensor",
+    "description": "Coherence"
+  },
+  "0717": {
+    "name": "Fault on the circuit of the gearbox input speed sensor",
+    "description": "No signal"
+  },
+  "0720": {
+    "name": "Fault on the circuit of the gearbox output speed sensor",
+    "description": "Coherence"
+  },
+  "0722": {
+    "name": "Fault on the circuit of the gearbox output speed sensor",
+    "description": "No signal"
+  },
+  "0727": {
+    "name": "Fault on the engine speed information not received by the CAN (Engine ECU)",
+    "description": "Not characterised"
+  },
+  "0729": {
+    "name": "Mechanical or hydraulic fault on the sixth gear",
+    "description": "Coherence"
+  },
+  "0731": {
+    "name": "Mechanical or hydraulic fault on the first gear",
+    "description": "Coherence"
+  },
+  "0732": {
+    "name": "Mechanical or hydraulic fault on the second gear",
+    "description": "Coherence"
+  },
+  "0733": {
+    "name": "Mechanical or hydraulic fault on the third gear",
+    "description": "Coherence"
+  },
+  "0734": {
+    "name": "Mechanical or hydraulic fault on the fourth gear",
+    "description": "Coherence"
+  },
+  "0735": {
+    "name": "Mechanical or hydraulic fault on the fifth gear",
+    "description": "Coherence"
+  },
+  "0736": {
+    "name": "Mechanical or hydraulic fault on the reverse gear",
+    "description": "Coherence"
+  },
+  "0741": {
+    "name": "Fault the converter cannot be locked up",
+    "description": "Not characterised"
+  },
+  "0742": {
+    "name": "Converter permanently locked up fault",
+    "description": "Not characterised"
+  },
+  "0765": {
+    "name": "General fault on the reduction of drag in mode D (neutral)",
+    "description": "Not characterised"
+  },
+  "0771": {
+    "name": "Unwanted change to neutral in mode D or R detection fault (automatic gearbox mechanical or hydraulic fault)",
+    "description": "Not characterised"
+  },
+  "0772": {
+    "name": "Fault in engagement of the clutch C1 for reduction of drag in mode D (neutral)",
+    "description": "Not characterised"
+  },
+  "0780": {
+    "name": "Random gear change fault",
+    "description": "Coherence"
+  },
+  "0819": {
+    "name": "One-touch control signal fault",
+    "description": "Change of position impossible"
+  },
+  "0826": {
+    "name": "One-touch control signal fault",
+    "description": "Locking in position M+ or M-"
+  },
+  "0928": {
+    "name": "Fault on the lever locking actuator circuit (shift-lock)",
+    "description": "Short circuit to positive"
+  },
+  "0930": {
+    "name": "Fault on the lever locking actuator circuit (shift-lock)",
+    "description": "Coherence"
+  },
+  "0938": {
+    "name": "Automatic gearbox oil temperature blocked at the same value fault (Information from the sensor)",
+    "description": "Coherence"
+  },
+  "0939": {
+    "name": "Fault on the automatic gearbox oil temperature sensor circuit",
+    "description": "Short circuit to earth"
+  },
+  "0940": {
+    "name": "Fault on the automatic gearbox oil temperature sensor circuit",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0961": {
+    "name": "SLT solenoid locking fault",
+    "description": "Locking"
+  },
+  "0962": {
+    "name": "Fault on the circuit of the \"SLT\" solenoid valve (Regulation of the line pressure)",
+    "description": "Coherence"
+  },
+  "0963": {
+    "name": "Fault on the circuit of the \"SLT\" solenoid valve (Regulation of the line pressure)",
+    "description": "Short circuit to positive"
+  },
+  "0965": {
+    "name": "SLB1 solenoid locking fault  ( gear shift control )",
+    "description": "Locking"
+  },
+  "0966": {
+    "name": "Fault on the control circuit of the \"SLB1\" solenoid valve (Gear control)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "0967": {
+    "name": "Fault on the control circuit of the \"SLB1\" solenoid valve (Gear control)",
+    "description": "Short circuit to positive"
+  },
+  "0969": {
+    "name": "SLC1 solenoid locking fault  ( gear shift control )",
+    "description": "Locking"
+  },
+  "0970": {
+    "name": "Fault on the control circuit of the \"SLC1\" solenoid valve (Gear control)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "0971": {
+    "name": "Fault on the control circuit of the \"SLC1\" solenoid valve (Gear control)",
+    "description": "Short circuit to positive"
+  },
+  "0973": {
+    "name": "Fault on the circuit of the \"S1\" solenoid valve (Control of the engine brake)",
+    "description": "Short circuit to earth"
+  },
+  "0974": {
+    "name": "Fault on the circuit of the \"S1\" solenoid valve (Control of the engine brake)",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0976": {
+    "name": "Fault on the circuit of the \"S2\" solenoid valve (Control of the engine brake)",
+    "description": "Short circuit to earth"
+  },
+  "0977": {
+    "name": "Fault on the circuit of the \"S2\" solenoid valve (Control of the engine brake)",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1605": {
+    "name": "Engine torque required by the driver information not received by the CAN fault (Engine ECU)",
+    "description": "Not characterised"
+  },
+  "1613": {
+    "name": "Configuration not carried out fault",
+    "description": "Not characterised"
+  },
+  "1703": {
+    "name": "Fault on the accelerator pedal position information not received by the CAN (Engine ECU)",
+    "description": "Not characterised"
+  },
+  "1727": {
+    "name": "Fault on the actual engine torque information not received by the CAN (Engine ECU)",
+    "description": "Not characterised"
+  },
+  "1732": {
+    "name": "Fault on the gear selector position sensor (Incorporated in the automatic gearbox ECU)",
+    "description": "Low stop"
+  },
+  "1733": {
+    "name": "Fault on the gear selector position sensor (Incorporated in the automatic gearbox ECU)",
+    "description": "Coherence"
+  },
+  "1737": {
+    "name": "Fault on the gear selector position sensor (Incorporated in the automatic gearbox ECU)",
+    "description": "High stop"
+  },
+  "1771": {
+    "name": "Exit from the \"Reduction of drag\" in mode D operating mode fault (neutral)",
+    "description": "Not characterised"
+  },
+  "1828": {
+    "name": "Fault on the starting inhibiting control output (Start-lock)",
+    "description": "Short circuit to positive"
+  },
+  "1829": {
+    "name": "Fault on the starting inhibiting control output (Start-lock)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "1830": {
+    "name": "Fault on the front wheels speed information not received by the CAN (Anti-lock braking system ECU)",
+    "description": "Not characterised"
+  },
+  "1838": {
+    "name": "Mechanical or hydraulic fault on the engine brake function in the first sequential mode",
+    "description": "Coherence"
+  },
+  "1839": {
+    "name": "Reduction of drag in mode D activation fault (neutral)",
+    "description": "Not characterised"
+  },
+  "2719": {
+    "name": "SLC2 solenoid locking fault  ( gear shift control )",
+    "description": "Locking"
+  },
+  "2720": {
+    "name": "Fault on the control circuit of the \"SLC2\" solenoid valve (Gear control)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "2721": {
+    "name": "Fault on the control circuit of the \"SLC2\" solenoid valve (Gear control)",
+    "description": "Short circuit to positive"
+  },
+  "2728": {
+    "name": "SLC3 solenoid locking fault  ( gear shift control )",
+    "description": "Locking"
+  },
+  "2729": {
+    "name": "Fault on the control circuit of the \"SLC3\" solenoid valve (Gear control)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "2730": {
+    "name": "Fault on the control circuit of the \"SLC3\" solenoid valve (Gear control)",
+    "description": "Short circuit to positive"
+  },
+  "2762": {
+    "name": "SLU solenoid locking fault (Control of the converter or lock-up)",
+    "description": "Locking"
+  },
+  "2763": {
+    "name": "Fault on the control circuit of the \"SLU\" solenoid valve (Control of the converter or lock-up)",
+    "description": "Short circuit to positive"
+  },
+  "2764": {
+    "name": "Fault on the control circuit of the \"SLU\" solenoid valve (Control of the converter or lock-up)",
+    "description": "Short-circuit to earth or circuit open"
+  },
+  "2775": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Coherence"
+  },
+  "2776": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Short circuit to earth"
+  },
+  "2777": {
+    "name": "Fault in the sequential signal + or the sensor",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "2779": {
+    "name": "Sequential signal - or sensor fault",
+    "description": "Coherence"
+  },
+  "2780": {
+    "name": "Sequential signal - or sensor fault",
+    "description": "Short circuit to earth"
+  },
+  "2781": {
+    "name": "Sequential signal - or sensor fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "5325": {
+    "name": "Fault on the rear left wheel speed information not received by the CAN (Anti-lock braking system ECU)",
+    "description": "Not characterised"
+  },
+  "5335": {
+    "name": "Fault on the rear right wheel speed information not received by the CAN (Anti-lock braking system ECU)",
+    "description": "Not characterised"
+  },
+  "D000": {
+    "name": "Communication fault on the CAN between the automatic gearbox ECU and the other ECUs of the network",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "Fault: CAN",
+    "description": "Not characterised"
+  },
+  "D105": {
+    "name": "Fault - absence of communication with the steering wheel angle sensor",
+    "description": "Not characterised"
+  },
+  "D108": {
+    "name": "Fault in communication on the CAN with the engine management ECU",
+    "description": "Not characterised"
+  },
+  "D110": {
+    "name": "Fault in communication with the automatic gearbox electric control ECU",
+    "description": "Not characterised"
+  },
+  "D113": {
+    "name": "Fault in communication on the CAN with the ESP ECU",
+    "description": "Not characterised"
+  },
+  "D118": {
+    "name": "Fault in communication with the BSI on the CAN",
+    "description": "Not characterised"
+  },
+  "D205": {
+    "name": "Fault in the steering wheel angle information received by the CAN",
+    "description": "Incorrect value received"
+  },
+  "D208": {
+    "name": "Fault in the information transmitted by the engine ECU",
+    "description": "Incorrect value received"
+  },
+  "D213": {
+    "name": "Fault in the information transmitted by the dynamic stability control (ESP) ECU",
+    "description": "Incorrect value received"
+  },
+  "D218": {
+    "name": "Fault on the engine oil or intake air temperature information received by the CAN (Engine ECU)",
+    "description": "Incorrect value received"
+  },
+  "D310": {
+    "name": "Automatic gearbox electric control fault",
+    "description": "Not characterised"
+  },
+  "E000": {
+    "name": "Fault in synchronisation of the main controlled reawakening request received by the CAN (BSI ECU) and the controlled reawakening control by wire",
+    "description": "Not characterised"
+  },
+  "E003": {
+    "name": "Coherence fault between the status of the vehicle and the main controlled triggering request received by the CAN",
+    "description": "Not characterised"
+  },
+  "E109": {
+    "name": "Fault in synchronisation of the partial controlled reawakening request received by the CAN (BSI ECU) and the controlled reawakening control by wire",
+    "description": "Not characterised"
+  }
+}

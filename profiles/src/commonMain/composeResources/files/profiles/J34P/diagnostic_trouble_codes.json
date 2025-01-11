@@ -1,0 +1,738 @@
+{
+  "0008": {
+    "name": "Detection of phase integrated with ignition",
+    "description": "Not characterised"
+  },
+  "0030": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0032": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0036": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0038": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0105": {
+    "name": "Inlet manifold pressure sensor signal",
+    "description": "Coherence"
+  },
+  "0106": {
+    "name": "Inlet manifold pressure sensor signal",
+    "description": "Coherence"
+  },
+  "0107": {
+    "name": "Inlet manifold pressure sensor signal",
+    "description": "OC, SC-"
+  },
+  "0108": {
+    "name": "Inlet manifold pressure sensor signal",
+    "description": "SC+"
+  },
+  "0110": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "SC+, OC"
+  },
+  "0111": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "Problem"
+  },
+  "0112": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "SC-"
+  },
+  "0113": {
+    "name": "Inlet air temperature sensor signal",
+    "description": "SC+, OC"
+  },
+  "0115": {
+    "name": "Coolant temperature sensor signal",
+    "description": "SC+, OC"
+  },
+  "0116": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Coherence"
+  },
+  "0117": {
+    "name": "Coolant temperature sensor signal",
+    "description": "SC-"
+  },
+  "0118": {
+    "name": "Coolant temperature sensor signal",
+    "description": "SC+, OC"
+  },
+  "0121": {
+    "name": "Motorised throttle signal inconsistent between track (1) and (2)",
+    "description": "Coherence"
+  },
+  "0122": {
+    "name": "Motorised throttle signal, track (1)",
+    "description": "OC, SC-"
+  },
+  "0123": {
+    "name": "Motorised throttle signal, track (1)",
+    "description": "SC+"
+  },
+  "0130": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Not characterised"
+  },
+  "0131": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "SC-"
+  },
+  "0132": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Not characterised"
+  },
+  "0133": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0134": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "OC"
+  },
+  "0135": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0136": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0137": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "SC-"
+  },
+  "0138": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0139": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0140": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "OC"
+  },
+  "0141": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "SC-, OC SC+"
+  },
+  "0171": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0172": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "0197": {
+    "name": "Engine oil level sensor voltage",
+    "description": "Voltage low"
+  },
+  "0198": {
+    "name": "Engine oil level sensor voltage",
+    "description": "Voltage too high"
+  },
+  "0201": {
+    "name": "Injector no. 1 control fault",
+    "description": "OC, SC-"
+  },
+  "0202": {
+    "name": "Injector no. 2 control fault",
+    "description": "OC, SC-"
+  },
+  "0203": {
+    "name": "Injector no. 3 control fault",
+    "description": "OC, SC-"
+  },
+  "0204": {
+    "name": "Injector no. 4 control fault",
+    "description": "OC, SC-"
+  },
+  "0221": {
+    "name": "Pedal sensor signal lack of coherence of track (1) and (2)",
+    "description": "Problem"
+  },
+  "0222": {
+    "name": "Accelerator pedal sensor track (1) signal",
+    "description": "SC-"
+  },
+  "0223": {
+    "name": "Accelerator pedal sensor track (1) signal",
+    "description": "SC+, OC"
+  },
+  "0227": {
+    "name": "Accelerator pedal sensor track (2) signal",
+    "description": "SC-"
+  },
+  "0228": {
+    "name": "Accelerator pedal sensor track (2) signal",
+    "description": "SC+, OC"
+  },
+  "0262": {
+    "name": "Injector no. 1 control fault",
+    "description": "SC+"
+  },
+  "0265": {
+    "name": "Injector no. 2 control fault",
+    "description": "SC+"
+  },
+  "0268": {
+    "name": "Injector no. 3 control fault",
+    "description": "SC+"
+  },
+  "0271": {
+    "name": "Injector no. 4 control fault",
+    "description": "SC+"
+  },
+  "0300": {
+    "name": "Misfiring on one or several undetermined cylinders",
+    "description": "Not characterised"
+  },
+  "0301": {
+    "name": "Misfire on cylinder (1)",
+    "description": "Not characterised"
+  },
+  "0302": {
+    "name": "Misfire on cylinder (2)",
+    "description": "Not characterised"
+  },
+  "0303": {
+    "name": "Misfire on cylinder (3)",
+    "description": "Not characterised"
+  },
+  "0304": {
+    "name": "Misfire on cylinder (4)",
+    "description": "Not characterised"
+  },
+  "0313": {
+    "name": "Misfire detected during a low fuel level",
+    "description": "Not characterised"
+  },
+  "0315": {
+    "name": "Misfiring on one or several undetermined cylinders",
+    "description": "Adaptive at limit"
+  },
+  "0326": {
+    "name": "Pinking sensor signal",
+    "description": "Problem"
+  },
+  "0335": {
+    "name": "Engine speed sensor signal",
+    "description": "Problem"
+  },
+  "0336": {
+    "name": "Engine speed sensor signal",
+    "description": "Problem"
+  },
+  "0351": {
+    "name": "Ignition coil 1 and 4 control fault",
+    "description": "SC+, SC- or OC"
+  },
+  "0352": {
+    "name": "Ignition coil 2 and 3 control fault",
+    "description": "SC+, SC- or OC"
+  },
+  "0400": {
+    "name": "EGR electrovalve",
+    "description": "Problem"
+  },
+  "0420": {
+    "name": "Catalytic converter ageing",
+    "description": "Loss of efficiency"
+  },
+  "0444": {
+    "name": "Canister bleed electrovalve signal",
+    "description": "OC, SC-"
+  },
+  "0445": {
+    "name": "Canister bleed electrovalve signal",
+    "description": "SC+"
+  },
+  "0461": {
+    "name": "Fault: fuel sender signal",
+    "description": "Problem"
+  },
+  "0462": {
+    "name": "Fault: fuel sender signal",
+    "description": "SC-"
+  },
+  "0463": {
+    "name": "Fault: fuel sender signal",
+    "description": "OC"
+  },
+  "0480": {
+    "name": "High speed fan (fan(1)) relay control",
+    "description": "Problem"
+  },
+  "0481": {
+    "name": "Low speed fan (fan(2)) relay control",
+    "description": "Problem"
+  },
+  "0483": {
+    "name": "Cooling function incorporated into the engine ECU",
+    "description": "Not characterised"
+  },
+  "0485": {
+    "name": "Cooling function incorporated into the engine ECU",
+    "description": "Not characterised"
+  },
+  "0493": {
+    "name": "Cooling function incorporated into the engine ECU",
+    "description": "Not characterised"
+  },
+  "0494": {
+    "name": "Cooling function incorporated into the engine ECU",
+    "description": "Not characterised"
+  },
+  "0501": {
+    "name": "Vehicle speed sensor signal",
+    "description": "Problem"
+  },
+  "0503": {
+    "name": "Vehicle speed sensor signal",
+    "description": "Problem"
+  },
+  "0512": {
+    "name": "Information sent by the BSI",
+    "description": "Coherence"
+  },
+  "0531": {
+    "name": "Air conditioning pressure sensor signal",
+    "description": "Problem"
+  },
+  "0532": {
+    "name": "Air conditioning pressure sensor signal",
+    "description": "Lower limit"
+  },
+  "0533": {
+    "name": "Air conditioning pressure sensor signal",
+    "description": "Maximum value"
+  },
+  "0562": {
+    "name": "Battery voltage",
+    "description": "Too low"
+  },
+  "0563": {
+    "name": "Battery voltage",
+    "description": "Too high"
+  },
+  "0568": {
+    "name": "Cruise control signal",
+    "description": "Problem"
+  },
+  "0571": {
+    "name": "Redundant brake switch signal",
+    "description": "Problem"
+  },
+  "0575": {
+    "name": "Cruise control (RVV) or speed limiter (LVV) operating fault",
+    "description": "Not characterised"
+  },
+  "0598": {
+    "name": "Controlled thermostat signal",
+    "description": "OC, SC-"
+  },
+  "0599": {
+    "name": "Controlled thermostat signal",
+    "description": "SC+"
+  },
+  "0601": {
+    "name": "Engine ECU internal (CAN)",
+    "description": "Not characterised"
+  },
+  "0602": {
+    "name": "Configuration fault or ECU downloading not carried out",
+    "description": "Not characterised"
+  },
+  "0603": {
+    "name": "Engine ECU internal (CAN)",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "Engine ECU internal (CAN)",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "Engine ECU internal (CAN)",
+    "description": "Not characterised"
+  },
+  "0608": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "0609": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "0615": {
+    "name": "DAMP (Controlled Engine Stop Start)",
+    "description": "Coherence"
+  },
+  "0617": {
+    "name": "Fault: starting control",
+    "description": "SC+"
+  },
+  "0620": {
+    "name": "Controlled alternator",
+    "description": "Not characterised"
+  },
+  "0638": {
+    "name": "Throttle position regulation",
+    "description": "Coherence"
+  },
+  "0657": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "0658": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "0685": {
+    "name": "Actuators supply",
+    "description": "OC"
+  },
+  "0686": {
+    "name": "Actuators supply",
+    "description": "SC+, SC-"
+  },
+  "0691": {
+    "name": "High speed fan (fan(1)) relay control",
+    "description": "OC, SC-"
+  },
+  "0692": {
+    "name": "High speed fan (fan(1)) relay control",
+    "description": "SC+"
+  },
+  "0693": {
+    "name": "Low speed fan (fan(2)) relay control",
+    "description": "Problem"
+  },
+  "0694": {
+    "name": "Low speed fan (fan(2)) relay control",
+    "description": "Problem"
+  },
+  "0703": {
+    "name": "Redundant brake switch signal",
+    "description": "Problem"
+  },
+  "0704": {
+    "name": "Clutch sensor signal",
+    "description": "Problem"
+  },
+  "1108": {
+    "name": "Adaptation of air entering the inlet manifold",
+    "description": "Not characterised"
+  },
+  "1109": {
+    "name": "Adaptation of air entering the inlet manifold",
+    "description": "Not characterised"
+  },
+  "1110": {
+    "name": "Adaptation of air entering the inlet manifold",
+    "description": "Not characterised"
+  },
+  "1152": {
+    "name": "Motorised throttle motor control",
+    "description": "Not characterised"
+  },
+  "1153": {
+    "name": "Program motorised throttle limits",
+    "description": "Lower limit"
+  },
+  "1157": {
+    "name": "Motorised throttle signal, track (2)",
+    "description": "OC, SC-"
+  },
+  "1158": {
+    "name": "Motorised throttle signal, track (2)",
+    "description": "SC+"
+  },
+  "1161": {
+    "name": "Throttle position regulation",
+    "description": "Coherence"
+  },
+  "1327": {
+    "name": "Detection of phase integrated with ignition",
+    "description": "Not characterised"
+  },
+  "1336": {
+    "name": "Misfiring on one or several undetermined cylinders",
+    "description": "Not characterised"
+  },
+  "1337": {
+    "name": "Misfire on cylinder (1)",
+    "description": "Not characterised"
+  },
+  "1338": {
+    "name": "Misfire on cylinder (2)",
+    "description": "Not characterised"
+  },
+  "1339": {
+    "name": "Misfire on cylinder (3)",
+    "description": "Not characterised"
+  },
+  "1340": {
+    "name": "Misfire on cylinder (4)",
+    "description": "Not characterised"
+  },
+  "1378": {
+    "name": "Misfiring on one or several undetermined cylinders",
+    "description": "Adaptive at limit"
+  },
+  "1385": {
+    "name": "Knock regulation",
+    "description": "Maximum value"
+  },
+  "1386": {
+    "name": "Knock regulation",
+    "description": "Lower limit"
+  },
+  "1438": {
+    "name": "Binding of the engine fuse box power relay",
+    "description": "Not characterised"
+  },
+  "1511": {
+    "name": "Supply with + ig. on",
+    "description": "SC+"
+  },
+  "1526": {
+    "name": "Alternator charge information",
+    "description": "Not characterised"
+  },
+  "1601": {
+    "name": "Actuators supply",
+    "description": "SC+, OC, SC-"
+  },
+  "1607": {
+    "name": "Vehicle speed limitation",
+    "description": "Not characterised"
+  },
+  "1613": {
+    "name": "Configuration",
+    "description": "Not characterised"
+  },
+  "1614": {
+    "name": "Speed Limiter point of resistance sensor signal",
+    "description": "Problem"
+  },
+  "1632": {
+    "name": "Throttle opening / pedal position coherence fault",
+    "description": "Coherence"
+  },
+  "1643": {
+    "name": "Speed Limiter point of resistance sensor signal",
+    "description": "SC-"
+  },
+  "1644": {
+    "name": "Speed Limiter point of resistance sensor signal",
+    "description": "SC+, OC"
+  },
+  "1645": {
+    "name": "Lack of coherence between the speed limiter point of resistance sensor signal and the accelerator pedal position signal",
+    "description": "Coherence"
+  },
+  "1655": {
+    "name": "Engine running information",
+    "description": "SC+"
+  },
+  "1671": {
+    "name": "Cruise control",
+    "description": "Not characterised"
+  },
+  "1674": {
+    "name": "Controlled Alternator Mechanics",
+    "description": "Mechanic malfunction"
+  },
+  "1675": {
+    "name": "Controlled alternator electrical signal",
+    "description": "Electrical fault"
+  },
+  "1676": {
+    "name": "Controlled alternator",
+    "description": "Not characterised"
+  },
+  "1680": {
+    "name": "Oil level sensor signal",
+    "description": "Coherence"
+  },
+  "1693": {
+    "name": "Information sent by the BSI",
+    "description": "Coherence"
+  },
+  "1694": {
+    "name": "Fault: short circuit to positive on the starting control or DAMP (Controlled Engine Starting and Stopping) fault",
+    "description": "Not characterised"
+  },
+  "1695": {
+    "name": "DAMP (Controlled Engine Stop Start)",
+    "description": "Coherence"
+  },
+  "2101": {
+    "name": "Motorised throttle motor control",
+    "description": "Not characterised"
+  },
+  "2122": {
+    "name": "Motorised throttle signal, track (2)",
+    "description": "OC, SC-"
+  },
+  "2123": {
+    "name": "Motorised throttle signal, track (2)",
+    "description": "SC+"
+  },
+  "2130": {
+    "name": "Lack of coherence between the speed limiter point of resistance sensor signal and the accelerator pedal position signal",
+    "description": "Coherence"
+  },
+  "2131": {
+    "name": "Lack of coherence between the speed limiter point of resistance sensor signal and the accelerator pedal position signal",
+    "description": "Coherence"
+  },
+  "2132": {
+    "name": "Speed Limiter point of resistance sensor signal",
+    "description": "SC-"
+  },
+  "2133": {
+    "name": "Speed Limiter point of resistance sensor signal",
+    "description": "SC+, OC"
+  },
+  "2137": {
+    "name": "Pedal sensor signal lack of coherence of track (1) and (2)",
+    "description": "Problem"
+  },
+  "2176": {
+    "name": "Programming of the motorised throttle Limp Home position",
+    "description": "Coherence"
+  },
+  "2195": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Not characterised"
+  },
+  "2196": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Not characterised"
+  },
+  "2270": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "2271": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Problem"
+  },
+  "2299": {
+    "name": "Lock of coherence between the accelerator pedal sensor signal and the brake switch signal",
+    "description": "Coherence"
+  },
+  "250B": {
+    "name": "Engine oil level signal",
+    "description": "Level incorrect"
+  },
+  "250C": {
+    "name": "Engine oil level signal",
+    "description": "SC-, OC"
+  },
+  "250D": {
+    "name": "Engine oil level signal",
+    "description": "SC+"
+  },
+  "2669": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "2670": {
+    "name": "Sensor power supply",
+    "description": "Not characterised"
+  },
+  "3019": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Coherence"
+  },
+  "C019": {
+    "name": "No communication on the network (CAN)",
+    "description": "No signal"
+  },
+  "C028": {
+    "name": "Communication on the comfort VAN",
+    "description": "No signal"
+  },
+  "C037": {
+    "name": "Communication on the Bodywork VAN",
+    "description": "No signal"
+  },
+  "C055": {
+    "name": "Communication on the Comfort CAN",
+    "description": "No signal"
+  },
+  "C103": {
+    "name": "Automatic gearbox ECU reception",
+    "description": "No signal"
+  },
+  "C122": {
+    "name": "ESP ECU reception",
+    "description": "No signal"
+  },
+  "C140": {
+    "name": "BSI reception",
+    "description": "No signal"
+  },
+  "C400": {
+    "name": "CAN message system",
+    "description": "Coherence"
+  },
+  "C404": {
+    "name": "Automatic gearbox ECU reception",
+    "description": "Coherence"
+  },
+  "C405": {
+    "name": "Faults in the cruise control (RVV) or speed limiter (LVV) information transmitted by the built-in systems interface (BSI)",
+    "description": "Coherence"
+  },
+  "C415": {
+    "name": "No vehicle speed information transmitted by the ABS/ESP ECU",
+    "description": "No signal"
+  },
+  "C416": {
+    "name": "ESP ECU reception",
+    "description": "Coherence"
+  },
+  "D000": {
+    "name": "Communication between the engine management ECU and the other ECUs on the network (CAN)",
+    "description": "Not characterised"
+  },
+  "D003": {
+    "name": "No communication on the network (CAN)",
+    "description": "No signal"
+  },
+  "D117": {
+    "name": "Variable suspension ECU reception",
+    "description": "No signal"
+  },
+  "D118": {
+    "name": "BSI reception",
+    "description": "No signal"
+  },
+  "E000": {
+    "name": "Remote controlled wake-up communication on CAN",
+    "description": "Not characterised"
+  },
+  "E003": {
+    "name": "Remote controlled wake-up communication on CAN",
+    "description": "Not characterised"
+  },
+  "0FFE": {
+    "name": "No fault found",
+    "description": ""
+  }
+}
