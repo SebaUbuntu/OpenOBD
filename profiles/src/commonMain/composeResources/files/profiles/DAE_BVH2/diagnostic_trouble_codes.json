@@ -1,0 +1,126 @@
+{
+  "0562": {
+    "name": "Undervoltage fault",
+    "description": "-"
+  },
+  "0563": {
+    "name": "Overvoltage fault",
+    "description": "-"
+  },
+  "0602": {
+    "name": "Downloading fault",
+    "description": "Calibration downloading"
+  },
+  "0603": {
+    "name": "Internal fault",
+    "description": "-"
+  },
+  "0604": {
+    "name": "Internal fault",
+    "description": "-"
+  },
+  "0605": {
+    "name": "Internal fault",
+    "description": "-"
+  },
+  "0606": {
+    "name": "Internal control unit fault",
+    "description": "-"
+  },
+  "1613": {
+    "name": "Configuration fault",
+    "description": "-"
+  },
+  "5400": {
+    "name": "Fault - torque sensor",
+    "description": "-"
+  },
+  "5406": {
+    "name": "Overheating of the power steering motor or ECU",
+    "description": "-"
+  },
+  "540B": {
+    "name": "Supply fault",
+    "description": "Voltage too low"
+  },
+  "5566": {
+    "name": "Communication error",
+    "description": "-"
+  },
+  "5638": {
+    "name": "Communications error",
+    "description": "Steering wheel angle information"
+  },
+  "563A": {
+    "name": "Overheating of the power steering motor or ECU",
+    "description": "-"
+  },
+  "5644": {
+    "name": "Supply fault",
+    "description": "Open circuit"
+  },
+  "D000": {
+    "name": "No communication on the CAN",
+    "description": "-"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN network",
+    "description": "-"
+  },
+  "D105": {
+    "name": "Fault - absence of communication with the steering wheel angle sensor",
+    "description": "No signal"
+  },
+  "D108": {
+    "name": "Fault: internal combustion engine status information",
+    "description": "-"
+  },
+  "D113": {
+    "name": "Fault: no communication with anti-lock braking system (ABS) or electronic stability program (ESP)",
+    "description": "-"
+  },
+  "D118": {
+    "name": "Absence of communication fault with the built-in Systems Interface",
+    "description": "Missing datastream"
+  },
+  "D11D": {
+    "name": "Fault: no communication with parking assistance ECU",
+    "description": "-"
+  },
+  "D205": {
+    "name": "Communication fault with the steering wheel angle sensor",
+    "description": "Coherence"
+  },
+  "D208": {
+    "name": "Fault: internal combustion engine status information",
+    "description": "No communication"
+  },
+  "D213": {
+    "name": "Communication fault between the electric power steering (DAE) ECU and the ABS/ESP ECU",
+    "description": "-"
+  },
+  "D21D": {
+    "name": "Communication fault with the parking assistance ECU",
+    "description": "-"
+  },
+  "D305": {
+    "name": "Fault - absence of communication with the steering wheel angle sensor",
+    "description": "No signal"
+  },
+  "D308": {
+    "name": "Fault: internal combustion engine status information",
+    "description": "-"
+  },
+  "D313": {
+    "name": "Fault: no communication with anti-lock braking system (ABS) or electronic stability program (ESP)",
+    "description": "Value received incorrect"
+  },
+  "D318": {
+    "name": "Absence of communication fault with the built-in Systems Interface",
+    "description": "Value received incorrect"
+  },
+  "D31D": {
+    "name": "Fault: no communication with parking assistance ECU",
+    "description": "-"
+  }
+}
