@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+     SPDX-FileCopyrightText: Sebastiano Barezzi
+     SPDX-License-Identifier: GPL-3.0-or-later
+-->
+<resources>
+    <string name="app_name" translatable="false">OpenOBD</string>
+
+    <!-- Generic UI elements -->
+    <string name="go_back">Go back</string>
+
+    <!-- Devices -->
+    <string name="devices">Devices</string>
+    <string name="current_device_none">None</string>
+    <string name="no_device_connected">No device connected</string>
+    <string name="unknown_device">Unknown device</string>
+
+    <!-- Connection types -->
+    <string name="connection_type_none">None</string>
+    <string name="connection_type_usb" translatable="false">USB</string>
+    <string name="connection_type_bluetooth" translatable="false">Bluetooth</string>
+    <string name="connection_type_bluetooth_le" translatable="false">Bluetooth LE</string>
+    <string name="connection_type_network">Network</string>
+    <string name="connection_type_serial">Serial</string>
+    <string name="connection_type_demo">Demo</string>
+
+    <!-- Functions -->
+    <string name="dashboard">Dashboard</string>
+    <string name="dtc">Diagnostic Trouble Codes (DTC)</string>
+    <string name="current_data">Current data</string>
+    <string name="freeze_frame_data">Freeze frame data</string>
+    <string name="vehicle_information">Vehicle information</string>
+    <string name="settings">Settings</string>
+
+    <!-- Terminal -->
+    <string name="terminal">Terminal</string>
+    <string name="send_command">Send</string>
+
+    <!-- Logs -->
+    <string name="logs">Logs</string>
+
+    <!-- Settings -->
+    <string name="settings_general">General</string>
+    <string name="theme">Theme</string>
+    <string name="dynamic_colors">Dynamic colors</string>
+    <string name="dynamic_colors_description">Enable dynamic colors</string>
+    <string name="settings_units">Units</string>
+    <string name="speed_unit">Speed unit</string>
+    <string name="temperature_unit">Temperature unit</string>
+    <string name="settings_platform">Platform</string>
+    <string name="platform_information">Platform information</string>
+    <string name="device_type">Device type</string>
+
+    <!-- Themes -->
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+
+    <!-- Generic buttons -->
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- Permissions -->
+    <string name="permission_bluetooth">Bluetooth</string>
+
+    <!-- Permission gated composable -->
+    <string name="permission_not_granted">Permission not granted: %1$s</string>
+    <string name="request_permission">Request permission</string>
+    <string name="permission_denied">Permission denied: %1$s. Open the app settings to grant it</string>
+
+    <!-- Connection gated composable -->
+    <string name="no_active_connection">No active connection</string>
+
+    <!-- Device manager state -->
+    <string name="device_manager_state_unavailable">Unavailable</string>
+    <string name="device_manager_state_disabled">Disabled</string>
+    <string name="device_manager_state_disabling">Disabling</string>
+    <string name="device_manager_state_enabling">Enabling</string>
+    <string name="device_manager_state_enabled">Enabled</string>
+
+    <!-- Bluetooth device state -->
+    <string name="bluetooth_device_state_unknown">Unknown</string>
+    <string name="bluetooth_device_state_available">Available</string>
+    <string name="bluetooth_device_state_bonding">Bonding</string>
+    <string name="bluetooth_device_state_bonded">Bonded</string>
+    <string name="bluetooth_device_state_connecting">Connecting</string>
+    <string name="bluetooth_device_state_connected">Connected</string>
+    <string name="bluetooth_device_state_disconnecting">Disconnecting</string>
+
+    <!-- Network devices screen -->
+    <string name="network_devices_connect">Connect</string>
+    <string name="network_devices_create">Add</string>
+    <string name="network_devices_update">Edit</string>
+    <string name="network_device_display_name">Display name</string>
+    <string name="network_device_hostname">Hostname</string>
+    <string name="network_device_port">Port</string>
+    <string name="network_devices_delete">Delete</string>
+    <string name="network_devices_delete_confirmation">Are you sure you want to delete this device?</string>
+
+    <!-- Data types -->
+    <string name="calculated_engine_load">Calculated engine load</string>
+    <string name="engine_coolant_temperature">Engine coolant temperature</string>
+    <string name="engine_speed">Engine speed</string>
+    <string name="vehicle_speed">Vehicle speed</string>
+    <string name="intake_air_temperature">Intake air temperature</string>
+    <string name="throttle_position">Throttle position</string>
+    <string name="ambient_air_temperature">Ambient air temperature</string>
+    <string name="fuel_type">Fuel type</string>
+    <string name="engine_oil_temperature">Engine oil temperature</string>
+    <string name="dpf_temperature">Diesel particulate filter (DPF) temperature</string>
+    <string name="odometer">Odometer</string>
+
+    <!-- Errors -->
+    <string name="error_not_implemented">Not implemented</string>
+    <string name="error_io">I/O error</string>
+    <string name="error_authentication_required">Authentication required</string>
+    <string name="error_invalid_credentials">Invalid credentials</string>
+    <string name="error_not_found">Not found</string>
+    <string name="error_already_exists">Already exists</string>
+    <string name="error_deserialization">Deserialization error</string>
+    <string name="error_cancelled">Cancelled</string>
+    <string name="error_invalid_response">Invalid response</string>
+
+    <!-- Connection status -->
+    <string name="connection_status_idle">Idle</string>
+    <string name="connection_status_connecting">Connecting</string>
+    <string name="connection_status_initializing">Initializing ELM327</string>
+    <string name="connection_status_ready">Ready</string>
+    <string name="connection_status_failed_connection">Cannot connect to the device</string>
+    <string name="connection_status_failed_initialization">Cannot initialize ELM327</string>
+
+    <!-- Session information -->
+    <string name="session_information">Session information</string>
+    <string name="session_information_device_description">Device description</string>
+    <string name="session_information_device_identifier">Device identifier</string>
+    <string name="session_information_version_id">Version ID</string>
+    <string name="session_information_input_voltage">Input voltage</string>
+    <string name="session_information_obd_protocol">OBD protocol</string>
+    <string name="session_information_obd_protocol_description">OBD protocol description</string>
+    <string name="session_information_ignition">Ignition</string>
+
+    <!-- Diagnostic trouble codes -->
+    <string name="unknown_dtc">Unknown DTC</string>
+
+    <!-- Speed units -->
+    <string name="speed_unit_meter_per_second">Meter per second</string>
+    <string name="speed_unit_mile_per_hour">Mile per hour</string>
+    <string name="speed_unit_kilometer_per_hour">Kilometer per hour</string>
+
+    <!-- Temperature units -->
+    <string name="temperature_unit_celsius">Celsius</string>
+    <string name="temperature_unit_fahrenheit">Fahrenheit</string>
+    <string name="temperature_unit_kelvin">Kelvin</string>
+</resources>
