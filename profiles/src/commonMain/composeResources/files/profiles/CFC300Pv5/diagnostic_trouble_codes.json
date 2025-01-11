@@ -1,0 +1,438 @@
+{
+  "0556": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "Switch jammed"
+  },
+  "0559": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "Coherence"
+  },
+  "0561": {
+    "name": "ECU supply fault: + permanent",
+    "description": "Open circuit"
+  },
+  "0562": {
+    "name": "ECU supply fault: + permanent",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "ECU supply fault: + permanent",
+    "description": "Voltage too high"
+  },
+  "0573": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "Open circuit"
+  },
+  "0603": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0604": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0605": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0606": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0608": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0609": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0613": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0634": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "0807": {
+    "name": "Clutch actuator position signal fault - secondary circuit",
+    "description": "Short circuit to earth"
+  },
+  "0808": {
+    "name": "Clutch actuator position signal fault - secondary circuit",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0811": {
+    "name": "Clutch overheating fault",
+    "description": "Not characterised"
+  },
+  "0840": {
+    "name": "Oil pressure signal fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0841": {
+    "name": "Oil pressure signal fault",
+    "description": "Coherence"
+  },
+  "0842": {
+    "name": "Oil pressure signal fault",
+    "description": "Short circuit to earth"
+  },
+  "0844": {
+    "name": "Oil pressure signal fault",
+    "description": "Coherence"
+  },
+  "0868": {
+    "name": "Oil pressure defect fault",
+    "description": "Pressure too low"
+  },
+  "0896": {
+    "name": "Gear selection fault",
+    "description": "Not characterised"
+  },
+  "0900": {
+    "name": "Clutch pressure modulation electrovalve output fault",
+    "description": "Open circuit"
+  },
+  "0901": {
+    "name": "Clutch pressure modulation electrovalve output fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0902": {
+    "name": "Clutch pressure modulation electrovalve output fault",
+    "description": "Short circuit to earth"
+  },
+  "0903": {
+    "name": "Clutch pressure modulation electrovalve output fault",
+    "description": "Short circuit to positive"
+  },
+  "0919": {
+    "name": "Gearbox fault",
+    "description": "The gear cannot be disengaged"
+  },
+  "0920": {
+    "name": "Gear engagement pressure modulating solenoid valve 2 output fault",
+    "description": "Open circuit"
+  },
+  "0921": {
+    "name": "Gear engagement pressure modulating solenoid valve 2 output fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0922": {
+    "name": "Gear engagement pressure modulating solenoid valve 2 output fault",
+    "description": "Short circuit to earth"
+  },
+  "0923": {
+    "name": "Gear engagement pressure modulating solenoid valve 2 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0924": {
+    "name": "Gear engagement pressure modulating solenoid valve 1 output fault",
+    "description": "Open circuit"
+  },
+  "0925": {
+    "name": "Gearbox fault",
+    "description": "The gear does not engage"
+  },
+  "0926": {
+    "name": "Gear engagement pressure modulating solenoid valve 1 output fault",
+    "description": "Short circuit to earth"
+  },
+  "0927": {
+    "name": "Gear engagement pressure modulating solenoid valve 1 output fault",
+    "description": "Short circuit to positive"
+  },
+  "0929": {
+    "name": "Gear engagement pressure modulating solenoid valve 1 output fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0942": {
+    "name": "Fault: incorrect use of the gearbox",
+    "description": "Over-frequent gear changing"
+  },
+  "0943": {
+    "name": "Fault overheating of the electropump assembly",
+    "description": "Not characterised"
+  },
+  "0944": {
+    "name": "Oil pressure accumulator discharged fault",
+    "description": "Not characterised"
+  },
+  "0945": {
+    "name": "Electropump assembly electric motor control fault",
+    "description": "Short circuit to positive"
+  },
+  "0946": {
+    "name": "Electropump assembly electric motor control fault",
+    "description": "Relay jammed open"
+  },
+  "0947": {
+    "name": "Electropump assembly electric motor control fault",
+    "description": "Relay jammed closed"
+  },
+  "0948": {
+    "name": "Electropump assembly electric motor control fault",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "0949": {
+    "name": "Fault: clutch initialisation incomplete or not performed",
+    "description": "Not characterised"
+  },
+  "1208": {
+    "name": "Fault in the information transmitted by the engine ECU",
+    "description": "Stop and Start information incorrect"
+  },
+  "1586": {
+    "name": "Gearbox actuator position sensors supply fault",
+    "description": "Short circuit to earth"
+  },
+  "1587": {
+    "name": "Gearbox actuator position sensors supply fault",
+    "description": "Short circuit to positive"
+  },
+  "1589": {
+    "name": "Oil pressure sensor supply fault",
+    "description": "Short circuit to earth"
+  },
+  "1590": {
+    "name": "Oil pressure sensor supply fault",
+    "description": "Short circuit to positive"
+  },
+  "1621": {
+    "name": "ECU fault",
+    "description": "Not characterised"
+  },
+  "162B": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Clutch speed information"
+  },
+  "162C": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Input check"
+  },
+  "162D": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Check of the clutch torque reference values"
+  },
+  "162E": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Check of the target gear"
+  },
+  "162F": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Check of the engine torque"
+  },
+  "166A": {
+    "name": "Fault in the microprocessor or in a control component",
+    "description": "Check of the clutch position"
+  },
+  "1701": {
+    "name": "ECU fault",
+    "description": "Gear change control"
+  },
+  "1702": {
+    "name": "ECU switch to dormant mode phase (power latch) not carried out or not completed fault",
+    "description": "Not characterised"
+  },
+  "1704": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "Incorrect value received"
+  },
+  "1705": {
+    "name": "Gearbox input speed signal fault",
+    "description": "Coherence"
+  },
+  "1708": {
+    "name": "Gear lever signal fault",
+    "description": "Short circuit to earth"
+  },
+  "1711": {
+    "name": "Clutch actuator position signal fault - primary circuit",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1712": {
+    "name": "Clutch actuator position signal fault",
+    "description": "Coherence"
+  },
+  "1713": {
+    "name": "Clutch actuator position signal fault - primary circuit",
+    "description": "Short circuit to earth"
+  },
+  "1716": {
+    "name": "Gear lever signal fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1718": {
+    "name": "Gear lever signal fault",
+    "description": "Coherence"
+  },
+  "1719": {
+    "name": "Gear lever signal fault",
+    "description": "Coherence"
+  },
+  "171A": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "CAN / by wire coherence"
+  },
+  "1723": {
+    "name": "Vehicle speed coherence fault",
+    "description": "Coherence"
+  },
+  "1724": {
+    "name": "Fault in the gearbox actuator position signal in the gear engagement axis",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1726": {
+    "name": "Fault in the gearbox actuator position signal in the gear engagement axis",
+    "description": "Short circuit to earth"
+  },
+  "1731": {
+    "name": "Fault in the gearbox actuator position signal in the gear engagement axis",
+    "description": "Coherence"
+  },
+  "1732": {
+    "name": "Fault in the gearbox actuator position signal in the gear selection axis",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1733": {
+    "name": "Fault in the gearbox actuator position signal in the gear selection axis",
+    "description": "Coherence"
+  },
+  "1734": {
+    "name": "Fault in the gearbox actuator position signal in the gear selection axis",
+    "description": "Short circuit to earth"
+  },
+  "1738": {
+    "name": "Gearbox input speed signal fault",
+    "description": "Short circuit to positive or short circuit to earth or open circuit"
+  },
+  "1739": {
+    "name": "Gearbox input speed signal fault",
+    "description": "No signal"
+  },
+  "1749": {
+    "name": "Gearbox fault",
+    "description": "The gear does not remain engaged"
+  },
+  "1750": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1752": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Short circuit to earth"
+  },
+  "1755": {
+    "name": "Clutch actuator position control fault",
+    "description": "Clutch jammed"
+  },
+  "1764": {
+    "name": "Gear selection solenoid valve output fault",
+    "description": "Short circuit to earth"
+  },
+  "1765": {
+    "name": "Gear selection solenoid valve output fault",
+    "description": "Short circuit to positive"
+  },
+  "1766": {
+    "name": "Gear selection solenoid valve output fault",
+    "description": "Open circuit"
+  },
+  "1767": {
+    "name": "Gear selection fault",
+    "description": "Not characterised"
+  },
+  "1772": {
+    "name": "Gear selection solenoid valve output fault",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "17A8": {
+    "name": "Electropump assembly electric motor control fault",
+    "description": "Duration of operation too long"
+  },
+  "17AB": {
+    "name": "Gearbox lever supply fault",
+    "description": "Not characterised"
+  },
+  "1800": {
+    "name": "Fault: gearbox initialisation incomplete or not performed",
+    "description": "Not characterised"
+  },
+  "1830": {
+    "name": "Vehicle speed coherence fault",
+    "description": "No signal"
+  },
+  "1832": {
+    "name": "Engine speed signal fault",
+    "description": "Coherence"
+  },
+  "1837": {
+    "name": "Steering wheel gear shift control signal fault",
+    "description": "Coherence"
+  },
+  "1842": {
+    "name": "ECU supply fault: + permanent",
+    "description": "Open circuit"
+  },
+  "1843": {
+    "name": "Gearbox external fault during the restarting phase",
+    "description": "Not characterised"
+  },
+  "2712": {
+    "name": "Oil pressure defect fault",
+    "description": "Internal/external leaks"
+  },
+  "2785": {
+    "name": "Clutch actuator position control fault",
+    "description": "Coherence"
+  },
+  "53A3": {
+    "name": "Brake signal fault (switch / CAN)",
+    "description": "Coherence"
+  },
+  "C415": {
+    "name": "Fault in the information transmitted by the ABS/ESP or FSE (Electric Parking Brake) ECU",
+    "description": "Incorrect value received"
+  },
+  "D000": {
+    "name": "Fault in communication between the gearbox ECU and the other ECUs on the network",
+    "description": "No signal"
+  },
+  "D003": {
+    "name": "Communication fault on the CAN",
+    "description": "No signal"
+  },
+  "D108": {
+    "name": "Communications fault with the engine management ECU",
+    "description": "No signal"
+  },
+  "D113": {
+    "name": "Fault in communication with the ABS ECU",
+    "description": "No signal"
+  },
+  "D118": {
+    "name": "Fault: communications with built-in systems interface (BSI)",
+    "description": "No signal"
+  },
+  "D208": {
+    "name": "Fault in the information transmitted by the engine ECU",
+    "description": "Incorrect value received"
+  },
+  "D213": {
+    "name": "Fault in the information transmitted by the ABS/ESP or FSE (Electric Parking Brake) ECU",
+    "description": "Incorrect value received"
+  },
+  "D218": {
+    "name": "Fault in the information transmitted by the BSI ECU",
+    "description": "Outside temperature incorrect"
+  },
+  "E000": {
+    "name": "Main wake-up request information reception fault",
+    "description": "Not characterised"
+  },
+  "E003": {
+    "name": "Fault: incoherence between the vehicle status and the main wake-up request information",
+    "description": "Not characterised"
+  }
+}

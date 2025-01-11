@@ -1,0 +1,41 @@
+{
+  "9002": {
+    "name": "Fault: unexpected re-initialisation of the ECU."
+  },
+  "9003": {
+    "name": "Secure configuration fault."
+  },
+  "9004": {
+    "name": "ECU internal fault."
+  },
+  "AE01": {
+    "name": "Fault: multifunction screen ECU Escape control button stuck"
+  },
+  "AE04": {
+    "name": "Fault: multifunction screen ECU Validate control button stuck"
+  },
+  "AE07": {
+    "name": "Fault: multifunction screen ECU Down control button stuck"
+  },
+  "AE08": {
+    "name": "Fault: multifunction screen ECU Up control button stuck"
+  },
+  "D800": {
+    "name": "Exterior temperature data fault."
+  },
+  "DF00": {
+    "name": "Event not recorded fault."
+  },
+  "DF03": {
+    "name": "Fault: no communication with BSI"
+  },
+  "DF0A": {
+    "name": "CAN  fault."
+  },
+  "DF0F": {
+    "name": "Fault: ECU mute on the CAN"
+  },
+  "DF20": {
+    "name": "Fault: no communication with audio ECU."
+  }
+}

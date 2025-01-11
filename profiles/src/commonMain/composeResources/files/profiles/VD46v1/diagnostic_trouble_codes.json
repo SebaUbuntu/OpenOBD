@@ -1,0 +1,1478 @@
+{
+  "0001": {
+    "name": "Control of the fuel flow regulator",
+    "description": "Open circuit"
+  },
+  "0002": {
+    "name": "Control of the fuel flow regulator",
+    "description": "Incoherence of the current controlling the fuel flow regulation valve"
+  },
+  "0004": {
+    "name": "Control of the fuel flow regulator",
+    "description": "Short circuit to positive"
+  },
+  "000A": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Linked control fault"
+  },
+  "000B": {
+    "name": "Exhaust camshaft dephaser",
+    "description": "Linked control fault"
+  },
+  "0010": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Programming of the limits"
+  },
+  "0011": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Locking"
+  },
+  "0012": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Locking"
+  },
+  "0013": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Programming of the limits"
+  },
+  "0014": {
+    "name": "Exhaust camshaft dephaser",
+    "description": "Coherence"
+  },
+  "0015": {
+    "name": "Exhaust camshaft dephaser",
+    "description": "Linked control fault"
+  },
+  "0017": {
+    "name": "Synchronisation",
+    "description": "Lack of coherence between the engine speed sensor information and exhaust camshaft sensor information"
+  },
+  "0031": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0032": {
+    "name": "Upstream oxygen sensor heating control",
+    "description": "Short circuit to the battery +"
+  },
+  "0037": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0038": {
+    "name": "Downstream oxygen sensor heating control",
+    "description": "Short circuit to the battery +"
+  },
+  "0039": {
+    "name": "Compressor discharge solenoid valve",
+    "description": "Short circuit or locked closed"
+  },
+  "0053": {
+    "name": "Upstream oxygen sensor heating",
+    "description": "Functional fault"
+  },
+  "0054": {
+    "name": "Downstream oxygen sensor heater",
+    "description": "Functional fault"
+  },
+  "0087": {
+    "name": "Fuel circuit",
+    "description": "Pressure measured in the injection rail lower than the setting"
+  },
+  "0088": {
+    "name": "Fuel circuit",
+    "description": "Pressure measured in the injection rail higher than the setting"
+  },
+  "0094": {
+    "name": "Fuel circuit",
+    "description": "Incoherence in the fuel pressure with the flow regulator too much open"
+  },
+  "0095": {
+    "name": "Intake air temperature signal",
+    "description": "Implausible value"
+  },
+  "0096": {
+    "name": "Intake air temperature signal",
+    "description": "Variation in voltage outside the tolerance"
+  },
+  "0097": {
+    "name": "Intake air temperature signal",
+    "description": "Short circuit to earth or not plausible"
+  },
+  "0098": {
+    "name": "Intake air temperature signal",
+    "description": "Open circuit or short circuit to Battery positive"
+  },
+  "0099": {
+    "name": "Intake air temperature signal",
+    "description": "Implausible value"
+  },
+  "0106": {
+    "name": "Intake air pressure signal",
+    "description": "Outside the tolerance"
+  },
+  "0107": {
+    "name": "Intake air pressure signal",
+    "description": "Short circuit to earth"
+  },
+  "0108": {
+    "name": "Intake air pressure signal",
+    "description": "Short circuit to the battery +"
+  },
+  "0115": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Value frozen or overheating"
+  },
+  "0116": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Lack of coherence in relation to the model"
+  },
+  "0117": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short circuit to earth or temperature too high"
+  },
+  "0118": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "0119": {
+    "name": "Coolant temperature sensor signal",
+    "description": "Coherence"
+  },
+  "0122": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Short circuit to earth on track 1"
+  },
+  "0123": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Short circuit to positive or open circuit on 1 wire"
+  },
+  "0130": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Open circuit"
+  },
+  "0131": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0132": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Short circuit to the battery +"
+  },
+  "0133": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Coherence"
+  },
+  "0136": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Open circuit"
+  },
+  "0137": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0138": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Short circuit to the battery +"
+  },
+  "0139": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Coherence"
+  },
+  "0171": {
+    "name": "Richness regulation",
+    "description": "Mixture too lean"
+  },
+  "0172": {
+    "name": "Richness regulation",
+    "description": "Mixture too rich"
+  },
+  "0190": {
+    "name": "Fuel high pressure sensor",
+    "description": "Value frozen"
+  },
+  "0191": {
+    "name": "Fuel high pressure sensor",
+    "description": "Coherence"
+  },
+  "0192": {
+    "name": "Fuel high pressure sensor",
+    "description": "Pressure too low"
+  },
+  "0193": {
+    "name": "Fuel high pressure sensor",
+    "description": "Pressure too high"
+  },
+  "0201": {
+    "name": "Cylinder 1 petrol injector control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0202": {
+    "name": "Cylinder 2 petrol injector control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0203": {
+    "name": "Cylinder 3 petrol injector control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0215": {
+    "name": "Engine management ECU supply fault",
+    "description": "Main relay remains closed"
+  },
+  "0222": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Short circuit to earth or open circuit on signal 2"
+  },
+  "0223": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Short circuit to positive on signal 2"
+  },
+  "0234": {
+    "name": "Supercharging pressure sensor",
+    "description": "Pressure too low or mechanical malfunction"
+  },
+  "0235": {
+    "name": "Supercharging pressure sensor",
+    "description": "Pressure too high"
+  },
+  "0237": {
+    "name": "Supercharging pressure sensor",
+    "description": "Short circuit to earth"
+  },
+  "0238": {
+    "name": "Supercharging pressure sensor",
+    "description": "Short circuit to the battery +"
+  },
+  "023A": {
+    "name": "Turbocharger additional coolant pump actuator control",
+    "description": "Open circuit"
+  },
+  "023B": {
+    "name": "Turbocharger additional coolant pump actuator control",
+    "description": "Short circuit to the battery +"
+  },
+  "023C": {
+    "name": "Turbocharger additional coolant pump actuator control",
+    "description": "Short circuit to earth"
+  },
+  "0243": {
+    "name": "Turbocharging pressure regulation solenoid valve control",
+    "description": "Open circuit"
+  },
+  "0245": {
+    "name": "Turbocharging pressure regulation solenoid valve control",
+    "description": "Short circuit to earth"
+  },
+  "0246": {
+    "name": "Turbocharging pressure regulation solenoid valve control",
+    "description": "Short circuit to the battery +"
+  },
+  "0261": {
+    "name": "Cylinder 1 petrol injector control",
+    "description": "Short circuit to earth"
+  },
+  "0262": {
+    "name": "Cylinder 1 petrol injector control",
+    "description": "Short circuit to the battery +"
+  },
+  "0264": {
+    "name": "Cylinder 2 petrol injector control",
+    "description": "Short circuit to earth"
+  },
+  "0265": {
+    "name": "Cylinder 2 petrol injector control",
+    "description": "Short circuit to the battery +"
+  },
+  "0267": {
+    "name": "Cylinder 3 petrol injector control",
+    "description": "Short circuit to earth"
+  },
+  "0268": {
+    "name": "Cylinder 3 petrol injector control",
+    "description": "Short circuit to the battery +"
+  },
+  "0299": {
+    "name": "Supercharging pressure sensor",
+    "description": "Pressure too low"
+  },
+  "0300": {
+    "name": "Combustion misfiring (pollution impact)",
+    "description": "Cylinder undetermined"
+  },
+  "0301": {
+    "name": "Combustion misfiring (pollution impact)",
+    "description": "Cylinder 1 petrol injector"
+  },
+  "0302": {
+    "name": "Combustion misfiring (pollution impact)",
+    "description": "Cylinder 2 petrol injector"
+  },
+  "0303": {
+    "name": "Combustion misfiring (pollution impact)",
+    "description": "Cylinder 3 petrol injector"
+  },
+  "0315": {
+    "name": "Engine speed sensor signal fault",
+    "description": "Programming incorrect"
+  },
+  "0318": {
+    "name": "Wheel speed information received from ABS/ESP",
+    "description": "Value not valid or absent"
+  },
+  "0326": {
+    "name": "Knock detector signal",
+    "description": "Coherence"
+  },
+  "0335": {
+    "name": "Engine speed sensor signal",
+    "description": "Loss of signal"
+  },
+  "0336": {
+    "name": "Engine speed sensor signal",
+    "description": "Not plausible"
+  },
+  "0339": {
+    "name": "Engine speed sensor signal",
+    "description": "Setting the valve timing"
+  },
+  "0340": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Loss of signal"
+  },
+  "0341": {
+    "name": "Inlet cylinder reference sensor signal",
+    "description": "Coherence"
+  },
+  "0344": {
+    "name": "Inlet cylinder reference sensor signal",
+    "description": "Loss of signal"
+  },
+  "0351": {
+    "name": "Number 1 cylinder ignition coil power supply",
+    "description": "Open circuit"
+  },
+  "0352": {
+    "name": "Number 2 cylinder ignition coil power supply",
+    "description": "Open circuit"
+  },
+  "0353": {
+    "name": "Number 3 cylinder ignition coil power supply",
+    "description": "Open circuit"
+  },
+  "0365": {
+    "name": "Exhaust cylinder reference sensor signal",
+    "description": "Loss of signal"
+  },
+  "0366": {
+    "name": "Exhaust cylinder reference sensor signal",
+    "description": "Coherence"
+  },
+  "0369": {
+    "name": "Exhaust cylinder reference sensor signal",
+    "description": "Loss of signal"
+  },
+  "0420": {
+    "name": "Catalytic converter",
+    "description": "Loss of efficiency"
+  },
+  "0444": {
+    "name": "Purge canister solenoid valve control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0445": {
+    "name": "Purge canister solenoid valve control",
+    "description": "Short circuit to the battery +"
+  },
+  "0463": {
+    "name": "Fuel level information (received by the CAN)",
+    "description": "Open circuit"
+  },
+  "0480": {
+    "name": "Fan assembly control",
+    "description": "Short-circuit or incoherent value"
+  },
+  "0481": {
+    "name": "Fan assembly control",
+    "description": "Relay stuck or short curcuit"
+  },
+  "0493": {
+    "name": "Fan assembly status signal",
+    "description": "Incoherent value for the fan assembly status"
+  },
+  "0494": {
+    "name": "Fan unit low speed",
+    "description": "Non-coherence"
+  },
+  "0495": {
+    "name": "Fan assembly high speed",
+    "description": "Non-coherence"
+  },
+  "0501": {
+    "name": "Vehicle speed",
+    "description": "Vehicle speed too high"
+  },
+  "0504": {
+    "name": "Dual function brake switch signal",
+    "description": "Signal invalid or lack of coherence between the 2 signals"
+  },
+  "050B": {
+    "name": "Starting monitoring",
+    "description": "Starting time too long"
+  },
+  "0513": {
+    "name": "Starting monitoring",
+    "description": "Immobiliser unlocking time too long or Coded immobiliser code not valid"
+  },
+  "0520": {
+    "name": "Engine oil pressure sensor signal",
+    "description": "Value invalid"
+  },
+  "0522": {
+    "name": "Engine oil pressure sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0523": {
+    "name": "Engine oil pressure sensor signal",
+    "description": "Short circuit to the battery +"
+  },
+  "0530": {
+    "name": "Air conditioning pressure sensor signal",
+    "description": "Value inconsistent or too low"
+  },
+  "0555": {
+    "name": "Braking circuit vacuum sensor",
+    "description": "Short circuit"
+  },
+  "0557": {
+    "name": "Braking circuit vacuum sensor",
+    "description": "Pressure too low"
+  },
+  "0558": {
+    "name": "Braking circuit vacuum sensor",
+    "description": "Pressure too high"
+  },
+  "0559": {
+    "name": "Braking circuit vacuum sensor",
+    "description": "Short circuit"
+  },
+  "0560": {
+    "name": "ECU supply fault",
+    "description": "Not characterised"
+  },
+  "0562": {
+    "name": "Battery voltage signal",
+    "description": "Voltage too low"
+  },
+  "0563": {
+    "name": "Battery voltage signal",
+    "description": "Voltage too high"
+  },
+  "0579": {
+    "name": "Cruise Control",
+    "description": "Coherence"
+  },
+  "057F": {
+    "name": "Battery charge status unit",
+    "description": "Battery charge status insufficient"
+  },
+  "058B": {
+    "name": "Battery charge status unit",
+    "description": "Current sensor fault"
+  },
+  "058C": {
+    "name": "Battery charge status unit",
+    "description": "Temperature sensor fault"
+  },
+  "058D": {
+    "name": "Battery charge status unit",
+    "description": "Open circuit"
+  },
+  "0591": {
+    "name": "Speed limiter",
+    "description": "Coherence"
+  },
+  "0597": {
+    "name": "Controlled thermostat control",
+    "description": "Open circuit"
+  },
+  "0598": {
+    "name": "Controlled thermostat control",
+    "description": "Short circuit to earth"
+  },
+  "0599": {
+    "name": "Controlled thermostat control",
+    "description": "Short circuit to the battery +"
+  },
+  "0601": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0603": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0605": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0606": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0607": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "0610": {
+    "name": "Engine ECU configuration",
+    "description": "Not carried out or rejected"
+  },
+  "0612": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0615": {
+    "name": "Starter control",
+    "description": "Short or open circuit"
+  },
+  "0617": {
+    "name": "Starter control",
+    "description": "Short circuit to the battery +"
+  },
+  "0620": {
+    "name": "Controlled alternator signal",
+    "description": "Electrical fault"
+  },
+  "0627": {
+    "name": "Low pressure fuel pump",
+    "description": "Signal invalid or open circuit"
+  },
+  "0628": {
+    "name": "Low pressure fuel pump",
+    "description": "Short circuit to earth"
+  },
+  "0629": {
+    "name": "Low pressure fuel pump",
+    "description": "Short circuit to the battery +"
+  },
+  "062A": {
+    "name": "Low pressure fuel pump",
+    "description": "Open circuit"
+  },
+  "062C": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "0638": {
+    "name": "Fault throttle position regulation",
+    "description": "Coherence"
+  },
+  "0645": {
+    "name": "Air conditioning compressor relay",
+    "description": "Not characterised"
+  },
+  "064A": {
+    "name": "Low pressure fuel pump",
+    "description": "Aggravated short circuit"
+  },
+  "0658": {
+    "name": "Sensors No.1 5 volt electrical supply",
+    "description": "Voltage too low"
+  },
+  "065A": {
+    "name": "Controlled alternator",
+    "description": "Mechanical failure"
+  },
+  "065B": {
+    "name": "Controlled alternator",
+    "description": "Faulty"
+  },
+  "0685": {
+    "name": "Power relay control",
+    "description": "Open circuit"
+  },
+  "0686": {
+    "name": "Power relay control",
+    "description": "Short circuit to earth"
+  },
+  "0687": {
+    "name": "Power relay control",
+    "description": "Short circuit to the battery +"
+  },
+  "0691": {
+    "name": "Fan assembly control 1",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "0692": {
+    "name": "Fan assembly control 1",
+    "description": "Short circuit to the battery +"
+  },
+  "0693": {
+    "name": "Fan assembly control 2",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "06E9": {
+    "name": "Starter",
+    "description": "Exceeding of the threshold for the number of activations of the starter for restarting"
+  },
+  "0805": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Coherence"
+  },
+  "0806": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Not plausible"
+  },
+  "0807": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "0808": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Short circuit to the battery +"
+  },
+  "0810": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Not plausible"
+  },
+  "0812": {
+    "name": "Reverse gear information signal",
+    "description": "Coherence"
+  },
+  "081A": {
+    "name": "Stop and Start function restarting authorisation information",
+    "description": "Short circuit to earth"
+  },
+  "081B": {
+    "name": "Stop and Start function restarting authorisation information",
+    "description": "Short circuit to the battery +"
+  },
+  "0820": {
+    "name": "Clutch pedal angle position sensor signal",
+    "description": "Coherence"
+  },
+  "0850": {
+    "name": "Gearbox neutral sensor",
+    "description": "Signal outside range"
+  },
+  "0851": {
+    "name": "Gearbox neutral sensor",
+    "description": "Short circuit to earth"
+  },
+  "0852": {
+    "name": "Gearbox neutral sensor",
+    "description": "Short circuit to the battery +"
+  },
+  "0914": {
+    "name": "Gearbox neutral sensor",
+    "description": "Coherence fault"
+  },
+  "0945": {
+    "name": "Oil pressure regulation solenoid valve control",
+    "description": "Open circuit"
+  },
+  "0947": {
+    "name": "Oil pressure regulation solenoid valve control",
+    "description": "Short circuit to earth"
+  },
+  "0948": {
+    "name": "Oil pressure regulation solenoid valve control",
+    "description": "Short circuit to the battery +"
+  },
+  "0A1A": {
+    "name": "Controlled alternator signal",
+    "description": "Value received incorrect"
+  },
+  "0A23": {
+    "name": "Controlled alternator signal",
+    "description": "Signal inconsistent"
+  },
+  "0A3B": {
+    "name": "Controlled alternator signal",
+    "description": "Temperature too high"
+  },
+  "1032": {
+    "name": "Self-ignition before spark (Rumble) (low incidence)",
+    "description": "Frequency too high"
+  },
+  "1033": {
+    "name": "Self-ignition before spark (Rumble) (average incidence)",
+    "description": "Frequency too high"
+  },
+  "1034": {
+    "name": "Self-ignition before spark (Rumble) (high incidence)",
+    "description": "Frequency too high"
+  },
+  "1035": {
+    "name": "End-of-life of the piston linked to self-ignition before spark (Rumble)",
+    "description": "Frequency too high"
+  },
+  "1037": {
+    "name": "Unprotected piston linked to self-ignition before spark (Rumble) (premature engine failure)",
+    "description": "Frequency too high"
+  },
+  "1038": {
+    "name": "Slight limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)",
+    "description": "Frequency too high"
+  },
+  "1039": {
+    "name": "Severe limitation of the filling of the cylinder linked to the self-ignition before spark (Rumble)",
+    "description": "Frequency too high"
+  },
+  "1153": {
+    "name": "Motorised throttle valve programming",
+    "description": "Failed in the low stops"
+  },
+  "1166": {
+    "name": "Fuel circuit",
+    "description": "Rail pressure too high"
+  },
+  "1182": {
+    "name": "Brake servo pressure sensor",
+    "description": "Coherence"
+  },
+  "1183": {
+    "name": "Brake servo pressure sensor",
+    "description": "Short circuit to earth"
+  },
+  "1184": {
+    "name": "Brake servo pressure sensor",
+    "description": "Short-circuit to positive or circuit open"
+  },
+  "1199": {
+    "name": "Fuel system",
+    "description": "Fuel level too low"
+  },
+  "11A8": {
+    "name": "Exhaust camshaft dephaser",
+    "description": "Programming fault"
+  },
+  "11A9": {
+    "name": "Inlet camshaft dephaser",
+    "description": "Programming fault"
+  },
+  "11AA": {
+    "name": "Brake servo pressure sensor",
+    "description": "Signal inconsistent"
+  },
+  "11B4": {
+    "name": "Accelerator pedal sensor signal",
+    "description": "Coherence between the 2 tracks"
+  },
+  "12A1": {
+    "name": "Cylinder 1 petrol injector",
+    "description": "Injector stuck open"
+  },
+  "12A4": {
+    "name": "Cylinder 2 petrol injector",
+    "description": "Injector stuck open"
+  },
+  "12A7": {
+    "name": "Cylinder 3 petrol injector",
+    "description": "Injector stuck open"
+  },
+  "1336": {
+    "name": "Combustion misfiring (impact on catalytic converter)",
+    "description": "Cylinder undetermined"
+  },
+  "1337": {
+    "name": "Combustion misfiring (impact on catalytic converter)",
+    "description": "1 cylinder"
+  },
+  "1338": {
+    "name": "Combustion misfiring (impact on catalytic converter)",
+    "description": "2 cylinder"
+  },
+  "1339": {
+    "name": "Combustion misfiring (impact on catalytic converter)",
+    "description": "3 cylinder"
+  },
+  "1372": {
+    "name": "Cylinder 1 petrol injector control",
+    "description": "Voltage outside range"
+  },
+  "1373": {
+    "name": "Cylinder 2 petrol injector control",
+    "description": "Voltage outside range"
+  },
+  "1374": {
+    "name": "Cylinder 3 petrol injector control",
+    "description": "Voltage outside range"
+  },
+  "1385": {
+    "name": "Super-knock information",
+    "description": "Detection on injection cut-off"
+  },
+  "1386": {
+    "name": "Super-knock information",
+    "description": "Detection on injection cut-off"
+  },
+  "13A8": {
+    "name": "Intake air pressure",
+    "description": "Value inconsistent"
+  },
+  "13A9": {
+    "name": "Intake air pressure",
+    "description": "Pressure incoherent on starting"
+  },
+  "13AB": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "13AC": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "13AD": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "13AE": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "13B3": {
+    "name": "Engine control ECU internal fault",
+    "description": "Malfunction"
+  },
+  "13B4": {
+    "name": "Engine control ECU internal fault",
+    "description": "Malfunction"
+  },
+  "13B6": {
+    "name": "Engine control ECU internal fault",
+    "description": "Malfunction"
+  },
+  "13B7": {
+    "name": "Engine control ECU internal fault",
+    "description": "Malfunction"
+  },
+  "13B8": {
+    "name": "Engine control ECU internal fault",
+    "description": "Safety level"
+  },
+  "13BA": {
+    "name": "Engine management ECU",
+    "description": "Safety level"
+  },
+  "13BB": {
+    "name": "Engine management ECU",
+    "description": "Exceeding of the maximum threshold for the discharge current supplied by the ancillaries battery during the last start or restart"
+  },
+  "13BE": {
+    "name": "Engine management ECU",
+    "description": "Compensation for losses on line fault"
+  },
+  "13C0": {
+    "name": "Starter control interface unit",
+    "description": "Starter motor control fault"
+  },
+  "13C1": {
+    "name": "Starter control interface unit",
+    "description": "Internal fault"
+  },
+  "13C3": {
+    "name": "Network voltage maintaining device",
+    "description": "Short circuit to positive"
+  },
+  "13C4": {
+    "name": "Network voltage maintaining device",
+    "description": "Short circuit to earth"
+  },
+  "1403": {
+    "name": "Additional heating 1 command",
+    "description": "Short or open circuit"
+  },
+  "1404": {
+    "name": "Additional heating 2 command",
+    "description": "Short or open circuit"
+  },
+  "1438": {
+    "name": "Power relay",
+    "description": "Relay stuck"
+  },
+  "1505": {
+    "name": "Intersystems CAN",
+    "description": "Injection failure"
+  },
+  "1536": {
+    "name": "Dual function brake switch signal",
+    "description": "Lack of coherence between the 2 signals"
+  },
+  "15A0": {
+    "name": "Lubrication system",
+    "description": "Oil pressure too high"
+  },
+  "15A1": {
+    "name": "Lubrication system",
+    "description": "Pressure below reference"
+  },
+  "15A2": {
+    "name": "Lubrication system",
+    "description": "Incorrect pressure"
+  },
+  "15A3": {
+    "name": "Oil pressure regulation solenoid valve",
+    "description": "Short circuit to positive"
+  },
+  "15A4": {
+    "name": "Oil pressure regulation solenoid valve",
+    "description": "Short or open circuit"
+  },
+  "15A7": {
+    "name": "Lubrication system",
+    "description": "Pressure not consistent with the atmospheric pressure"
+  },
+  "15A8": {
+    "name": "Lubrication system",
+    "description": "Pressure not consistent with the atmospheric pressure"
+  },
+  "15B4": {
+    "name": "Accelerator pedal sensor",
+    "description": "Inconsistent position"
+  },
+  "160A": {
+    "name": "Downloading / Configuration",
+    "description": "Approval number not entered"
+  },
+  "1612": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1614": {
+    "name": "Accelerator pedal tight spot sensor",
+    "description": "Coherence"
+  },
+  "1627": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "162A": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "162C": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1632": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1643": {
+    "name": "Accelerator pedal tight spot sensor",
+    "description": "Short circuit to earth"
+  },
+  "1644": {
+    "name": "Accelerator pedal tight spot sensor",
+    "description": "Short circuit to positive"
+  },
+  "1645": {
+    "name": "Accelerator pedal tight spot sensor",
+    "description": "Malfunction"
+  },
+  "1648": {
+    "name": "Engine management ECU",
+    "description": "ECU reset"
+  },
+  "1655": {
+    "name": "Engine running status information",
+    "description": "Short circuit to the battery +"
+  },
+  "1656": {
+    "name": "Engine running status information",
+    "description": "Short circuit to earth"
+  },
+  "1693": {
+    "name": "Engine running status information",
+    "description": "Plausibility"
+  },
+  "1696": {
+    "name": "Starter control",
+    "description": "Simultaneous starting and stopping request"
+  },
+  "16A5": {
+    "name": "Oil vapour recirculation circuit heater",
+    "description": "Short circuit to positive"
+  },
+  "16A6": {
+    "name": "Oil vapour recirculation circuit heater",
+    "description": "Short circuit to earth"
+  },
+  "16A7": {
+    "name": "Oil vapour recirculation circuit heater",
+    "description": "Open circuit"
+  },
+  "16B1": {
+    "name": "Controlled air inlet module",
+    "description": "Piloted flaps jammed shut"
+  },
+  "16B2": {
+    "name": "Controlled air inlet module",
+    "description": "Piloted flaps jammed open"
+  },
+  "16BA": {
+    "name": "Starter control interface unit",
+    "description": "Short circuit to the battery +"
+  },
+  "16BB": {
+    "name": "Starter control interface unit",
+    "description": "Short circuit to earth or open circuit"
+  },
+  "16D8": {
+    "name": "Starter control interface unit",
+    "description": "Electrical fault on the control"
+  },
+  "16D9": {
+    "name": "Starter control interface unit",
+    "description": "Not characterised"
+  },
+  "16DB": {
+    "name": "Sensors No.4 5 volt electrical supply",
+    "description": "Open circuit"
+  },
+  "16E7": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "1A8D": {
+    "name": "Starter control interface unit",
+    "description": "Short circuit to earth or open circuit on the starting control authorisation line"
+  },
+  "1A8E": {
+    "name": "Starter control interface unit",
+    "description": "Short circuit to positive on the restarting inhibiting line"
+  },
+  "1B40": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "2073": {
+    "name": "Inlet pressure regulation",
+    "description": "Incoherence between pressure and position of throttle: not defined"
+  },
+  "2074": {
+    "name": "Inlet pressure regulation",
+    "description": "Incoherence between pressure and position of throttle: not defined"
+  },
+  "2088": {
+    "name": "Inlet variable timing electrovalve control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2089": {
+    "name": "Inlet variable timing electrovalve control",
+    "description": "Short circuit to the battery +"
+  },
+  "2090": {
+    "name": "Exhaust variable timing electrovalve control",
+    "description": "Open circuit or short circuit to earth"
+  },
+  "2091": {
+    "name": "Exhaust variable timing electrovalve control",
+    "description": "Short circuit to the battery +"
+  },
+  "2101": {
+    "name": "Motorised throttle housing control",
+    "description": "Overheating or overpowering"
+  },
+  "2107": {
+    "name": "Engine management ECU",
+    "description": "Internal fault (motorised throttle housing control)"
+  },
+  "2122": {
+    "name": "Accelerator pedal position sensor",
+    "description": "Short circuit to earth on signal 1"
+  },
+  "2123": {
+    "name": "Accelerator pedal position sensor",
+    "description": "Short circuit to positive or open circuit on signal 1"
+  },
+  "2127": {
+    "name": "Accelerator pedal position sensor",
+    "description": "Short circuit to earth on signal 2"
+  },
+  "2128": {
+    "name": "Accelerator pedal position sensor",
+    "description": "Short circuit to positive or open circuit on signal 2"
+  },
+  "2135": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Incoherence between the 2 tracks"
+  },
+  "2138": {
+    "name": "Accelerator pedal position sensor",
+    "description": "Functional fault"
+  },
+  "2173": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Negative drift"
+  },
+  "2175": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Positive drift"
+  },
+  "2176": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Coherence of the natural position of the motorised throttle housing"
+  },
+  "2177": {
+    "name": "Fault adaptative memory data of the mixture regulation: not characterized.",
+    "description": "Mixture too lean"
+  },
+  "2178": {
+    "name": "Fault adaptative memory data of the mixture regulation: not characterized.",
+    "description": "Mixture too rich"
+  },
+  "2195": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Mixture too lean"
+  },
+  "2196": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Mixture too rich"
+  },
+  "2227": {
+    "name": "Atmospheric pressure sensor signal",
+    "description": "Voltage outside tolerance"
+  },
+  "2228": {
+    "name": "Atmospheric pressure sensor signal",
+    "description": "Value too low or short circuit to earth"
+  },
+  "2229": {
+    "name": "Atmospheric pressure sensor signal",
+    "description": "Value too high or short circuit to battery positive or open circuit"
+  },
+  "2261": {
+    "name": "Turbine discharge electrovalve",
+    "description": "Electrovalve stuck open"
+  },
+  "2262": {
+    "name": "Turbocharging air circuit",
+    "description": "Turbocharging regulation valve suspected jammed"
+  },
+  "2270": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Mixture too lean"
+  },
+  "2271": {
+    "name": "Downstream oxygen sensor signal",
+    "description": "Mixture too rich"
+  },
+  "2279": {
+    "name": "Air circuit",
+    "description": "Suspected leak"
+  },
+  "2291": {
+    "name": "Fuel pressure measured in the fuel high pressure common rail",
+    "description": "Pressurisation too slow"
+  },
+  "2299": {
+    "name": "Accelerator pedal position sensor signal",
+    "description": "Pedal blocked or pressed simultaneously with the brake pedal"
+  },
+  "2301": {
+    "name": "Cylinder 1 ignition coil control fault",
+    "description": "Short circuit to the battery +"
+  },
+  "2304": {
+    "name": "Cylinder 2 ignition coil control fault",
+    "description": "Short circuit to the battery +"
+  },
+  "2307": {
+    "name": "Cylinder 3 ignition coil control fault",
+    "description": "Short circuit to the battery +"
+  },
+  "250A": {
+    "name": "Oil level sensor signal",
+    "description": "Signal inconsistent"
+  },
+  "250C": {
+    "name": "Oil level sensor signal",
+    "description": "Short circuit to earth"
+  },
+  "250D": {
+    "name": "Oil level sensor signal",
+    "description": "Short circuit to the battery +"
+  },
+  "2600": {
+    "name": "Turbo cooling coolant pump control",
+    "description": "Open circuit"
+  },
+  "2602": {
+    "name": "Turbo cooling coolant pump control",
+    "description": "Short circuit to earth"
+  },
+  "2603": {
+    "name": "Turbo cooling coolant pump control",
+    "description": "Short circuit to the battery +"
+  },
+  "2670": {
+    "name": "Sensors No.2 5 volt electrical supply",
+    "description": "Voltage too low"
+  },
+  "2685": {
+    "name": "Sensors No.3 5 volt electrical supply",
+    "description": "Voltage too low"
+  },
+  "3011": {
+    "name": "Motorised throttle housing",
+    "description": "Throttle return spring fault"
+  },
+  "3015": {
+    "name": "Motorised throttle housing position sensor signal",
+    "description": "Electrical fault"
+  },
+  "3019": {
+    "name": "Upstream oxygen sensor signal",
+    "description": "Ageing or consistency"
+  },
+  "3034": {
+    "name": "Motorised throttle housing",
+    "description": "Overheating"
+  },
+  "3059": {
+    "name": "Stop and start",
+    "description": "Internal fault"
+  },
+  "305A": {
+    "name": "Stop and start",
+    "description": "Internal fault"
+  },
+  "305B": {
+    "name": "Speed limiter and cruise control",
+    "description": "Internal fault"
+  },
+  "3060": {
+    "name": "Knock detector",
+    "description": "Superknock"
+  },
+  "3061": {
+    "name": "Knock detector",
+    "description": "Superknock"
+  },
+  "3064": {
+    "name": "Motorised throttle housing",
+    "description": "Adaptive value at stop"
+  },
+  "3065": {
+    "name": "Motorised throttle housing",
+    "description": "Adaptive value at stop"
+  },
+  "3066": {
+    "name": "Motorised throttle housing",
+    "description": "Adaptive value at stop"
+  },
+  "3067": {
+    "name": "Motorised throttle housing",
+    "description": "Adaptive value at stop"
+  },
+  "3068": {
+    "name": "Exhaust variable timing solenoid valve",
+    "description": "Adaptive value at stop"
+  },
+  "3069": {
+    "name": "Injection time",
+    "description": "Adaptive value at stop"
+  },
+  "306A": {
+    "name": "Injection time",
+    "description": "Adaptive value at stop"
+  },
+  "306B": {
+    "name": "Inlet variable timing electrovalve",
+    "description": "Adaptive value at stop"
+  },
+  "306C": {
+    "name": "Injection time",
+    "description": "Adaptive value at stop"
+  },
+  "306E": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "306F": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Adaptive value at stop"
+  },
+  "3070": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Adaptive value at stop"
+  },
+  "3071": {
+    "name": "Pressure of the fuel in the high pressure fuel circuit",
+    "description": "Adaptive value at stop"
+  },
+  "3072": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "3073": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "3074": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "3075": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "3076": {
+    "name": "Engine management ECU",
+    "description": "Internal fault"
+  },
+  "C019": {
+    "name": "Communication between the built-in systems interface and the engine fuse box",
+    "description": "Data received invalid"
+  },
+  "C028": {
+    "name": "Communication between the built-in systems interface and the instrument panel CAN",
+    "description": "Communication fault"
+  },
+  "C055": {
+    "name": "Communication between the built-in systems interface and the comfort CAN",
+    "description": "Data received invalid"
+  },
+  "C073": {
+    "name": "Intersystems CAN",
+    "description": "Communication fault on the CAN network"
+  },
+  "C103": {
+    "name": "Communication with the gearbox ECU",
+    "description": "No communication"
+  },
+  "C121": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "No communication"
+  },
+  "C140": {
+    "name": "Communication with the BSI",
+    "description": "No communication"
+  },
+  "C167": {
+    "name": "Communication with the built-in systems interface on request for unlocking of the engine management ECU",
+    "description": "No communication"
+  },
+  "C304": {
+    "name": "Communication with the gearbox ECU",
+    "description": "Data received invalid"
+  },
+  "C315": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "Data received invalid"
+  },
+  "C322": {
+    "name": "Communication with the BSI",
+    "description": "Data received invalid"
+  },
+  "C415": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "Data received invalid"
+  },
+  "C417": {
+    "name": "Communication with the Electric Handbrake ECU",
+    "description": "Data received invalid"
+  },
+  "C422": {
+    "name": "Communication with the BSI",
+    "description": "Data received invalid"
+  },
+  "D000": {
+    "name": "Communication of the engine management ECU on the intersystems CAN",
+    "description": "No communication"
+  },
+  "D105": {
+    "name": "Communication with the steering wheel angle sensor",
+    "description": "No communication"
+  },
+  "D109": {
+    "name": "Communication with the gearbox ECU",
+    "description": "No communication"
+  },
+  "D113": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "No communication"
+  },
+  "D118": {
+    "name": "Communication with the BSI",
+    "description": "No communication"
+  },
+  "D121": {
+    "name": "Communication with the power steering ECU",
+    "description": "No communication"
+  },
+  "D1DD": {
+    "name": "Fault in communication with the network voltage maintaining device ECU",
+    "description": "No communication"
+  },
+  "D205": {
+    "name": "Communication with the steering wheel angle sensor",
+    "description": "Data received invalid"
+  },
+  "D209": {
+    "name": "Communication with the gearbox ECU",
+    "description": "Data received invalid"
+  },
+  "D213": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "Data received invalid"
+  },
+  "D218": {
+    "name": "Communication with the BSI",
+    "description": "Data received invalid"
+  },
+  "D2D9": {
+    "name": "Fault in communication with the network voltage maintaining device ECU",
+    "description": "Data received invalid"
+  },
+  "D305": {
+    "name": "Communication with the steering wheel angle sensor",
+    "description": "Data received invalid"
+  },
+  "D309": {
+    "name": "Communication with the gearbox ECU",
+    "description": "Data received invalid"
+  },
+  "D313": {
+    "name": "Communication with the ABS or ABS/ESP ECU",
+    "description": "Data received invalid"
+  },
+  "D318": {
+    "name": "Communication with the BSI",
+    "description": "Data received invalid"
+  },
+  "D31F": {
+    "name": "Engine management ECU",
+    "description": "Built-in systems interface internal clock fault"
+  },
+  "D321": {
+    "name": "Communication with the power steering ECU",
+    "description": "Data received invalid"
+  },
+  "D3D9": {
+    "name": "Fault in communication with the network voltage maintaining device ECU",
+    "description": "Data received invalid"
+  },
+  "D400": {
+    "name": "Alternator LIN network fault",
+    "description": "Registering of a fault on the LIN network"
+  },
+  "D401": {
+    "name": "Alternator LIN network fault",
+    "description": "Registering of a fault on the LIN network"
+  },
+  "E000": {
+    "name": "Intersystems CAN",
+    "description": "Main wake-up fault"
+  },
+  "E002": {
+    "name": "Remote controlled triggering (RCD) line",
+    "description": "Short circuit to earth"
+  },
+  "E003": {
+    "name": "Intersystems CAN",
+    "description": "Lack of coherence between the CAN information and the remote triggering request"
+  }
+}
