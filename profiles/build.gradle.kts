@@ -12,7 +12,7 @@ plugins {
 }
 
 kotlin {
-    androidLibrary {
+    android {
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
         namespace = "dev.sebaubuntu.openobd.profiles"
