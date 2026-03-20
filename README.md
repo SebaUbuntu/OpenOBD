@@ -19,15 +19,37 @@ Open source ELM327 client application
     - Demo device for testing
 - Session information (ELM327 version, OBD protocol, etc.)
 - OBD-II services
-    - Get current data (01)
-    - Get freeze frame data (02)
-    - Get stored diagnostic trouble codes (03)
-    - Clear diagnostic trouble codes (04) (TODO)
-    - Get pending diagnostic trouble codes (07)
-    - Get vehicle information (09)
-    - Get permanent diagnostic trouble codes (0A)
-- UDS services
-    - TODO
+    - Get current and freeze frame data (0x01, 0x02)
+    - Get vehicle information (0x09)
+    - Read stored, pending and permanent diagnostic trouble codes (0x03, 0x07, 0x0A)
+    - Clear stored diagnostic trouble codes (0x04) (TODO)
+- UDS services (TODO)
+    - 0x10: DiagnosticSessionControl
+    - 0x11: ECUReset
+    - 0x14: ClearDiagnosticInformation
+    - 0x19: ReadDTCInformation
+    - 0x22: ReadDataByIdentifier
+    - 0x23: ReadMemoryByAddress
+    - 0x24: ReadScalingDataByIdentifier
+    - 0x27: SecurityAccess
+    - 0x28: CommunicationControl
+    - 0x29: Authentication
+    - 0x2A: ReadDataByPeriodicIdentifier
+    - 0x2C: DynamicallyDefineDataIdentifier
+    - 0x2E: WriteDataByIdentifier
+    - 0x2F: InputOutputControlByIdentifier
+    - 0x31: RoutineControl
+    - 0x34: RequestDownload
+    - 0x35: RequestUpload
+    - 0x36: TransferData
+    - 0x37: RequestTransferExit
+    - 0x38: RequestFileTransfer
+    - 0x3D: WriteMemoryByAddress
+    - 0x3F: TesterPresent
+    - 0x84: SecuredDataTransmission
+    - 0x85: ControlDTCSetting
+    - 0x86: ResponseOnEvent
+    - 0x87: LinkControl
 - Car cluster-like dashboard with gauges
 - Connection profile support
     - Custom DTC codes
