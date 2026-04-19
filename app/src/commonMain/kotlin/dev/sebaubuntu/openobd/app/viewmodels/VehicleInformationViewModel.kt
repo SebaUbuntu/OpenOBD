@@ -27,6 +27,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.stateIn
+import kotlin.time.Duration.Companion.milliseconds
 
 class VehicleInformationViewModel(
     private val elm327Repository: Elm327Repository,
@@ -34,7 +35,7 @@ class VehicleInformationViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     val supportedParameterIds = elm327Repository.pollCommand(
         command = GetVehicleInformationCommand(VehicleInformationType.PID_SUPPORTED_01_20),
-        pollIntervalMs = null,
+        pollInterval = null,
     )
         .mapLatest {
             buildSet {
@@ -90,7 +91,7 @@ class VehicleInformationViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     private fun <T> VehicleInformationType<T>.asFlow() = elm327Repository.pollCommand(
         GetVehicleInformationCommand(this),
-        1000u,
+        1000.milliseconds,
     ).mapLatest {
         it.getOrNull()?.let { obdResponse ->
             this to obdResponse

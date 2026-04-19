@@ -18,8 +18,6 @@ import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowHeadersCommand
 import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.IO
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
@@ -35,21 +33,20 @@ import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.io.Buffer
 import kotlinx.io.InternalIoApi
 import kotlinx.io.readString
-import kotlin.time.Clock
-import kotlin.time.ExperimentalTime
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.milliseconds
+import kotlin.time.TimeSource
+import kotlin.time.measureTimedValue
 
 /**
  * ELM327 IC manager.
  *
  * @param coroutineScope The [CoroutineScope] to use for coroutines
  * @param coroutineDispatcher The [CoroutineDispatcher] to use for coroutines
- * @param clock The clock to use for timing
  */
-@OptIn(ExperimentalTime::class)
 class Elm327Manager(
     private val coroutineScope: CoroutineScope,
-    private val coroutineDispatcher: CoroutineDispatcher = Dispatchers.IO,
-    private val clock: Clock = Clock.System,
+    private val coroutineDispatcher: CoroutineDispatcher,
 ) {
     enum class Status {
         /**
@@ -133,16 +130,16 @@ class Elm327Manager(
      * Execute a command.
      *
      * @param command The [Command] to execute
-     * @param timeoutMs The timeout in milliseconds for each sub-operation, not for the whole
+     * @param timeout The timeout in milliseconds for each sub-operation, not for the whole
      *   execution
      */
     suspend fun <T> executeCommand(
         command: Command<T>,
-        timeoutMs: Long = DEFAULT_COMMAND_TIMEOUT_MS,
+        timeout: Duration = DEFAULT_COMMAND_TIMEOUT,
     ) = withContext(coroutineDispatcher) {
         socket.value?.executeCommand(
             command = command,
-            timeoutMs = timeoutMs,
+            timeout = timeout,
         ) ?: Result.Error(Error.IO)
     }
 
@@ -150,37 +147,31 @@ class Elm327Manager(
      * Get a flow that polls a command.
      *
      * @param command The [Command] to poll
-     * @param pollIntervalMs The interval in milliseconds between each poll, null to disable polling
-     * @param timeoutMs The timeout in milliseconds for each sub-operation, not for the whole
-     *   execution
+     * @param pollInterval The interval in milliseconds between each poll, null to disable polling
+     * @param timeout The timeout for each sub-operation, not for the whole execution
      */
     fun <T> pollCommand(
         command: Command<T>,
-        pollIntervalMs: UInt?,
-        timeoutMs: Long = DEFAULT_COMMAND_TIMEOUT_MS,
+        pollInterval: Duration?,
+        timeout: Duration = DEFAULT_COMMAND_TIMEOUT,
     ) = channelFlow {
-        pollIntervalMs?.also { pollIntervalMs ->
+        pollInterval?.also { pollInterval ->
             while (true) {
-                val startMs = clock.now().toEpochMilliseconds()
-
-                val result = executeCommand(
-                    command = command,
-                    timeoutMs = timeoutMs,
-                )
-
-                val endMs = clock.now().toEpochMilliseconds()
+                val (result, duration) = TimeSource.Monotonic.measureTimedValue {
+                    executeCommand(
+                        command = command,
+                        timeout = timeout,
+                    )
+                }
 
                 send(result)
 
-                val remainingTime = pollIntervalMs.toLong() - (endMs - startMs)
-                if (remainingTime > 0) {
-                    delay(remainingTime)
-                }
+                delay(pollInterval - duration)
             }
         } ?: run {
             val result = executeCommand(
                 command = command,
-                timeoutMs = timeoutMs,
+                timeout = timeout,
             )
 
             send(result)
@@ -192,7 +183,7 @@ class Elm327Manager(
      */
     private suspend fun <T> Socket.executeCommand(
         command: Command<T>,
-        timeoutMs: Long = DEFAULT_COMMAND_TIMEOUT_MS,
+        timeout: Duration = DEFAULT_COMMAND_TIMEOUT,
     ) = withContext(coroutineDispatcher) {
         mutex.withLock {
             val response = mutableListOf<String>()
@@ -229,7 +220,7 @@ class Elm327Manager(
                             source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
                         }
 
-                        false -> withTimeoutOrNull(timeMillis = timeoutMs) {
+                        false -> withTimeoutOrNull(timeout = timeout) {
                             source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
                         } ?: run {
                             Logger.error(LOG_TAG) { "Timed out waiting for response" }
@@ -396,7 +387,7 @@ class Elm327Manager(
         /**
          * Timeout value if not specified.
          */
-        private const val DEFAULT_COMMAND_TIMEOUT_MS = 5000L
+        private val DEFAULT_COMMAND_TIMEOUT = 5000.milliseconds
 
         /**
          * Character used to end the response. It indicates ready for next command.

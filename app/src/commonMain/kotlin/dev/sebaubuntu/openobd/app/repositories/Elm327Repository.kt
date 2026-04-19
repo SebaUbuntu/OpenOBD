@@ -17,6 +17,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import kotlin.time.Duration
 
 /**
  * Elm327 repository.
@@ -58,7 +59,7 @@ class Elm327Repository(
     @OptIn(ExperimentalCoroutinesApi::class)
     fun <T> pollCommand(
         command: Command<T>,
-        pollIntervalMs: UInt?,
-    ) = elm327Manager.pollCommand(command, pollIntervalMs)
+        pollInterval: Duration?,
+    ) = elm327Manager.pollCommand(command, pollInterval)
         .flowOn(coroutineDispatcher)
 }

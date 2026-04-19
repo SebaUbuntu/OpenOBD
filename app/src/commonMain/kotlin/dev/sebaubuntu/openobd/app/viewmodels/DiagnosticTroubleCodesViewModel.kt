@@ -30,6 +30,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import kotlin.time.Duration.Companion.milliseconds
 
 class DiagnosticTroubleCodesViewModel(
     private val elm327Repository: Elm327Repository,
@@ -108,7 +109,7 @@ class DiagnosticTroubleCodesViewModel(
 
     @OptIn(ExperimentalCoroutinesApi::class)
     private fun GetDiagnosticTroubleCodesCommand.asFlow() =
-        elm327Repository.pollCommand(this, 5000u)
+        elm327Repository.pollCommand(this, 5000.milliseconds)
             .asFlowResult()
             .mapLatestDataOrNull()
             .mapLatest { it?.value.orEmpty() }

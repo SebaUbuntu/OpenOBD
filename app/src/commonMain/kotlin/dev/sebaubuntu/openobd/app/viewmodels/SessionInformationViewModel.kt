@@ -28,6 +28,7 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
+import kotlin.time.Duration.Companion.milliseconds
 
 class SessionInformationViewModel(
     connectionStatusRepository: ConnectionStatusRepository,
@@ -41,31 +42,31 @@ class SessionInformationViewModel(
             combine(
                 elm327Repository.pollCommand(
                     command = GetDeviceDescriptionCommand,
-                    pollIntervalMs = null,
+                    pollInterval = null,
                 ),
                 elm327Repository.pollCommand(
                     command = GetDeviceIdentifierCommand,
-                    pollIntervalMs = null,
+                    pollInterval = null,
                 ),
                 elm327Repository.pollCommand(
                     command = GetVersionIdCommand,
-                    pollIntervalMs = null,
+                    pollInterval = null,
                 ),
                 elm327Repository.pollCommand(
                     command = ReadInputVoltageCommand,
-                    pollIntervalMs = SESSION_INFORMATION_POLL_INTERVAL_MS,
+                    pollInterval = SESSION_INFORMATION_POLL_INTERVAL,
                 ),
                 elm327Repository.pollCommand(
                     command = DescribeProtocolByNumberCommand,
-                    pollIntervalMs = null,
+                    pollInterval = null,
                 ),
                 elm327Repository.pollCommand(
                     command = DescribeProtocolCommand,
-                    pollIntervalMs = null,
+                    pollInterval = null,
                 ),
                 elm327Repository.pollCommand(
                     command = GetIgnMonCommand,
-                    pollIntervalMs = SESSION_INFORMATION_POLL_INTERVAL_MS,
+                    pollInterval = SESSION_INFORMATION_POLL_INTERVAL,
                 ),
             ) { results ->
                 @Suppress("UNCHECKED_CAST")
@@ -90,6 +91,6 @@ class SessionInformationViewModel(
         )
 
     companion object {
-        private const val SESSION_INFORMATION_POLL_INTERVAL_MS = 1000u
+        private val SESSION_INFORMATION_POLL_INTERVAL = 1000.milliseconds
     }
 }

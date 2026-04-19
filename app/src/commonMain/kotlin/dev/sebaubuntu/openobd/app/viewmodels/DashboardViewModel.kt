@@ -33,6 +33,8 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.stateIn
+import kotlin.time.Duration
+import kotlin.time.Duration.Companion.milliseconds
 
 /**
  * Dashboard view model.
@@ -43,7 +45,7 @@ class DashboardViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     val supportedParameterIds = elm327Repository.pollCommand(
         command = GetCurrentDataCommand(DataType.PID_SUPPORTED_01_20),
-        pollIntervalMs = null,
+        pollInterval = null,
     )
         .mapLatest {
             buildSet {
@@ -70,39 +72,39 @@ class DashboardViewModel(
         )
 
     private val ambientAirTemperature = DataType.AMBIENT_AIR_TEMPERATURE.asSharedFlow(
-        pollIntervalMs = SLOW_DATA_POLL_INTERVAL_MS,
+        pollInterval = SLOW_DATA_POLL_INTERVAL,
         defaultValue = 0.celsius,
     )
     private val engineCoolantTemperature = DataType.ENGINE_COOLANT_TEMPERATURE.asSharedFlow(
-        pollIntervalMs = MEDIUM_DATA_POLL_INTERVAL_MS,
+        pollInterval = MEDIUM_DATA_POLL_INTERVAL,
         defaultValue = 0.celsius,
     )
     private val engineOilTemperature = DataType.ENGINE_OIL_TEMPERATURE.asSharedFlow(
-        pollIntervalMs = MEDIUM_DATA_POLL_INTERVAL_MS,
+        pollInterval = MEDIUM_DATA_POLL_INTERVAL,
         defaultValue = 0.celsius,
     )
     private val engineSpeed = DataType.ENGINE_SPEED.asSharedFlow(
-        pollIntervalMs = FAST_DATA_POLL_INTERVAL_MS,
+        pollInterval = FAST_DATA_POLL_INTERVAL,
         defaultValue = 0.revolutionsPerMinute,
     )
     private val fuelTankLevelInput = DataType.FUEL_TANK_LEVEL_INPUT.asSharedFlow(
-        pollIntervalMs = MEDIUM_DATA_POLL_INTERVAL_MS,
+        pollInterval = MEDIUM_DATA_POLL_INTERVAL,
         defaultValue = 0.percent,
     )
     private val fuelType = DataType.FUEL_TYPE.asSharedFlow(
-        pollIntervalMs = SLOW_DATA_POLL_INTERVAL_MS,
+        pollInterval = SLOW_DATA_POLL_INTERVAL,
         defaultValue = FuelType.GASOLINE,
     )
     private val intakeAirTemperature = DataType.INTAKE_AIR_TEMPERATURE.asSharedFlow(
-        pollIntervalMs = SLOW_DATA_POLL_INTERVAL_MS,
+        pollInterval = SLOW_DATA_POLL_INTERVAL,
         defaultValue = 0.celsius,
     )
     private val odometer = DataType.ODOMETER.asSharedFlow(
-        pollIntervalMs = SLOW_DATA_POLL_INTERVAL_MS,
+        pollInterval = SLOW_DATA_POLL_INTERVAL,
         defaultValue = 0.kilometers,
     )
     private val vehicleSpeed = DataType.VEHICLE_SPEED.asSharedFlow(
-        pollIntervalMs = FAST_DATA_POLL_INTERVAL_MS,
+        pollInterval = FAST_DATA_POLL_INTERVAL,
         defaultValue = 0.kilometersPerHour,
     )
 
@@ -139,14 +141,14 @@ class DashboardViewModel(
 
     @OptIn(ExperimentalCoroutinesApi::class)
     private fun <T> DataType<T>.asSharedFlow(
-        pollIntervalMs: UInt,
+        pollInterval: Duration,
         defaultValue: T,
     ) = supportedParameterIds
         .flatMapLatest { supportedParameterIds ->
             when (supportedParameterIds.contains(parameterId)) {
                 true -> elm327Repository.pollCommand(
                     GetCurrentDataCommand(this),
-                    pollIntervalMs,
+                    pollInterval,
                 ).mapLatest {
                     it.getOrNull()?.value?.values?.first() ?: defaultValue
                 }
@@ -162,9 +164,9 @@ class DashboardViewModel(
         )
 
     companion object {
-        private const val FAST_DATA_POLL_INTERVAL_MS = 100u
-        private const val MEDIUM_DATA_POLL_INTERVAL_MS = 500u
-        private const val SLOW_DATA_POLL_INTERVAL_MS = 5000u
+        private val FAST_DATA_POLL_INTERVAL = 100.milliseconds
+        private val MEDIUM_DATA_POLL_INTERVAL = 500.milliseconds
+        private val SLOW_DATA_POLL_INTERVAL = 5000.milliseconds
 
         private val optionalSupportedParameterIdsCommands = listOf(
             DataType.PID_SUPPORTED_21_40,

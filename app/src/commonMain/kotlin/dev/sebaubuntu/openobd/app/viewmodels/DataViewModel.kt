@@ -27,6 +27,7 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.stateIn
+import kotlin.time.Duration.Companion.milliseconds
 
 /**
  * Base view model for [CurrentDataViewModel] and [FreezeFrameDataViewModel].
@@ -43,7 +44,7 @@ abstract class DataViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     val supportedParameterIds = elm327Repository.pollCommand(
         command = pidSupported0120Command,
-        pollIntervalMs = null,
+        pollInterval = null,
     )
         .mapLatest {
             buildSet {
@@ -99,7 +100,7 @@ abstract class DataViewModel(
     @OptIn(ExperimentalCoroutinesApi::class)
     private fun <T> DataType<T>.asFlow() = elm327Repository.pollCommand(
         dataCommandBuilder(this),
-        1000u,
+        1000.milliseconds,
     ).mapLatest {
         it.getOrNull()?.let { obdResponse ->
             this to obdResponse

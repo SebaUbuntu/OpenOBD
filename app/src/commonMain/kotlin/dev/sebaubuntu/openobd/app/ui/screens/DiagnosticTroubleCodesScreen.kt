@@ -93,7 +93,7 @@ private fun CodeWithControlModulesListItem(
 
                     append(
                         codeWithControlModules.controlModulesWithStatus.joinToString("\n") {
-                            "${it.controlModule}: ${it.status.joinToString()}"
+                            "${it.canIdentifier}: ${it.status.joinToString()}"
                         }
                     )
                 }
