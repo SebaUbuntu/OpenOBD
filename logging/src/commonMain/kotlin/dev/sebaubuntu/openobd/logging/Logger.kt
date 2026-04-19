@@ -8,12 +8,10 @@ package dev.sebaubuntu.openobd.logging
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.runBlocking
-import kotlin.time.ExperimentalTime
 
 /**
  * Logger.
  */
-@OptIn(ExperimentalTime::class)
 object Logger : LogDevice {
     private val _logEntryFlow = MutableSharedFlow<LogEntry>()
     val logEntryFlow = _logEntryFlow.asSharedFlow()

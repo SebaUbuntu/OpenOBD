@@ -6,13 +6,11 @@
 package dev.sebaubuntu.openobd.logging
 
 import kotlin.time.Clock
-import kotlin.time.ExperimentalTime
 import kotlin.time.Instant
 
 /**
  * Log entry.
  */
-@OptIn(ExperimentalTime::class)
 data class LogEntry(
     val message: String,
     val level: LogLevel,

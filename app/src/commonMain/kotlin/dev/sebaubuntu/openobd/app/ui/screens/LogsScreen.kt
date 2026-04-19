@@ -28,7 +28,6 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.sebaubuntu.openobd.app.viewmodels.LogsViewModel
 import dev.sebaubuntu.openobd.logging.LogEntry
 import org.koin.compose.viewmodel.koinViewModel
-import kotlin.time.ExperimentalTime
 
 @Composable
 fun LogsScreen(
@@ -75,7 +74,6 @@ private fun LogsScreen(
 }
 
 @Composable
-@OptIn(ExperimentalTime::class)
 private fun LogEntryListItem(
     logEntry: LogEntry,
     modifier: Modifier = Modifier,
