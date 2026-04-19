@@ -15,11 +15,11 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.navigation3.runtime.NavBackStack
 import androidx.navigation3.runtime.NavKey
 import dev.sebaubuntu.openobd.app.repositories.ConnectionStatusRepository
-import dev.sebaubuntu.openobd.app.ui.composables.OpenOBDBottomBar
-import dev.sebaubuntu.openobd.app.ui.composables.OpenOBDTopAppBar
+import dev.sebaubuntu.openobd.app.ui.composables.AppBottomBar
+import dev.sebaubuntu.openobd.app.ui.composables.AppTopAppBar
+import dev.sebaubuntu.openobd.app.ui.navigation.AppNavDisplay
 import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
-import dev.sebaubuntu.openobd.app.ui.navigation.OpenOBDNavDisplay
-import dev.sebaubuntu.openobd.app.ui.themes.OpenOBDTheme
+import dev.sebaubuntu.openobd.app.ui.themes.AppTheme
 import dev.sebaubuntu.openobd.app.viewmodels.AppViewModel
 import dev.sebaubuntu.openobd.app.viewmodels.CurrentDeviceViewModel
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.getOrNull
@@ -45,26 +45,26 @@ fun App() {
     val device by currentDeviceViewModel.device.collectAsStateWithLifecycle()
     val connectionStatus by connectionStatusRepository.connectionStatus.collectAsStateWithLifecycle()
 
-    OpenOBDTheme(
+    AppTheme(
         theme = theme,
         dynamicColors = dynamicColors,
     ) {
         Scaffold(
             topBar = {
-                OpenOBDTopAppBar(
+                AppTopAppBar(
                     navBackStack = navBackStack,
                     connectionStatus = connectionStatus,
                 )
             },
             bottomBar = {
-                OpenOBDBottomBar(
+                AppBottomBar(
                     navBackStack = navBackStack,
                     device = device.getOrNull(),
                     connectionStatus = connectionStatus,
                 )
             },
         ) { paddingValues ->
-            OpenOBDNavDisplay(
+            AppNavDisplay(
                 paddingValues = paddingValues,
                 navBackStack = navBackStack,
                 modifier = Modifier.fillMaxSize(),

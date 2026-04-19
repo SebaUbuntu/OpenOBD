@@ -46,7 +46,7 @@ import org.jetbrains.compose.resources.stringResource
 
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
-fun OpenOBDTopAppBar(
+fun AppTopAppBar(
     navBackStack: NavBackStack<AppNavRoute>,
     connectionStatus: ConnectionStatus,
     modifier: Modifier = Modifier,

@@ -29,7 +29,7 @@ import dev.sebaubuntu.openobd.app.ui.screens.TerminalScreen
 import dev.sebaubuntu.openobd.app.ui.screens.VehicleInformationScreen
 
 @Composable
-fun OpenOBDNavDisplay(
+fun AppNavDisplay(
     paddingValues: PaddingValues,
     navBackStack: NavBackStack<AppNavRoute>,
     modifier: Modifier = Modifier,

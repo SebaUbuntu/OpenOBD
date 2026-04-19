@@ -14,7 +14,7 @@ import org.koin.compose.koinInject
  * Default app theme.
  */
 @Composable
-fun OpenOBDTheme(
+fun AppTheme(
     theme: Theme,
     dynamicColors: Boolean,
     content: @Composable () -> Unit,

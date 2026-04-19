@@ -37,7 +37,7 @@ import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 
 @Composable
-fun OpenOBDBottomBar(
+fun AppBottomBar(
     navBackStack: NavBackStack<AppNavRoute>,
     device: Device<*>?,
     connectionStatus: ConnectionStatus,
