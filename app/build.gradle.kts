@@ -55,12 +55,12 @@ kotlin {
 
             implementation(projects.backend)
             implementation(projects.core)
-            implementation(projects.elm327)
             implementation(projects.logging)
-            implementation(projects.obd2)
             implementation(projects.profiles)
+            implementation(projects.protocols.obd2)
+            implementation(projects.protocols.elm327)
+            implementation(projects.protocols.uds)
             implementation(projects.storage)
-            implementation(projects.uds)
         }
 
         commonTest.dependencies {

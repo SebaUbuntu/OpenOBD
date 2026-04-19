@@ -10,8 +10,8 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
-import dev.sebaubuntu.openobd.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.obd2.models.DataType
+import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
+import dev.sebaubuntu.openobd.protocols.obd2.models.DataType
 
 @Composable
 fun DataListItem(

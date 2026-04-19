@@ -12,10 +12,10 @@ import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.core.models.Result.Companion.getOrNull
-import dev.sebaubuntu.openobd.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.obd2.commands.GetDataCommand
-import dev.sebaubuntu.openobd.obd2.models.DataType
-import dev.sebaubuntu.openobd.obd2.models.SupportedParameterIds
+import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
+import dev.sebaubuntu.openobd.protocols.obd2.commands.GetDataCommand
+import dev.sebaubuntu.openobd.protocols.obd2.models.DataType
+import dev.sebaubuntu.openobd.protocols.obd2.models.SupportedParameterIds
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.IO

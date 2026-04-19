@@ -6,7 +6,7 @@
 package dev.sebaubuntu.openobd.app.models
 
 import dev.sebaubuntu.openobd.core.models.value.Voltage
-import dev.sebaubuntu.openobd.elm327.models.ObdProtocol
+import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 
 /**
  * ELM327 session information.

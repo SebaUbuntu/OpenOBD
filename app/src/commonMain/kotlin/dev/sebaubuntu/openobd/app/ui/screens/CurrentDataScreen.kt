@@ -19,8 +19,8 @@ import dev.sebaubuntu.openobd.app.ui.composables.ConnectionGatedComposable
 import dev.sebaubuntu.openobd.app.ui.composables.DataListItem
 import dev.sebaubuntu.openobd.app.ui.composables.FlowResultComposable
 import dev.sebaubuntu.openobd.app.viewmodels.CurrentDataViewModel
-import dev.sebaubuntu.openobd.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.obd2.models.DataType
+import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
+import dev.sebaubuntu.openobd.protocols.obd2.models.DataType
 import org.koin.compose.viewmodel.koinViewModel
 
 /**

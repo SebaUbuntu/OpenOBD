@@ -40,11 +40,11 @@ import dev.sebaubuntu.openobd.backend.bluetoothle.BluetoothLeManager
 import dev.sebaubuntu.openobd.backend.demo.DemoManager
 import dev.sebaubuntu.openobd.backend.network.NetworkManager
 import dev.sebaubuntu.openobd.backend.usb.UsbManager
-import dev.sebaubuntu.openobd.elm327.Elm327Manager
 import dev.sebaubuntu.openobd.logging.LogBuffer
 import dev.sebaubuntu.openobd.logging.LogDevice
 import dev.sebaubuntu.openobd.logging.Logger
 import dev.sebaubuntu.openobd.logging.PrintlnLogDevice
+import dev.sebaubuntu.openobd.protocols.elm327.Elm327Manager
 import dev.sebaubuntu.openobd.storage.database.AppDatabase
 import dev.sebaubuntu.openobd.storage.preferences.PreferencesManager
 import kotlinx.coroutines.CoroutineDispatcher

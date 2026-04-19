@@ -8,7 +8,7 @@ package dev.sebaubuntu.openobd.app.repositories
 import dev.sebaubuntu.openobd.app.models.ConnectionStatus
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
-import dev.sebaubuntu.openobd.elm327.Elm327Manager
+import dev.sebaubuntu.openobd.protocols.elm327.Elm327Manager
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
