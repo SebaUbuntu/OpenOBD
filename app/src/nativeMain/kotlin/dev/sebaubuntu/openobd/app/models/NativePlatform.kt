@@ -27,8 +27,6 @@ abstract class NativePlatform : Platform {
             add("CPU architecture: ${kotlinPlatform.cpuArchitecture}")
             add("Is debug binary: ${kotlinPlatform.isDebugBinary}")
             add("Program name: ${kotlinPlatform.programName}")
-            add("Is memory leak checker active: ${kotlinPlatform.isMemoryLeakCheckerActive}")
-            add("Is cleaners leak checker active: ${kotlinPlatform.isCleanersLeakCheckerActive}")
             add("Available processors: ${kotlinPlatform.getAvailableProcessors()}")
         }
     }
