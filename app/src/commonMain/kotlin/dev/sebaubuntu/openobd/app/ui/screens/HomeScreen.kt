@@ -25,8 +25,13 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import dev.sebaubuntu.openobd.app.ui.AppRoute
+import dev.sebaubuntu.openobd.app.ui.LocalNavBackStack
+import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
 import openobd.app.generated.resources.Res
+import openobd.app.generated.resources.current_data
+import openobd.app.generated.resources.dashboard
+import openobd.app.generated.resources.dtc
+import openobd.app.generated.resources.freeze_frame_data
 import openobd.app.generated.resources.ic_laptop_car
 import openobd.app.generated.resources.ic_list_alt
 import openobd.app.generated.resources.ic_sensors
@@ -35,48 +40,60 @@ import openobd.app.generated.resources.ic_speed
 import openobd.app.generated.resources.ic_terminal
 import openobd.app.generated.resources.ic_timer
 import openobd.app.generated.resources.ic_warning
+import openobd.app.generated.resources.logs
+import openobd.app.generated.resources.settings
+import openobd.app.generated.resources.terminal
+import openobd.app.generated.resources.vehicle_information
 import org.jetbrains.compose.resources.DrawableResource
+import org.jetbrains.compose.resources.StringResource
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 
 private enum class Tab(
-    val route: AppRoute,
+    val route: AppNavRoute,
+    val stringResource: StringResource,
     val drawableResource: DrawableResource,
 ) {
     DASHBOARD(
-        AppRoute.DASHBOARD,
+        AppNavRoute.Dashboard,
+        Res.string.dashboard,
         Res.drawable.ic_speed,
     ),
     DTC(
-        AppRoute.DTC,
+        AppNavRoute.DiagnosticTroubleCodes,
+        Res.string.dtc,
         Res.drawable.ic_warning,
     ),
     CURRENT_DATA(
-        AppRoute.CURRENT_DATA,
+        AppNavRoute.CurrentData,
+        Res.string.current_data,
         Res.drawable.ic_sensors,
     ),
     FREEZE_FRAME_DATA(
-        AppRoute.FREEZE_FRAME_DATA,
+        AppNavRoute.FreezeFrameData,
+        Res.string.freeze_frame_data,
         Res.drawable.ic_timer,
     ),
     VEHICLE_INFORMATION(
-        AppRoute.VEHICLE_INFORMATION,
+        AppNavRoute.VehicleInformation,
+        Res.string.vehicle_information,
         Res.drawable.ic_laptop_car,
     ),
     TERMINAL(
-        AppRoute.TERMINAL,
+        AppNavRoute.Terminal,
+        Res.string.terminal,
         Res.drawable.ic_terminal,
     ),
     LOGS(
-        AppRoute.LOGS,
+        AppNavRoute.Logs,
+        Res.string.logs,
         Res.drawable.ic_list_alt,
     ),
     SETTINGS(
-        AppRoute.SETTINGS,
+        AppNavRoute.Settings,
+        Res.string.settings,
         Res.drawable.ic_settings,
-    );
-
-    val stringResource = route.title
+    ),
 }
 
 /**
@@ -85,8 +102,9 @@ private enum class Tab(
 @Composable
 fun HomeScreen(
     paddingValues: PaddingValues,
-    onNavigateTo: (AppRoute) -> Unit,
 ) {
+    val navBackStack = LocalNavBackStack.current
+
     LazyVerticalStaggeredGrid(
         columns = StaggeredGridCells.Adaptive(minSize = 128.dp),
         modifier = Modifier
@@ -100,7 +118,7 @@ fun HomeScreen(
         ) {
             TabCard(
                 tab = it,
-                onClick = { onNavigateTo(it.route) },
+                onClick = { navBackStack.add(it.route) },
                 modifier = Modifier.padding(8.dp),
             )
         }

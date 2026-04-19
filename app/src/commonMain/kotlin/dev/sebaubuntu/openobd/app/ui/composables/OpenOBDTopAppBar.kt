@@ -25,8 +25,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation3.runtime.NavBackStack
+import dev.sebaubuntu.openobd.app.ext.stringResource
 import dev.sebaubuntu.openobd.app.models.ConnectionStatus
-import dev.sebaubuntu.openobd.app.ui.AppRoute
+import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.connection_status_connecting
 import openobd.app.generated.resources.connection_status_failed_connection
@@ -45,10 +47,7 @@ import org.jetbrains.compose.resources.stringResource
 @Composable
 @OptIn(ExperimentalMaterial3Api::class)
 fun OpenOBDTopAppBar(
-    currentRoute: AppRoute,
-    canNavigateBack: Boolean,
-    onNavigateUp: () -> Unit,
-    onNavigateToSessionInformation: () -> Unit,
+    navBackStack: NavBackStack<AppNavRoute>,
     connectionStatus: ConnectionStatus,
     modifier: Modifier = Modifier,
 ) {
@@ -58,7 +57,7 @@ fun OpenOBDTopAppBar(
                 verticalAlignment = Alignment.CenterVertically,
             ) {
                 Text(
-                    text = stringResource(currentRoute.title),
+                    text = stringResource(navBackStack.last().stringResource),
                     modifier = Modifier.weight(1f),
                 )
 
@@ -69,7 +68,11 @@ fun OpenOBDTopAppBar(
                     Card {
                         Row(
                             modifier = Modifier
-                                .clickable { onNavigateToSessionInformation() }
+                                .clickable {
+                                    if (navBackStack.last() != AppNavRoute.SessionInformation) {
+                                        navBackStack.add(AppNavRoute.SessionInformation)
+                                    }
+                                }
                                 .padding(horizontal = 16.dp, vertical = 8.dp),
                             verticalAlignment = Alignment.CenterVertically,
                         ) {
@@ -151,8 +154,14 @@ fun OpenOBDTopAppBar(
         },
         modifier = modifier,
         navigationIcon = {
-            if (canNavigateBack) {
-                IconButton(onClick = onNavigateUp) {
+            if (navBackStack.size > 1) {
+                IconButton(
+                    onClick = {
+                        if (navBackStack.size > 1) {
+                            navBackStack.removeLast()
+                        }
+                    }
+                ) {
                     Icon(
                         painter = painterResource(Res.drawable.ic_arrow_back),
                         contentDescription = stringResource(Res.string.go_back)

@@ -20,9 +20,11 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.navigation3.runtime.NavBackStack
 import dev.sebaubuntu.openobd.app.ext.drawableResource
 import dev.sebaubuntu.openobd.app.ext.stringResource
 import dev.sebaubuntu.openobd.app.models.ConnectionStatus
+import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
 import dev.sebaubuntu.openobd.backend.models.Device
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.app_name
@@ -36,14 +38,15 @@ import org.jetbrains.compose.resources.stringResource
 
 @Composable
 fun OpenOBDBottomBar(
-    onNavigateToHome: () -> Unit,
-    onNavigateToDevices: () -> Unit,
+    navBackStack: NavBackStack<AppNavRoute>,
     device: Device<*>?,
     connectionStatus: ConnectionStatus,
 ) {
     BottomAppBar {
         IconButton(
-            onClick = onNavigateToHome,
+            onClick = {
+                navBackStack.removeAll { it != AppNavRoute.Home }
+            },
         ) {
             Icon(
                 painter = painterResource(Res.drawable.ic_menu),
@@ -54,7 +57,9 @@ fun OpenOBDBottomBar(
         Spacer(Modifier.weight(1f, true))
 
         Button(
-            onClick = onNavigateToDevices,
+            onClick = {
+                navBackStack.add(AppNavRoute.DeviceTypes)
+            },
             modifier = Modifier.padding(end = 16.dp),
         ) {
             Row(
