@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * ELM327 IC reset.
  */
-object ResetCommand : Command<Unit> {
+data object ResetCommand : Command<Unit> {
     override val command = "AT Z"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(Unit)
 }

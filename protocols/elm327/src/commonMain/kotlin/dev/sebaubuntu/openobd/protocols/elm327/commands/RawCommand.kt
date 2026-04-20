@@ -14,7 +14,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
  *
  * @param command The command
  */
-class RawCommand(
+data class RawCommand(
     override val command: String
 ) : Command<List<String>> {
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(response)

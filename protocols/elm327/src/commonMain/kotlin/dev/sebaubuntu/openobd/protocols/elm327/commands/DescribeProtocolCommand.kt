@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Describe the current protocol.
  */
-object DescribeProtocolCommand : Command<String> {
+data object DescribeProtocolCommand : Command<String> {
     override val command = "AT DP"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(
         response.joinToString("\n")

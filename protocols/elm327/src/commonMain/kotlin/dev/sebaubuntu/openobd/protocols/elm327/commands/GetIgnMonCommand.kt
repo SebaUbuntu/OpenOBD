@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Get the ignition monitoring status.
  */
-object GetIgnMonCommand : Command<Boolean> {
+data object GetIgnMonCommand : Command<Boolean> {
     override val command = "AT IGN"
     override fun parseResponse(response: List<String>) = response.getOrNull(0)?.let {
         when (it) {

@@ -13,7 +13,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 /**
  * Describe the current protocol by its number.
  */
-object DescribeProtocolByNumberCommand : Command<Pair<Boolean, ObdProtocol>> {
+data object DescribeProtocolByNumberCommand : Command<Pair<Boolean, ObdProtocol>> {
     private const val AUTO_PREFIX = "A"
 
     override val command = "AT DPN"

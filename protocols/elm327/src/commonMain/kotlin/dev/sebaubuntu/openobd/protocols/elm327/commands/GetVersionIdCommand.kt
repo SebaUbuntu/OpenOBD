@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Get the version ID.
  */
-object GetVersionIdCommand : Command<String> {
+data object GetVersionIdCommand : Command<String> {
     override val command = "AT I"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(
         response.joinToString("\n")

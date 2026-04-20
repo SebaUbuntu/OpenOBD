@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Get the device identifier.
  */
-object GetDeviceIdentifierCommand : Command<String> {
+data object GetDeviceIdentifierCommand : Command<String> {
     override val command = "AT @2"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(
         response.joinToString("\n")

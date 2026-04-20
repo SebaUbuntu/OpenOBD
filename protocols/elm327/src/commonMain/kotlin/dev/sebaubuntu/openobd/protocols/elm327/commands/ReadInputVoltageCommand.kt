@@ -14,7 +14,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Read the input voltage.
  */
-object ReadInputVoltageCommand : Command<Voltage> {
+data object ReadInputVoltageCommand : Command<Voltage> {
     private val voltageRegex = "([0-9]+[.][0-9]+)V".toRegex()
 
     override val command = "AT RV"

@@ -13,7 +13,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 /**
  * Set OBD protocol.
  */
-class SetObdProtocolCommand(obdProtocol: ObdProtocol) : Command<Unit> {
+data class SetObdProtocolCommand(val obdProtocol: ObdProtocol) : Command<Unit> {
     override val command = "AT SP${obdProtocol.elm327Value}"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(Unit)
 }

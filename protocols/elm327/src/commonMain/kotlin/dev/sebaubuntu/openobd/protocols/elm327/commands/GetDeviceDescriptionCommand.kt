@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Get the device description.
  */
-object GetDeviceDescriptionCommand : Command<String> {
+data object GetDeviceDescriptionCommand : Command<String> {
     override val command = "AT @1"
     override fun parseResponse(response: List<String>) = Result.Success<_, Error>(
         response.joinToString("\n")

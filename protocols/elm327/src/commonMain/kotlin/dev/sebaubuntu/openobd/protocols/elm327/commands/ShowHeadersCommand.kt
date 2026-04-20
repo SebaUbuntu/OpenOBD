@@ -14,7 +14,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
  *
  * @param showHeaders Whether to show headers or not
  */
-class ShowHeadersCommand(showHeaders: Boolean) : Command<Unit> {
+data class ShowHeadersCommand(val showHeaders: Boolean) : Command<Unit> {
     override val command = when (showHeaders) {
         true -> "AT H1"
         false -> "AT H0"

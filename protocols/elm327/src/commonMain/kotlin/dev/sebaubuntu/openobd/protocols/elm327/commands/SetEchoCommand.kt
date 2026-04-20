@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 /**
  * Set echo on or off.
  */
-class SetEchoCommand(echo: Boolean) : Command<Unit> {
+data class SetEchoCommand(val echo: Boolean) : Command<Unit> {
     override val command = when (echo) {
         true -> "AT E1"
         false -> "AT E0"
