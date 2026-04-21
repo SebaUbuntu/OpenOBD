@@ -25,7 +25,7 @@ abstract class StubDeviceManager<D : Device<ID>, ID : Device.Identifier> : Devic
 
     override fun connection(
         identifier: ID,
-    ) = flowOf(Result.Error<Socket, Error>(Error.NOT_IMPLEMENTED))
+    ) = flowOf(Result.Error<RawSocket, Error>(Error.NOT_IMPLEMENTED))
 
     override fun setState(
         state: Boolean,

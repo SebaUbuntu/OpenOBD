@@ -9,7 +9,8 @@ import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
 import dev.sebaubuntu.openobd.backend.models.NetworkDevice
 import dev.sebaubuntu.openobd.backend.models.NetworkDevice.Companion.toModel
-import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.RawSocket
+import dev.sebaubuntu.openobd.backend.models.RawSocket.Companion.RawSocket
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.logging.Logger
@@ -66,7 +67,7 @@ class NetworkManager(
         .distinctUntilChanged()
         .flatMapLatest { networkDevice ->
             networkDevice?.let {
-                callbackFlow<Result<Socket, Error>> {
+                callbackFlow<Result<RawSocket, Error>> {
                     val selectorManager = SelectorManager()
 
                     val socket = runCatching {
@@ -77,12 +78,12 @@ class NetworkManager(
                         val receiveChannel = socket.openReadChannel()
                         val sendChannel = socket.openWriteChannel(autoFlush = true)
 
-                        val modelSocket = Socket(
-                            rawSource = receiveChannel.asSource(),
-                            rawSink = sendChannel.asSink(),
+                        val rawSocket = RawSocket(
+                            source = receiveChannel.asSource(),
+                            sink = sendChannel.asSink(),
                         )
 
-                        send(Result.Success(modelSocket))
+                        send(Result.Success(rawSocket))
                     }.onFailure { throwable ->
                         Logger.error(LOG_TAG, throwable) { "Failed to connect to network device" }
                         send(Result.Error(Error.IO))

@@ -16,7 +16,7 @@ import com.juul.kable.write
 import dev.sebaubuntu.openobd.backend.models.BluetoothLeDevice
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
-import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import kotlinx.coroutines.CoroutineScope
@@ -34,8 +34,6 @@ import kotlinx.coroutines.flow.scan
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.runBlocking
 import kotlinx.io.Buffer
-import kotlinx.io.RawSink
-import kotlinx.io.RawSource
 import kotlinx.io.readByteArray
 import kotlin.uuid.ExperimentalUuidApi
 
@@ -121,34 +119,27 @@ class BluetoothLeManager(
                 return@collectLatest
             }
 
-            val socket = Socket(
-                rawSource = object : RawSource {
-                    override fun readAtMostTo(sink: Buffer, byteCount: Long) = runBlocking {
-                        val data = peripheral.read(characteristic)
-                        sink.write(data)
-                        data.size.toLong()
-                    }
+            val socket = object : RawSocket {
+                override fun readAtMostTo(sink: Buffer, byteCount: Long) = runBlocking {
+                    val data = peripheral.read(characteristic)
+                    sink.write(data)
+                    data.size.toLong()
+                }
 
-                    override fun close() {
-                        // Do nothing
-                    }
-                },
-                rawSink = object : RawSink {
-                    override fun write(source: Buffer, byteCount: Long) = runBlocking {
-                        peripheral.write(characteristic, source.readByteArray())
-                    }
+                override fun write(source: Buffer, byteCount: Long) = runBlocking {
+                    peripheral.write(characteristic, source.readByteArray())
+                }
 
-                    override fun flush() {
-                        // Do nothing
-                    }
+                override fun flush() {
+                    // Do nothing
+                }
 
-                    override fun close() {
-                        // Do nothing
-                    }
-                },
-            )
+                override fun close() {
+                    // Do nothing
+                }
+            }
 
-            send(Result.Success<_, Error>(socket))
+            send(Result.Success<RawSocket, Error>(socket))
         }
 
         awaitClose {

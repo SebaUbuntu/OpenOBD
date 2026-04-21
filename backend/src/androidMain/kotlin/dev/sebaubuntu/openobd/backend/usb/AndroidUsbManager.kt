@@ -11,7 +11,7 @@ import android.content.IntentFilter
 import androidx.core.content.ContextCompat
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
-import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.backend.models.UsbDevice
 import dev.sebaubuntu.openobd.core.ext.broadcastReceiverFlow
 import dev.sebaubuntu.openobd.core.models.Error
@@ -90,7 +90,7 @@ class AndroidUsbManager(
                 //usbManager.requestPermission(device, PendingIntent.getActivity())
                 val usbDeviceConnection = usbManager.openDevice(device)
 
-                send(FlowResult.Error<Socket, _>(Error.NOT_IMPLEMENTED))
+                send(FlowResult.Error<RawSocket, _>(Error.NOT_IMPLEMENTED))
 
                 awaitClose {
                     usbDeviceConnection.close()

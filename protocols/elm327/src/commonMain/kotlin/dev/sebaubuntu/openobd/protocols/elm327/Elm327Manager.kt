@@ -5,7 +5,9 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327
 
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.Socket.Companion.buffered
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.core.models.Result.Companion.flatMap
@@ -29,7 +31,7 @@ import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
-import kotlinx.coroutines.flow.onEach
+import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -73,14 +75,14 @@ class Elm327Manager(
     /**
      * Requested socket holder.
      */
-    private val requestedSocket = MutableStateFlow<Socket?>(null)
+    private val rawSocket = MutableStateFlow<RawSocket?>(null)
 
     /**
      * The initialized socket.
      */
-    private val socket = requestedSocket
-        .onEach { socket ->
-            socket?.let {
+    private val socket = rawSocket
+        .map { rawSocket ->
+            rawSocket?.buffered()?.also {
                 // Reset the ELM327
                 it.executeCommand(ResetCommand)
 
@@ -117,7 +119,7 @@ class Elm327Manager(
     private val responseBuffer = Buffer()
 
     val status = combine(
-        requestedSocket,
+        rawSocket,
         socket,
     ) { requestedSocket, socket ->
         when {
@@ -160,8 +162,8 @@ class Elm327Manager(
     /**
      * Set the socket. Set to null to disconnect.
      */
-    fun setSocket(socket: Socket?) {
-        requestedSocket.value = socket
+    fun setSocket(socket: RawSocket?) {
+        rawSocket.value = socket
     }
 
     /**

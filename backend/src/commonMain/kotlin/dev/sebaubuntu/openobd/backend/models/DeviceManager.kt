@@ -69,7 +69,7 @@ interface DeviceManager<D : Device<ID>, ID : Device.Identifier> {
     /**
      * Flow representing a connection to the device.
      */
-    fun connection(identifier: ID): Flow<Result<Socket, Error>>
+    fun connection(identifier: ID): Flow<Result<RawSocket, Error>>
 
     /**
      * Set the current state of the manager.

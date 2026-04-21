@@ -8,7 +8,7 @@ package dev.sebaubuntu.openobd.backend.demo
 import dev.sebaubuntu.openobd.backend.models.DemoDevice
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
-import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
@@ -27,8 +27,6 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.io.Buffer
-import kotlinx.io.RawSink
-import kotlinx.io.RawSource
 
 class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
     override val isToggleable = false
@@ -59,7 +57,7 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
                 val commandSharedFlow = MutableSharedFlow<ByteArray>()
                 val responseSharedFlow = MutableSharedFlow<ByteArray?>(replay = 1)
 
-                val rawSource = object : RawSource {
+                val rawSocket = object : RawSocket {
                     override fun readAtMostTo(sink: Buffer, byteCount: Long): Long {
                         val bytes = runBlocking(Dispatchers.IO) {
                             responseSharedFlow.filterNotNull().first().also {
@@ -72,12 +70,6 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
                         return bytes.size.toLong()
                     }
 
-                    override fun close() {
-                        // Nothing
-                    }
-                }
-
-                val rawSink = object : RawSink {
                     override fun write(source: Buffer, byteCount: Long) {
                         runBlocking(Dispatchers.IO) {
                             commandSharedFlow.emit(source.readBytes())
@@ -101,14 +93,7 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
                     }
                 }
 
-                send(
-                    FlowResult.Success(
-                        Socket(
-                            rawSource = rawSource,
-                            rawSink = rawSink,
-                        )
-                    )
-                )
+                send(FlowResult.Success<RawSocket, Error>(rawSocket))
             }
         }
         .asResult()

@@ -16,7 +16,7 @@ import androidx.core.content.ContextCompat
 import dev.sebaubuntu.openobd.backend.models.BluetoothDevice
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
-import dev.sebaubuntu.openobd.backend.models.Socket
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.core.ext.getParcelable
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
@@ -30,8 +30,6 @@ import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
 import kotlinx.io.Buffer
-import kotlinx.io.RawSink
-import kotlinx.io.RawSource
 import kotlinx.io.asSink
 import kotlinx.io.asSource
 import kotlin.concurrent.atomics.AtomicBoolean
@@ -194,7 +192,7 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
     @OptIn(ExperimentalAtomicApi::class)
     override fun connection(
         identifier: BluetoothDevice.Identifier,
-    ) = callbackFlow<Result<Socket, Error>> {
+    ) = callbackFlow<Result<RawSocket, Error>> {
         // Cancel discovery because it otherwise slows down the connection.
         bluetoothAdapter?.cancelDiscovery()
 
@@ -269,44 +267,35 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
 
     private fun BluetoothSocket.toSocket(
         onError: (Throwable) -> Unit,
-    ): Socket {
-        val rawSource = object : RawSource {
-            private val realSource = inputStream.asSource()
+    ) = object : RawSocket {
+        private val realSource = inputStream.asSource()
+        private val realSink = outputStream.asSink()
 
-            override fun readAtMostTo(sink: Buffer, byteCount: Long) = try {
-                realSource.readAtMostTo(sink, byteCount)
-            } catch (e: Throwable) {
-                onError(e)
-                throw e
-            }
-
-            override fun close() = realSource.close()
+        override fun readAtMostTo(sink: Buffer, byteCount: Long) = try {
+            realSource.readAtMostTo(sink, byteCount)
+        } catch (e: Throwable) {
+            onError(e)
+            throw e
         }
 
-        val rawSink = object : RawSink {
-            private val realSink = outputStream.asSink()
-
-            override fun write(source: Buffer, byteCount: Long) = try {
-                realSink.write(source, byteCount)
-            } catch (e: Throwable) {
-                onError(e)
-                throw e
-            }
-
-            override fun flush() = try {
-                realSink.flush()
-            } catch (e: Throwable) {
-                onError(e)
-                throw e
-            }
-
-            override fun close() = realSink.close()
+        override fun write(source: Buffer, byteCount: Long) = try {
+            realSink.write(source, byteCount)
+        } catch (e: Throwable) {
+            onError(e)
+            throw e
         }
 
-        return Socket(
-            rawSource = rawSource,
-            rawSink = rawSink,
-        )
+        override fun flush() = try {
+            realSink.flush()
+        } catch (e: Throwable) {
+            onError(e)
+            throw e
+        }
+
+        override fun close() {
+            realSource.close()
+            realSink.close()
+        }
     }
 
     private fun android.bluetooth.BluetoothDevice.toModel() = BluetoothDevice(
