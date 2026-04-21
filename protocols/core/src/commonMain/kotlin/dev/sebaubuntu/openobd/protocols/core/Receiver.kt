@@ -10,7 +10,7 @@ import kotlinx.coroutines.flow.Flow
 /**
  * A protocol receiver.
  */
-interface Receiver<F : Frame> {
+interface Receiver<F : Frame> : Interface<F> {
     /**
      * Get a flow that emits newly received frames.
      */

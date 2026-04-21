@@ -8,7 +8,7 @@ package dev.sebaubuntu.openobd.protocols.core
 /**
  * A protocol transmitter.
  */
-interface Transmitter<F : Frame> {
+interface Transmitter<F : Frame> : Interface<F> {
     /**
      * Send a frame.
      *
