@@ -43,7 +43,7 @@ class NetworkManager(
 
     @OptIn(ExperimentalCoroutinesApi::class)
     override fun devices() = dao.getAll().mapLatest { networkDevices ->
-        Result.Success<_, Error>(
+        Result.Success(
             DevicesState(
                 devices = networkDevices.map { it.toModel() },
                 isSearching = false,
@@ -56,8 +56,8 @@ class NetworkManager(
         identifier: NetworkDevice.Identifier,
     ) = dao.getById(identifier.networkDeviceId).mapLatest { networkDevice ->
         networkDevice?.let {
-            Result.Success<_, Error>(it.toModel())
-        } ?: Result.Error(Error.NOT_FOUND)
+            Result.Success(it.toModel())
+        } ?: Result.Failure(Error.NOT_FOUND)
     }
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -86,7 +86,7 @@ class NetworkManager(
                         send(Result.Success(rawSocket))
                     }.onFailure { throwable ->
                         Logger.error(LOG_TAG, throwable) { "Failed to connect to network device" }
-                        send(Result.Error(Error.IO))
+                        send(Result.Failure(Error.IO))
                     }.getOrNull()
 
                     awaitClose {
@@ -94,10 +94,10 @@ class NetworkManager(
                         selectorManager.close()
                     }
                 }
-            } ?: flowOf(Result.Error(Error.NOT_FOUND))
+            } ?: flowOf(Result.Failure(Error.NOT_FOUND))
         }
 
-    override fun setState(state: Boolean) = Result.Error<Unit, _>(Error.NOT_IMPLEMENTED)
+    override fun setState(state: Boolean) = Result.Failure(Error.NOT_IMPLEMENTED)
 
     companion object {
         private val LOG_TAG = NetworkManager::class.simpleName!!

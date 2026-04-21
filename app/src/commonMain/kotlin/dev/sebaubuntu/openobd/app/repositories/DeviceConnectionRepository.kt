@@ -47,14 +47,14 @@ class DeviceConnectionRepository(
                 it.deviceRepository.device(
                     identifier = it
                 )
-            } ?: flowOf(Result.Error(Error.NOT_FOUND))
+            } ?: flowOf(Result.Failure(Error.NOT_FOUND))
         }
         .asFlowResult()
         .flowOn(coroutineDispatcher)
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -62,7 +62,7 @@ class DeviceConnectionRepository(
         .flatMapLatest { deviceIdentifier ->
             deviceIdentifier?.let {
                 flow {
-                    emit(flowOf(FlowResult.Loading()))
+                    emit(flowOf(FlowResult.Loading))
 
                     emit(
                         it.deviceRepository.connection(
@@ -70,13 +70,13 @@ class DeviceConnectionRepository(
                         ).asFlowResult()
                     )
                 }.flatMapLatest { it }
-            } ?: flowOf(FlowResult.Error(Error.NOT_FOUND))
+            } ?: flowOf(FlowResult.Failure(Error.NOT_FOUND))
         }
         .flowOn(coroutineDispatcher)
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     /**

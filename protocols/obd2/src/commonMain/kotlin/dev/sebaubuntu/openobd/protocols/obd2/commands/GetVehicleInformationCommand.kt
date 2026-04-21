@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.obd2.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.obd2.models.VehicleInformationType
 
@@ -22,5 +21,5 @@ class GetVehicleInformationCommand<T>(
 
     override fun parseResponse(
         response: UByteArray,
-    ) = Result.Success<T, Error>(vehicleInformationType.responseParser(response))
+    ) = Result.Success(vehicleInformationType.responseParser(response))
 }

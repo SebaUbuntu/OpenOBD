@@ -30,8 +30,8 @@ class NetworkDevicesViewModel(
     ) = networkRepository.get(identifier)
         .mapLatest { device ->
             device?.let {
-                FlowResult.Success<_, Error>(it)
-            } ?: FlowResult.Error(Error.NOT_FOUND)
+                FlowResult.Success(it)
+            } ?: FlowResult.Failure(Error.NOT_FOUND)
         }
 
     fun createDevice(

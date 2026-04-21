@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.elm327.Command
 
@@ -17,5 +16,5 @@ import dev.sebaubuntu.openobd.protocols.elm327.Command
 data class RawCommand(
     override val command: String
 ) : Command<List<String>> {
-    override fun parseResponse(response: List<String>) = Result.Success<_, Error>(response)
+    override fun parseResponse(response: List<String>) = Result.Success(response)
 }

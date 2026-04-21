@@ -25,7 +25,7 @@ object IsoTpDecoder : ProtocolDecoder {
                 val size = frame[0].and(0x0Fu).toInt()
                 if (size > 7) {
                     Logger.error(LOG_TAG) { "Invalid frame size: $size" }
-                    return Result.Error(Error.INVALID_RESPONSE)
+                    return Result.Failure(Error.INVALID_RESPONSE)
                 }
 
                 (frame.size - 1).let { actualSize ->
@@ -33,7 +33,7 @@ object IsoTpDecoder : ProtocolDecoder {
                         Logger.error(LOG_TAG) {
                             "Declared frame size ($size) > actual size ($actualSize)"
                         }
-                        return Result.Error(Error.INVALID_RESPONSE)
+                        return Result.Failure(Error.INVALID_RESPONSE)
                     } else if (size < actualSize) {
                         Logger.warn(LOG_TAG) { "Trimming single frame data: $actualSize != $size" }
                     }
@@ -52,7 +52,7 @@ object IsoTpDecoder : ProtocolDecoder {
                     .or(frame[1].toUInt())
                 if (totalBytes !in 8u..4095u) {
                     Logger.error(LOG_TAG) { "Invalid total bytes: $totalBytes" }
-                    return Result.Error(Error.INVALID_RESPONSE)
+                    return Result.Failure(Error.INVALID_RESPONSE)
                 }
 
                 return Result.Success(
@@ -77,7 +77,7 @@ object IsoTpDecoder : ProtocolDecoder {
 
             else -> {
                 Logger.error(LOG_TAG) { "Invalid frame type: ${frame[0]}" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
     }

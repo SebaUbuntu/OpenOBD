@@ -128,7 +128,7 @@ private fun ExchangeListItem(
             Text(
                 text = when (exchange.response) {
                     is Result.Success -> exchange.response.data.joinToString("\n")
-                    is Result.Error -> exchange.response.error.toString()
+                    is Result.Failure -> exchange.response.error.toString()
                 }
             )
         }

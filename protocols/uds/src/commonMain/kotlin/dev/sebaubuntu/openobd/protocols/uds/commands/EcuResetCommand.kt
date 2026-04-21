@@ -36,20 +36,20 @@ class EcuResetCommand(
     override fun parseResponse(response: UByteArray): Result<Response, Error> {
         if (response.isEmpty()) {
             Logger.info(LOG_TAG) { "Response is empty" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val resetTypeEcho = ResetType.entries.firstOrNull {
             it.subfunction == response[0]
         } ?: run {
             Logger.info(LOG_TAG) { "Invalid reset type echo: ${response[0]}" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val powerdownTime = when (resetType) {
             ResetType.ENABLE_RAPID_POWER_SHUT_DOWN -> response.getOrNull(1) ?: run {
                 Logger.info(LOG_TAG) { "No power down time found" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             else -> null

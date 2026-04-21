@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 
 @OptIn(ExperimentalUnsignedTypes::class)
@@ -16,5 +15,5 @@ data class RawCanCommand(
 
     override fun parseControlModuleResponse(
         rawResponse: UByteArray
-    ) = Result.Success<UByteArray, Error>(rawResponse)
+    ) = Result.Success(rawResponse)
 }

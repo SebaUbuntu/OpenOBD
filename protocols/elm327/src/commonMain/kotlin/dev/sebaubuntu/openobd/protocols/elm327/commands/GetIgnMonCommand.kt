@@ -20,5 +20,5 @@ data object GetIgnMonCommand : Command<Boolean> {
             "OFF" -> Result.Success(false)
             else -> null
         }
-    } ?: Result.Error(Error.INVALID_RESPONSE)
+    } ?: Result.Failure(Error.INVALID_RESPONSE)
 }

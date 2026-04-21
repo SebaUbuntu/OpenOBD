@@ -54,7 +54,7 @@ fun <T> FlowResultComposable(
             successContent(flowResult.data)
         }
 
-        is FlowResult.Error -> {
+        is FlowResult.Failure -> {
             Column(
                 modifier = Modifier
                     .fillMaxSize()

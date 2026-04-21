@@ -152,7 +152,7 @@ class Elm327Manager(
                 canFramesFlow.emit(canFrame)
             }
 
-            is Result.Error -> {
+            is Result.Failure -> {
                 Logger.error(LOG_TAG, result.throwable) { "Failed to transmit CAN frame" }
                 return
             }
@@ -180,7 +180,7 @@ class Elm327Manager(
         socket.value?.executeCommand(
             command = command,
             timeout = timeout,
-        ) ?: Result.Error(Error.IO)
+        ) ?: Result.Failure(Error.IO)
     }
 
     /**
@@ -234,7 +234,7 @@ class Elm327Manager(
                 source.buffer.readAtMostTo(Buffer(), Long.MAX_VALUE)
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to drain source buffer" }
-                return@withContext Result.Error(Error.IO)
+                return@withContext Result.Failure(Error.IO)
             }
 
             // Write the command
@@ -243,7 +243,7 @@ class Elm327Manager(
                 sink.flush()
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to write command" }
-                return@withContext Result.Error(Error.IO)
+                return@withContext Result.Failure(Error.IO)
             }
 
             // Read the response
@@ -264,17 +264,17 @@ class Elm327Manager(
                             source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
                         } ?: run {
                             Logger.error(LOG_TAG) { "Timed out waiting for response" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
                     }
                 }.getOrElse {
                     Logger.error(LOG_TAG, it) { "Failed to read response" }
-                    return@withContext Result.Error(Error.IO)
+                    return@withContext Result.Failure(Error.IO)
                 }
 
                 if (bytesRead < 0) {
                     Logger.error(LOG_TAG) { "Source exhausted" }
-                    return@withContext Result.Error(Error.IO)
+                    return@withContext Result.Failure(Error.IO)
                 }
 
                 partialResponse += responseBuffer.readString(bytesRead).replace("\u0000", "")
@@ -287,7 +287,7 @@ class Elm327Manager(
                     when (val cleanedUpLine = line.trim()) {
                         "?" -> {
                             Logger.error(LOG_TAG) { "Unknown command: \"${command.command}\"" }
-                            return@withContext Result.Error(Error.NOT_IMPLEMENTED)
+                            return@withContext Result.Failure(Error.NOT_IMPLEMENTED)
                         }
 
                         IDLE_MESSAGE -> {
@@ -306,57 +306,57 @@ class Elm327Manager(
 
                         "BUFFER FULL" -> {
                             Logger.error(LOG_TAG) { "ELM327 buffer is full" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "BUS BUSY" -> {
                             Logger.error(LOG_TAG) { "Bus is busy" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "BUS ERROR" -> {
                             Logger.error(LOG_TAG) { "Bus error" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "CAN ERROR" -> {
                             Logger.error(LOG_TAG) { "CAN error" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "DATA ERROR" -> {
                             Logger.error(LOG_TAG) { "Data error" }
-                            return@withContext Result.Error(Error.INVALID_RESPONSE)
+                            return@withContext Result.Failure(Error.INVALID_RESPONSE)
                         }
 
                         "FB ERROR" -> {
                             Logger.error(LOG_TAG) { "Feedback error" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "LP ALERT" -> {
                             Logger.error(LOG_TAG) { "Low power alert" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "LV RESET" -> {
                             Logger.error(LOG_TAG) { "Low voltage reset" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "STOPPED" -> {
                             Logger.error(LOG_TAG) { "ELM327 stopped" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "UNABLE TO CONNECT" -> {
                             Logger.error(LOG_TAG) { "Unable to connect" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         "BUS INIT... ERROR" -> {
                             Logger.error(LOG_TAG) { "Bus initialization error" }
-                            return@withContext Result.Error(Error.IO)
+                            return@withContext Result.Failure(Error.IO)
                         }
 
                         else -> {
@@ -379,7 +379,7 @@ class Elm327Manager(
                 Logger.warn(LOG_TAG) { "Partial response not empty: $partialResponse" }
             }
 
-            Result.Success<_, Error>(response)
+            Result.Success(response)
         }
     }.flatMap(command::parseResponse)
 

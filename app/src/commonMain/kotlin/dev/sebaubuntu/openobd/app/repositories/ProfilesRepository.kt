@@ -6,7 +6,6 @@
 package dev.sebaubuntu.openobd.app.repositories
 
 import dev.sebaubuntu.openobd.core.ext.flowOf
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.flatMapLatestFlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.mapLatestData
@@ -29,12 +28,12 @@ class ProfilesRepository(
     coroutineScope: CoroutineScope,
     coroutineDispatcher: CoroutineDispatcher,
 ) : Repository(coroutineScope, coroutineDispatcher) {
-    private val profiles = flowOf { FlowResult.Success<_, Error>(Profiles.fromResources()) }
+    private val profiles = flowOf { FlowResult.Success(Profiles.fromResources()) }
         .flowOn(coroutineDispatcher)
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     @OptIn(ExperimentalCoroutinesApi::class)
@@ -48,7 +47,7 @@ class ProfilesRepository(
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     /**
@@ -60,7 +59,7 @@ class ProfilesRepository(
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     val manufacturers = Manufacturer.entries

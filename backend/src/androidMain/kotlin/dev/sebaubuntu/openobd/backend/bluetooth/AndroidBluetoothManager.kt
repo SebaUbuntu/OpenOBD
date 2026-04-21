@@ -115,7 +115,7 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
 
         val emitValue = suspend {
             send(
-                Result.Success<_, Error>(
+                Result.Success(
                     DevicesState(
                         devices = mapMutex.withLock {
                             devices.values.map { it.toModel() }
@@ -185,7 +185,7 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
         emit(
             bluetoothAdapter?.getRemoteDevice(identifier.macAddress)?.let {
                 Result.Success(it.toModel())
-            } ?: Result.Error(Error.NOT_FOUND)
+            } ?: Result.Failure(Error.NOT_FOUND)
         )
     }
 
@@ -225,18 +225,18 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
 
                 val socket = it.toSocket { throwable ->
                     if (error.compareAndSet(expectedValue = false, newValue = true)) {
-                        trySendBlocking(Result.Error(Error.IO, throwable))
+                        trySendBlocking(Result.Failure(Error.IO, throwable))
                     }
                 }
 
                 send(Result.Success(socket))
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to connect to the Bluetooth device" }
-                send(Result.Error(Error.IO, it))
+                send(Result.Failure(Error.IO, it))
             }
         } ?: run {
             Logger.error(LOG_TAG) { "Failed to create the RFCOMM socket" }
-            send(Result.Error(Error.IO))
+            send(Result.Failure(Error.IO))
         }
 
         awaitClose {
@@ -255,15 +255,15 @@ class AndroidBluetoothManager(private val context: Context) : BluetoothManager {
                     context.startActivity(
                         Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE)
                     )
-                    Result.Success<_, Error>(Unit)
+                    Result.Success(Unit)
                 }
 
-                false -> Result.Error(Error.NOT_IMPLEMENTED)
+                false -> Result.Failure(Error.NOT_IMPLEMENTED)
             }
         } else {
             Result.Success(Unit)
         }
-    } ?: Result.Error(Error.NOT_IMPLEMENTED)
+    } ?: Result.Failure(Error.NOT_IMPLEMENTED)
 
     private fun BluetoothSocket.toSocket(
         onError: (Throwable) -> Unit,

@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.elm327.Command
 
@@ -20,5 +19,5 @@ data class ShowHeadersCommand(val showHeaders: Boolean) : Command<Unit> {
         false -> "AT H0"
     }
 
-    override fun parseResponse(response: List<String>) = Result.Success<Unit, Error>(Unit)
+    override fun parseResponse(response: List<String>) = Result.Success(Unit)
 }

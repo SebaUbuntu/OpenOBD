@@ -17,17 +17,17 @@ abstract class StubDeviceManager<D : Device<ID>, ID : Device.Identifier> : Devic
 
     override fun state() = flowOf(DeviceManager.State.UNAVAILABLE)
 
-    override fun devices() = flowOf(Result.Error<DevicesState<D, ID>, Error>(Error.NOT_IMPLEMENTED))
+    override fun devices() = flowOf(Result.Failure(Error.NOT_IMPLEMENTED))
 
     override fun device(
         identifier: ID,
-    ) = flowOf(Result.Error<D, Error>(Error.NOT_IMPLEMENTED))
+    ) = flowOf(Result.Failure(Error.NOT_IMPLEMENTED))
 
     override fun connection(
         identifier: ID,
-    ) = flowOf(Result.Error<RawSocket, Error>(Error.NOT_IMPLEMENTED))
+    ) = flowOf(Result.Failure(Error.NOT_IMPLEMENTED))
 
     override fun setState(
         state: Boolean,
-    ) = Result.Error<Unit, Error>(Error.NOT_IMPLEMENTED)
+    ) = Result.Failure(Error.NOT_IMPLEMENTED)
 }

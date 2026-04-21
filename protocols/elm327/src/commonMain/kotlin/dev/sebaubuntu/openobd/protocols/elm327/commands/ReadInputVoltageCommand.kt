@@ -22,7 +22,7 @@ data object ReadInputVoltageCommand : Command<Voltage> {
         voltageRegex.matchEntire(it)?.let { matchResult ->
             val (voltage) = matchResult.destructured
 
-            Result.Success<_, Error>(voltage.toFloat().volts)
+            Result.Success(voltage.toFloat().volts)
         }
-    } ?: Result.Error(Error.INVALID_RESPONSE)
+    } ?: Result.Failure(Error.INVALID_RESPONSE)
 }

@@ -82,7 +82,7 @@ class BluetoothLeManager(
 
     @OptIn(ExperimentalUuidApi::class, ExperimentalCoroutinesApi::class)
     override fun devices() = advertisements.mapLatest { advertisements ->
-        Result.Success<_, Error>(
+        Result.Success(
             DevicesState(
                 devices = advertisements.map { (_, advertisement) -> advertisement.toDevice() },
                 isSearching = true,
@@ -91,7 +91,7 @@ class BluetoothLeManager(
     }
 
     override fun device(identifier: BluetoothLeDevice.Identifier) = {
-        Result.Success<_, Error>(identifier.advertisement.toDevice())
+        Result.Success(identifier.advertisement.toDevice())
     }.asFlow()
 
     override fun connection(identifier: BluetoothLeDevice.Identifier) = callbackFlow {
@@ -101,21 +101,21 @@ class BluetoothLeManager(
 
         peripheral.state.collectLatest { state ->
             if (state !is State.Connected) {
-                send(Result.Error(Error.IO))
+                send(Result.Failure(Error.IO))
                 return@collectLatest
             }
 
             val service = peripheral.services.value.orEmpty().firstOrNull {
                 it.serviceUuid == serviceUuid
             } ?: run {
-                send(Result.Error(Error.IO))
+                send(Result.Failure(Error.IO))
                 return@collectLatest
             }
 
             val characteristic = service.characteristics.firstOrNull {
                 it.properties.read && it.properties.write
             } ?: run {
-                send(Result.Error(Error.IO))
+                send(Result.Failure(Error.IO))
                 return@collectLatest
             }
 
@@ -139,7 +139,7 @@ class BluetoothLeManager(
                 }
             }
 
-            send(Result.Success<RawSocket, Error>(socket))
+            send(Result.Success(socket))
         }
 
         awaitClose {
@@ -147,7 +147,7 @@ class BluetoothLeManager(
         }
     }
 
-    override fun setState(state: Boolean) = Result.Error<Unit, _>(Error.NOT_IMPLEMENTED)
+    override fun setState(state: Boolean) = Result.Failure(Error.NOT_IMPLEMENTED)
 
     private fun Advertisement.toDevice() = BluetoothLeDevice(
         identifier = BluetoothLeDevice.Identifier(this),

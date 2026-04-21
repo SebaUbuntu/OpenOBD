@@ -53,13 +53,13 @@ sealed class UdsCommand<T>(
     final override fun parseControlModuleResponse(rawResponse: UByteArray): Result<T, Error> {
         if (rawResponse.isEmpty()) {
             Logger.error(LOG_TAG) { "Response is empty" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         if (rawResponse[0] == NEGATIVE_RESPONSE_CODE) {
             if (rawResponse.size < 3) {
                 Logger.error(LOG_TAG) { "Partial negative response" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             val serviceCode = rawResponse[1]
@@ -67,7 +67,7 @@ sealed class UdsCommand<T>(
                 Logger.error(LOG_TAG) {
                     "Got a negative response for the wrong service: ${serviceCode.toHexString(format = hexFormat)}"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             val responseCodeByte = rawResponse[2]
@@ -75,7 +75,7 @@ sealed class UdsCommand<T>(
                 Logger.error(LOG_TAG) {
                     "Invalid response code: ${responseCodeByte.toHexString(format = hexFormat)}"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             Logger.error(LOG_TAG) {
@@ -83,7 +83,7 @@ sealed class UdsCommand<T>(
                 "Negative response: $responseCode, data: ${data.toHexString(format = hexFormat)}"
             }
 
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val requestCode = (rawResponse[0] - SERVICE_CODE_RESPONSE_OFFSET).toUByte()
@@ -97,14 +97,14 @@ sealed class UdsCommand<T>(
         subfunction?.let {
             if (rawResponse.size < 2) {
                 Logger.error(LOG_TAG) { "Response is too short, missing subfunction" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             if (rawResponse[1] != it) {
                 Logger.error(LOG_TAG) {
                     "Invalid subfunction response: ${rawResponse[1]}, expected $it"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
 
@@ -118,7 +118,7 @@ sealed class UdsCommand<T>(
         expectedDataBytes?.let {
             if (data.size != it) {
                 Logger.error(LOG_TAG) { "Invalid data response size: ${data.size}, expected $it" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
 

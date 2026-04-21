@@ -9,7 +9,6 @@ import dev.sebaubuntu.openobd.backend.models.DemoDevice
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
 import dev.sebaubuntu.openobd.backend.models.RawSocket
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asResult
@@ -34,7 +33,7 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
     override fun state() = flowOf(DeviceManager.State.ENABLED)
 
     override fun devices() = flowOf(
-        Result.Success<_, Error>(
+        Result.Success(
             DevicesState(
                 listOf(DemoDevice),
                 false,
@@ -44,7 +43,7 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
 
     override fun device(
         identifier: DemoDevice.Identifier,
-    ) = flowOf(Result.Success<_, Error>(DemoDevice))
+    ) = flowOf(Result.Success(DemoDevice))
 
     override fun connection(
         identifier: DemoDevice.Identifier,
@@ -93,10 +92,10 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
                     }
                 }
 
-                send(FlowResult.Success<RawSocket, Error>(rawSocket))
+                send(FlowResult.Success(rawSocket))
             }
         }
         .asResult()
 
-    override fun setState(state: Boolean) = Result.Success<Unit, Error>(Unit)
+    override fun setState(state: Boolean) = Result.Success(Unit)
 }

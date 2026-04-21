@@ -24,8 +24,8 @@ data object DescribeProtocolByNumberCommand : Command<Pair<Boolean, ObdProtocol>
 
         it.removePrefix(AUTO_PREFIX).toUIntOrNull()?.let { value ->
             ObdProtocol.fromElm327Value(value)?.let { obdProtocol ->
-                Result.Success<_, Error>(auto to obdProtocol)
+                Result.Success(auto to obdProtocol)
             }
         }
-    } ?: Result.Error(Error.INVALID_RESPONSE)
+    } ?: Result.Failure(Error.INVALID_RESPONSE)
 }

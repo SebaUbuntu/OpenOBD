@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.obd2.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.obd2.models.DataType
 
@@ -25,5 +24,5 @@ abstract class GetDataCommand<T>(
 
     override fun parseResponse(
         response: UByteArray,
-    ) = Result.Success<T, Error>(dataType.responseParser(response))
+    ) = Result.Success(dataType.responseParser(response))
 }

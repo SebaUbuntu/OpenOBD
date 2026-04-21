@@ -87,7 +87,7 @@ class SessionInformationViewModel(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     companion object {

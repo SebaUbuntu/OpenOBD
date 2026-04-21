@@ -44,7 +44,7 @@ abstract class CanCommand<T> : Command<CanResponse<T>> {
             Logger.error(LOG_TAG) {
                 "No valid data received for command: $command"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         // Parse the CAN response to raw data
@@ -52,7 +52,7 @@ abstract class CanCommand<T> : Command<CanResponse<T>> {
             Logger.error(LOG_TAG) {
                 "No valid response found for command: $command"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         // Check if we have at least a valid response
@@ -60,7 +60,7 @@ abstract class CanCommand<T> : Command<CanResponse<T>> {
             Logger.error(LOG_TAG) {
                 "No valid response found after parsing CAN frames for command: $command"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         // Map all the responses to typed responses
@@ -78,7 +78,7 @@ abstract class CanCommand<T> : Command<CanResponse<T>> {
             Logger.error(LOG_TAG) {
                 "No valid responses found after parsing raw data for command: $command"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         return Result.Success(typedResponses)

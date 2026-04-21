@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.obd2.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 
 /**
@@ -15,5 +14,5 @@ import dev.sebaubuntu.openobd.core.models.Result
 data object ClearDiagnosticTroubleCodesCommand : ObdCommand<Unit>(0x04u) {
     override val pid = ubyteArrayOf()
 
-    override fun parseResponse(response: UByteArray) = Result.Success<_, Error>(Unit)
+    override fun parseResponse(response: UByteArray) = Result.Success(Unit)
 }

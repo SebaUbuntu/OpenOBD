@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.elm327.Command
 import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
@@ -15,5 +14,5 @@ import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
  */
 data class SetObdProtocolCommand(val obdProtocol: ObdProtocol) : Command<Unit> {
     override val command = "AT SP${obdProtocol.elm327Value}"
-    override fun parseResponse(response: List<String>) = Result.Success<_, Error>(Unit)
+    override fun parseResponse(response: List<String>) = Result.Success(Unit)
 }

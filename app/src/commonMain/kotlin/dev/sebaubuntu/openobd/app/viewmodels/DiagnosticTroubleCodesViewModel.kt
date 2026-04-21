@@ -93,14 +93,14 @@ class DiagnosticTroubleCodesViewModel(
                 },
             )
         }.takeIf { it.isNotEmpty() }?.let {
-            FlowResult.Success<_, Error>(it)
-        } ?: FlowResult.Error(Error.NOT_FOUND)
+            FlowResult.Success(it)
+        } ?: FlowResult.Failure(Error.NOT_FOUND)
     }
         .flowOn(Dispatchers.IO)
         .stateIn(
             viewModelScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     fun clearCodes() = viewModelScope.launch {

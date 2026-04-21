@@ -77,15 +77,15 @@ abstract class DataViewModel(
                 dataType.takeIf { parameterId in supportedParameterIds }?.asFlow()
             }.takeIf { it.isNotEmpty() }?.let {
                 combine(it) { dataToValue ->
-                    FlowResult.Success<_, Error>(dataToValue.filterNotNull())
+                    FlowResult.Success(dataToValue.filterNotNull())
                 }
-            } ?: flowOf(FlowResult.Error(Error.NOT_FOUND))
+            } ?: flowOf(FlowResult.Failure(Error.NOT_FOUND))
         }
         .flowOn(Dispatchers.IO)
         .stateIn(
             viewModelScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     private fun MutableSet<UByte>.addAllParameterIds(

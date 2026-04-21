@@ -35,7 +35,7 @@ abstract class BaseDevicesViewModel<D : Device<ID>, ID : Device.Identifier>(
         .stateIn(
             scope = viewModelScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     fun setState(enabled: Boolean) = viewModelScope.launch(Dispatchers.IO) {

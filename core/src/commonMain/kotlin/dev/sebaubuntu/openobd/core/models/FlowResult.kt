@@ -17,10 +17,26 @@ import kotlin.experimental.ExperimentalTypeInference
 /**
  * A data holder used for flows.
  */
-sealed interface FlowResult<T, E> {
-    class Loading<T, E> : FlowResult<T, E>
-    class Success<T, E>(val data: T) : FlowResult<T, E>
-    class Error<T, E>(val error: E, val throwable: Throwable? = null) : FlowResult<T, E>
+sealed interface FlowResult<out T, out E> {
+    /**
+     * The result is loading.
+     */
+    data object Loading : FlowResult<Nothing, Nothing>
+
+    /**
+     * The result is ready.
+     *
+     * @param data The obtained data
+     */
+    data class Success<T>(val data: T) : FlowResult<T, Nothing>
+
+    /**
+     * The request failed.
+     *
+     * @param error The error
+     * @param throwable An optional [Throwable] object
+     */
+    data class Failure<E>(val error: E, val throwable: Throwable? = null) : FlowResult<Nothing, E>
 
     companion object {
         /**
@@ -29,23 +45,23 @@ sealed interface FlowResult<T, E> {
         fun <T, E> FlowResult<T, E>.getOrNull() = when (this) {
             is Loading -> null
             is Success -> data
-            is Error -> null
+            is Failure -> null
         }
 
         /**
          * Convert a flow of [Result] to a flow of [FlowResult].
          */
         @OptIn(ExperimentalCoroutinesApi::class)
-        fun <T, E> Flow<Result<out T, out E>>.asFlowResult() = mapLatest {
+        fun <T, E> Flow<Result<T, E>>.asFlowResult() = mapLatest {
             when (it) {
-                is Result.Success -> Success<T, E>(it.data)
-                is Result.Error -> Error(it.error, it.throwable)
+                is Result.Success -> Success(it.data)
+                is Result.Failure -> Failure(it.error, it.throwable)
             }
         }
 
         /**
          * Transform the data of a flow of [FlowResult] to a new [FlowResult].
-         * When the original flow emits a [Loading] or an [Error] state, the new flow will emit the
+         * When the original flow emits a [Loading] or an [Failure] state, the new flow will emit the
          * same result.
          *
          * @see Flow.mapLatest
@@ -55,16 +71,16 @@ sealed interface FlowResult<T, E> {
             transform: suspend (value: T) -> FlowResult<R, E>
         ) = mapLatest {
             when (it) {
-                is Loading -> Loading()
+                is Loading -> it
                 is Success -> transform(it.data)
-                is Error -> Error(it.error, it.throwable)
+                is Failure -> it
             }
         }
 
         /**
          * Map the data of a flow of [FlowResult].
-         * When the original flow emits a [Loading] or an [Error] state, the new flow will emit the
-         * same result.
+         * When the original flow emits a [Loading] or an [Failure] state, the new flow will emit
+         * the same result.
          *
          * @see Flow.mapLatest
          */
@@ -75,8 +91,8 @@ sealed interface FlowResult<T, E> {
 
         /**
          * Transform the data of a flow of [FlowResult] to a new flow of [FlowResult].
-         * When the original flow emits a [Loading] or an [Error] state, the new flow will emit the
-         * same result.
+         * When the original flow emits a [Loading] or an [Failure] state, the new flow will emit
+         * the same result.
          *
          * @see Flow.flatMapLatest
          */
@@ -85,9 +101,9 @@ sealed interface FlowResult<T, E> {
             transform: suspend (value: T) -> Flow<FlowResult<R, E>>
         ) = flatMapLatest {
             when (it) {
-                is Loading -> flowOf(Loading())
+                is Loading -> flowOf(it)
                 is Success -> transform(it.data)
-                is Error -> flowOf(Error(it.error, it.throwable))
+                is Failure -> flowOf(it)
             }
         }
 
@@ -96,7 +112,7 @@ sealed interface FlowResult<T, E> {
          * When the original flow emits a [Loading] value, the new flow will emit nothing.
          */
         @OptIn(ExperimentalTypeInference::class)
-        private fun <T, E, R> Flow<FlowResult<T, E>>.foldLatest(
+        fun <T, E, R> Flow<FlowResult<T, E>>.foldLatest(
             onSuccess: suspend (value: T) -> R,
             onError: suspend (error: E, throwable: Throwable?) -> R,
         ) = channelFlow {
@@ -107,7 +123,7 @@ sealed interface FlowResult<T, E> {
                     }
 
                     is Success -> send(onSuccess(it.data))
-                    is Error -> send(onError(it.error, it.throwable))
+                    is Failure -> send(onError(it.error, it.throwable))
                 }
             }
         }
@@ -125,8 +141,8 @@ sealed interface FlowResult<T, E> {
          * When the original flow emits a [Loading] value, the new flow will emit nothing.
          */
         fun <T, E> Flow<FlowResult<T, E>>.asResult() = foldLatest(
-            onSuccess = { Result.Success<T, E>(it) },
-            onError = { error, throwable -> Result.Error(error, throwable) },
+            onSuccess = Result<T, E>::Success,
+            onError = Result<T, E>::Failure,
         )
     }
 }

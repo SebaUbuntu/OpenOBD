@@ -45,7 +45,7 @@ abstract class BaseDeviceRepository<DM : DeviceManager<D, ID>, D : Device<ID>, I
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     /**

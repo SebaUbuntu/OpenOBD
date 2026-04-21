@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.uds.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 
 /**
@@ -14,5 +13,5 @@ import dev.sebaubuntu.openobd.core.models.Result
 @OptIn(ExperimentalUnsignedTypes::class)
 data object TesterPresentCommand : UdsCommand<Unit>(0x3Eu) {
     override val subfunction: UByte = 0x00u
-    override fun parseResponse(response: UByteArray) = Result.Success<_, Error>(Unit)
+    override fun parseResponse(response: UByteArray) = Result.Success(Unit)
 }

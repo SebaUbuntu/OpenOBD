@@ -5,7 +5,6 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.commands
 
-import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.protocols.elm327.Command
 
@@ -18,5 +17,5 @@ data class SetEchoCommand(val echo: Boolean) : Command<Unit> {
         false -> "AT E0"
     }
 
-    override fun parseResponse(response: List<String>) = Result.Success<_, Error>(Unit)
+    override fun parseResponse(response: List<String>) = Result.Success(Unit)
 }

@@ -155,7 +155,7 @@ private fun NetworkDevicesModalBottomSheet(
             is BottomSheetStatus.ItemSelected -> {
                 val device by onGetDevice(
                     bottomSheetStatus.identifier,
-                ).collectAsStateWithLifecycle(FlowResult.Loading())
+                ).collectAsStateWithLifecycle(FlowResult.Loading)
 
                 FlowResultComposable(
                     flowResult = device,
@@ -309,7 +309,7 @@ private fun NetworkDevicesModalBottomSheet(
             is BottomSheetStatus.Edit -> {
                 val device by onGetDevice(
                     bottomSheetStatus.identifier,
-                ).collectAsStateWithLifecycle(FlowResult.Loading())
+                ).collectAsStateWithLifecycle(FlowResult.Loading)
 
                 FlowResultComposable(
                     flowResult = device,

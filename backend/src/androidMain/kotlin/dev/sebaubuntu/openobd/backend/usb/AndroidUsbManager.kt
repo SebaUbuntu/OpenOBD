@@ -11,7 +11,6 @@ import android.content.IntentFilter
 import androidx.core.content.ContextCompat
 import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.backend.models.DevicesState
-import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.backend.models.UsbDevice
 import dev.sebaubuntu.openobd.core.ext.broadcastReceiverFlow
 import dev.sebaubuntu.openobd.core.models.Error
@@ -54,13 +53,13 @@ class AndroidUsbManager(
             LOG_TAG,
         ).onStart { emit(Intent()) }
     ) { _, _ ->
-        FlowResult.Success<_, Error>(usbManager.deviceList.toMap())
+        FlowResult.Success(usbManager.deviceList.toMap())
     }
         .flowOn(coroutineDispatcher)
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 
     override val isToggleable = false
@@ -90,7 +89,7 @@ class AndroidUsbManager(
                 //usbManager.requestPermission(device, PendingIntent.getActivity())
                 val usbDeviceConnection = usbManager.openDevice(device)
 
-                send(FlowResult.Error<RawSocket, _>(Error.NOT_IMPLEMENTED))
+                send(FlowResult.Failure(Error.NOT_IMPLEMENTED))
 
                 awaitClose {
                     usbDeviceConnection.close()
@@ -99,7 +98,7 @@ class AndroidUsbManager(
         }
         .asResult()
 
-    override fun setState(state: Boolean) = Result.Error<Unit, Error>(Error.NOT_IMPLEMENTED)
+    override fun setState(state: Boolean) = Result.Failure(Error.NOT_IMPLEMENTED)
 
     private fun android.hardware.usb.UsbDevice.toModel() = UsbDevice(
         identifier = UsbDevice.Identifier(id = deviceId),
@@ -115,7 +114,7 @@ class AndroidUsbManager(
             usbDevice.deviceId == identifier.id
         }?.let {
             FlowResult.Success(it)
-        } ?: FlowResult.Error(Error.NOT_FOUND)
+        } ?: FlowResult.Failure(Error.NOT_FOUND)
     }
 
     companion object {

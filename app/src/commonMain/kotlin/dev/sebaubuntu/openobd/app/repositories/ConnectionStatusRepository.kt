@@ -33,7 +33,7 @@ class ConnectionStatusRepository(
             is FlowResult.Loading -> ConnectionStatus.IDLE
 
             is FlowResult.Success -> when (connection) {
-                is FlowResult.Loading -> ConnectionStatus.CONNECTING
+                FlowResult.Loading -> ConnectionStatus.CONNECTING
 
                 is FlowResult.Success -> when (status) {
                     Elm327Manager.Status.IDLE -> ConnectionStatus.IDLE
@@ -43,10 +43,10 @@ class ConnectionStatusRepository(
                     Elm327Manager.Status.READY -> ConnectionStatus.READY
                 }
 
-                is FlowResult.Error -> ConnectionStatus.FAILED_CONNECTION
+                is FlowResult.Failure -> ConnectionStatus.FAILED_CONNECTION
             }
 
-            is FlowResult.Error -> ConnectionStatus.IDLE
+            is FlowResult.Failure -> ConnectionStatus.IDLE
         }
     }
         .flowOn(coroutineDispatcher)
@@ -60,18 +60,18 @@ class ConnectionStatusRepository(
     val connectionStatusResult = connectionStatus
         .mapLatest { connectionStatus ->
             when (connectionStatus) {
-                ConnectionStatus.IDLE -> FlowResult.Error(Error.NOT_FOUND)
-                ConnectionStatus.CONNECTING -> FlowResult.Loading()
-                ConnectionStatus.INITIALIZING -> FlowResult.Loading()
-                ConnectionStatus.READY -> FlowResult.Success<_, Error>(Unit)
-                ConnectionStatus.FAILED_CONNECTION -> FlowResult.Error(Error.IO)
-                ConnectionStatus.FAILED_INITIALIZATION -> FlowResult.Error(Error.IO)
+                ConnectionStatus.IDLE -> FlowResult.Failure(Error.NOT_FOUND)
+                ConnectionStatus.CONNECTING -> FlowResult.Loading
+                ConnectionStatus.INITIALIZING -> FlowResult.Loading
+                ConnectionStatus.READY -> FlowResult.Success(Unit)
+                ConnectionStatus.FAILED_CONNECTION -> FlowResult.Failure(Error.IO)
+                ConnectionStatus.FAILED_INITIALIZATION -> FlowResult.Failure(Error.IO)
             }
         }
         .flowOn(coroutineDispatcher)
         .stateIn(
             scope = coroutineScope,
             started = SharingStarted.WhileSubscribed(),
-            initialValue = FlowResult.Loading(),
+            initialValue = FlowResult.Loading,
         )
 }

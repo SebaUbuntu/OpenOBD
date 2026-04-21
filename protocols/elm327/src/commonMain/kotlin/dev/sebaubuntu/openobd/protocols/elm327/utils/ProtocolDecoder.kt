@@ -79,7 +79,7 @@ interface ProtocolDecoder {
     fun parseMessage(message: UByteArray, frameSizeBytes: Int): Result<UByteArray, Error> {
         if (message.isEmpty()) {
             Logger.error(LOG_TAG) { "At least one frame is required" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val frames = buildList {
@@ -88,7 +88,7 @@ interface ProtocolDecoder {
                     add(it)
                 } ?: run {
                     Logger.error(LOG_TAG) { "Invalid frame: $frame" }
-                    return Result.Error(Error.INVALID_RESPONSE)
+                    return Result.Failure(Error.INVALID_RESPONSE)
                 }
             }
         }
@@ -108,7 +108,7 @@ interface ProtocolDecoder {
             when (sortedFrames.size) {
                 0 -> {
                     Logger.error(LOG_TAG) { "At least one frame is required" }
-                    return Result.Error(Error.INVALID_RESPONSE)
+                    return Result.Failure(Error.INVALID_RESPONSE)
                 }
 
                 1 -> {
@@ -121,7 +121,7 @@ interface ProtocolDecoder {
 
                         else -> {
                             Logger.error(LOG_TAG) { "First frame is not a single frame" }
-                            return Result.Error(Error.INVALID_RESPONSE)
+                            return Result.Failure(Error.INVALID_RESPONSE)
                         }
                     }
                 }
@@ -136,13 +136,13 @@ interface ProtocolDecoder {
                                 Logger.error(LOG_TAG) {
                                     "Got single frame in message with multiple frames"
                                 }
-                                return Result.Error(Error.INVALID_RESPONSE)
+                                return Result.Failure(Error.INVALID_RESPONSE)
                             }
 
                             is Frame.First -> {
                                 if (lastIndex != -1) {
                                     Logger.error(LOG_TAG) { "Got multiple first frames in message" }
-                                    return Result.Error(Error.INVALID_RESPONSE)
+                                    return Result.Failure(Error.INVALID_RESPONSE)
                                 }
                                 lastIndex = 0
 
@@ -156,7 +156,7 @@ interface ProtocolDecoder {
                                     Logger.error(LOG_TAG) {
                                         "Got unexpected frame index: $expectedLastIndex vs $lastIndex"
                                     }
-                                    return Result.Error(Error.INVALID_RESPONSE)
+                                    return Result.Failure(Error.INVALID_RESPONSE)
                                 }
                                 lastIndex = frame.index
                             }
@@ -170,13 +170,13 @@ interface ProtocolDecoder {
             // Check if we have a valid number of bytes
             if (totalBytes == -1) {
                 Logger.error(LOG_TAG) { "Total bytes not set, missing first frame?" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             // Check if we have the correct number of bytes
             if (bytes.size < totalBytes) {
                 Logger.error(LOG_TAG) { "Invalid number of bytes: ${bytes.size} < $totalBytes" }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
 
             return Result.Success(bytes.take(totalBytes).toUByteArray())

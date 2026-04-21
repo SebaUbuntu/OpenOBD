@@ -25,7 +25,7 @@ sealed class GetDiagnosticTroubleCodesCommand(
     ): Result<List<DiagnosticTroubleCode>, Error> {
         if (response.isEmpty()) {
             Logger.error(this::class.simpleName) { "Empty response" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val codesCount = response[0].toInt()
@@ -33,7 +33,7 @@ sealed class GetDiagnosticTroubleCodesCommand(
 
         if (codes.size % 2 != 0) {
             Logger.error(this::class.simpleName) { "Odd number of bytes in response" }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         val actualCodesCount = codes.size / 2
@@ -42,7 +42,7 @@ sealed class GetDiagnosticTroubleCodesCommand(
             Logger.error(this::class.simpleName) {
                 "Declared codes count ($codesCount) does not match actual codes count (${actualCodesCount})"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         return Result.Success(

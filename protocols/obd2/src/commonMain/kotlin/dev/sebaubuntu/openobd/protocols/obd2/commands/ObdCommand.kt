@@ -46,7 +46,7 @@ sealed class ObdCommand<T>(
             Logger.error(LOG_TAG) {
                 "Response doesn't contain enough bytes: ${rawResponse.toHexString(format = hexFormat)}"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         // If we know the expected number of bytes, check it
@@ -56,7 +56,7 @@ sealed class ObdCommand<T>(
                 Logger.error(LOG_TAG) {
                     "Unexpected response size: Expected $expectedResponseSize bytes, got ${rawResponse.size}"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
 
@@ -69,7 +69,7 @@ sealed class ObdCommand<T>(
 
                 "Invalid service code response: expected $expectedValue, actual $actualValue"
             }
-            return Result.Error(Error.INVALID_RESPONSE)
+            return Result.Failure(Error.INVALID_RESPONSE)
         }
 
         // Second one is the PID itself
@@ -81,7 +81,7 @@ sealed class ObdCommand<T>(
 
                     "Invalid PID response: expected $expectedValue, actual $actualValue"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
 
@@ -92,7 +92,7 @@ sealed class ObdCommand<T>(
                 Logger.error(LOG_TAG) {
                     "Invalid data response size: ${dataResponse.size}, expected $it"
                 }
-                return Result.Error(Error.INVALID_RESPONSE)
+                return Result.Failure(Error.INVALID_RESPONSE)
             }
         }
 
