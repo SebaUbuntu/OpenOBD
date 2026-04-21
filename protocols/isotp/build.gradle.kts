@@ -12,7 +12,7 @@ kotlin {
     android {
         compileSdk = libs.versions.android.compileSdk.get().toInt()
         minSdk = libs.versions.android.minSdk.get().toInt()
-        namespace = "dev.sebaubuntu.openobd.protocols.elm327"
+        namespace = "dev.sebaubuntu.openobd.protocols.isotp"
     }
 
     listOf(
@@ -20,7 +20,7 @@ kotlin {
         iosSimulatorArm64(),
     ).forEach { iosTarget ->
         iosTarget.binaries.framework {
-            baseName = "protocolsElm327Kit"
+            baseName = "protocolsIsotpKit"
         }
     }
 
@@ -33,12 +33,10 @@ kotlin {
             implementation(libs.kotlinx.io.core)
             implementation(libs.kotlin.stdlib)
 
-            implementation(projects.backend)
             implementation(projects.core)
-            api(projects.protocols.can)
-            api(projects.protocols.core)
-            implementation(projects.protocols.isotp)
             implementation(projects.logging)
+            implementation(projects.protocols.can)
+            implementation(projects.protocols.core)
         }
 
         commonTest.dependencies {

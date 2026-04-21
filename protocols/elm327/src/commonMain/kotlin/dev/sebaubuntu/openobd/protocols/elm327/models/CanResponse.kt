@@ -5,6 +5,8 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.models
 
+import dev.sebaubuntu.openobd.protocols.can.CanIdentifier
+
 /**
  * CAN response
  *
@@ -12,7 +14,7 @@ package dev.sebaubuntu.openobd.protocols.elm327.models
  * @param messageFormat The message format of the response
  */
 data class CanResponse<T>(
-    val value: Map<ControlModule, T>,
+    val value: Map<CanIdentifier, T>,
     val messageFormat: MessageFormat,
 ) {
     enum class MessageFormat {

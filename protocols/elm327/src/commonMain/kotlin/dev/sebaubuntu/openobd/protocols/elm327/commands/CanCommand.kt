@@ -9,15 +9,15 @@ import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.core.models.Result.Companion.getOrNull
 import dev.sebaubuntu.openobd.logging.Logger
+import dev.sebaubuntu.openobd.protocols.can.CanIdentifier
 import dev.sebaubuntu.openobd.protocols.elm327.Command
 import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.protocols.elm327.models.ControlModule
 import dev.sebaubuntu.openobd.protocols.elm327.utils.CanResponseParser
 
 /**
  * Base CAN command.
  *
- * The response will contain each [ControlModule] response.
+ * The response will contain each [CanIdentifier] response.
  */
 @OptIn(ExperimentalUnsignedTypes::class)
 abstract class CanCommand<T> : Command<CanResponse<T>> {

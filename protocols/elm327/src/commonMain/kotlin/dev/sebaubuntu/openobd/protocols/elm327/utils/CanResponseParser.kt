@@ -5,10 +5,11 @@
 
 package dev.sebaubuntu.openobd.protocols.elm327.utils
 
+import dev.sebaubuntu.openobd.core.ext.toUInt
 import dev.sebaubuntu.openobd.core.models.Result.Companion.getOrNull
 import dev.sebaubuntu.openobd.logging.Logger
+import dev.sebaubuntu.openobd.protocols.can.CanIdentifier
 import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.protocols.elm327.models.ControlModule
 
 /**
  * Utility class to parse CAN responses.
@@ -18,11 +19,11 @@ object CanResponseParser {
     /**
      * Line.
      *
-     * @param controlModule The control module
+     * @param canIdentifier The control module
      * @param frame Message frame
      */
     data class Line(
-        val controlModule: ControlModule,
+        val canIdentifier: CanIdentifier,
         val frame: ProtocolDecoder.Frame,
     )
 
@@ -30,11 +31,11 @@ object CanResponseParser {
 
     /**
      * ISO-TP (CAN) response line format:
-     * - Responding control module (7E8-7EF)
+     * - Responding control module (000-7FF)
      * - Number of bytes and whether this is a multi-message response
      * - Remaining response
      */
-    private val isoTpResponseRegex = "7E[8-9A-F] [0-9A-F]{2}(\\s+[0-9A-Z]{2})+".toRegex()
+    private val isoTpResponseRegex = "[0-9A-F]{3} [0-9A-F]{2}(\\s+[0-9A-Z]{2})+".toRegex()
 
     /**
      * J1850 response line format:
@@ -44,9 +45,6 @@ object CanResponseParser {
      * - Remaining response
      */
     private val j1850ResponseRegex = "[0-9A-F]{2}(\\s+[0-9A-Z]{2})+".toRegex()
-
-    private val CAN_CONTROL_MODULE_ID_MASK: UShort = 0x07E8u
-    private val CAN_CONTROL_MODULE_MAX_ID_VALUE: UByte = 0xFu
 
     private val hexFormat = HexFormat {
         bytes {
@@ -65,10 +63,10 @@ object CanResponseParser {
             return null
         }
 
-        val values = buildMap<ControlModule, MutableList<ProtocolDecoder.Frame>> {
+        val values = buildMap<CanIdentifier, MutableList<ProtocolDecoder.Frame>> {
             response.forEach { lineString ->
                 parseLine(lineString, messageFormat)?.let { line ->
-                    getOrPut(line.controlModule) { mutableListOf() }.add(line.frame)
+                    getOrPut(line.canIdentifier) { mutableListOf() }.add(line.frame)
                 }
             }
         }
@@ -104,20 +102,12 @@ object CanResponseParser {
         val (controlModuleId, isoTpFrameData) = line.split(" ", limit = 2)
 
         val controlModule = controlModuleId.hexToUShort(format = hexFormat)
-            .xor(CAN_CONTROL_MODULE_ID_MASK)
-            .also { id ->
-                if (id > CAN_CONTROL_MODULE_MAX_ID_VALUE) {
-                    Logger.error(LOG_TAG) { "Invalid ID: $id" }
-                    return null
-                }
-            }
-            .toUByte()
 
         return IsoTpDecoder.parseFrame(
             frame = isoTpFrameData.hexToUByteArray(format = hexFormat),
         ).getOrNull()?.let {
             Line(
-                controlModule = ControlModule(controlModule),
+                canIdentifier = CanIdentifier.Standard(controlModule),
                 frame = it,
             )
         } ?: run {
@@ -132,10 +122,17 @@ object CanResponseParser {
             return null
         }
 
-        val (_, _, sender, data) = line.split(" ", limit = 4)
+        val (priority, receiver, sender, data) = line.split(" ", limit = 4)
+
+        val canIdentifier = ubyteArrayOf(
+            0x0u,
+            priority.hexToUByte(format = hexFormat),
+            receiver.hexToUByte(format = hexFormat),
+            sender.hexToUByte(format = hexFormat),
+        ).toUInt()
 
         return Line(
-            controlModule = ControlModule(sender.hexToUByte(format = hexFormat)),
+            canIdentifier = CanIdentifier.Extended(canIdentifier),
             frame = ProtocolDecoder.Frame.Single(
                 data = data.hexToUByteArray(format = hexFormat),
             )

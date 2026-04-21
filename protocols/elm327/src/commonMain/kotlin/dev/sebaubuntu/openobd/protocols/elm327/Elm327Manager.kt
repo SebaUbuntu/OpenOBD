@@ -9,18 +9,23 @@ import dev.sebaubuntu.openobd.backend.models.Socket
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.core.models.Result.Companion.flatMap
-import dev.sebaubuntu.openobd.core.models.Result.Success
 import dev.sebaubuntu.openobd.logging.Logger
+import dev.sebaubuntu.openobd.protocols.can.CanFrame
+import dev.sebaubuntu.openobd.protocols.core.Transceiver
+import dev.sebaubuntu.openobd.protocols.elm327.commands.RawCanCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.ResetCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.SetEchoCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.SetObdProtocolCommand
+import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowDataLengthCodeCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowHeadersCommand
 import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
+import kotlinx.coroutines.flow.asSharedFlow
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
@@ -47,7 +52,7 @@ import kotlin.time.measureTimedValue
 class Elm327Manager(
     private val coroutineScope: CoroutineScope,
     private val coroutineDispatcher: CoroutineDispatcher,
-) {
+) : Transceiver<CanFrame> {
     enum class Status {
         /**
          * No socket is connected.
@@ -87,6 +92,9 @@ class Elm327Manager(
 
                 // Show headers to identify the ECU
                 it.executeCommand(ShowHeadersCommand(true))
+
+                // Show the DLC value
+                it.executeCommand(ShowDataLengthCodeCommand(true))
             }
         }
         .flowOn(coroutineDispatcher)
@@ -116,6 +124,36 @@ class Elm327Manager(
             requestedSocket == null -> Status.IDLE
             socket == null -> Status.INITIALIZING
             else -> Status.READY
+        }
+    }
+
+    /**
+     * CAN messages flow.
+     */
+    private val canFramesFlow = MutableSharedFlow<CanFrame>()
+
+    override fun receive() = canFramesFlow.asSharedFlow()
+
+    @OptIn(ExperimentalUnsignedTypes::class)
+    override suspend fun transmit(frame: CanFrame) {
+        val dataFrame = frame as? CanFrame.Classic.Data ?: error("Unsupported frame type")
+
+        val command = RawCanCommand(dataFrame.data)
+
+        when (val result = executeCommand(command)) {
+            is Result.Success -> result.data.value.forEach { (canIdentifier, data) ->
+                val canFrame = CanFrame.Classic.Data(
+                    identifier = canIdentifier,
+                    data = data.toList()
+                )
+
+                canFramesFlow.emit(canFrame)
+            }
+
+            is Result.Error -> {
+                Logger.error(LOG_TAG, result.throwable) { "Failed to transmit CAN frame" }
+                return
+            }
         }
     }
 
@@ -339,7 +377,7 @@ class Elm327Manager(
                 Logger.warn(LOG_TAG) { "Partial response not empty: $partialResponse" }
             }
 
-            Success<_, Error>(response)
+            Result.Success<_, Error>(response)
         }
     }.flatMap(command::parseResponse)
 

@@ -14,7 +14,7 @@ import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.mapLatestDataOrNull
 import dev.sebaubuntu.openobd.profiles.models.DtcInformation
-import dev.sebaubuntu.openobd.protocols.elm327.models.ControlModule
+import dev.sebaubuntu.openobd.protocols.can.CanIdentifier
 import dev.sebaubuntu.openobd.protocols.obd2.commands.ClearDiagnosticTroubleCodesCommand
 import dev.sebaubuntu.openobd.protocols.obd2.commands.GetDiagnosticTroubleCodesCommand
 import dev.sebaubuntu.openobd.protocols.obd2.commands.GetPendingDiagnosticTroubleCodesCommand
@@ -48,7 +48,7 @@ class DiagnosticTroubleCodesViewModel(
         val controlModulesWithStatus: List<ControlModuleWithStatus>,
     ) {
         data class ControlModuleWithStatus(
-            val controlModule: ControlModule,
+            val canIdentifier: CanIdentifier,
             val status: Set<CodeStatus>,
         )
     }
@@ -65,7 +65,7 @@ class DiagnosticTroubleCodesViewModel(
             addAll(permanent.values.flatten())
         }.toList().sorted()
 
-        buildMap<DiagnosticTroubleCode, MutableMap<ControlModule, MutableSet<CodeStatus>>> {
+        buildMap<DiagnosticTroubleCode, MutableMap<CanIdentifier, MutableSet<CodeStatus>>> {
             allDtcs.forEach { dtc ->
                 mapOf(
                     CodeStatus.STORED to stored,
@@ -87,7 +87,7 @@ class DiagnosticTroubleCodesViewModel(
                 information = diagnosticTroubleCodesDescription?.get(dtc),
                 controlModulesWithStatus = controlModules.map { (controlModule, status) ->
                     CodeWithControlModules.ControlModuleWithStatus(
-                        controlModule = controlModule,
+                        canIdentifier = controlModule,
                         status = status,
                     )
                 },

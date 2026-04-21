@@ -14,28 +14,46 @@ sealed interface CanFrame : Frame {
     /**
      * The ID of the frame.
      */
-    val id: CanIdentifier
-
-    /**
-     * The data of the frame.
-     */
-    val data: List<UByte>
-
-    /**
-     * The maximum [data] length allowed by the frame type.
-     */
-    val maxDataSize: Int
+    val identifier: CanIdentifier
 
     /**
      * Classic CAN frame.
      *
      * Data can be up to 8 bytes.
      */
-    data class Classic(
-        override val id: CanIdentifier,
-        override val data: List<UByte>,
-    ) : CanFrame {
-        override val maxDataSize = 8
+    sealed interface Classic : CanFrame {
+        /**
+         * Data frame.
+         *
+         * @param data The data
+         */
+        data class Data(
+            override val identifier: CanIdentifier,
+            val data: List<UByte>,
+        ) : Classic {
+            init {
+                require(data.size <= MAX_DATA_SIZE) {
+                    "Data size must be less than or equal to $MAX_DATA_SIZE"
+                }
+            }
+        }
+
+        /**
+         * Remote request.
+         *
+         * @param dlc The expected reply's data length code
+         */
+        data class Remote(
+            override val identifier: CanIdentifier,
+            val dlc: UByte,
+        ) : Classic
+
+        companion object {
+            /**
+             * The maximum data length allowed by the frame type.
+             */
+            const val MAX_DATA_SIZE = 8
+        }
     }
 
     /**
@@ -44,9 +62,20 @@ sealed interface CanFrame : Frame {
      * Data can be up to 64 bytes.
      */
     data class FlexibleDataRate(
-        override val id: CanIdentifier,
-        override val data: List<UByte>,
+        override val identifier: CanIdentifier,
+        val data: List<UByte>,
     ) : CanFrame {
-        override val maxDataSize = 64
+        init {
+            require(data.size <= MAX_DATA_SIZE) {
+                "Data size must be less than or equal to $MAX_DATA_SIZE"
+            }
+        }
+
+        companion object {
+            /**
+             * The maximum [data] length allowed by the frame type.
+             */
+            const val MAX_DATA_SIZE = 64
+        }
     }
 }
