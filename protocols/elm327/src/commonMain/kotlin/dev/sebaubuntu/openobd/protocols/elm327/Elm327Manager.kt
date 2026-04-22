@@ -95,8 +95,8 @@ class Elm327Manager(
                 // Show headers to identify the ECU
                 it.executeCommand(ShowHeadersCommand(true))
 
-                // Show the DLC value
-                it.executeCommand(ShowDataLengthCodeCommand(true))
+                // Hide the CAN DLC value
+                it.executeCommand(ShowDataLengthCodeCommand(false))
             }
         }
         .flowOn(coroutineDispatcher)
