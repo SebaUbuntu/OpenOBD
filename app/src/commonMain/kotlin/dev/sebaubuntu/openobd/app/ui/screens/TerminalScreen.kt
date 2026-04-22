@@ -9,13 +9,21 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.WindowInsets
+import androidx.compose.foundation.layout.consumeWindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.ime
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.windowInsetsBottomHeight
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.lazy.rememberLazyListState
-import androidx.compose.material3.Button
+import androidx.compose.foundation.text.KeyboardActions
+import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -25,13 +33,19 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.input.ImeAction
+import androidx.compose.ui.text.input.KeyboardType
+import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.sebaubuntu.openobd.app.ui.composables.ConnectionGatedComposable
 import dev.sebaubuntu.openobd.app.viewmodels.TerminalViewModel
 import dev.sebaubuntu.openobd.core.models.Result
 import openobd.app.generated.resources.Res
+import openobd.app.generated.resources.ic_send
 import openobd.app.generated.resources.send_command
+import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 import org.koin.compose.viewmodel.koinViewModel
 
@@ -92,23 +106,38 @@ private fun TerminalScreen(
             }
         }
 
-        Row {
+        Row(
+            verticalAlignment = Alignment.CenterVertically,
+        ) {
             TextField(
                 value = consoleText,
                 onValueChange = { consoleText = it },
                 modifier = Modifier.weight(1f, fill = true),
+                keyboardOptions = KeyboardOptions(
+                    keyboardType = KeyboardType.Ascii,
+                    imeAction = ImeAction.Send,
+                ),
+                keyboardActions = KeyboardActions {
+                    onSendCommand(consoleText)
+                },
                 singleLine = true,
             )
-            Button(
+            IconButton(
                 onClick = {
                     onSendCommand(consoleText)
                 },
+                modifier = Modifier.padding(8.dp),
             ) {
-                Text(
-                    text = stringResource(Res.string.send_command),
+                Icon(
+                    painter = painterResource(Res.drawable.ic_send),
+                    contentDescription = stringResource(Res.string.send_command),
                 )
             }
         }
+
+        Spacer(
+            Modifier.consumeWindowInsets(paddingValues).windowInsetsBottomHeight(WindowInsets.ime)
+        )
     }
 }
 
