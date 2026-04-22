@@ -6,6 +6,7 @@
 package dev.sebaubuntu.openobd.backend.demo
 
 import dev.sebaubuntu.openobd.logging.Logger
+import io.ktor.util.toUpperCasePreservingASCIIRules
 import kotlinx.coroutines.delay
 import kotlin.random.Random
 import kotlin.random.nextUBytes
@@ -152,15 +153,19 @@ class Elm327Emulator {
         }
 
         val response = command?.let {
-            getCommandResponse(it)
+            getCommandResponse(it.toUpperCasePreservingASCIIRules())
         } ?: listOf(UNKNOWN_COMMAND)
 
         return buildString {
-            response.forEach {
-                append(it)
-                append('\r')
+            when (response.isNotEmpty()) {
+                true -> response.forEach {
+                    append(it)
+                    append('\r')
+                }
+
+                false -> append('\r')
             }
-            append('\r')
+
             append(IDLE_MESSAGE)
         }
     }

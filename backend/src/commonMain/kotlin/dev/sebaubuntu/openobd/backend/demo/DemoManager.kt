@@ -14,18 +14,20 @@ import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.flatMapLatestFlowResult
 import dev.sebaubuntu.openobd.core.models.Result
-import io.ktor.utils.io.core.readBytes
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
-import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.channelFlow
-import kotlinx.coroutines.flow.collectLatest
-import kotlinx.coroutines.flow.filterNotNull
-import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.io.Buffer
+import kotlinx.io.bytestring.decodeToString
+import kotlinx.io.bytestring.encodeToByteString
+import kotlinx.io.bytestring.isNotEmpty
+import kotlinx.io.indexOf
+import kotlinx.io.readByteString
+import kotlinx.io.write
 
 class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
     override val isToggleable = false
@@ -53,42 +55,70 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
             channelFlow {
                 val elm327Emulator = Elm327Emulator()
 
-                val commandSharedFlow = MutableSharedFlow<ByteArray>()
-                val responseSharedFlow = MutableSharedFlow<ByteArray?>(replay = 1)
+                val receiveBuffer = Buffer()
+                val transferBuffer = Buffer()
+
+                val receiveChannel = Channel<Unit>(1)
+                val transferChannel = Channel<Unit>(1)
 
                 val rawSocket = object : RawSocket {
-                    override fun readAtMostTo(sink: Buffer, byteCount: Long): Long {
-                        val bytes = runBlocking(Dispatchers.IO) {
-                            responseSharedFlow.filterNotNull().first().also {
-                                responseSharedFlow.emit(null)
-                            }
+                    override fun readAtMostTo(
+                        sink: Buffer,
+                        byteCount: Long,
+                    ) = runBlocking {
+                        transferChannel.receive()
+                    }.let {
+                        transferBuffer.readAtMostTo(sink, byteCount)
+                    }
+
+                    override fun write(
+                        source: Buffer,
+                        byteCount: Long,
+                    ) = receiveBuffer.write(source, byteCount).also {
+                        if (byteCount > 0) {
+                            receiveChannel.trySend(Unit)
                         }
-
-                        sink.write(bytes)
-
-                        return bytes.size.toLong()
                     }
 
-                    override fun write(source: Buffer, byteCount: Long) {
-                        runBlocking(Dispatchers.IO) {
-                            commandSharedFlow.emit(source.readBytes())
-                        }
-                    }
-
-                    override fun flush() {
-                        // Nothing
-                    }
+                    override fun flush() = receiveBuffer.flush()
 
                     override fun close() {
-                        // Nothing
+                        receiveBuffer.close()
+                        transferBuffer.close()
                     }
                 }
 
                 launch(Dispatchers.IO) {
-                    commandSharedFlow.collectLatest { command ->
-                        val response = elm327Emulator.processCommand(command.decodeToString())
+                    while (true) {
+                        receiveChannel.receive()
 
-                        responseSharedFlow.emit(response.encodeToByteArray())
+                        if (receiveBuffer.exhausted()) {
+                            continue
+                        }
+
+                        when (val lineBreakIndex = receiveBuffer.indexOf('\r'.code.toByte())) {
+                            -1L -> error("Source exhausted")
+
+                            else -> {
+                                require(lineBreakIndex <= Int.MAX_VALUE) { "Too large index" }
+
+                                // Read everything before the line break
+                                val command = receiveBuffer.readByteString(lineBreakIndex.toInt())
+
+                                // Then discard the line break
+                                receiveBuffer.skip(1)
+
+                                val response = elm327Emulator.processCommand(
+                                    command.decodeToString()
+                                ).encodeToByteString()
+
+                                transferBuffer.write(response)
+
+                                if (response.isNotEmpty()) {
+                                    transferChannel.send(Unit)
+                                }
+                            }
+                        }
                     }
                 }
 
