@@ -97,7 +97,9 @@ class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
                         }
 
                         when (val lineBreakIndex = receiveBuffer.indexOf('\r'.code.toByte())) {
-                            -1L -> error("Source exhausted")
+                            -1L -> {
+                                // Do nothing
+                            }
 
                             else -> {
                                 require(lineBreakIndex <= Int.MAX_VALUE) { "Too large index" }
