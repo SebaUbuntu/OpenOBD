@@ -14,12 +14,9 @@ import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import kotlinx.io.Buffer
-import kotlinx.io.bytestring.decodeToString
-import kotlinx.io.bytestring.encodeToByteString
-import kotlinx.io.bytestring.isNotEmpty
 import kotlinx.io.indexOf
-import kotlinx.io.readByteString
-import kotlinx.io.write
+import kotlinx.io.readString
+import kotlinx.io.writeString
 import kotlin.random.Random
 import kotlin.random.nextUBytes
 
@@ -155,32 +152,24 @@ class Elm327Emulator(
         while (true) {
             receiveChannel.receive()
 
-            if (receiveBuffer.exhausted()) {
-                continue
-            }
+            while (true) {
+                when (val lineBreakIndex = receiveBuffer.indexOf('\r'.code.toByte())) {
+                    -1L -> break
 
-            when (val lineBreakIndex = receiveBuffer.indexOf('\r'.code.toByte())) {
-                -1L -> {
-                    // Do nothing
-                }
+                    else -> {
+                        // Read everything before the line break
+                        val command = receiveBuffer.readString(lineBreakIndex)
 
-                else -> {
-                    require(lineBreakIndex <= Int.MAX_VALUE) { "Too large index" }
+                        // Then discard the line break
+                        receiveBuffer.skip(1)
 
-                    // Read everything before the line break
-                    val command = receiveBuffer.readByteString(lineBreakIndex.toInt())
+                        val response = processCommand(command)
 
-                    // Then discard the line break
-                    receiveBuffer.skip(1)
+                        transferBuffer.writeString(response)
 
-                    val response = processCommand(
-                        command.decodeToString()
-                    ).encodeToByteString()
-
-                    transferBuffer.write(response)
-
-                    if (response.isNotEmpty()) {
-                        transferChannel.send(Unit)
+                        if (!transferBuffer.exhausted()) {
+                            transferChannel.trySend(Unit)
+                        }
                     }
                 }
             }
