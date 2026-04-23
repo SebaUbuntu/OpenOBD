@@ -5,9 +5,21 @@
 
 package dev.sebaubuntu.openobd.backend.demo
 
+import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.logging.Logger
 import io.ktor.util.toUpperCasePreservingASCIIRules
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.runBlocking
+import kotlinx.io.Buffer
+import kotlinx.io.bytestring.decodeToString
+import kotlinx.io.bytestring.encodeToByteString
+import kotlinx.io.bytestring.isNotEmpty
+import kotlinx.io.indexOf
+import kotlinx.io.readByteString
+import kotlinx.io.write
 import kotlin.random.Random
 import kotlin.random.nextUBytes
 
@@ -15,7 +27,15 @@ import kotlin.random.nextUBytes
  * ELM327 emulator.
  */
 @OptIn(ExperimentalUnsignedTypes::class)
-class Elm327Emulator {
+class Elm327Emulator(
+    coroutineScope: CoroutineScope,
+) : RawSocket {
+    private val receiveBuffer = Buffer()
+    private val transferBuffer = Buffer()
+
+    private val receiveChannel = Channel<Unit>(1)
+    private val transferChannel = Channel<Unit>(1)
+
     private val atResponses = mapOf<String, suspend () -> List<String>>(
         "@1" to {
             listOf("OBDII to RS232 Interpreter")
@@ -130,6 +150,71 @@ class Elm327Emulator {
             )
         }
     )
+
+    private val processorJob = coroutineScope.launch {
+        while (true) {
+            receiveChannel.receive()
+
+            if (receiveBuffer.exhausted()) {
+                continue
+            }
+
+            when (val lineBreakIndex = receiveBuffer.indexOf('\r'.code.toByte())) {
+                -1L -> {
+                    // Do nothing
+                }
+
+                else -> {
+                    require(lineBreakIndex <= Int.MAX_VALUE) { "Too large index" }
+
+                    // Read everything before the line break
+                    val command = receiveBuffer.readByteString(lineBreakIndex.toInt())
+
+                    // Then discard the line break
+                    receiveBuffer.skip(1)
+
+                    val response = processCommand(
+                        command.decodeToString()
+                    ).encodeToByteString()
+
+                    transferBuffer.write(response)
+
+                    if (response.isNotEmpty()) {
+                        transferChannel.send(Unit)
+                    }
+                }
+            }
+        }
+    }
+
+    override fun readAtMostTo(
+        sink: Buffer,
+        byteCount: Long,
+    ) = runBlocking {
+        transferChannel.receive()
+    }.let {
+        transferBuffer.readAtMostTo(sink, byteCount)
+    }
+
+    override fun write(
+        source: Buffer,
+        byteCount: Long,
+    ) = receiveBuffer.write(source, byteCount).also {
+        if (byteCount > 0) {
+            receiveChannel.trySend(Unit)
+        }
+    }
+
+    override fun flush() = receiveBuffer.flush()
+
+    override fun close() {
+        // Cancel the processor job
+        processorJob.cancel()
+
+        // Close the buffers
+        receiveBuffer.close()
+        transferBuffer.close()
+    }
 
     suspend fun processCommand(message: String): String {
         val trimmedMessage = message.trim()
