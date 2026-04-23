@@ -23,6 +23,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowHeadersCommand
 import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.async
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -224,7 +225,7 @@ class Elm327Manager(
     private suspend fun <T> Socket.executeCommand(
         command: Command<T>,
         timeout: Duration = DEFAULT_COMMAND_TIMEOUT,
-    ) = withContext(coroutineDispatcher) {
+    ) = coroutineScope.async(coroutineDispatcher) {
         mutex.withLock {
             val response = mutableListOf<String>()
 
@@ -234,7 +235,7 @@ class Elm327Manager(
                 source.buffer.readAtMostTo(Buffer(), Long.MAX_VALUE)
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to drain source buffer" }
-                return@withContext Result.Failure(Error.IO)
+                return@withLock Result.Failure(Error.IO)
             }
 
             // Write the command
@@ -243,7 +244,7 @@ class Elm327Manager(
                 sink.flush()
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to write command" }
-                return@withContext Result.Failure(Error.IO)
+                return@withLock Result.Failure(Error.IO)
             }
 
             // Read the response
@@ -264,17 +265,17 @@ class Elm327Manager(
                             source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
                         } ?: run {
                             Logger.error(LOG_TAG) { "Timed out waiting for response" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
                     }
                 }.getOrElse {
                     Logger.error(LOG_TAG, it) { "Failed to read response" }
-                    return@withContext Result.Failure(Error.IO)
+                    return@withLock Result.Failure(Error.IO)
                 }
 
                 if (bytesRead < 0) {
                     Logger.error(LOG_TAG) { "Source exhausted" }
-                    return@withContext Result.Failure(Error.IO)
+                    return@withLock Result.Failure(Error.IO)
                 }
 
                 partialResponse += responseBuffer.readString(bytesRead).replace("\u0000", "")
@@ -287,7 +288,7 @@ class Elm327Manager(
                     when (val cleanedUpLine = line.trim()) {
                         "?" -> {
                             Logger.error(LOG_TAG) { "Unknown command: \"${command.command}\"" }
-                            return@withContext Result.Failure(Error.NOT_IMPLEMENTED)
+                            return@withLock Result.Failure(Error.NOT_IMPLEMENTED)
                         }
 
                         IDLE_MESSAGE -> {
@@ -306,57 +307,57 @@ class Elm327Manager(
 
                         "BUFFER FULL" -> {
                             Logger.error(LOG_TAG) { "ELM327 buffer is full" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "BUS BUSY" -> {
                             Logger.error(LOG_TAG) { "Bus is busy" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "BUS ERROR" -> {
                             Logger.error(LOG_TAG) { "Bus error" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "CAN ERROR" -> {
                             Logger.error(LOG_TAG) { "CAN error" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "DATA ERROR" -> {
                             Logger.error(LOG_TAG) { "Data error" }
-                            return@withContext Result.Failure(Error.INVALID_RESPONSE)
+                            return@withLock Result.Failure(Error.INVALID_RESPONSE)
                         }
 
                         "FB ERROR" -> {
                             Logger.error(LOG_TAG) { "Feedback error" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "LP ALERT" -> {
                             Logger.error(LOG_TAG) { "Low power alert" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "LV RESET" -> {
                             Logger.error(LOG_TAG) { "Low voltage reset" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "STOPPED" -> {
                             Logger.error(LOG_TAG) { "ELM327 stopped" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "UNABLE TO CONNECT" -> {
                             Logger.error(LOG_TAG) { "Unable to connect" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         "BUS INIT... ERROR" -> {
                             Logger.error(LOG_TAG) { "Bus initialization error" }
-                            return@withContext Result.Failure(Error.IO)
+                            return@withLock Result.Failure(Error.IO)
                         }
 
                         else -> {
@@ -381,7 +382,7 @@ class Elm327Manager(
 
             Result.Success(response)
         }
-    }.flatMap(command::parseResponse)
+    }.await().flatMap(command::parseResponse)
 
     private fun String.splitWithRemainder(delimiter: Char): Pair<List<String>, String?> {
         val substrings = mutableListOf<String>()
