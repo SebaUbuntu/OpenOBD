@@ -9,7 +9,9 @@ import dev.sebaubuntu.openobd.backend.models.RawSocket
 import dev.sebaubuntu.openobd.logging.Logger
 import io.ktor.util.toUpperCasePreservingASCIIRules
 import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.async
 import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
@@ -27,6 +29,25 @@ import kotlin.random.nextUBytes
 class Elm327Emulator(
     coroutineScope: CoroutineScope,
 ) : RawSocket {
+    /**
+     * IC internal state.
+     */
+    data class InternalState(
+        val echoEnabled: Boolean,
+        val headersEnabled: Boolean,
+        val displayCanDataLengthCode: Boolean,
+    ) {
+        companion object {
+            val DEFAULT = InternalState(
+                echoEnabled = false,
+                headersEnabled = false,
+                displayCanDataLengthCode = false,
+            )
+        }
+    }
+
+    private var internalState = InternalState.DEFAULT
+
     private val receiveBuffer = Buffer()
     private val transferBuffer = Buffer()
 
@@ -37,6 +58,14 @@ class Elm327Emulator(
         "@1" to {
             listOf("OBDII to RS232 Interpreter")
         },
+        "D0" to {
+            internalState = internalState.copy(displayCanDataLengthCode = false)
+            listOf("OK")
+        },
+        "D1" to {
+            internalState = internalState.copy(displayCanDataLengthCode = true)
+            listOf("OK")
+        },
         "DP" to {
             listOf("AUTO, ISO 15765-4 (CAN 11/500)")
         },
@@ -44,9 +73,19 @@ class Elm327Emulator(
             listOf("A6")
         },
         "E0" to {
+            internalState = internalState.copy(echoEnabled = false)
+            listOf("OK")
+        },
+        "E1" to {
+            internalState = internalState.copy(echoEnabled = true)
+            listOf("OK")
+        },
+        "H0" to {
+            internalState = internalState.copy(headersEnabled = false)
             listOf("OK")
         },
         "H1" to {
+            internalState = internalState.copy(headersEnabled = true)
             listOf("OK")
         },
         "I" to {
@@ -62,10 +101,20 @@ class Elm327Emulator(
             listOf("OK")
         },
         "Z" to {
-            // Simulate restart
-            delay(1000L)
+            coroutineScope {
+                // Simulate restart
+                val restartDeferred = async {
+                    delay(1000L)
+                }
 
-            listOf(ELM327_VERSION)
+                // Reset internal state
+                internalState = InternalState.DEFAULT
+
+                // Wait for the fake delay
+                restartDeferred.join()
+
+                listOf(ELM327_VERSION)
+            }
         },
     )
 
@@ -206,38 +255,27 @@ class Elm327Emulator(
     }
 
     suspend fun processCommand(message: String): String {
-        val trimmedMessage = message.trim()
+        val internalState = internalState
 
-        val lines = trimmedMessage.split('\r').map {
-            it.trim()
-        }
+        val command = message.trim()
 
-        val command = when (lines.size) {
-            0 -> {
-                Logger.warn(LOG_TAG) { "No lines" }
-                null
-            }
-
-            1 -> lines.first().trim()
-
-            else -> {
-                Logger.warn(LOG_TAG) { "Too many lines" }
-                null
-            }
-        }
-
-        val response = command?.let {
-            getCommandResponse(it.toUpperCasePreservingASCIIRules())
-        } ?: listOf(UNKNOWN_COMMAND)
+        val response = getCommandResponse(
+            command.toUpperCasePreservingASCIIRules()
+        ) ?: listOf(UNKNOWN_COMMAND)
 
         return buildString {
-            when (response.isNotEmpty()) {
-                true -> response.forEach {
-                    append(it)
-                    append('\r')
-                }
+            if (internalState.echoEnabled) {
+                append(command)
+                append('\r')
+            }
 
-                false -> append('\r')
+            response.forEach {
+                append(it)
+                append('\r')
+            }
+
+            if (lastOrNull() != '\r') {
+                append('\r')
             }
 
             append(IDLE_MESSAGE)
