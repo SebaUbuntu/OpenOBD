@@ -5,7 +5,7 @@
 
 package dev.sebaubuntu.openobd.profiles.models
 
-import dev.sebaubuntu.openobd.protocols.obd2.models.DiagnosticTroubleCode
+import dev.sebaubuntu.openobd.network.obd2.models.DiagnosticTroubleCode
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 

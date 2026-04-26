@@ -17,11 +17,11 @@ import dev.sebaubuntu.openobd.core.models.value.Length.Companion.kilometers
 import dev.sebaubuntu.openobd.core.models.value.Percentage.Companion.percent
 import dev.sebaubuntu.openobd.core.models.value.Speed.Companion.kilometersPerHour
 import dev.sebaubuntu.openobd.core.models.value.Temperature.Companion.celsius
-import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.protocols.obd2.commands.GetCurrentDataCommand
-import dev.sebaubuntu.openobd.protocols.obd2.models.DataType
-import dev.sebaubuntu.openobd.protocols.obd2.models.FuelType
-import dev.sebaubuntu.openobd.protocols.obd2.models.SupportedParameterIds
+import dev.sebaubuntu.openobd.network.elm327.models.CanResponse
+import dev.sebaubuntu.openobd.network.obd2.commands.GetCurrentDataCommand
+import dev.sebaubuntu.openobd.network.obd2.models.DataType
+import dev.sebaubuntu.openobd.network.obd2.models.FuelType
+import dev.sebaubuntu.openobd.network.obd2.models.SupportedParameterIds
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.IO

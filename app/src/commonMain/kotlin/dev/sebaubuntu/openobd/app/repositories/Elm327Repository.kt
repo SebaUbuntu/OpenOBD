@@ -6,8 +6,8 @@
 package dev.sebaubuntu.openobd.app.repositories
 
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.getOrNull
-import dev.sebaubuntu.openobd.protocols.elm327.Command
-import dev.sebaubuntu.openobd.protocols.elm327.Elm327Manager
+import dev.sebaubuntu.openobd.network.elm327.Command
+import dev.sebaubuntu.openobd.network.elm327.Elm327Manager
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi

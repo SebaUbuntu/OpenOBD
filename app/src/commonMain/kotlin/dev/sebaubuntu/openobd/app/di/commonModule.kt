@@ -44,7 +44,7 @@ import dev.sebaubuntu.openobd.logging.LogBuffer
 import dev.sebaubuntu.openobd.logging.LogDevice
 import dev.sebaubuntu.openobd.logging.Logger
 import dev.sebaubuntu.openobd.logging.PrintlnLogDevice
-import dev.sebaubuntu.openobd.protocols.elm327.Elm327Manager
+import dev.sebaubuntu.openobd.network.elm327.Elm327Manager
 import dev.sebaubuntu.openobd.storage.database.AppDatabase
 import dev.sebaubuntu.openobd.storage.preferences.PreferencesManager
 import kotlinx.coroutines.CoroutineDispatcher

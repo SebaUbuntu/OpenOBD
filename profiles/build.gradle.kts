@@ -40,7 +40,7 @@ kotlin {
             implementation(libs.kotlinx.serialization.json)
 
             implementation(projects.core)
-            implementation(projects.protocols.obd2)
+            implementation(projects.network.obd2)
         }
 
         commonTest.dependencies {

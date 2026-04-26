@@ -56,10 +56,10 @@ kotlin {
             implementation(projects.backend)
             implementation(projects.core)
             implementation(projects.logging)
+            implementation(projects.network.elm327)
+            implementation(projects.network.obd2)
+            implementation(projects.network.uds)
             implementation(projects.profiles)
-            implementation(projects.protocols.obd2)
-            implementation(projects.protocols.elm327)
-            implementation(projects.protocols.uds)
             implementation(projects.storage)
         }
 

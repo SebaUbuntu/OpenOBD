@@ -21,8 +21,8 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.sebaubuntu.openobd.app.ui.composables.ConnectionGatedComposable
 import dev.sebaubuntu.openobd.app.ui.composables.FlowResultComposable
 import dev.sebaubuntu.openobd.app.viewmodels.VehicleInformationViewModel
-import dev.sebaubuntu.openobd.protocols.elm327.models.CanResponse
-import dev.sebaubuntu.openobd.protocols.obd2.models.VehicleInformationType
+import dev.sebaubuntu.openobd.network.elm327.models.CanResponse
+import dev.sebaubuntu.openobd.network.obd2.models.VehicleInformationType
 import org.koin.compose.viewmodel.koinViewModel
 
 @Composable

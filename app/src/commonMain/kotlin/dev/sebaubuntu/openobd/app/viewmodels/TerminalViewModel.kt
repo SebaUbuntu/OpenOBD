@@ -10,7 +10,7 @@ import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.openobd.app.repositories.Elm327Repository
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
-import dev.sebaubuntu.openobd.protocols.elm327.commands.RawCommand
+import dev.sebaubuntu.openobd.network.elm327.commands.RawCommand
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.MutableStateFlow
