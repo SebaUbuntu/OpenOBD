@@ -20,6 +20,7 @@ import dev.sebaubuntu.openobd.protocols.elm327.commands.SetEchoCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.SetObdProtocolCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowDataLengthCodeCommand
 import dev.sebaubuntu.openobd.protocols.elm327.commands.ShowHeadersCommand
+import dev.sebaubuntu.openobd.protocols.elm327.models.Elm327Message
 import dev.sebaubuntu.openobd.protocols.elm327.models.ObdProtocol
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
@@ -39,8 +40,9 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.coroutines.withContext
 import kotlinx.coroutines.withTimeoutOrNull
 import kotlinx.io.Buffer
-import kotlinx.io.InternalIoApi
+import kotlinx.io.indexOf
 import kotlinx.io.readString
+import kotlinx.io.writeString
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.TimeSource
@@ -111,13 +113,6 @@ class Elm327Manager(
      * Mutex to allow sequential execution of commands.
      */
     private val mutex = Mutex()
-
-    /**
-     * Response buffer.
-     *
-     * Protected by [mutex].
-     */
-    private val responseBuffer = Buffer()
 
     val status = combine(
         rawSocket,
@@ -229,18 +224,9 @@ class Elm327Manager(
         mutex.withLock {
             val response = mutableListOf<String>()
 
-            // Drain the source buffer
-            runCatching {
-                @OptIn(InternalIoApi::class)
-                source.buffer.readAtMostTo(Buffer(), Long.MAX_VALUE)
-            }.onFailure {
-                Logger.error(LOG_TAG, it) { "Failed to drain source buffer" }
-                return@withLock Result.Failure(Error.IO)
-            }
-
             // Write the command
             runCatching {
-                sink.write("${command.command}\r".encodeToByteArray())
+                sink.writeString("${command.command}\r")
                 sink.flush()
             }.onFailure {
                 Logger.error(LOG_TAG, it) { "Failed to write command" }
@@ -248,21 +234,20 @@ class Elm327Manager(
             }
 
             // Read the response
-            var partialResponse = ""
             var avoidTimeout = false
             while (true) {
-                // Read data
-                responseBuffer.clear()
-                val bytesRead = runCatching {
+                val responseBuffer = Buffer()
+
+                val lineBreakIndex = runCatching {
                     when (avoidTimeout) {
                         true -> {
                             avoidTimeout = false
                             Logger.info(LOG_TAG) { "Reading response w/o timeout" }
-                            source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
+                            source.indexOf(IDLE_MESSAGE)
                         }
 
                         false -> withTimeoutOrNull(timeout = timeout) {
-                            source.readAtMostTo(responseBuffer, Long.MAX_VALUE)
+                            source.indexOf(IDLE_MESSAGE)
                         } ?: run {
                             Logger.error(LOG_TAG) { "Timed out waiting for response" }
                             return@withLock Result.Failure(Error.IO)
@@ -273,154 +258,52 @@ class Elm327Manager(
                     return@withLock Result.Failure(Error.IO)
                 }
 
-                if (bytesRead < 0) {
-                    Logger.error(LOG_TAG) { "Source exhausted" }
-                    return@withLock Result.Failure(Error.IO)
-                }
+                when (lineBreakIndex) {
+                    -1L -> break
 
-                partialResponse += responseBuffer.readString(bytesRead).replace("\u0000", "")
+                    else -> {
+                        // Read everything before the line break
+                        source.readTo(responseBuffer, lineBreakIndex)
 
-                val (lines, remainder) = partialResponse.splitWithRemainder(LINE_DELIMITER)
-                partialResponse = remainder ?: ""
-
-                var foundIdleMessage = false
-                for (line in lines) {
-                    when (val cleanedUpLine = line.trim()) {
-                        "?" -> {
-                            Logger.error(LOG_TAG) { "Unknown command: \"${command.command}\"" }
-                            return@withLock Result.Failure(Error.NOT_IMPLEMENTED)
-                        }
-
-                        IDLE_MESSAGE -> {
-                            foundIdleMessage = true
-                            break
-                        }
-
-                        "NO DATA" -> {
-                            // Skip, do nothing
-                        }
-
-                        "SEARCHING..." -> {
-                            Logger.info(LOG_TAG) { "Searching for ECUs, avoiding timeout" }
-                            avoidTimeout = true
-                        }
-
-                        "BUFFER FULL" -> {
-                            Logger.error(LOG_TAG) { "ELM327 buffer is full" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "BUS BUSY" -> {
-                            Logger.error(LOG_TAG) { "Bus is busy" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "BUS ERROR" -> {
-                            Logger.error(LOG_TAG) { "Bus error" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "CAN ERROR" -> {
-                            Logger.error(LOG_TAG) { "CAN error" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "DATA ERROR" -> {
-                            Logger.error(LOG_TAG) { "Data error" }
-                            return@withLock Result.Failure(Error.INVALID_RESPONSE)
-                        }
-
-                        "FB ERROR" -> {
-                            Logger.error(LOG_TAG) { "Feedback error" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "LP ALERT" -> {
-                            Logger.error(LOG_TAG) { "Low power alert" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "LV RESET" -> {
-                            Logger.error(LOG_TAG) { "Low voltage reset" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "STOPPED" -> {
-                            Logger.error(LOG_TAG) { "ELM327 stopped" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "UNABLE TO CONNECT" -> {
-                            Logger.error(LOG_TAG) { "Unable to connect" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        "BUS INIT... ERROR" -> {
-                            Logger.error(LOG_TAG) { "Bus initialization error" }
-                            return@withLock Result.Failure(Error.IO)
-                        }
-
-                        else -> {
-                            response.add(cleanedUpLine)
-                        }
+                        // Then discard the line break itself
+                        source.skip(1)
                     }
                 }
 
-                if (remainder?.trim() == IDLE_MESSAGE) {
-                    foundIdleMessage = true
+                val rawResponse = responseBuffer.readString().replace("\u0000", "")
+
+                for (line in rawResponse.split(LINE_DELIMITER)) {
+                    val cleanedUpLine = line.trim()
+
+                    if (cleanedUpLine.isBlank()) {
+                        continue
+                    }
+
+                    when (val message = Elm327Message.from(cleanedUpLine)) {
+                        is Elm327Message.Alert -> when (message) {
+                            is Elm327Message.Alert.SearchingEcus -> {
+                                Logger.warn(LOG_TAG) { "Searching for ECUs, avoiding timeout" }
+                                avoidTimeout = true
+                            }
+
+                            else -> Logger.warn(LOG_TAG) { "Received alert: $message, ignoring" }
+                        }
+
+                        is Elm327Message.Error -> {
+                            Logger.error(LOG_TAG) { "Received error: $message" }
+                            return@withLock Result.Failure(Error.INVALID_RESPONSE)
+                        }
+
+                        else -> response.add(cleanedUpLine)
+                    }
                 }
 
-                if (foundIdleMessage) {
-                    break
-                }
-            }
-
-            partialResponse = partialResponse.trim()
-            if (partialResponse != IDLE_MESSAGE) {
-                Logger.warn(LOG_TAG) { "Partial response not empty: $partialResponse" }
+                break
             }
 
             Result.Success(response)
         }
     }.await().flatMap(command::parseResponse)
-
-    private fun String.splitWithRemainder(delimiter: Char): Pair<List<String>, String?> {
-        val substrings = mutableListOf<String>()
-        var startIndex = 0
-
-        // Skip any initial consecutive delimiters
-        while (startIndex < length && this[startIndex] == delimiter) {
-            startIndex++
-        }
-
-        while (startIndex < length) {
-            val delimiterIndex = indexOf(delimiter, startIndex)
-            if (delimiterIndex == -1) {
-                // No more delimiters found, the rest is the remainder
-                break
-            }
-
-            // Extract the substring up to (but not including) the delimiter
-            val substring = substring(startIndex, delimiterIndex)
-
-            // Add the substring only if it's not empty
-            if (substring.isNotEmpty()) {
-                substrings.add(substring)
-            }
-
-            // Find the next start index by skipping consecutive delimiters
-            var nextStartIndex = delimiterIndex + 1
-            while (nextStartIndex < length && this[nextStartIndex] == delimiter) {
-                nextStartIndex++
-            }
-            startIndex = nextStartIndex
-        }
-
-        return substrings to when (startIndex < length) {
-            true -> substring(startIndex)
-            else -> null
-        }
-    }
 
     companion object {
         private val LOG_TAG = Elm327Manager::class.simpleName!!
@@ -433,7 +316,7 @@ class Elm327Manager(
         /**
          * Character used to end the response. It indicates ready for next command.
          */
-        private const val IDLE_MESSAGE = ">"
+        private const val IDLE_MESSAGE = '>'.code.toByte()
 
         /**
          * Regex to match multiple carriage return characters.
