@@ -11,10 +11,10 @@ import dev.sebaubuntu.openobd.app.ui.themes.AndroidColorSchemeProvider
 import dev.sebaubuntu.openobd.app.ui.themes.ColorSchemeProvider
 import dev.sebaubuntu.openobd.app.utils.AndroidPermissionsManager
 import dev.sebaubuntu.openobd.app.utils.PermissionsManager
-import dev.sebaubuntu.openobd.backend.bluetooth.AndroidBluetoothManager
-import dev.sebaubuntu.openobd.backend.bluetooth.BluetoothManager
-import dev.sebaubuntu.openobd.backend.usb.AndroidUsbManager
-import dev.sebaubuntu.openobd.backend.usb.UsbManager
+import dev.sebaubuntu.openobd.network.devices.bluetooth.AndroidBluetoothManager
+import dev.sebaubuntu.openobd.network.devices.bluetooth.BluetoothManager
+import dev.sebaubuntu.openobd.network.devices.usb.AndroidUsbManager
+import dev.sebaubuntu.openobd.network.devices.usb.UsbManager
 import dev.sebaubuntu.openobd.storage.AndroidStorageProvider
 import dev.sebaubuntu.openobd.storage.StorageProvider
 import org.koin.androidx.scope.dsl.activityScope

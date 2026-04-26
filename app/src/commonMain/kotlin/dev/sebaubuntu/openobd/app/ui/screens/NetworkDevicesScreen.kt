@@ -37,9 +37,9 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import dev.sebaubuntu.openobd.app.ui.composables.FlowResultComposable
 import dev.sebaubuntu.openobd.app.viewmodels.NetworkDevicesViewModel
-import dev.sebaubuntu.openobd.backend.models.NetworkDevice
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
+import dev.sebaubuntu.openobd.network.devices.models.NetworkDevice
 import kotlinx.coroutines.flow.Flow
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.cancel

@@ -5,14 +5,14 @@
 
 package dev.sebaubuntu.openobd.network.elm327
 
-import dev.sebaubuntu.openobd.backend.models.RawSocket
-import dev.sebaubuntu.openobd.backend.models.Socket
-import dev.sebaubuntu.openobd.backend.models.Socket.Companion.buffered
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.Result
 import dev.sebaubuntu.openobd.core.models.Result.Companion.flatMap
 import dev.sebaubuntu.openobd.logging.Logger
 import dev.sebaubuntu.openobd.network.can.CanFrame
+import dev.sebaubuntu.openobd.network.core.RawSocket
+import dev.sebaubuntu.openobd.network.core.Socket
+import dev.sebaubuntu.openobd.network.core.Socket.Companion.buffered
 import dev.sebaubuntu.openobd.network.core.Transceiver
 import dev.sebaubuntu.openobd.network.elm327.commands.RawCanCommand
 import dev.sebaubuntu.openobd.network.elm327.commands.ResetCommand

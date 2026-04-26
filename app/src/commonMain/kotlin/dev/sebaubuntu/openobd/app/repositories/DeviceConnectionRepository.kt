@@ -5,16 +5,16 @@
 
 package dev.sebaubuntu.openobd.app.repositories
 
-import dev.sebaubuntu.openobd.backend.models.BluetoothDevice
-import dev.sebaubuntu.openobd.backend.models.BluetoothLeDevice
-import dev.sebaubuntu.openobd.backend.models.DemoDevice
-import dev.sebaubuntu.openobd.backend.models.Device
-import dev.sebaubuntu.openobd.backend.models.NetworkDevice
-import dev.sebaubuntu.openobd.backend.models.UsbDevice
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
 import dev.sebaubuntu.openobd.core.models.Result
+import dev.sebaubuntu.openobd.network.devices.models.BluetoothDevice
+import dev.sebaubuntu.openobd.network.devices.models.BluetoothLeDevice
+import dev.sebaubuntu.openobd.network.devices.models.DemoDevice
+import dev.sebaubuntu.openobd.network.devices.models.Device
+import dev.sebaubuntu.openobd.network.devices.models.NetworkDevice
+import dev.sebaubuntu.openobd.network.devices.models.UsbDevice
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi

@@ -5,9 +5,9 @@
 
 package dev.sebaubuntu.openobd.app.repositories
 
-import dev.sebaubuntu.openobd.backend.models.NetworkDevice
-import dev.sebaubuntu.openobd.backend.models.NetworkDevice.Companion.toModel
-import dev.sebaubuntu.openobd.backend.network.NetworkManager
+import dev.sebaubuntu.openobd.network.devices.models.NetworkDevice
+import dev.sebaubuntu.openobd.network.devices.models.NetworkDevice.Companion.toModel
+import dev.sebaubuntu.openobd.network.devices.network.NetworkManager
 import dev.sebaubuntu.openobd.storage.database.AppDatabase
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope

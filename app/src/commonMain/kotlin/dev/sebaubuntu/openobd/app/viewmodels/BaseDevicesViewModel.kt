@@ -9,9 +9,9 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.openobd.app.repositories.BaseDeviceRepository
 import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
-import dev.sebaubuntu.openobd.backend.models.Device
-import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.core.models.FlowResult
+import dev.sebaubuntu.openobd.network.devices.models.Device
+import dev.sebaubuntu.openobd.network.devices.models.DeviceManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.SharingStarted

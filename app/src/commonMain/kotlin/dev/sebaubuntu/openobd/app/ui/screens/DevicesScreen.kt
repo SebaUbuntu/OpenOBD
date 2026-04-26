@@ -12,7 +12,7 @@ import dev.sebaubuntu.openobd.app.viewmodels.BluetoothDevicesViewModel
 import dev.sebaubuntu.openobd.app.viewmodels.BluetoothLeDevicesViewModel
 import dev.sebaubuntu.openobd.app.viewmodels.DemoDevicesViewModel
 import dev.sebaubuntu.openobd.app.viewmodels.UsbDevicesViewModel
-import dev.sebaubuntu.openobd.backend.models.DeviceType
+import dev.sebaubuntu.openobd.network.devices.models.DeviceType
 
 @Composable
 fun DevicesScreen(

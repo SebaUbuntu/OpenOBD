@@ -5,8 +5,8 @@
 
 package dev.sebaubuntu.openobd.app.repositories
 
-import dev.sebaubuntu.openobd.backend.bluetooth.BluetoothManager
-import dev.sebaubuntu.openobd.backend.models.BluetoothDevice
+import dev.sebaubuntu.openobd.network.devices.bluetooth.BluetoothManager
+import dev.sebaubuntu.openobd.network.devices.models.BluetoothDevice
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 

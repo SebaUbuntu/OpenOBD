@@ -33,7 +33,6 @@ kotlin {
             implementation(libs.kotlinx.io.core)
             implementation(libs.kotlin.stdlib)
 
-            implementation(projects.backend)
             implementation(projects.core)
             implementation(projects.logging)
             api(projects.network.can)

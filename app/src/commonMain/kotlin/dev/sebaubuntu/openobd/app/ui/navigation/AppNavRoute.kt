@@ -18,7 +18,7 @@ import dev.sebaubuntu.openobd.app.ui.screens.SessionInformationScreen
 import dev.sebaubuntu.openobd.app.ui.screens.SettingsScreen
 import dev.sebaubuntu.openobd.app.ui.screens.TerminalScreen
 import dev.sebaubuntu.openobd.app.ui.screens.VehicleInformationScreen
-import dev.sebaubuntu.openobd.backend.models.DeviceType
+import dev.sebaubuntu.openobd.network.devices.models.DeviceType
 import kotlinx.serialization.Serializable
 
 /**

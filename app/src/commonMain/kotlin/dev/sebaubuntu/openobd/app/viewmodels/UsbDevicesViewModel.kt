@@ -7,7 +7,7 @@ package dev.sebaubuntu.openobd.app.viewmodels
 
 import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
 import dev.sebaubuntu.openobd.app.repositories.UsbRepository
-import dev.sebaubuntu.openobd.backend.models.UsbDevice
+import dev.sebaubuntu.openobd.network.devices.models.UsbDevice
 
 class UsbDevicesViewModel(
     usbRepository: UsbRepository,

@@ -5,7 +5,7 @@
 
 package dev.sebaubuntu.openobd.app.ext
 
-import dev.sebaubuntu.openobd.backend.models.DeviceType
+import dev.sebaubuntu.openobd.network.devices.models.DeviceType
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.connection_type_bluetooth
 import openobd.app.generated.resources.connection_type_bluetooth_le

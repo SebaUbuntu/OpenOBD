@@ -25,7 +25,7 @@ import dev.sebaubuntu.openobd.app.ext.drawableResource
 import dev.sebaubuntu.openobd.app.ext.stringResource
 import dev.sebaubuntu.openobd.app.models.ConnectionStatus
 import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
-import dev.sebaubuntu.openobd.backend.models.Device
+import dev.sebaubuntu.openobd.network.devices.models.Device
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.app_name
 import openobd.app.generated.resources.connection_type_none

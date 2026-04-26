@@ -5,8 +5,8 @@
 
 package dev.sebaubuntu.openobd.app.repositories
 
-import dev.sebaubuntu.openobd.backend.demo.DemoManager
-import dev.sebaubuntu.openobd.backend.models.DemoDevice
+import dev.sebaubuntu.openobd.network.devices.demo.DemoManager
+import dev.sebaubuntu.openobd.network.devices.models.DemoDevice
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 

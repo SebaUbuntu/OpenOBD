@@ -53,9 +53,9 @@ kotlin {
             implementation(libs.kotlinx.io.core)
             implementation(libs.kotlinx.serialization.core)
 
-            implementation(projects.backend)
             implementation(projects.core)
             implementation(projects.logging)
+            implementation(projects.network.devices)
             implementation(projects.network.elm327)
             implementation(projects.network.obd2)
             implementation(projects.network.uds)

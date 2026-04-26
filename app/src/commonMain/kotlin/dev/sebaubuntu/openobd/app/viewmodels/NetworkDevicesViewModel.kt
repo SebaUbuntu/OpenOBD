@@ -8,9 +8,9 @@ package dev.sebaubuntu.openobd.app.viewmodels
 import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
 import dev.sebaubuntu.openobd.app.repositories.NetworkRepository
-import dev.sebaubuntu.openobd.backend.models.NetworkDevice
 import dev.sebaubuntu.openobd.core.models.Error
 import dev.sebaubuntu.openobd.core.models.FlowResult
+import dev.sebaubuntu.openobd.network.devices.models.NetworkDevice
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.IO

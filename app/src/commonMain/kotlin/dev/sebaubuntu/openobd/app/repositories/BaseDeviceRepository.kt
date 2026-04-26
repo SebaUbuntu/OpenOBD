@@ -5,10 +5,10 @@
 
 package dev.sebaubuntu.openobd.app.repositories
 
-import dev.sebaubuntu.openobd.backend.models.Device
-import dev.sebaubuntu.openobd.backend.models.DeviceManager
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
+import dev.sebaubuntu.openobd.network.devices.models.Device
+import dev.sebaubuntu.openobd.network.devices.models.DeviceManager
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted

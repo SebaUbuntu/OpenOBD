@@ -19,7 +19,7 @@ import dev.sebaubuntu.openobd.app.ext.drawableResource
 import dev.sebaubuntu.openobd.app.ext.stringResource
 import dev.sebaubuntu.openobd.app.ui.LocalNavBackStack
 import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
-import dev.sebaubuntu.openobd.backend.models.DeviceType
+import dev.sebaubuntu.openobd.network.devices.models.DeviceType
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.resources.stringResource
 

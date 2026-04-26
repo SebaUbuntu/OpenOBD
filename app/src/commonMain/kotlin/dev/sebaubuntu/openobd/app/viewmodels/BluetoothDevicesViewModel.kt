@@ -7,7 +7,7 @@ package dev.sebaubuntu.openobd.app.viewmodels
 
 import dev.sebaubuntu.openobd.app.repositories.BluetoothRepository
 import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
-import dev.sebaubuntu.openobd.backend.models.BluetoothDevice
+import dev.sebaubuntu.openobd.network.devices.models.BluetoothDevice
 
 /**
  * Bluetooth devices view model.
