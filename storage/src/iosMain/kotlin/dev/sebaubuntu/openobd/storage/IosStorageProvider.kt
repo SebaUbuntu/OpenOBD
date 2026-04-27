@@ -13,11 +13,11 @@ import platform.Foundation.NSFileManager
 import platform.Foundation.NSUserDomainMask
 
 object IosStorageProvider : StorageProvider {
-    override fun getDatabaseBuilder(filename: String) = Room.databaseBuilder<AppDatabase>(
-        name = getFilePath(filename),
+    override fun getDatabaseBuilder(fileName: String) = Room.databaseBuilder<AppDatabase>(
+        name = getFilePath(fileName),
     )
 
-    override fun getDataStoreFile(filename: String) = getFilePath(filename)
+    override fun getDataStoreFile(fileName: String) = getFilePath(fileName)
 
     @OptIn(ExperimentalForeignApi::class)
     private fun getFilePath(filename: String) = NSFileManager.defaultManager.URLForDirectory(
