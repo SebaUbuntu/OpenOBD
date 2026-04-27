@@ -60,20 +60,24 @@ Open source ELM327 client application
 
 ## Gradle modules
 
-The app is split between several modules, mostly based on features or protocol:
-
-- app: The Compose Multiplatform stuff (UI - VM - repositories + dependency injection)
-- backend: I/O socket providers (USB, Bluetooth, etc.)
-- core: Common code for all modules
-- elm327: Code needed to talk with an ELM327 device
-- logging: Logging library
-- obd2: OBD-II services
-- profiles: Non-standard profiles provider (Custom DTC definitions, etc.)
-- storage: Application data storage
-- uds: UDS services
-
-Each platform is instead split into separate modules:
+Each app target is split into separate modules:
 
 - androidApp: Android
 - desktopApp: JVM
 - iosApp: iOS
+
+The app is split between several modules, mostly based on features or protocol:
+
+- app: The Compose Multiplatform stuff (UI - VM - repositories)
+- core: Common code for all modules
+- logging: Logging library
+- network: Anything regarding the transfer of data
+  - can: CAN bus utilities
+  - core: Common network core classes
+  - devices: I/O socket providers (USB, Bluetooth, etc.)
+  - elm327: Code needed to talk with an ELM327 device
+  - isotp: ISO-TP utilities
+  - obd2: OBD-II services
+  - uds: UDS services
+- profiles: Non-standard profiles provider (Custom DTC definitions, etc.)
+- storage: Application data storage
