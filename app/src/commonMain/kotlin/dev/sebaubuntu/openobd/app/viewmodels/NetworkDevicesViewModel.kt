@@ -16,7 +16,9 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.launch
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class NetworkDevicesViewModel(
     private val networkRepository: NetworkRepository,
     deviceConnectionRepository: DeviceConnectionRepository,

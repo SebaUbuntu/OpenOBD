@@ -14,10 +14,12 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.runBlocking
+import org.koin.core.annotation.KoinViewModel
 
 /**
  * View model for the App composable.
  */
+@KoinViewModel
 class AppViewModel(
     preferencesRepository: PreferencesRepository,
 ) : ViewModel() {

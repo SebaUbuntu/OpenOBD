@@ -9,9 +9,11 @@ import dev.sebaubuntu.openobd.network.devices.demo.DemoManager
 import dev.sebaubuntu.openobd.network.devices.models.DemoDevice
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
+import org.koin.core.annotation.Single
 
+@Single
 class DemoRepository(
-    deviceManager: DemoManager,
+    deviceManager: DemoManager?,
     coroutineScope: CoroutineScope,
     coroutineDispatcher: CoroutineDispatcher,
 ) : BaseDeviceRepository<DemoManager, DemoDevice, DemoDevice.Identifier>(

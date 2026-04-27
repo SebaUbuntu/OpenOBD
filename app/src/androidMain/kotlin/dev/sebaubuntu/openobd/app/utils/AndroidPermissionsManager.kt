@@ -14,7 +14,9 @@ import dev.sebaubuntu.openobd.app.models.Permission
 import dev.sebaubuntu.openobd.app.models.PermissionState
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.mapLatest
+import org.koin.android.annotation.ActivityScope
 
+@ActivityScope
 class AndroidPermissionsManager(
     private val activity: ComponentActivity,
 ) : PermissionsManager {

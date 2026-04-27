@@ -15,10 +15,14 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import org.koin.core.annotation.Single
 
 /**
  * A class that collects log entries.
  */
+@Single(
+    createdAtStart = true,
+)
 class LogBuffer(
     coroutineScope: CoroutineScope,
     coroutineDispatcher: CoroutineDispatcher,

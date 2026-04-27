@@ -11,7 +11,9 @@ import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
 import dev.sebaubuntu.openobd.core.models.FlowResult
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class CurrentDeviceViewModel(
     deviceConnectionRepository: DeviceConnectionRepository,
 ) : ViewModel() {

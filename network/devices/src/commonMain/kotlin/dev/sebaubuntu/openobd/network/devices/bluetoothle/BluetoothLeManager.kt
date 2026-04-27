@@ -35,6 +35,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.runBlocking
 import kotlinx.io.Buffer
 import kotlinx.io.readByteArray
+import org.koin.core.annotation.Single
 import kotlin.uuid.ExperimentalUuidApi
 
 /**
@@ -45,6 +46,7 @@ import kotlin.uuid.ExperimentalUuidApi
     ExperimentalCoroutinesApi::class,
     ExperimentalUuidApi::class,
 )
+@Single
 class BluetoothLeManager(
     coroutineScope: CoroutineScope,
 ) : DeviceManager<BluetoothLeDevice, BluetoothLeDevice.Identifier> {

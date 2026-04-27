@@ -17,10 +17,12 @@ import dev.sebaubuntu.openobd.storage.preferences.PreferencesManager
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.Flow
+import org.koin.core.annotation.Single
 
 /**
  * User preferences repository.
  */
+@Single
 class PreferencesRepository(
     private val preferencesManager: PreferencesManager,
     platform: Platform,

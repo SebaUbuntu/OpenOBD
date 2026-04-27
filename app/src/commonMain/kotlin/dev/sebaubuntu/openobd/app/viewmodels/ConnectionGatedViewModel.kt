@@ -13,7 +13,9 @@ import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class ConnectionGatedViewModel(
     connectionStatusRepository: ConnectionStatusRepository,
 ) : ViewModel() {

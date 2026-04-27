@@ -7,8 +7,14 @@ package dev.sebaubuntu.openobd.app.models
 
 import dev.sebaubuntu.openobd.app.utils.LocaleUtils
 import kotlinx.coroutines.flow.flowOf
+import org.koin.core.annotation.Single
 import java.util.Locale
 
+@Single(
+    binds = [
+        Platform::class,
+    ],
+)
 object JvmPlatform : Platform {
     override fun information() = flowOf(
         listOf(

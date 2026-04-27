@@ -43,6 +43,7 @@ import kotlinx.io.Buffer
 import kotlinx.io.indexOf
 import kotlinx.io.readString
 import kotlinx.io.writeString
+import org.koin.core.annotation.Single
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.milliseconds
 import kotlin.time.TimeSource
@@ -54,6 +55,7 @@ import kotlin.time.measureTimedValue
  * @param coroutineScope The [CoroutineScope] to use for coroutines
  * @param coroutineDispatcher The [CoroutineDispatcher] to use for coroutines
  */
+@Single
 class Elm327Manager(
     private val coroutineScope: CoroutineScope,
     private val coroutineDispatcher: CoroutineDispatcher,

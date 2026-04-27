@@ -5,6 +5,7 @@
 
 plugins {
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
+    alias(libs.plugins.koinCompiler)
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.ksp)
     alias(libs.plugins.room)
@@ -34,6 +35,8 @@ kotlin {
             implementation(libs.androidx.datastore.preferences)
             api(libs.androidx.room.runtime)
             implementation(libs.androidx.sqlite.bundled)
+            implementation(libs.koin.annotations)
+            implementation(libs.koin.core)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.serialization.core)
             implementation(libs.kotlin.stdlib)

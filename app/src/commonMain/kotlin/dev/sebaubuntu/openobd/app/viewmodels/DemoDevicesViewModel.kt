@@ -8,7 +8,9 @@ package dev.sebaubuntu.openobd.app.viewmodels
 import dev.sebaubuntu.openobd.app.repositories.DemoRepository
 import dev.sebaubuntu.openobd.app.repositories.DeviceConnectionRepository
 import dev.sebaubuntu.openobd.network.devices.models.DemoDevice
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class DemoDevicesViewModel(
     demoRepository: DemoRepository,
     deviceConnectionRepository: DeviceConnectionRepository,

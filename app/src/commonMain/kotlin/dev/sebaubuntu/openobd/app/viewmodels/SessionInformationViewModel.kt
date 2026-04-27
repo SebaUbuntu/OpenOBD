@@ -28,8 +28,10 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.KoinViewModel
 import kotlin.time.Duration.Companion.milliseconds
 
+@KoinViewModel
 class SessionInformationViewModel(
     connectionStatusRepository: ConnectionStatusRepository,
     elm327Repository: Elm327Repository,

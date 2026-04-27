@@ -13,6 +13,24 @@ import androidx.compose.runtime.Composable
 import dev.sebaubuntu.openobd.app.models.Theme
 
 interface ColorSchemeProvider {
+    object Default : ColorSchemeProvider {
+        override val supportsDynamicColors = false
+
+        @Composable
+        override fun getColorScheme(
+            theme: Theme,
+            dynamicColors: Boolean,
+        ) = when (theme) {
+            Theme.SYSTEM -> when (isSystemInDarkTheme()) {
+                true -> darkColorScheme()
+                false -> lightColorScheme()
+            }
+
+            Theme.LIGHT -> lightColorScheme()
+            Theme.DARK -> darkColorScheme()
+        }
+    }
+
     /**
      * Return whether this platform supports dynamic colors or not.
      * The returned value must stay the same throughout the app lifecycle.
@@ -30,24 +48,4 @@ interface ColorSchemeProvider {
         theme: Theme,
         dynamicColors: Boolean,
     ): ColorScheme
-
-    companion object {
-        val DEFAULT = object : ColorSchemeProvider {
-            override val supportsDynamicColors = false
-
-            @Composable
-            override fun getColorScheme(
-                theme: Theme,
-                dynamicColors: Boolean,
-            ) = when (theme) {
-                Theme.SYSTEM -> when (isSystemInDarkTheme()) {
-                    true -> darkColorScheme()
-                    false -> lightColorScheme()
-                }
-
-                Theme.LIGHT -> lightColorScheme()
-                Theme.DARK -> darkColorScheme()
-            }
-        }
-    }
 }

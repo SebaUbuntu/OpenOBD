@@ -15,6 +15,20 @@ import kotlinx.coroutines.flow.flowOf
  */
 interface PermissionsManager {
     /**
+     * Default implementation of [PermissionsManager]. Will assume that all permissions are
+     * granted.
+     */
+    object Default : PermissionsManager {
+        override suspend fun permissionState(permission: Permission) = PermissionState.GRANTED
+
+        override fun permissionStateFlow(
+            permission: Permission
+        ) = flowOf(PermissionState.GRANTED)
+
+        override suspend fun requestPermission(permission: Permission) = PermissionState.GRANTED
+    }
+
+    /**
      * Check the state of the requested permission.
      */
     suspend fun permissionState(permission: Permission): PermissionState
@@ -31,20 +45,4 @@ interface PermissionsManager {
      * @return The new state of the permission
      */
     suspend fun requestPermission(permission: Permission): PermissionState
-
-    companion object {
-        /**
-         * Default implementation of [PermissionsManager]. Will assume that all permissions are
-         * granted.
-         */
-        val DEFAULT = object : PermissionsManager {
-            override suspend fun permissionState(permission: Permission) = PermissionState.GRANTED
-
-            override fun permissionStateFlow(
-                permission: Permission
-            ) = flowOf(PermissionState.GRANTED)
-
-            override suspend fun requestPermission(permission: Permission) = PermissionState.GRANTED
-        }
-    }
 }

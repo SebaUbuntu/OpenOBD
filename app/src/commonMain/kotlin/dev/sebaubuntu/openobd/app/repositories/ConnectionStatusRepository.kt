@@ -17,7 +17,9 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.Single
 
+@Single
 class ConnectionStatusRepository(
     deviceConnectionRepository: DeviceConnectionRepository,
     elm327Repository: Elm327Repository,

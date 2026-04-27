@@ -5,14 +5,12 @@
 
 package dev.sebaubuntu.openobd.app.di
 
-import org.koin.core.context.startKoin
 import org.koin.dsl.KoinAppDeclaration
 import org.koin.dsl.includes
+import org.koin.plugin.module.dsl.startKoin
 
-fun initKoin(config: KoinAppDeclaration? = null) = startKoin {
+fun initKoin(config: KoinAppDeclaration? = null) = startKoin<KoinApp> {
     includes(config)
-
-    modules(commonModule, platformModule)
 
     logger(KoinLogger)
 }

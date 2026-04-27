@@ -32,12 +32,18 @@ import kotlinx.coroutines.sync.withLock
 import kotlinx.io.Buffer
 import kotlinx.io.asSink
 import kotlinx.io.asSource
+import org.koin.core.annotation.Single
 import kotlin.concurrent.atomics.AtomicBoolean
 import kotlin.concurrent.atomics.ExperimentalAtomicApi
 import kotlin.uuid.ExperimentalUuidApi
 import kotlin.uuid.Uuid
 import kotlin.uuid.toJavaUuid
 
+@Single(
+    binds = [
+        BluetoothManager::class,
+    ],
+)
 @OptIn(ExperimentalUuidApi::class)
 @Suppress("MissingPermission")
 class AndroidBluetoothManager(private val context: Context) : BluetoothManager {

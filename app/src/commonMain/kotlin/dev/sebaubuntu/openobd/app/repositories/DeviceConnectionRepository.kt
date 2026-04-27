@@ -25,7 +25,9 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.Single
 
+@Single
 class DeviceConnectionRepository(
     private val bluetoothRepository: BluetoothRepository,
     private val bluetoothLeRepository: BluetoothLeRepository,

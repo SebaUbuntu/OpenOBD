@@ -15,7 +15,9 @@ import dev.sebaubuntu.openobd.network.devices.models.DeviceManager
 import dev.sebaubuntu.openobd.network.devices.models.DevicesState
 import kotlinx.coroutines.flow.channelFlow
 import kotlinx.coroutines.flow.flowOf
+import org.koin.core.annotation.Single
 
+@Single
 class DemoManager : DeviceManager<DemoDevice, DemoDevice.Identifier> {
     override val isToggleable = false
 

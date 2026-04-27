@@ -31,7 +31,13 @@ import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.onStart
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.Single
 
+@Single(
+    binds = [
+        UsbManager::class,
+    ],
+)
 class AndroidUsbManager(
     context: Context,
     coroutineScope: CoroutineScope,

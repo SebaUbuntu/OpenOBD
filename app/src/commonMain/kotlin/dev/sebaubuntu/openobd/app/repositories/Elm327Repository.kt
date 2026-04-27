@@ -17,11 +17,13 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
+import org.koin.core.annotation.Single
 import kotlin.time.Duration
 
 /**
  * Elm327 repository.
  */
+@Single
 class Elm327Repository(
     deviceConnectionRepository: DeviceConnectionRepository,
     private val elm327Manager: Elm327Manager,

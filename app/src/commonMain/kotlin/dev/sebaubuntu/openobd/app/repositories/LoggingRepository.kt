@@ -10,10 +10,12 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.Single
 
 /**
  * Logging repository.
  */
+@Single
 class LoggingRepository(
     private val logBuffer: LogBuffer,
     coroutineScope: CoroutineScope,

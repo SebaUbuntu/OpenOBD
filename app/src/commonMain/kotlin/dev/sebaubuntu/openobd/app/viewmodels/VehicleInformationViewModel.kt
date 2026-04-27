@@ -27,8 +27,10 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.shareIn
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.KoinViewModel
 import kotlin.time.Duration.Companion.milliseconds
 
+@KoinViewModel
 class VehicleInformationViewModel(
     private val elm327Repository: Elm327Repository,
 ) : ViewModel() {

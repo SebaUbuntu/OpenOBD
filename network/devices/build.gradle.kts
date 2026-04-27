@@ -5,6 +5,7 @@
 
 plugins {
     alias(libs.plugins.androidKotlinMultiplatformLibrary)
+    alias(libs.plugins.koinCompiler)
     alias(libs.plugins.kotlinMultiplatform)
 }
 
@@ -29,6 +30,8 @@ kotlin {
     sourceSets {
         commonMain.dependencies {
             implementation(libs.kable.core)
+            implementation(libs.koin.annotations)
+            implementation(libs.koin.core)
             implementation(libs.kotlinx.coroutines.core)
             implementation(libs.kotlinx.io.core)
             implementation(libs.kotlin.stdlib)

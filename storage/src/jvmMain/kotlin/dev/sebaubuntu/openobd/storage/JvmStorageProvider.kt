@@ -7,8 +7,14 @@ package dev.sebaubuntu.openobd.storage
 
 import androidx.room.Room
 import dev.sebaubuntu.openobd.storage.database.AppDatabase
+import org.koin.core.annotation.Single
 import java.io.File
 
+@Single(
+    binds = [
+        StorageProvider::class,
+    ],
+)
 object JvmStorageProvider : StorageProvider {
     override fun getDatabaseBuilder(fileName: String) = Room.databaseBuilder<AppDatabase>(
         name = getFilePath(fileName),

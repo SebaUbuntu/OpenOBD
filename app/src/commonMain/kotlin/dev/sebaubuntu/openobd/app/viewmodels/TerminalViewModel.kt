@@ -16,7 +16,9 @@ import kotlinx.coroutines.IO
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class TerminalViewModel(
     private val elm327Repository: Elm327Repository,
 ) : ViewModel() {

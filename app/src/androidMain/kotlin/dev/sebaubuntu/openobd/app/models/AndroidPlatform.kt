@@ -16,7 +16,13 @@ import androidx.core.content.getSystemService
 import androidx.core.text.util.LocalePreferences
 import dev.sebaubuntu.openobd.core.models.value.Temperature
 import kotlinx.coroutines.flow.flowOf
+import org.koin.core.annotation.Single
 
+@Single(
+    binds = [
+        Platform::class,
+    ],
+)
 class AndroidPlatform(private val context: Context) : Platform {
     private val uiModeManager = context.getSystemService<UiModeManager>()!!
 

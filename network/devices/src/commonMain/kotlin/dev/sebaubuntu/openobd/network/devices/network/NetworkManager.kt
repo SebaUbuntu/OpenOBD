@@ -28,10 +28,12 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.flowOf
 import kotlinx.coroutines.flow.mapLatest
+import org.koin.core.annotation.Single
 
 /**
  * Network manager.
  */
+@Single
 class NetworkManager(
     appDatabase: AppDatabase,
 ) : DeviceManager<NetworkDevice, NetworkDevice.Identifier> {

@@ -14,7 +14,13 @@ import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
 import dev.sebaubuntu.openobd.app.models.Theme
+import org.koin.core.annotation.Single
 
+@Single(
+    binds = [
+        ColorSchemeProvider::class,
+    ],
+)
 class AndroidColorSchemeProvider(
     private val context: Context,
 ) : ColorSchemeProvider {

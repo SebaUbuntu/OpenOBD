@@ -9,12 +9,14 @@ import dev.sebaubuntu.openobd.network.devices.bluetooth.BluetoothManager
 import dev.sebaubuntu.openobd.network.devices.models.BluetoothDevice
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
+import org.koin.core.annotation.Single
 
 /**
  * Bluetooth repository.
  */
+@Single
 class BluetoothRepository(
-    deviceManager: BluetoothManager,
+    deviceManager: BluetoothManager?,
     coroutineScope: CoroutineScope,
     coroutineDispatcher: CoroutineDispatcher,
 ) : BaseDeviceRepository<BluetoothManager, BluetoothDevice, BluetoothDevice.Identifier>(

@@ -8,12 +8,18 @@ package dev.sebaubuntu.openobd.app.models
 import dev.sebaubuntu.openobd.app.utils.LocaleUtils
 import dev.sebaubuntu.openobd.core.models.value.Temperature
 import kotlinx.coroutines.flow.flowOf
+import org.koin.core.annotation.Single
 import platform.Foundation.NSLocale
 import platform.Foundation.countryCode
 import platform.Foundation.currentLocale
 import platform.Foundation.usesMetricSystem
 import platform.UIKit.UIDevice
 
+@Single(
+    binds = [
+        Platform::class,
+    ],
+)
 object IosPlatform : NativePlatform() {
     override fun platformInformation() = flowOf(
         listOf(

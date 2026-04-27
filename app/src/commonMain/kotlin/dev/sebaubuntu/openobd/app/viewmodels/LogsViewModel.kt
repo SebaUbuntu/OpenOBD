@@ -10,7 +10,9 @@ import androidx.lifecycle.viewModelScope
 import dev.sebaubuntu.openobd.app.repositories.LoggingRepository
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.KoinViewModel
 
+@KoinViewModel
 class LogsViewModel(
     private val loggingRepository: LoggingRepository,
 ) : ViewModel() {

@@ -30,8 +30,10 @@ import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
+import org.koin.core.annotation.KoinViewModel
 import kotlin.time.Duration.Companion.milliseconds
 
+@KoinViewModel
 class DiagnosticTroubleCodesViewModel(
     private val elm327Repository: Elm327Repository,
     profilesRepository: ProfilesRepository,

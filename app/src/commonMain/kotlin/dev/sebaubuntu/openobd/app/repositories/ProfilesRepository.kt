@@ -19,10 +19,12 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
+import org.koin.core.annotation.Single
 
 /**
  * Profiles repository.
  */
+@Single
 class ProfilesRepository(
     preferencesRepository: PreferencesRepository,
     coroutineScope: CoroutineScope,

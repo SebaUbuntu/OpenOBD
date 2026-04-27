@@ -13,12 +13,14 @@ import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.flow.mapLatest
+import org.koin.core.annotation.Single
 
 /**
  * Network repository.
  */
+@Single
 class NetworkRepository(
-    deviceManager: NetworkManager,
+    deviceManager: NetworkManager?,
     appDatabase: AppDatabase,
     coroutineScope: CoroutineScope,
     coroutineDispatcher: CoroutineDispatcher,
