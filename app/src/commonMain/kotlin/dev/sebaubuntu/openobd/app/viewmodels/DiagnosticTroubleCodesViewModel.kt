@@ -14,7 +14,6 @@ import dev.sebaubuntu.openobd.core.models.FlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.asFlowResult
 import dev.sebaubuntu.openobd.core.models.FlowResult.Companion.mapLatestDataOrNull
 import dev.sebaubuntu.openobd.network.can.CanIdentifier
-import dev.sebaubuntu.openobd.network.obd2.commands.ClearDiagnosticTroubleCodesCommand
 import dev.sebaubuntu.openobd.network.obd2.commands.GetDiagnosticTroubleCodesCommand
 import dev.sebaubuntu.openobd.network.obd2.commands.GetPendingDiagnosticTroubleCodesCommand
 import dev.sebaubuntu.openobd.network.obd2.commands.GetPermanentDiagnosticTroubleCodesCommand
@@ -29,7 +28,6 @@ import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.flowOn
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.launch
 import org.koin.core.annotation.KoinViewModel
 import kotlin.time.Duration.Companion.milliseconds
 
@@ -104,10 +102,6 @@ class DiagnosticTroubleCodesViewModel(
             started = SharingStarted.WhileSubscribed(),
             initialValue = FlowResult.Loading,
         )
-
-    fun clearCodes() = viewModelScope.launch {
-        elm327Repository.executeCommand(ClearDiagnosticTroubleCodesCommand)
-    }
 
     @OptIn(ExperimentalCoroutinesApi::class)
     private fun GetDiagnosticTroubleCodesCommand.asFlow() =

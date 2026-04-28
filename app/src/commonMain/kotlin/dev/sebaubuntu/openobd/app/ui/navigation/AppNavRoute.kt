@@ -6,6 +6,7 @@
 package dev.sebaubuntu.openobd.app.ui.navigation
 
 import androidx.navigation3.runtime.NavKey
+import dev.sebaubuntu.openobd.app.ui.screens.ClearDiagnosticTroubleCodesScreen
 import dev.sebaubuntu.openobd.app.ui.screens.CurrentDataScreen
 import dev.sebaubuntu.openobd.app.ui.screens.DashboardScreen
 import dev.sebaubuntu.openobd.app.ui.screens.DeviceTypesScreen
@@ -61,6 +62,12 @@ sealed interface AppNavRoute : NavKey {
      */
     @Serializable
     data object DiagnosticTroubleCodes : AppNavRoute
+
+    /**
+     * @see ClearDiagnosticTroubleCodesScreen
+     */
+    @Serializable
+    data object ClearDiagnosticTroubleCodes : AppNavRoute
 
     /**
      * @see CurrentDataScreen

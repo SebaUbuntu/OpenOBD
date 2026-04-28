@@ -22,7 +22,7 @@ Open source ELM327 client application
     - Get current and freeze frame data (0x01, 0x02)
     - Get vehicle information (0x09)
     - Read stored, pending and permanent diagnostic trouble codes (0x03, 0x07, 0x0A)
-    - Clear stored diagnostic trouble codes (0x04) (TODO)
+    - Clear stored diagnostic trouble codes (0x04)
 - UDS services (TODO)
     - 0x10: DiagnosticSessionControl
     - 0x11: ECUReset

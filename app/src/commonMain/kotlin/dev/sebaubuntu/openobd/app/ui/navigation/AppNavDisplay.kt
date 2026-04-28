@@ -15,6 +15,7 @@ import androidx.navigation3.runtime.entryProvider
 import androidx.navigation3.runtime.rememberSaveableStateHolderNavEntryDecorator
 import androidx.navigation3.ui.NavDisplay
 import dev.sebaubuntu.openobd.app.ui.LocalNavBackStack
+import dev.sebaubuntu.openobd.app.ui.screens.ClearDiagnosticTroubleCodesScreen
 import dev.sebaubuntu.openobd.app.ui.screens.CurrentDataScreen
 import dev.sebaubuntu.openobd.app.ui.screens.DashboardScreen
 import dev.sebaubuntu.openobd.app.ui.screens.DeviceTypesScreen
@@ -68,6 +69,12 @@ fun AppNavDisplay(
 
         entry<AppNavRoute.DiagnosticTroubleCodes> {
             DiagnosticTroubleCodesScreen(
+                paddingValues = paddingValues,
+            )
+        }
+
+        entry<AppNavRoute.ClearDiagnosticTroubleCodes> {
+            ClearDiagnosticTroubleCodesScreen(
                 paddingValues = paddingValues,
             )
         }

@@ -8,6 +8,7 @@ package dev.sebaubuntu.openobd.app.ext
 import dev.sebaubuntu.openobd.app.ui.navigation.AppNavRoute
 import openobd.app.generated.resources.Res
 import openobd.app.generated.resources.app_name
+import openobd.app.generated.resources.clear_dtc
 import openobd.app.generated.resources.current_data
 import openobd.app.generated.resources.dashboard
 import openobd.app.generated.resources.devices
@@ -28,6 +29,7 @@ val AppNavRoute.stringResource: StringResource
         AppNavRoute.SessionInformation -> Res.string.session_information
         AppNavRoute.Dashboard -> Res.string.dashboard
         AppNavRoute.DiagnosticTroubleCodes -> Res.string.dtc
+        AppNavRoute.ClearDiagnosticTroubleCodes -> Res.string.clear_dtc
         AppNavRoute.CurrentData -> Res.string.current_data
         AppNavRoute.FreezeFrameData -> Res.string.freeze_frame_data
         AppNavRoute.VehicleInformation -> Res.string.vehicle_information

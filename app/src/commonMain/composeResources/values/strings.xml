@@ -151,4 +151,12 @@
     <string name="temperature_unit_celsius">Celsius</string>
     <string name="temperature_unit_fahrenheit">Fahrenheit</string>
     <string name="temperature_unit_kelvin">Kelvin</string>
+
+    <!-- Clear diagnostic trouble codes screen -->
+    <string name="clear_dtc">Clear diagnostic trouble codes</string>
+    <string name="clear_dtc_prompt">Do you want to clear the stored diagnostic trouble codes? The engine ECU usually requires the ignition to be on and the engine to not be running</string>
+    <string name="clear_dtc_clearing">Clearing...</string>
+    <string name="clear_dtc_success">Codes cleared successfully, it is advised to turn off the ignition before restarting the engine</string>
+    <string name="clear_dtc_failure">Failed to clear diagnostic trouble codes, make sure the necessary conditions have been met</string>
+    <string name="clear_dtc_retry">Retry</string>
 </resources>
