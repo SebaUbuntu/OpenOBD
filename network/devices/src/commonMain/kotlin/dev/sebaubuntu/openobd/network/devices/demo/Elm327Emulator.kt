@@ -9,7 +9,6 @@ import dev.sebaubuntu.openobd.logging.Logger
 import dev.sebaubuntu.openobd.network.core.RawSocket
 import io.ktor.util.toUpperCasePreservingASCIIRules
 import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.async
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
@@ -33,15 +32,23 @@ class Elm327Emulator(
      * IC internal state.
      */
     data class InternalState(
+        // ELM327
         val echoEnabled: Boolean,
         val headersEnabled: Boolean,
         val displayCanDataLengthCode: Boolean,
+
+        // OBD2
+        val storedDiagnosticTroubleCodes: List<UShort>,
     ) {
         companion object {
             val DEFAULT = InternalState(
                 echoEnabled = false,
                 headersEnabled = false,
                 displayCanDataLengthCode = false,
+                storedDiagnosticTroubleCodes = listOf(
+                    0x0470u,
+                    0x0471u,
+                ),
             )
         }
     }
@@ -103,7 +110,7 @@ class Elm327Emulator(
         "Z" to {
             coroutineScope {
                 // Simulate restart
-                val restartDeferred = async {
+                val delayJob = launch {
                     delay(1000L)
                 }
 
@@ -111,7 +118,7 @@ class Elm327Emulator(
                 internalState = InternalState.DEFAULT
 
                 // Wait for the fake delay
-                restartDeferred.join()
+                delayJob.join()
 
                 listOf(ELM327_VERSION)
             }
@@ -119,6 +126,7 @@ class Elm327Emulator(
     )
 
     private val canResponses = mapOf(
+        // Service 01
         obd2Response(0x01u, 0x00u) { ubyteArrayOf(0xBFu, 0xFFu, 0xFFu, 0xFFu) },
         randomObd2Response(0x01u, 0x01u, responseSize = 4),
         obd2Response(0x01u, 0x03u) { ubyteArrayOf(0x02u, 0x00u) },
@@ -150,6 +158,40 @@ class Elm327Emulator(
         randomObd2Response(0x01u, 0x1Du, responseSize = 1),
         randomObd2Response(0x01u, 0x1Eu, responseSize = 1),
         randomObd2Response(0x01u, 0x1Fu, responseSize = 2),
+
+        // Service 03
+        obd2Response(0x03u) {
+            internalState.storedDiagnosticTroubleCodes.let {
+                buildList {
+                    add(it.size.toUByte())
+
+                    for (code in it) {
+                        add(code.toUInt().shr(8).toUByte())
+                        add(code.toUByte())
+                    }
+                }.toUByteArray()
+            }
+        },
+
+        // Service 04
+        obd2Response(0x04u) {
+            coroutineScope {
+                // Simulate delay
+                val delayJob = launch {
+                    delay(2000L)
+                }
+
+                internalState = internalState.copy(
+                    storedDiagnosticTroubleCodes = listOf(),
+                )
+
+                delayJob.join()
+
+                ubyteArrayOf()
+            }
+        },
+
+        // Service 09
         obd2Response(0x09u, 0x00u) { ubyteArrayOf(0x55u, 0x40u, 0x00u, 0x00u) },
         obd2Response(0x09u, 0x01u) { ubyteArrayOf(0x01u) },
         obd2Response(0x09u, 0x02u) {
