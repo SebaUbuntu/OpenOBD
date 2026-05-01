@@ -44,3 +44,13 @@ inline operator fun <reified N : Number> Byte.div(other: N): Number = when (othe
     is Short -> div(other)
     else -> error("Unsupported number class: ${other::class}")
 }
+
+inline operator fun <reified N : Number> Byte.rem(other: N): Number = when (other) {
+    is Byte -> rem(other)
+    is Double -> rem(other)
+    is Float -> rem(other)
+    is Int -> rem(other)
+    is Long -> rem(other)
+    is Short -> rem(other)
+    else -> error("Unsupported number class: ${other::class}")
+}

@@ -47,6 +47,16 @@ inline operator fun <reified N : Number> Double.div(other: N): Number = when (ot
     else -> error("Unsupported number class: ${other::class}")
 }
 
+inline operator fun <reified N : Number> Double.rem(other: N): Number = when (other) {
+    is Byte -> rem(other)
+    is Double -> rem(other)
+    is Float -> rem(other)
+    is Int -> rem(other)
+    is Long -> rem(other)
+    is Short -> rem(other)
+    else -> error("Unsupported number class: ${other::class}")
+}
+
 fun Double.degreesToRadians(): Double = this / 180.0 * PI
 
 fun Double.radiansToDegrees(): Double = this * 180.0 / PI
