@@ -7,6 +7,16 @@ package dev.sebaubuntu.openobd.core.ext
 
 import kotlin.math.PI
 
+inline operator fun <reified N : Number> Double.compareTo(other: N): Int = when (other) {
+    is Byte -> compareTo(other)
+    is Double -> compareTo(other)
+    is Float -> compareTo(other)
+    is Int -> compareTo(other)
+    is Long -> compareTo(other)
+    is Short -> compareTo(other)
+    else -> error("Unsupported number class: ${other::class}")
+}
+
 inline operator fun <reified N : Number> Double.plus(other: N): Number = when (other) {
     is Byte -> plus(other)
     is Double -> plus(other)

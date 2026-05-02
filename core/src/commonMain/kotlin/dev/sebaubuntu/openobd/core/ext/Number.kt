@@ -16,6 +16,16 @@ inline fun <reified N : Number> Number.toNumber(): N = when (N::class) {
     else -> error("Unsupported number class: ${N::class}")
 } as N
 
+inline operator fun <reified N : Number> N.compareTo(other: Number): Int = when (this) {
+    is Byte -> compareTo(other)
+    is Double -> compareTo(other)
+    is Float -> compareTo(other)
+    is Int -> compareTo(other)
+    is Long -> compareTo(other)
+    is Short -> compareTo(other)
+    else -> error("Unsupported number class: ${this::class}")
+}
+
 inline operator fun <reified N : Number> N.plus(other: Number): Number = when (this) {
     is Byte -> plus(other)
     is Double -> plus(other)
@@ -65,3 +75,43 @@ inline operator fun <reified N : Number> N.rem(other: Number): Number = when (th
     is Short -> rem(other)
     else -> error("Unsupported number class: ${this::class}")
 }
+
+inline operator fun <reified N : Number> N.inc(): N = when (this) {
+    is Byte -> inc()
+    is Double -> inc()
+    is Float -> inc()
+    is Int -> inc()
+    is Long -> inc()
+    is Short -> inc()
+    else -> error("Unsupported number class: ${this::class}")
+} as N
+
+inline operator fun <reified N : Number> N.dec(): N = when (this) {
+    is Byte -> dec()
+    is Double -> dec()
+    is Float -> dec()
+    is Int -> dec()
+    is Long -> dec()
+    is Short -> dec()
+    else -> error("Unsupported number class: ${this::class}")
+} as N
+
+inline operator fun <reified N : Number> N.unaryPlus(): N = when (this) {
+    is Byte -> unaryPlus()
+    is Double -> unaryPlus()
+    is Float -> unaryPlus()
+    is Int -> unaryPlus()
+    is Long -> unaryPlus()
+    is Short -> unaryPlus()
+    else -> error("Unsupported number class: ${this::class}")
+} as N
+
+inline operator fun <reified N : Number> N.unaryMinus(): N = when (this) {
+    is Byte -> unaryMinus()
+    is Double -> unaryMinus()
+    is Float -> unaryMinus()
+    is Int -> unaryMinus()
+    is Long -> unaryMinus()
+    is Short -> unaryMinus()
+    else -> error("Unsupported number class: ${this::class}")
+} as N
